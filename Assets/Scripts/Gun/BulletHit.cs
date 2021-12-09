@@ -12,23 +12,24 @@ public class BulletHit : MonoBehaviour
     private EnemyFlip enemyFlipScript;
     private float speed = 10;
     
-    void Update()
+    void Start()
     {
         RBBullets.velocity = transform.right * speed;
-        //enemyFlipScript = GameObject.FindGameObjectWithTag("EnemyLollipopGirlBlue").GetComponent<EnemyFlip>();
-        //enemySpriteRenderer = GameObject.FindGameObjectWithTag("EnemyLollipopGirlBlue").GetComponent<SpriteRenderer>();
+        enemySpriteRenderer = GameObject.FindGameObjectWithTag("EnemyLollipopGirlBlue").GetComponent<SpriteRenderer>();
+        enemyFlipScript = GameObject.FindGameObjectWithTag("EnemyLollipopGirlBlue").GetComponent<EnemyFlip>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("EnemyLollipopGirlBlue") || other.gameObject.CompareTag("EnemyLips") || other.gameObject.CompareTag("EnemyLollipopGirlPink"))
         {
+
             //enemySpriteRenderer.sprite = enemyFlipScript.enemySpriteDead;
             isEnemyDead = true;
-            Destroy(other.gameObject, 1.25f);
 
-            Destroy(this.gameObject);
-            //isEnemyDead = false;
+            //enemyFlipScript.DeadSprite();
+            Destroy(other.gameObject, 1.25f);
+            Destroy(gameObject);
         }
 
     }

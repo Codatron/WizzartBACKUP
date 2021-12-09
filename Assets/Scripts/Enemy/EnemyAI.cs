@@ -5,8 +5,7 @@ using Pathfinding;
 
 public class EnemyAI : MonoBehaviour
 {
-    public Transform target;                    // reference to target
-    public Transform lollipopGirlGFX;
+    private Transform target;                    // reference to target
     public float speed = 200f;
     public float nextWaypointDistance = 3f;     // how close enemy needs to be to a waypoint before moving on to the next
 
@@ -22,9 +21,9 @@ public class EnemyAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         lollipopGirlRb = GetComponent<Rigidbody2D>();
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
         // Generate path - (start point position, target position, function to invoke when calculation of path is complete) 
-        
         InvokeRepeating("UpdatePath", 0.0f, 0.5f);
     }
 
@@ -79,13 +78,13 @@ public class EnemyAI : MonoBehaviour
         }
 
         // flip sprite
-        if (force.x >= 0.01f)
-        {
-            lollipopGirlGFX.localScale = new Vector3(-0.25f, 0.25f, 1.0f);
-        }
-        else if (force.x <= -0.01f)
-        {
-            lollipopGirlGFX.localScale = new Vector3(0.25f, 0.25f, 1.0f);
-        }
+        //if (force.x >= 0.01f)
+        //{
+        //    lollipopGirlGFX.localScale = new Vector3(-0.25f, 0.25f, 1.0f);
+        //}
+        //else if (force.x <= -0.01f)
+        //{
+        //    lollipopGirlGFX.localScale = new Vector3(0.25f, 0.25f, 1.0f);
+        //}
     }
 }

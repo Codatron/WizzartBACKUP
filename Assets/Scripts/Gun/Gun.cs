@@ -12,6 +12,7 @@ public class Gun : MonoBehaviour
     public AudioSource speaker;
     public AudioClip refill;
     public AudioClip shoot;
+    public float force = 800f;      // If we want to fire the bullet using force instead
 
     public float angle;
     public int ammoCount;
@@ -58,7 +59,6 @@ public class Gun : MonoBehaviour
 
     void ReloadingGun()
     {
-        
         reloading = false;
     }
 
