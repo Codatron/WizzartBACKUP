@@ -9,10 +9,14 @@ public class Gun : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     public Slider slider;
-    public AudioSource Shooting;
+    public AudioSource speaker;
+    public AudioClip refill;
+    public AudioClip shoot;
 
     public float angle;
     public int ammoCount;
+
+    bool reloading = false;
 
     void Start()
     {
@@ -31,13 +35,31 @@ public class Gun : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
         //shoot 
-        if (Input.GetMouseButtonDown(0) && ammoCount > 0)
+        if (Input.GetMouseButtonDown(0) && ammoCount > 0 && reloading == false)
         {
             Fire(offSet);
-            Shooting.Play();
+            speaker.PlayOneShot(shoot);
             ammoCount--;
+            reloading = true;
             slider.value = ammoCount;
+            Invoke("ReloadingGun", 0.2f);
         }
+
+
+        if (Input.GetKeyDown("r"))
+        {
+            ammoCount = 20;
+            speaker.PlayOneShot(refill);
+            reloading = true;
+            Invoke("ReloadingGun", 3f);
+            
+        }
+    }
+
+    void ReloadingGun()
+    {
+        
+        reloading = false;
     }
 
     public void RefillAmmo(int ammo)
