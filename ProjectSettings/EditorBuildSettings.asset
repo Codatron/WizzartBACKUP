@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneRoomWaterColour.unity
     guid: dafdcd5c2dd114b4abc50a15bf3bb04b
   - enabled: 1
-    path: Assets/Scenes/SceneLevelPopArt.unity
+    path: Assets/Scenes/Edvin.unity
     guid: 08cb9ee884b54bb4f9373ecd429db285
   - enabled: 1
     path: Assets/Scenes/SceneLevelSurreal.unity
