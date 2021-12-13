@@ -5,17 +5,17 @@ using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
-    private Camera cam;
     public GameObject bulletPrefab;
     public Transform firePoint;
     public Slider slider;
     public AudioSource speaker;
     public AudioClip refill;
     public AudioClip shoot;
-    public float force = 800f;      // If we want to fire the bullet using force instead
-
-    public float angle;
+    public float speed;      
     public int ammoCount;
+
+    private Camera cam;
+    private float angle;
 
     bool reloading = false;
 
@@ -23,7 +23,7 @@ public class Gun : MonoBehaviour
     {
         cam = Camera.main;
 
-        ammoCount = 10;
+        ammoCount = 20;
         slider.maxValue = ammoCount;
     }
     public void Update()
@@ -31,14 +31,13 @@ public class Gun : MonoBehaviour
         Vector2 mouse = Input.mousePosition;
         Vector2 screenPoint = cam.WorldToScreenPoint(transform.position);
         Vector2 offSet = new Vector2(mouse.x - screenPoint.x, mouse.y - screenPoint.y);
-
         angle = Mathf.Atan2(offSet.y, offSet.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
         //shoot 
         if (Input.GetMouseButtonDown(0) && ammoCount > 0 && reloading == false)
         {
-            Fire(offSet);
+            Fire();
             speaker.PlayOneShot(shoot);
             ammoCount--;
             reloading = true;
@@ -46,15 +45,20 @@ public class Gun : MonoBehaviour
             Invoke("ReloadingGun", 0.2f);
         }
 
-
-        if (Input.GetKeyDown("r"))
+        if (Input.GetKeyDown("r") && reloading == false)
         {
             ammoCount = 20;
             speaker.PlayOneShot(refill);
             reloading = true;
-            Invoke("ReloadingGun", 3f);
-            
+            Invoke("ReloadingGun", 1.5f);  
         }
+    }
+
+    public void Fire()
+    {
+        GameObject bulletClone = Instantiate(bulletPrefab, firePoint.position, transform.rotation);
+        bulletClone.GetComponent<Rigidbody2D>().velocity = transform.right * speed;
+        Debug.Log("Fire");
     }
 
     void ReloadingGun()
@@ -66,12 +70,6 @@ public class Gun : MonoBehaviour
     {
         ammoCount = ammo;
         slider.value = ammoCount;
-    }
-
-    public void Fire(Vector2 offset)
-    {
-        Bullet bullet = Instantiate(bulletPrefab, firePoint.position, transform.rotation).GetComponent<Bullet>();
-        bullet.FireMe(offset);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
