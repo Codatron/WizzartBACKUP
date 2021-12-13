@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8697673302569838737}
   - component: {fileID: 8697673302569838736}
   - component: {fileID: 8697673302569838749}
-  - component: {fileID: 4808851865678662071}
+  - component: {fileID: -8852916138026780274}
   m_Layer: 0
   m_Name: EnemyLollipopGirlBlue
   m_TagString: EnemyLollipopGirlBlue
@@ -209,7 +209,7 @@ MonoBehaviour:
   enemySpriteFront: {fileID: 21300000, guid: 06a8ab57c32c4c74ebfae31a0b8634f2, type: 3}
   enemySpriteBack: {fileID: 21300000, guid: 73c5913c265e3b54ab53bc0f2ee41aca, type: 3}
   enemySpriteDead: {fileID: 21300000, guid: bc1a7c6f042f80b49ad8ff22d943db5a, type: 3}
---- !u!114 &4808851865678662071
+--- !u!114 &-8852916138026780274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8697673302569838742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8260412d45524724fba1ee4e58fde355, type: 3}
+  m_Script: {fileID: 11500000, guid: b3dc56834564c804da5394b60b2d18e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lollipop: {fileID: 3010701067807811637, guid: 36afd17077987f844ad28c16695cace0, type: 3}

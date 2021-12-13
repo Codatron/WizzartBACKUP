@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class LollipopAttackBlue : MonoBehaviour
 {
-    Transform player;
     public GameObject lollipop;
-    public float fireRate; 
+    public float fireRate;  
+    Transform player;
     float timeBtwShots;
    
     void Start()
     {
         timeBtwShots = fireRate;
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        //player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()

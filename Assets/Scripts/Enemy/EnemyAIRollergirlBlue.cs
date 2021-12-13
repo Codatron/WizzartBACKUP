@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
-public class EnemyAI : MonoBehaviour
+public class EnemyAIRollergirlBlue : MonoBehaviour
 {
     private Transform target;                    // reference to target
     public float speed = 200f;

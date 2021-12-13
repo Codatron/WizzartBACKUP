@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LollipopAttackPink : MonoBehaviour
+public class EnemyRollergirlAttack : MonoBehaviour
 {
-    Transform ally;
     public GameObject lollipop;
     public float fireRate;
     float timeBtwShots;
@@ -12,10 +11,14 @@ public class LollipopAttackPink : MonoBehaviour
     void Start()
     {
         timeBtwShots = fireRate;
-        ally = GameObject.FindGameObjectWithTag("Ally").transform;
     }
 
     void Update()
+    {
+        ShootLollipop();
+    }
+
+    void ShootLollipop()
     {
         //Governs how long it takes for the enemy to attack again
         if (timeBtwShots <= 0)

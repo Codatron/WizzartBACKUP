@@ -6,7 +6,6 @@ public class BulletHit : MonoBehaviour
 {
     public Rigidbody2D bulletRb;
     public Sprite enemySpriteDead;
-
     
     void Start()
     {
@@ -20,6 +19,5 @@ public class BulletHit : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    // TODO add collisions/triggers for the different enemies and include HP taken by them 24/11
 }
+    // TODO add collisions/triggers for the different enemies and include HP taken by them 24/11
