@@ -1,0 +1,5580 @@
+fileFormatVersion: 2
+guid: e6a42f7f951b1e745852433ab9712102
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3458355753304747971
+    second: PopArtTilemap_0
+  - first:
+      213: 6363002008511220764
+    second: PopArtTilemap_1
+  - first:
+      213: -7959862094454352781
+    second: PopArtTilemap_2
+  - first:
+      213: -3579219667048183517
+    second: PopArtTilemap_3
+  - first:
+      213: 8214668442616184027
+    second: PopArtTilemap_4
+  - first:
+      213: 5031947925011480541
+    second: PopArtTilemap_5
+  - first:
+      213: -8099574089298922564
+    second: PopArtTilemap_6
+  - first:
+      213: 5163241280293120505
+    second: PopArtTilemap_7
+  - first:
+      213: 3609986774835929473
+    second: PopArtTilemap_8
+  - first:
+      213: 8877167513673976176
+    second: PopArtTilemap_9
+  - first:
+      213: 1696649236627727354
+    second: PopArtTilemap_10
+  - first:
+      213: -7870184907994270594
+    second: PopArtTilemap_11
+  - first:
+      213: -6762997307087197754
+    second: PopArtTilemap_12
+  - first:
+      213: 5444056692534104543
+    second: PopArtTilemap_13
+  - first:
+      213: 1414062518225965272
+    second: PopArtTilemap_14
+  - first:
+      213: -4034376774993841066
+    second: PopArtTilemap_15
+  - first:
+      213: 5005505115913564745
+    second: PopArtTilemap_17
+  - first:
+      213: -5576536274647904996
+    second: PopArtTilemap_18
+  - first:
+      213: -3261717228252134767
+    second: PopArtTilemap_19
+  - first:
+      213: 2803490173058960025
+    second: PopArtTilemap_20
+  - first:
+      213: 4532893962966435674
+    second: PopArtTilemap_21
+  - first:
+      213: 8237026091953306079
+    second: PopArtTilemap_22
+  - first:
+      213: -1860715966033594095
+    second: PopArtTilemap_23
+  - first:
+      213: -1971851480518280256
+    second: PopArtTilemap_24
+  - first:
+      213: -1553977778829888193
+    second: PopArtTilemap_25
+  - first:
+      213: -798849033750468549
+    second: PopArtTilemap_26
+  - first:
+      213: -3425775306982069806
+    second: PopArtTilemap_27
+  - first:
+      213: -2038135748550989471
+    second: PopArtTilemap_28
+  - first:
+      213: -4683666571084262487
+    second: PopArtTilemap_29
+  - first:
+      213: 6430515602834176899
+    second: PopArtTilemap_30
+  - first:
+      213: -4634315149556118320
+    second: PopArtTilemap_31
+  - first:
+      213: 6772980023908997448
+    second: PopArtTilemap_32
+  - first:
+      213: 2482614296760389906
+    second: PopArtTilemap_33
+  - first:
+      213: 2860287063777710494
+    second: PopArtTilemap_34
+  - first:
+      213: -5281616373885250536
+    second: PopArtTilemap_38
+  - first:
+      213: 6575865202169282449
+    second: PopArtTilemap_39
+  - first:
+      213: 2432494084241534400
+    second: PopArtTilemap_40
+  - first:
+      213: -5220242601702640906
+    second: PopArtTilemap_41
+  - first:
+      213: 2690020369400349150
+    second: PopArtTilemap_42
+  - first:
+      213: 5562391834704349318
+    second: PopArtTilemap_43
+  - first:
+      213: -6119635267633734407
+    second: PopArtTilemap_44
+  - first:
+      213: -1311444003086215253
+    second: PopArtTilemap_45
+  - first:
+      213: 8286755360940952434
+    second: PopArtTilemap_46
+  - first:
+      213: -5117974985719845130
+    second: PopArtTilemap_47
+  - first:
+      213: -9160754953282787094
+    second: PopArtTilemap_48
+  - first:
+      213: 632454761320072554
+    second: PopArtTilemap_49
+  - first:
+      213: 6614046819516711664
+    second: PopArtTilemap_50
+  - first:
+      213: -6765584497234403981
+    second: PopArtTilemap_51
+  - first:
+      213: -623178349469826133
+    second: PopArtTilemap_52
+  - first:
+      213: -8139603921601558324
+    second: PopArtTilemap_53
+  - first:
+      213: -8344866100423568592
+    second: PopArtTilemap_54
+  - first:
+      213: -3716704485037650773
+    second: PopArtTilemap_55
+  - first:
+      213: -706287148541218565
+    second: PopArtTilemap_56
+  - first:
+      213: -8484345342906173146
+    second: PopArtTilemap_57
+  - first:
+      213: -8667134597320648853
+    second: PopArtTilemap_58
+  - first:
+      213: 4432950596081278316
+    second: PopArtTilemap_60
+  - first:
+      213: 5854562845134058110
+    second: PopArtTilemap_61
+  - first:
+      213: -7541095421980415902
+    second: PopArtTilemap_62
+  - first:
+      213: -2541094210462774083
+    second: PopArtTilemap_63
+  - first:
+      213: -8981245232915365037
+    second: PopArtTilemap_64
+  - first:
+      213: -1485929841002125038
+    second: PopArtTilemap_65
+  - first:
+      213: -1329392649600889039
+    second: PopArtTilemap_66
+  - first:
+      213: 8655542660352234856
+    second: PopArtTilemap_67
+  - first:
+      213: 973527074719524412
+    second: PopArtTilemap_68
+  - first:
+      213: -2261058588439349286
+    second: PopArtTilemap_69
+  - first:
+      213: -6698056739860292168
+    second: PopArtTilemap_70
+  - first:
+      213: 5835245470352377761
+    second: PopArtTilemap_71
+  - first:
+      213: 7413985514713902391
+    second: PopArtTilemap_72
+  - first:
+      213: 3681836305516512492
+    second: PopArtTilemap_73
+  - first:
+      213: -7240219891708011006
+    second: PopArtTilemap_74
+  - first:
+      213: -1390485288918503845
+    second: PopArtTilemap_75
+  - first:
+      213: -3640839037192856409
+    second: PopArtTilemap_76
+  - first:
+      213: -4443958726148045223
+    second: PopArtTilemap_77
+  - first:
+      213: 6240288728964076780
+    second: PopArtTilemap_78
+  - first:
+      213: -5084411315749080224
+    second: PopArtTilemap_79
+  - first:
+      213: -6708662508211447409
+    second: PopArtTilemap_80
+  - first:
+      213: -3259517870921007803
+    second: PopArtTilemap_82
+  - first:
+      213: -3336771444425583015
+    second: PopArtTilemap_83
+  - first:
+      213: -7164582254220116865
+    second: PopArtTilemap_84
+  - first:
+      213: -8379545248529789645
+    second: PopArtTilemap_85
+  - first:
+      213: 1643975230855142817
+    second: PopArtTilemap_86
+  - first:
+      213: 3379540965251068539
+    second: PopArtTilemap_87
+  - first:
+      213: -6897016938112591944
+    second: PopArtTilemap_88
+  - first:
+      213: -7994732303411203186
+    second: PopArtTilemap_89
+  - first:
+      213: 5372456002199880126
+    second: PopArtTilemap_90
+  - first:
+      213: -1118853967933688237
+    second: PopArtTilemap_91
+  - first:
+      213: 8464678673531009555
+    second: PopArtTilemap_92
+  - first:
+      213: -2344305746466289556
+    second: PopArtTilemap_93
+  - first:
+      213: -7786018192798550283
+    second: PopArtTilemap_94
+  - first:
+      213: 5403134711217151810
+    second: PopArtTilemap_95
+  - first:
+      213: -6561901829312863265
+    second: PopArtTilemap_96
+  - first:
+      213: -4353434307004386164
+    second: PopArtTilemap_97
+  - first:
+      213: 8724478908258273660
+    second: PopArtTilemap_98
+  - first:
+      213: 230362700169636784
+    second: PopArtTilemap_99
+  - first:
+      213: 5215265070030448316
+    second: PopArtTilemap_100
+  - first:
+      213: -5190308033874115781
+    second: PopArtTilemap_101
+  - first:
+      213: -1574487808155172027
+    second: PopArtTilemap_102
+  - first:
+      213: 1257206271310836096
+    second: PopArtTilemap_103
+  - first:
+      213: -373036488790951942
+    second: PopArtTilemap_106
+  - first:
+      213: 2363350906545359374
+    second: PopArtTilemap_107
+  - first:
+      213: -5022963901411023104
+    second: PopArtTilemap_108
+  - first:
+      213: 5560215494730230021
+    second: PopArtTilemap_109
+  - first:
+      213: 8078776247224320746
+    second: PopArtTilemap_110
+  - first:
+      213: -4938012173325087042
+    second: PopArtTilemap_111
+  - first:
+      213: 8782032215721338664
+    second: PopArtTilemap_112
+  - first:
+      213: 4547911629837037469
+    second: PopArtTilemap_113
+  - first:
+      213: -1941301455407286100
+    second: PopArtTilemap_114
+  - first:
+      213: -9061694470971821351
+    second: PopArtTilemap_115
+  - first:
+      213: -5559732163257851709
+    second: PopArtTilemap_116
+  - first:
+      213: 9214867538606222761
+    second: PopArtTilemap_117
+  - first:
+      213: 4861931926811532120
+    second: PopArtTilemap_118
+  - first:
+      213: -1637559301106802412
+    second: PopArtTilemap_119
+  - first:
+      213: -5568903316986546320
+    second: PopArtTilemap_120
+  - first:
+      213: 2350164387101355226
+    second: PopArtTilemap_121
+  - first:
+      213: -2273633445293498066
+    second: PopArtTilemap_122
+  - first:
+      213: -2800295988192917426
+    second: PopArtTilemap_123
+  - first:
+      213: 1290398437445469989
+    second: PopArtTilemap_124
+  - first:
+      213: -1655275509956361242
+    second: PopArtTilemap_125
+  - first:
+      213: 4690253272413502636
+    second: PopArtTilemap_126
+  - first:
+      213: -1835163300511663251
+    second: PopArtTilemap_127
+  - first:
+      213: -8196836652816378969
+    second: PopArtTilemap_129
+  - first:
+      213: 7040009295653223888
+    second: PopArtTilemap_130
+  - first:
+      213: 3471181518686257988
+    second: PopArtTilemap_131
+  - first:
+      213: -162713236064828432
+    second: PopArtTilemap_132
+  - first:
+      213: -6426879820541496312
+    second: PopArtTilemap_133
+  - first:
+      213: -2783799089993723714
+    second: PopArtTilemap_134
+  - first:
+      213: -8587312346630795160
+    second: PopArtTilemap_135
+  - first:
+      213: -7513343103783834617
+    second: PopArtTilemap_136
+  - first:
+      213: 3584284827923749376
+    second: PopArtTilemap_137
+  - first:
+      213: -2979899687015495413
+    second: PopArtTilemap_138
+  - first:
+      213: -4746288901510873081
+    second: PopArtTilemap_139
+  - first:
+      213: -5599886454517108533
+    second: PopArtTilemap_140
+  - first:
+      213: 5563468842763374645
+    second: PopArtTilemap_141
+  - first:
+      213: -3181799764100573532
+    second: PopArtTilemap_142
+  - first:
+      213: -3423106965592664659
+    second: PopArtTilemap_143
+  - first:
+      213: 8078013819120454281
+    second: PopArtTilemap_144
+  - first:
+      213: 626091787508325482
+    second: PopArtTilemap_145
+  - first:
+      213: -5699783649769480445
+    second: PopArtTilemap_146
+  - first:
+      213: -5660682251290646341
+    second: PopArtTilemap_147
+  - first:
+      213: -7745562512727277795
+    second: PopArtTilemap_151
+  - first:
+      213: 4542736957703882541
+    second: PopArtTilemap_152
+  - first:
+      213: 2514112799509167054
+    second: PopArtTilemap_153
+  - first:
+      213: -1067209562109906335
+    second: PopArtTilemap_154
+  - first:
+      213: -1154230923219462618
+    second: PopArtTilemap_155
+  - first:
+      213: 1572477926824570003
+    second: PopArtTilemap_156
+  - first:
+      213: 888133201414342896
+    second: PopArtTilemap_157
+  - first:
+      213: -1489493835795602862
+    second: PopArtTilemap_158
+  - first:
+      213: -7864559373277116476
+    second: PopArtTilemap_159
+  - first:
+      213: 8039824126541687990
+    second: PopArtTilemap_160
+  - first:
+      213: -8177239400986740676
+    second: PopArtTilemap_161
+  - first:
+      213: -4587446104422243214
+    second: PopArtTilemap_162
+  - first:
+      213: -6161565227092564654
+    second: PopArtTilemap_163
+  - first:
+      213: -1822458636308045344
+    second: PopArtTilemap_164
+  - first:
+      213: 7781612194905809801
+    second: PopArtTilemap_165
+  - first:
+      213: 9065749313086658594
+    second: PopArtTilemap_166
+  - first:
+      213: -2754861812222323059
+    second: PopArtTilemap_167
+  - first:
+      213: 7402989754708782186
+    second: PopArtTilemap_168
+  - first:
+      213: 1731000054340135615
+    second: PopArtTilemap_169
+  - first:
+      213: -1338532962108667136
+    second: PopArtTilemap_170
+  - first:
+      213: -4488938296291943301
+    second: PopArtTilemap_171
+  - first:
+      213: -3477966619345254636
+    second: PopArtTilemap_172
+  - first:
+      213: -6189079417108840970
+    second: PopArtTilemap_174
+  - first:
+      213: 168573120594079002
+    second: PopArtTilemap_175
+  - first:
+      213: 4061661124562762036
+    second: PopArtTilemap_176
+  - first:
+      213: -7104949743732725620
+    second: PopArtTilemap_177
+  - first:
+      213: 6893143786220976779
+    second: PopArtTilemap_178
+  - first:
+      213: 8263565950487805844
+    second: PopArtTilemap_179
+  - first:
+      213: -1793819663286270421
+    second: PopArtTilemap_180
+  - first:
+      213: -3040068866843574962
+    second: PopArtTilemap_181
+  - first:
+      213: 5976740990999921972
+    second: PopArtTilemap_182
+  - first:
+      213: -3387185818664987276
+    second: PopArtTilemap_183
+  - first:
+      213: -1615827167690130839
+    second: PopArtTilemap_184
+  - first:
+      213: 600908239695248495
+    second: PopArtTilemap_185
+  - first:
+      213: -1325370589388758816
+    second: PopArtTilemap_186
+  - first:
+      213: 8854941545739120949
+    second: PopArtTilemap_187
+  - first:
+      213: -6169606451048716381
+    second: PopArtTilemap_188
+  - first:
+      213: 635610086697540939
+    second: PopArtTilemap_190
+  - first:
+      213: -3698269600719838261
+    second: PopArtTilemap_191
+  - first:
+      213: -1088962717069681143
+    second: PopArtTilemap_192
+  - first:
+      213: -9114675468418994145
+    second: PopArtTilemap_193
+  - first:
+      213: 1291561024277602988
+    second: PopArtTilemap_194
+  - first:
+      213: 1221226757767328976
+    second: PopArtTilemap_195
+  - first:
+      213: -5548258305062423612
+    second: PopArtTilemap_196
+  - first:
+      213: 4821764030005687358
+    second: PopArtTilemap_197
+  - first:
+      213: 5631296097526438304
+    second: PopArtTilemap_198
+  - first:
+      213: -8314257441795356463
+    second: PopArtTilemap_199
+  - first:
+      213: 6340357061611983524
+    second: PopArtTilemap_200
+  - first:
+      213: -309822548041366131
+    second: PopArtTilemap_201
+  - first:
+      213: 9042990599201179249
+    second: PopArtTilemap_202
+  - first:
+      213: -4289858153078662866
+    second: PopArtTilemap_203
+  - first:
+      213: -1962157948337958237
+    second: PopArtTilemap_204
+  - first:
+      213: 1479570976357282687
+    second: PopArtTilemap_205
+  - first:
+      213: -2617638125110921432
+    second: PopArtTilemap_206
+  - first:
+      213: -8150687756933706145
+    second: PopArtTilemap_207
+  - first:
+      213: 7105607902684744104
+    second: PopArtTilemap_208
+  - first:
+      213: 2383963901040927007
+    second: PopArtTilemap_209
+  - first:
+      213: 2730037886211916320
+    second: PopArtTilemap_210
+  - first:
+      213: -4019739860936199517
+    second: PopArtTilemap_211
+  - first:
+      213: -3116349987142533575
+    second: PopArtTilemap_212
+  - first:
+      213: 1505635865319526809
+    second: PopArtTilemap_213
+  - first:
+      213: -4981606823660843249
+    second: PopArtTilemap_214
+  - first:
+      213: -2125011934461145466
+    second: PopArtTilemap_215
+  - first:
+      213: 4767383523325193488
+    second: PopArtTilemap_216
+  - first:
+      213: -585090619328439316
+    second: PopArtTilemap_217
+  - first:
+      213: 8523637005648524883
+    second: PopArtTilemap_218
+  - first:
+      213: -271264859729907498
+    second: PopArtTilemap_220
+  - first:
+      213: 4483517169299173074
+    second: PopArtTilemap_223
+  - first:
+      213: 5816935535805917459
+    second: PopArtTilemap_224
+  - first:
+      213: 4535940598147548515
+    second: PopArtTilemap_225
+  - first:
+      213: 5054257581715835189
+    second: PopArtTilemap_226
+  - first:
+      213: 979201264329572160
+    second: PopArtTilemap_227
+  - first:
+      213: -3388312616666424979
+    second: PopArtTilemap_229
+  - first:
+      213: -5566700489264237302
+    second: PopArtTilemap_230
+  - first:
+      213: 4922728274048143498
+    second: PopArtTilemap_231
+  - first:
+      213: -4354422324834613114
+    second: PopArtTilemap_232
+  - first:
+      213: -8700876128484789513
+    second: PopArtTilemap_233
+  - first:
+      213: 7330261827281543868
+    second: PopArtTilemap_234
+  - first:
+      213: 1782338105308633612
+    second: PopArtTilemap_235
+  - first:
+      213: -8940096298536224000
+    second: PopArtTilemap_236
+  - first:
+      213: -5389062862944486643
+    second: PopArtTilemap_237
+  - first:
+      213: 4003306432108414474
+    second: PopArtTilemap_238
+  - first:
+      213: -9009637194885893588
+    second: PopArtTilemap_240
+  - first:
+      213: 5800040065379477969
+    second: PopArtTilemap_241
+  - first:
+      213: -3824400167757193201
+    second: PopArtTilemap_242
+  - first:
+      213: -5373751032453220210
+    second: PopArtTilemap_243
+  - first:
+      213: 8302419604640114983
+    second: PopArtTilemap_244
+  - first:
+      213: 4376596512004341652
+    second: PopArtTilemap_245
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 120
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PopArtTilemap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d309759f3c37100d0800000000000000
+      internalID: -3458355753304747971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c88663d9ced4850800000000000000
+      internalID: 6363002008511220764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37493f62993e88190800000000000000
+      internalID: -7959862094454352781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32940842dae045ec0800000000000000
+      internalID: -3579219667048183517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_4
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcbfb5ec6d500270800000000000000
+      internalID: 8214668442616184027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_5
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfb2963af115d540800000000000000
+      internalID: 5031947925011480541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_6
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb331677748889f80800000000000000
+      internalID: -8099574089298922564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_7
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f92181a69487a740800000000000000
+      internalID: 5163241280293120505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_8
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18124fd58df391230800000000000000
+      internalID: 3609986774835929473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_9
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079cc2802d8023b70800000000000000
+      internalID: 8877167513673976176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_10
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af322a1dd75bb8710800000000000000
+      internalID: 1696649236627727354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_11
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e747c52368c77c290800000000000000
+      internalID: -7870184907994270594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_12
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9e426f7c10522a0800000000000000
+      internalID: -6762997307087197754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_13
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1559fc7bc2d8b40800000000000000
+      internalID: 5444056692534104543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_14
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d09d094e52cf9310800000000000000
+      internalID: 1414062518225965272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654f76cb2b30308c0800000000000000
+      internalID: -4034376774993841066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_17
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942bd63f160277540800000000000000
+      internalID: 5005505115913564745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_18
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d0880ddc92c92b0800000000000000
+      internalID: -5576536274647904996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_19
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1928244567d0cb2d0800000000000000
+      internalID: -3261717228252134767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_20
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 2760
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a4a78757ff7e620800000000000000
+      internalID: 2803490173058960025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5780230b0318ee30800000000000000
+      internalID: 4532893962966435674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_22
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd93088c69bcf4270800000000000000
+      internalID: 8237026091953306079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1197ba8ffa86d26e0800000000000000
+      internalID: -1860715966033594095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_24
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb31e9968392a4e0800000000000000
+      internalID: -1971851480518280256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_25
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f357ef781792f6ae0800000000000000
+      internalID: -1553977778829888193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_26
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38a32a490be9e4f0800000000000000
+      internalID: -798849033750468549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_27
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9670342833570d0800000000000000
+      internalID: -3425775306982069806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_28
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169e79fc55617b3e0800000000000000
+      internalID: -2038135748550989471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_29
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a396289116400fb0800000000000000
+      internalID: -4683666571084262487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_30
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38bb985ded7cd3950800000000000000
+      internalID: 6430515602834176899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_31
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc0f75dcea9fafb0800000000000000
+      internalID: -4634315149556118320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_32
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84999eb62757efd50800000000000000
+      internalID: 6772980023908997448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_33
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21195b8ac84047220800000000000000
+      internalID: 2482614296760389906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_34
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e919d181ee7c1b720800000000000000
+      internalID: 2860287063777710494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_38
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814dea224ede3b6b0800000000000000
+      internalID: -5281616373885250536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_39
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ff62a9f8a224b50800000000000000
+      internalID: 6575865202169282449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_40
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cda4715b74f1c120800000000000000
+      internalID: 2432494084241534400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_41
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f237240309fd87b0800000000000000
+      internalID: -5220242601702640906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_42
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed14cac064fd45520800000000000000
+      internalID: 2690020369400349150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_43
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688061127e5913d40800000000000000
+      internalID: 5562391834704349318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_44
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 2640
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc1db5b520b21ba0800000000000000
+      internalID: -6119635267633734407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7da35a0a0dccde0800000000000000
+      internalID: -1311444003086215253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_46
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b037d7818700370800000000000000
+      internalID: 8286755360940952434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_47
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe65dedddc49f8b0800000000000000
+      internalID: -5117974985719845130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_48
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8ed2fd7e57ed080800000000000000
+      internalID: -9160754953282787094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_49
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65ccf8214ee6c800800000000000000
+      internalID: 632454761320072554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_50
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f288152a80d9cb50800000000000000
+      internalID: 6614046819516711664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_51
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d1470deb0db12a0800000000000000
+      internalID: -6765584497234403981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_52
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba30328c7960a57f0800000000000000
+      internalID: -623178349469826133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_53
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc80098db515a0f80800000000000000
+      internalID: -8139603921601558324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_54
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033dd02ae74113c80800000000000000
+      internalID: -8344866100423568592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_55
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacca3a76fc9b6cc0800000000000000
+      internalID: -3716704485037650773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_56
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0f6c99493c236f0800000000000000
+      internalID: -706287148541218565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_57
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6297654dcdc814a80800000000000000
+      internalID: -8484345342906173146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_58
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b675432110728b780800000000000000
+      internalID: -8667134597320648853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_60
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6dd7429411058d30800000000000000
+      internalID: 4432950596081278316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_61
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e727a6b83e59f3150800000000000000
+      internalID: 5854562845134058110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_62
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268688b0ba5a85790800000000000000
+      internalID: -7541095421980415902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_63
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc809467483cbcd0800000000000000
+      internalID: -2541094210462774083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_64
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353c86b9b053c5380800000000000000
+      internalID: -8981245232915365037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_65
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2196ae1beaae06be0800000000000000
+      internalID: -1485929841002125038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_66
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 2520
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f0689bd6c0d8de0800000000000000
+      internalID: -1329392649600889039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865d888c03aae1870800000000000000
+      internalID: 8655542660352234856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_68
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36e1eb67b9a28d00800000000000000
+      internalID: 973527074719524412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_69
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7f9b3813b1f90e0800000000000000
+      internalID: -2261058588439349286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_70
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd573702e8bb03a0800000000000000
+      internalID: -6698056739860292168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_71
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a78f8db6d4faf050800000000000000
+      internalID: 5835245470352377761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_72
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73de96e6b84c3e660800000000000000
+      internalID: 7413985514713902391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_73
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4c277dc92881330800000000000000
+      internalID: 3681836305516512492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_74
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ed60b6e52958b90800000000000000
+      internalID: -7240219891708011006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_75
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e2b903ff004bce0800000000000000
+      internalID: -1390485288918503845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_76
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac9eb78f24297dc0800000000000000
+      internalID: -3640839037192856409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_77
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956c27b6513e352c0800000000000000
+      internalID: -4443958726148045223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_78
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce417c95985f99650800000000000000
+      internalID: 6240288728964076780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_79
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063bcc0c8da8079b0800000000000000
+      internalID: -5084411315749080224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_80
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8953182efa06e2a0800000000000000
+      internalID: -6708662508211447409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_82
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d37bc14cdd3c2d0800000000000000
+      internalID: -3259517870921007803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_83
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956985edc0861b1d0800000000000000
+      internalID: -3336771444425583015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_84
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c742d366a429c90800000000000000
+      internalID: -7164582254220116865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_85
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33dc1124effd5bb80800000000000000
+      internalID: -8379545248529789645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_86
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad59a623c290d610800000000000000
+      internalID: 1643975230855142817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_87
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72bba13a9a86ee20800000000000000
+      internalID: 3379540965251068539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_88
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b752f103afd840a0800000000000000
+      internalID: -6897016938112591944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_89
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2400
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83b5d4f3510d0190800000000000000
+      internalID: -7994732303411203186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb10a8ef44cce8a40800000000000000
+      internalID: 5372456002199880126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_91
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356b6cd7e380970f0800000000000000
+      internalID: -1118853967933688237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_92
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31af3a1e764987570800000000000000
+      internalID: 8464678673531009555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_93
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6848f0285a577fd0800000000000000
+      internalID: -2344305746466289556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_94
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6738ba4b182f390800000000000000
+      internalID: -7786018192798550283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_95
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f5eaf846acbfa40800000000000000
+      internalID: 5403134711217151810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_96
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd322dc7d017fe4a0800000000000000
+      internalID: -6561901829312863265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_97
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c843102309e7593c0800000000000000
+      internalID: -4353434307004386164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_98
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c794f11c753931970800000000000000
+      internalID: 8724478908258273660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_99
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb6c11c7a9623300800000000000000
+      internalID: 230362700169636784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_100
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6eaa413f7506840800000000000000
+      internalID: 5215265070030448316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_101
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33c316b75258f7b0800000000000000
+      internalID: -5190308033874115781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_102
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5434ab33eab462ae0800000000000000
+      internalID: -1574487808155172027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_103
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08130ea517e727110800000000000000
+      internalID: 1257206271310836096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_106
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af73b553a45b2daf0800000000000000
+      internalID: -373036488790951942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_107
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0acb30c02f4cc020800000000000000
+      internalID: 2363350906545359374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_108
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00729c8c1f8da4ab0800000000000000
+      internalID: -5022963901411023104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_109
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509a40e788ad92d40800000000000000
+      internalID: 5560215494730230021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_110
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae24ba391349d1070800000000000000
+      internalID: 8078776247224320746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_111
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe47605718a87bb0800000000000000
+      internalID: -4938012173325087042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_112
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8276b1065cb00e970800000000000000
+      internalID: 8782032215721338664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_113
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2280
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fed4e088d6d1f30800000000000000
+      internalID: 4547911629837037469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_114
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8ff7c9c9c1f05e0800000000000000
+      internalID: -1941301455407286100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_115
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d27a9ab3e46e3280800000000000000
+      internalID: -9061694470971821351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_116
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0a3b2ed0dd7d2b0800000000000000
+      internalID: -5559732163257851709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_117
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ade6e23439c1ef70800000000000000
+      internalID: 9214867538606222761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_118
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b5bbbe35d097340800000000000000
+      internalID: 4861931926811532120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_119
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41164e6ed783649e0800000000000000
+      internalID: -1637559301106802412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_120
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077b58240f747b2b0800000000000000
+      internalID: -5568903316986546320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_121
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc23f0fe067d9020800000000000000
+      internalID: 2350164387101355226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_122
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2165df7d6e6270e0800000000000000
+      internalID: -2273633445293498066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_123
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e484fc5a2a95329d0800000000000000
+      internalID: -2800295988192917426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_124
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52708a2ca8a68e110800000000000000
+      internalID: 1290398437445469989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_125
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3c5a791b74709e0800000000000000
+      internalID: -1655275509956361242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_126
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacf1d05080271140800000000000000
+      internalID: 4690253272413502636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_127
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b3b2883b03886e0800000000000000
+      internalID: -1835163300511663251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_129
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a35af23e7cfe3e80800000000000000
+      internalID: -8196836652816378969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_130
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ddbbd2a72323b160800000000000000
+      internalID: 7040009295653223888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_131
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443023c333d1c2030800000000000000
+      internalID: 3471181518686257988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_132
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f30a148c2dedbdf0800000000000000
+      internalID: -162713236064828432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_133
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8047f72bad22fc6a0800000000000000
+      internalID: -6426879820541496312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_134
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb05ed21a75fd59d0800000000000000
+      internalID: -2783799089993723714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_135
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860deb31becb3d880800000000000000
+      internalID: -8587312346630795160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_136
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2160
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c6557214e3bb790800000000000000
+      internalID: -7513343103783834617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_137
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a97368f00fdb130800000000000000
+      internalID: 3584284827923749376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_138
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09c429d50545a6d0800000000000000
+      internalID: -2979899687015495413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_139
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700c018146bc12eb0800000000000000
+      internalID: -4746288901510873081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_140
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc07cf760f43942b0800000000000000
+      internalID: -5599886454517108533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_141
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5305ddb9f69653d40800000000000000
+      internalID: 5563468842763374645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_142
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a61d52f8f9f7d3d0800000000000000
+      internalID: -3181799764100573532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_143
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da51fa7e95eae70d0800000000000000
+      internalID: -3423106965592664659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_144
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a0f53f4ceda1070800000000000000
+      internalID: 8078013819120454281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_145
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c193fd92350b800800000000000000
+      internalID: 626091787508325482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_146
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f19e228fc46e0b0800000000000000
+      internalID: -5699783649769480445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_147
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb86679eb773171b0800000000000000
+      internalID: -5660682251290646341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_151
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ffe43beeb328490800000000000000
+      internalID: -7745562512727277795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_152
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d278affc13b0b0f30800000000000000
+      internalID: 4542736957703882541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_153
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbb104554ce3e220800000000000000
+      internalID: 2514112799509167054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_154
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162f98dbe828031f0800000000000000
+      internalID: -1067209562109906335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_155
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6269bb837195bffe0800000000000000
+      internalID: -1154230923219462618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_156
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c6585d75092d510800000000000000
+      internalID: 1572477926824570003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_157
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8488fe078435c00800000000000000
+      internalID: 888133201414342896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_158
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252e44e7f31445be0800000000000000
+      internalID: -1489493835795602862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_159
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2040
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c749d01be87bd290800000000000000
+      internalID: -7864559373277116476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bce12f3271339f60800000000000000
+      internalID: 8039824126541687990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_161
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c387bd4f61c948e80800000000000000
+      internalID: -8177239400986740676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_162
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274a9a7c21e1650c0800000000000000
+      internalID: -4587446104422243214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_163
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255afb24219bd7aa0800000000000000
+      internalID: -6161565227092564654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_164
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1240da68355b6e0800000000000000
+      internalID: -1822458636308045344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_165
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98365310017ddfb60800000000000000
+      internalID: 7781612194905809801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_166
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2289545c7f200dd70800000000000000
+      internalID: 9065749313086658594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_167
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86133517c3c4c9d0800000000000000
+      internalID: -2754861812222323059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_168
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ce54d85f3bcb660800000000000000
+      internalID: 7402989754708782186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_169
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba2021d06fb50810800000000000000
+      internalID: 1731000054340135615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_170
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b8c51ec539c6de0800000000000000
+      internalID: -1338532962108667136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_171
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c1fd6276614b1c0800000000000000
+      internalID: -4488938296291943301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_172
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417824969c7cbbfc0800000000000000
+      internalID: -3477966619345254636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_174
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 1920
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdbb80bf09fb1aa0800000000000000
+      internalID: -6189079417108840970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_175
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d60bb2c54e65200800000000000000
+      internalID: 168573120594079002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_176
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439b39fe54bed5830800000000000000
+      internalID: 4061661124562762036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_177
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88eec90ad5266d90800000000000000
+      internalID: -7104949743732725620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_178
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a746b80cd59af50800000000000000
+      internalID: 6893143786220976779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_179
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49fb6d023751ea270800000000000000
+      internalID: 8263565950487805844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_180
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2606b235821b17e0800000000000000
+      internalID: -1793819663286270421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_181
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d701bf8718fc5d0800000000000000
+      internalID: -3040068866843574962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_182
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4350113e346a1f250800000000000000
+      internalID: 5976740990999921972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_183
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4759b3aa17c4ef0d0800000000000000
+      internalID: -3387185818664987276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_184
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a776380cd6399e0800000000000000
+      internalID: -1615827167690130839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_185
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6cf3a93cdad65800800000000000000
+      internalID: 600908239695248495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_186
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0abb798765b9de0800000000000000
+      internalID: -1325370589388758816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_187
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531f0ac9b6213ea70800000000000000
+      internalID: 8854941545739120949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_188
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a76849ee97216aa0800000000000000
+      internalID: -6169606451048716381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_190
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 1800
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d1349910422d800800000000000000
+      internalID: 635610086697540939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_191
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3e775746b1dacc0800000000000000
+      internalID: -3698269600719838261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_192
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90eda6bad2a33e0f0800000000000000
+      internalID: -1088962717069681143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_193
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f103bedf3fa228180800000000000000
+      internalID: -9114675468418994145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_194
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca26ec998eb8ce110800000000000000
+      internalID: 1291561024277602988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_195
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d47cee044ba2f010800000000000000
+      internalID: 1221226757767328976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_196
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3b4aca770a003b0800000000000000
+      internalID: -5548258305062423612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_197
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34be37a6d85ae240800000000000000
+      internalID: 4821764030005687358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_198
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a95b1ef6f1662e40800000000000000
+      internalID: 5631296097526438304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_199
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8c3a258e2dd9c80800000000000000
+      internalID: -8314257441795356463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_200
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a29586a7297df750800000000000000
+      internalID: 6340357061611983524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_201
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d858698b80a43bbf0800000000000000
+      internalID: -309822548041366131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_202
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1764594c9082f7d70800000000000000
+      internalID: 9042990599201179249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_203
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29dee80dbc5774c0800000000000000
+      internalID: -4289858153078662866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_204
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a25b10fdb305c4e0800000000000000
+      internalID: -1962157948337958237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_205
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73f0c1c6fd788410800000000000000
+      internalID: 1479570976357282687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_206
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8277e3a7ef74cabd0800000000000000
+      internalID: -2617638125110921432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_207
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e47d45ba0f2ee80800000000000000
+      internalID: -8150687756933706145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_208
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a98bb88db03c9260800000000000000
+      internalID: 7105607902684744104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_209
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1126e6898a851120800000000000000
+      internalID: 2383963901040927007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_210
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022050f3efa03e520800000000000000
+      internalID: 2730037886211916320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_211
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a27b6bd4e30738c0800000000000000
+      internalID: -4019739860936199517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_212
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e7394a23080c4d0800000000000000
+      internalID: -3116349987142533575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_213
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 1680
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9915571a7d715e410800000000000000
+      internalID: 1505635865319526809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_214
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f8801dcf6cddab0800000000000000
+      internalID: -4981606823660843249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_215
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e4af687e07282e0800000000000000
+      internalID: -2125011934461145466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_216
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d29d74e06292240800000000000000
+      internalID: 4767383523325193488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_217
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebd3818e2751e7f0800000000000000
+      internalID: -585090619328439316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_218
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356fd0c42ba0a4670800000000000000
+      internalID: 8523637005648524883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_220
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0b0cb1c064c3cf0800000000000000
+      internalID: -271264859729907498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_223
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de217c5c17a83e30800000000000000
+      internalID: 4483517169299173074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_224
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319ee05ec08e9b050800000000000000
+      internalID: 5816935535805917459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_225
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3658bda01f5e2fe30800000000000000
+      internalID: 4535940598147548515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_226
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5394f71fd74542640800000000000000
+      internalID: 5054257581715835189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_227
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f3af3ac52d69d00800000000000000
+      internalID: 979201264329572160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_229
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d699f9f80ab4af0d0800000000000000
+      internalID: -3388312616666424979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_230
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05796e066b1fb2b0800000000000000
+      internalID: -5566700489264237302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_231
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a805964984b015440800000000000000
+      internalID: 4922728274048143498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_232
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 1560
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688c33e57fbf193c0800000000000000
+      internalID: -4354422324834613114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_233
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2fcf6a247404780800000000000000
+      internalID: -8700876128484789513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_234
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2e8b56b425ab560800000000000000
+      internalID: 7330261827281543868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_235
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a509440132cb810800000000000000
+      internalID: 1782338105308633612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_236
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00bb6fb78c56ee380800000000000000
+      internalID: -8940096298536224000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_237
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0bb1fde0e33635b0800000000000000
+      internalID: -5389062862944486643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_238
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06cbd45df99e8730800000000000000
+      internalID: 4003306432108414474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_240
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22fda3d4b657f280800000000000000
+      internalID: -9009637194885893588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_241
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d92af3a5b1ed7050800000000000000
+      internalID: 5800040065379477969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_242
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0063e95f400deac0800000000000000
+      internalID: -3824400167757193201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_243
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88bc3748e99c65b0800000000000000
+      internalID: -5373751032453220210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_244
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72920de64ae183370800000000000000
+      internalID: 8302419604640114983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopArtTilemap_245
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 1440
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f7b37e65bccbc30800000000000000
+      internalID: 4376596512004341652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
