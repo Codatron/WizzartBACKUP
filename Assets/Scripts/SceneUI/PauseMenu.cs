@@ -19,22 +19,24 @@ public class PauseMenu : MonoBehaviour
         {
             if (gameIsPaused)
             {
+                Debug.Log("Resumed");
                 Resume();
             }
             else
             {
+                Debug.Log("Paused");
                 Pause();
             }
         }
     }
-    void Resume()
+    public void Resume()
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
     }
     void Pause()
-    {
+    { 
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         gameIsPaused = true;
@@ -42,5 +44,14 @@ public class PauseMenu : MonoBehaviour
     public void ExitLevel()
     {
         SceneManager.LoadScene(sceneBuildIndex: 2);
+    }
+    public void PlayGame()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 1);
+    }
+    public void QuitGame()
+    {
+        Debug.Log("Quit Game");
+        Application.Quit();
     }
 }
