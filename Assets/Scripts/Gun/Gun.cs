@@ -17,7 +17,7 @@ public class Gun : MonoBehaviour
     private Camera cam;
     private float angle;
 
-    bool reloading = false;
+    BoolKeeper boolKeeperRef;
 
     void Start()
     {
@@ -25,6 +25,9 @@ public class Gun : MonoBehaviour
 
         ammoCount = 20;
         slider.maxValue = ammoCount;
+
+        GameObject g = GameObject.FindGameObjectWithTag("BoolKeeper");
+        boolKeeperRef = g.GetComponent<BoolKeeper>();
     }
     public void Update()
     {
@@ -35,21 +38,21 @@ public class Gun : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
         //shoot 
-        if (Input.GetMouseButtonDown(0) && ammoCount > 0 && reloading == false)
+        if (Input.GetMouseButtonDown(0) && ammoCount > 0 && boolKeeperRef.dontShoot == false)
         {
             Fire();
             speaker.PlayOneShot(shoot);
             ammoCount--;
-            reloading = true;
+            boolKeeperRef.dontShoot = true;
             slider.value = ammoCount;
             Invoke("ReloadingGun", 0.2f);
         }
 
-        if (Input.GetKeyDown("r") && reloading == false)
+        if (Input.GetKeyDown("r") && boolKeeperRef.dontShoot == false)
         {
             ammoCount = 20;
             speaker.PlayOneShot(refill);
-            reloading = true;
+            boolKeeperRef.dontShoot = true;
             Invoke("ReloadingGun", 1.5f);  
         }
     }
@@ -63,7 +66,7 @@ public class Gun : MonoBehaviour
 
     void ReloadingGun()
     {
-        reloading = false;
+        boolKeeperRef.dontShoot = false;
     }
 
     public void RefillAmmo(int ammo)

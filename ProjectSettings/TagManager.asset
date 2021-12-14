@@ -28,6 +28,9 @@ TagManager:
   - LollipopPink
   - Enemy
   - ProjectilePlayer
+  - BombNoHands
+  - Factory
+  - BoolKeeper
   layers:
   - Default
   - TransparentFX
