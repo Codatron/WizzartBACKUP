@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,8 @@ public class Gun : MonoBehaviour
 
     BoolKeeper boolKeeperRef;
 
+    public GameObject bomb;
+    public GameObject dropBombPlace;
     void Start()
     {
         cam = Camera.main;
@@ -37,7 +40,23 @@ public class Gun : MonoBehaviour
         angle = Mathf.Atan2(offSet.y, offSet.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
-        //shoot 
+        shootGun();
+        reload();
+    }
+
+    private void reload()
+    {
+        if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.R) && boolKeeperRef.dontShoot == false)
+        {
+            ammoCount = 20;
+            speaker.PlayOneShot(refill);
+            boolKeeperRef.dontShoot = true;
+            Invoke("DontShoot", 1.5f);
+        }
+    }
+
+    private void shootGun()
+    {
         if (Input.GetMouseButtonDown(0) && ammoCount > 0 && boolKeeperRef.dontShoot == false)
         {
             Fire();
@@ -46,14 +65,16 @@ public class Gun : MonoBehaviour
             boolKeeperRef.dontShoot = true;
             slider.value = ammoCount;
             Invoke("DontShoot", 0.2f);
-        }
-        //reload
-        if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.R) && boolKeeperRef.dontShoot == false)
-        {
-            ammoCount = 20;
-            speaker.PlayOneShot(refill);
-            boolKeeperRef.dontShoot = true;
-            Invoke("DontShoot", 1.5f);  
+            
+            GetComponent<SpriteRenderer>().enabled = true;
+            GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled = false;
+
+            //TO DO FIXA SA BOMB TAPPAS
+            //if (GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled == true)
+            //{
+            //    GameObject clone = Instantiate(bomb, dropBombPlace.transform.position, Quaternion.identity);
+
+            //}
         }
     }
 

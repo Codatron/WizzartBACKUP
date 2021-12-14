@@ -15,7 +15,6 @@ public class PickUpBomb : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = false;
         GameObject g = GameObject.FindGameObjectWithTag("BoolKeeper");
         boolKeeperRef = g.GetComponent<BoolKeeper>();
-
     }
 
     private void Update()
@@ -29,7 +28,6 @@ public class PickUpBomb : MonoBehaviour
         {
             //TODO EXPOASITION
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -38,9 +36,8 @@ public class PickUpBomb : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().enabled = true;
             GameObject.FindGameObjectWithTag("Gun").GetComponent<SpriteRenderer>().enabled = false;
-            boolKeeperRef.dontShoot = true;
-
-             Destroy(other.gameObject);
+           
+            Destroy(other.gameObject);
          
         }
 
@@ -52,8 +49,6 @@ public class PickUpBomb : MonoBehaviour
             boolKeeperRef.dontShoot = false;
             bombCounter++;
         }
-
-
     }
 }
 
