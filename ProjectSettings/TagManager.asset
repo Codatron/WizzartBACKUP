@@ -31,6 +31,7 @@ TagManager:
   - BombNoHands
   - Factory
   - BoolKeeper
+  - BombHands
   layers:
   - Default
   - TransparentFX
