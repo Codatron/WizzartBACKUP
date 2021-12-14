@@ -4,18 +4,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
-{
-    public void PlayGame ()
+{ 
+    public void ExitLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(sceneBuildIndex: 2);
     }
-    public void QuitGame ()
+    public void PlayGame()
+    {
+        SceneManager.LoadScene(sceneBuildIndex: 1);
+    }
+    public void QuitGame()
     {
         Debug.Log("Quit Game");
         Application.Quit();
     }
-    public void ExitLevel ()
-    {
-        SceneManager.LoadScene(sceneBuildIndex:2);
-    }   
 }
