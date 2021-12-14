@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class BoolKeeper : MonoBehaviour
 {
-    public bool dontShoot;
+    public bool dontShoot = false;
 }

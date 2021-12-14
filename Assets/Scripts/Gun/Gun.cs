@@ -25,7 +25,7 @@ public class Gun : MonoBehaviour
 
         ammoCount = 20;
         slider.maxValue = ammoCount;
-
+    
         GameObject g = GameObject.FindGameObjectWithTag("BoolKeeper");
         boolKeeperRef = g.GetComponent<BoolKeeper>();
     }
@@ -45,15 +45,15 @@ public class Gun : MonoBehaviour
             ammoCount--;
             boolKeeperRef.dontShoot = true;
             slider.value = ammoCount;
-            Invoke("ReloadingGun", 0.2f);
+            Invoke("DontShoot", 0.2f);
         }
-
-        if (Input.GetKeyDown("r") && boolKeeperRef.dontShoot == false)
+        //reload
+        if (Input.GetMouseButtonDown(1) && boolKeeperRef.dontShoot == false)
         {
             ammoCount = 20;
             speaker.PlayOneShot(refill);
             boolKeeperRef.dontShoot = true;
-            Invoke("ReloadingGun", 1.5f);  
+            Invoke("DontShoot", 1.5f);  
         }
     }
 
@@ -64,7 +64,7 @@ public class Gun : MonoBehaviour
         Debug.Log("Fire");
     }
 
-    void ReloadingGun()
+    void DontShoot()
     {
         boolKeeperRef.dontShoot = false;
     }

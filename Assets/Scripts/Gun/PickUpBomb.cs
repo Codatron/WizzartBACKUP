@@ -8,7 +8,7 @@ public class PickUpBomb : MonoBehaviour
     public GameObject bombFactory;
     int bombCounter = 0;
     BoolKeeper boolKeeperRef;
-    //public GameObject leaveBombsPlace;
+    public GameObject leaveBombsPlace;
 
     private void Start()
     {
@@ -29,6 +29,7 @@ public class PickUpBomb : MonoBehaviour
         {
             //TODO EXPOASITION
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -39,21 +40,21 @@ public class PickUpBomb : MonoBehaviour
             GameObject.FindGameObjectWithTag("Gun").GetComponent<SpriteRenderer>().enabled = false;
             boolKeeperRef.dontShoot = true;
 
-
-
-
-            Destroy(other.gameObject);
+             Destroy(other.gameObject);
+         
         }
 
-        if (other.gameObject.CompareTag("Factory"))
+        if (other.gameObject.CompareTag("Factory")) //TO DO FIX
         {
             GetComponent<SpriteRenderer>().enabled = false;
-            GameObject clone = Instantiate(bombFactory, transform.position, Quaternion.identity);
+            GameObject.FindGameObjectWithTag("Gun").GetComponent<SpriteRenderer>().enabled = true;
+            GameObject clone = Instantiate(bombFactory, leaveBombsPlace.transform.position, Quaternion.identity);
+            boolKeeperRef.dontShoot = false;
             bombCounter++;
         }
+
+
+
     }
-
-
-
 }
 
