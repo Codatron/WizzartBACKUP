@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnRollergirl : MonoBehaviour
+public class SpawnLips: MonoBehaviour
 {
     public GameObject enemyBlue;
     public GameObject enemyPink;

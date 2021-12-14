@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LollipopGirlAIPink : MonoBehaviour
+public class EnemyAIRollergirlPink : MonoBehaviour
 {
     public float speed;
     public float stoppingDistance;
