@@ -48,7 +48,7 @@ public class Gun : MonoBehaviour
             Invoke("DontShoot", 0.2f);
         }
         //reload
-        if (Input.GetMouseButtonDown(1) && boolKeeperRef.dontShoot == false)
+        if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.R) && boolKeeperRef.dontShoot == false)
         {
             ammoCount = 20;
             speaker.PlayOneShot(refill);
