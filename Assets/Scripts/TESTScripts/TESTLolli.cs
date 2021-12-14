@@ -17,7 +17,12 @@ public class TESTLolli : MonoBehaviour
     private void Update()
     {
         //Makes lollipop move towards players position and destroys lollipop when it hits Players position
-        FollowTarget();
+        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+
+        if (transform.position.x == target.x && transform.position.y == target.y)
+        {
+            DestroyLollipop();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -38,16 +43,4 @@ public class TESTLolli : MonoBehaviour
     {
         target = new Vector2(targetToFind.transform.position.x, targetToFind.transform.position.y);
     }
-
-    void FollowTarget()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
-
-        if (transform.position.x == target.x && transform.position.y == target.y)
-        {
-            DestroyLollipop();
-        }
-    }
-
-
 }

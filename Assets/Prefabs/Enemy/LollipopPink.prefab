@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6238351212526352818}
   - component: {fileID: 5544511670154915721}
-  - component: {fileID: 2761104492067638201}
   - component: {fileID: 5277140175028551310}
-  - component: {fileID: -1951324421028079364}
+  - component: {fileID: -5735276688022937880}
   m_Layer: 0
   m_Name: LollipopPink
   m_TagString: LollipopPink
@@ -85,19 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2761104492067638201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2493050801279447107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2394fa16400a8684dbea305074841267, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 12.5
 --- !u!58 &5277140175028551310
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -114,17 +100,17 @@ CircleCollider2D:
   m_Offset: {x: -0.25633782, y: 0}
   serializedVersion: 2
   m_Radius: 1.1450698
---- !u!114 &-1951324421028079364
+--- !u!114 &-5735276688022937880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2493050801279447107}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1dcefeb28d2e224aa19edc170cf9f08, type: 3}
+  m_Script: {fileID: 11500000, guid: d9914d3300e255c42a1b171bebd1fd49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetGameObj: {fileID: 2183995816319055775, guid: 6f2714351e5818a40a256aef11d81923, type: 3}
   speed: 12.5
+  targetName: 1
