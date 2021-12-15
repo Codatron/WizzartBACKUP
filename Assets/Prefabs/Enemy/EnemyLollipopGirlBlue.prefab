@@ -11,12 +11,11 @@ GameObject:
   - component: {fileID: 8697673302569838748}
   - component: {fileID: 8697673302569838743}
   - component: {fileID: 8697673302569838739}
-  - component: {fileID: 8697673302569838738}
-  - component: {fileID: 8697673302569838750}
   - component: {fileID: 8697673302569838737}
   - component: {fileID: 8697673302569838736}
   - component: {fileID: 8697673302569838749}
   - component: {fileID: -8852916138026780274}
+  - component: {fileID: 1829461455}
   m_Layer: 0
   m_Name: EnemyLollipopGirlBlue
   m_TagString: EnemyLollipopGirlBlue
@@ -110,48 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &8697673302569838738
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8697673302569838742}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.11890793, y: 0.10581875}
-  m_Size: {x: 3.0312614, y: 12.408529}
-  m_Direction: 0
---- !u!61 &8697673302569838750
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8697673302569838742}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.11, y: 0.0705452}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 15.625, y: 16.875}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.66, y: 13}
-  m_EdgeRadius: 0
 --- !u!114 &8697673302569838737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,3 +180,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lollipop: {fileID: 3010701067807811637, guid: 36afd17077987f844ad28c16695cace0, type: 3}
   fireRate: 3
+--- !u!70 &1829461455
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8697673302569838742}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.32010487, y: 0.10138444}
+  m_Size: {x: 5.5704556, y: 9.455181}
+  m_Direction: 0

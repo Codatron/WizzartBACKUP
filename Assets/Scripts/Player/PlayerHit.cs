@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHit : MonoBehaviour
 {
-
+    public GameObject gameOverScreen;
     GameObject managerGame;
     PlayerHealthController refHealthController;
     SpriteRenderer rend;
     public AudioSource speaker;
 
     bool invincible = false;
+    public static bool isGameOver;
 
 
     int playerHit;
@@ -42,7 +43,11 @@ public class PlayerHit : MonoBehaviour
 
 
 
-    private void Start()
+    private void Awake()
+    {
+        isGameOver = false;
+    }
+    void Start()
     {
         managerGame = GameObject.FindGameObjectWithTag("ManagerGame");
         refHealthController = managerGame.GetComponent<PlayerHealthController>();
@@ -88,7 +93,21 @@ public class PlayerHit : MonoBehaviour
         playerHealthCurrent -= hpLost;
         refHealthController.SetCurrentHealth(playerHealthCurrent);
     }
-
+    void gameOver()
+    {
+     if (playerHit > 4)
+        {
+            Time.timeScale = 0f;
+            isGameOver = true;
+        }
+    }
+    private void Update()
+    {
+        if(isGameOver)
+        {
+            gameOverScreen.SetActive(true);
+        }
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         //For random play/sprite
@@ -123,8 +142,8 @@ public class PlayerHit : MonoBehaviour
 
                 if (playerHit > 4)
                 {
-                    Destroy(gameObject);
-                    SceneManager.LoadScene("SceneRoomPopArt");
+                    Time.timeScale = 0f;
+                    isGameOver = true;
                 }
             }
         }
