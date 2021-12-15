@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {   
-    private Camera theCam;
-    public float speed = 5;
+    public float speed;
     public Transform firePoint; 
     public GameObject playerBullets;
     public Animator animator;
-    public GameObject enemy;
     public ParticleSystem dust;
     public AudioSource playerRunning;
-    Rigidbody2D player;
-    float xAxis;
-    float yAxis;
+    
+    private Rigidbody2D player;
+    private float xAxis;
+    private float yAxis;
 
     private void Start()
     {
@@ -37,34 +36,17 @@ public class PlayerController : MonoBehaviour
             playerRunning.mute = true;
         }
     }
-    //
-    //void Update()
-    //{
-    //    xAxis = Input.GetAxisRaw("Horizontal");
-    //    yAxis = Input.GetAxisRaw("Vertical");
-    //    player.velocity = (new Vector2(xAxis, yAxis).normalized * speed);
-
-    //    RotateAnimation();
-    //}
-
-    // TODO
-    //animator.SetFloat("AnimHorizontal", xAxis);
-    //animator.SetFloat("AnimVertical", yAxis);
-
 
     private void RotateAnimation()
     {
         if (Input.GetAxis("Horizontal") > 0.01f)
         {
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
-            
-            
         }
 
         else if (Input.GetAxis("Horizontal") < -0.01f)
         {
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
-            
         }
     }
     void CreateDust()

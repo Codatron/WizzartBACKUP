@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class LipsMovement : MonoBehaviour
 {
-    GameObject lips;
-    GameObject player;
-    Rigidbody2D RBEnemy;
-    Vector2 movement;
     public float moveSpeed = 8;
+    
+    private GameObject lips;
+    private GameObject player;
+    private Rigidbody2D RBEnemy;
+    private Vector2 movement;
 
     void Start()
     {

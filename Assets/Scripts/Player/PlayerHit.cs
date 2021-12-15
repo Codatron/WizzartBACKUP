@@ -3,50 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class PlayerHit : MonoBehaviour
 {
-    public GameObject gameOverScreen;
-    GameObject managerGame;
-    PlayerHealthController refHealthController;
-    SpriteRenderer rend;
-    public AudioSource speaker;
-
-    bool invincible = false;
-    public static bool isGameOver;
-
-
-    int playerHit;
-    int hpLost = 1;
-
-    int playerHealthMax = 5;
-    int playerHealthCurrent;
-
-
-    public float invincibilityTime = 1.5f;
-
-    //Code for random sprite when taking hit
-    List<GameObject> prefabList = new List<GameObject>();
-
-    public GameObject Prefab1;
-    public GameObject Prefab2;
-    public GameObject Prefab3;
-
     //List for sound when hit
     List<AudioClip> hitSoundList = new List<AudioClip>();
-
     public AudioClip Sound1;
     public AudioClip Sound2;
     public AudioClip Sound3;
     public AudioClip Sound4;
     public AudioClip Sound5;
 
+    //Code for random sprite when taking hit
+    List<GameObject> prefabList = new List<GameObject>();
+    public GameObject Prefab1;
+    public GameObject Prefab2;
+    public GameObject Prefab3;
 
+    public AudioSource speaker;
+    public GameObject gameOverScreen;
+    public float invincibilityTime = 1.5f;
+    public static bool isGameOver;
+    
+    private GameObject managerGame;
+    private PlayerHealthController refHealthController;
+    private SpriteRenderer rend;
+    private bool invincible = false;
+    private int playerHit;
+    private int hpLost = 1;
+    private int playerHealthMax = 5;
+    private int playerHealthCurrent;
 
     private void Awake()
     {
         isGameOver = false;
     }
+
     void Start()
     {
         managerGame = GameObject.FindGameObjectWithTag("ManagerGame");
@@ -70,9 +61,6 @@ public class PlayerHit : MonoBehaviour
         hitSoundList.Add(Sound3);
         hitSoundList.Add(Sound4);
         hitSoundList.Add(Sound5);
-
-
-
     }
 
     //andra farg vid skada
@@ -95,7 +83,7 @@ public class PlayerHit : MonoBehaviour
     }
     void gameOver()
     {
-     if (playerHit > 4)
+        if (playerHit > 4)
         {
             Time.timeScale = 0f;
             isGameOver = true;
@@ -113,8 +101,6 @@ public class PlayerHit : MonoBehaviour
         //For random play/sprite
         int prefabIndex = UnityEngine.Random.Range(0, 3);
         int soundIndex = UnityEngine.Random.Range(0, 4);
-
-
 
         if (!invincible)
         {
@@ -148,6 +134,7 @@ public class PlayerHit : MonoBehaviour
             }
         }
     }
+
     // so that the player dont take damage after hit
     IEnumerator Invulnerability()
     {

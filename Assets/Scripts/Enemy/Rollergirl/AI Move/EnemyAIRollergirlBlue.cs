@@ -5,16 +5,15 @@ using Pathfinding;
 
 public class EnemyAIRollergirlBlue : MonoBehaviour
 {
-    private Transform target;                    // reference to target
     public float speed = 200f;
     public float nextWaypointDistance = 3f;     // how close enemy needs to be to a waypoint before moving on to the next
 
+    private Transform target;                    // reference to target
     private Path path;                          // current path we are following
-    private int currentWaypoint = 0;            // stores current waypoint along path we are targeting
-    private bool reachedEndOfPath = false;
-
     private Seeker seeker;
     private Rigidbody2D lollipopGirlRb;
+    private int currentWaypoint = 0;            // stores current waypoint along path we are targeting
+    private bool reachedEndOfPath = false;
 
     // Start is called before the first frame update
     void Start()

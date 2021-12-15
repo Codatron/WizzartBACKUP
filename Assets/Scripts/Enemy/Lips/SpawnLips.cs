@@ -6,13 +6,13 @@ public class SpawnLips: MonoBehaviour
 {
     public GameObject enemyBlue;
     public GameObject enemyPink;
-
     public float spawnRate = 3f;
-    float randX;
-    float randY;
-    float nextSpawn = 2f;
-    int maxEnemies = 100;
-    int enemyCounter;
+    
+    private float randX;
+    private float randY;
+    private float nextSpawn = 2f;
+    private int maxEnemies = 100;
+    private int enemyCounter;
 
     Vector2 whereToSpawn;
    
@@ -20,6 +20,7 @@ public class SpawnLips: MonoBehaviour
     {
          enemyCounter = 0;
     }
+
     void Update()
     {  
         //When time passed is greater than the spawnRate, spawn an enemy at a random position X and Y

@@ -18,9 +18,7 @@ public class MusicSound : MonoBehaviour
         {
             Destroy(this.gameObject);
             return;
-
         }
-
         else
         {
             instance = this;

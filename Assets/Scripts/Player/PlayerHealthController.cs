@@ -22,7 +22,6 @@ public class PlayerHealthController : MonoBehaviour
         //enemyHP = 5;
     }
 
-
     // TODO: connect EnemyHp to other enemies 24/11
     public void SetMaxHealth(int health)
     {

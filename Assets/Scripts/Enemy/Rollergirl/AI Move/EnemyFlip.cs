@@ -10,7 +10,6 @@ public class EnemyFlip : MonoBehaviour
     
     private SpriteRenderer enemySpriteRenderer;
     private Transform player;
-    //private BulletHit bulletHitScript;
     private bool isOverY;
 
     // Start is called before the first frame update
@@ -18,7 +17,6 @@ public class EnemyFlip : MonoBehaviour
     {
         enemySpriteRenderer = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        //bulletHitScript = GameObject.FindGameObjectWithTag("ProjectilePlayer").GetComponent<BulletHit>();
     }
 
     // Update is called once per frame
@@ -27,9 +25,5 @@ public class EnemyFlip : MonoBehaviour
         enemySpriteRenderer.flipX = player.position.x < transform.position.x;
         isOverY = player.position.y > transform.position.y;
         enemySpriteRenderer.sprite = isOverY ? enemySpriteBack : enemySpriteFront;
-        //enemySpriteRenderer.sprite = bulletHitScript.isEnemyDead == true && isOverY ? enemySpriteDead : enemySpriteBack;
-
     }
-
-    //TODO 9/12/2021 - render enemy dead sprite when enemy hp becomes 0. (See commented out code above)
 }

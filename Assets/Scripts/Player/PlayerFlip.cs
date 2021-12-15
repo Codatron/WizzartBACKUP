@@ -4,33 +4,29 @@ using UnityEngine;
 
 public class PlayerFlip : MonoBehaviour
 {
-    GameObject gun;
-    GameObject bomb;
-    Gun refGun;
-    PickUpBomb refPickUpBomb;
-    Transform firePoint;
-    SpriteRenderer playerSpriteRenderer;
-    SpriteRenderer gunSpriteRenderer;
-    SpriteRenderer bombSpriteRenderer;
     public Sprite playerSpriteBack;
     public Sprite playerSpriteFront;
-    bool isOverY;
+    
+    private bool isOverY;
+    private GameObject gun;
+    private GameObject bomb;
+    private Gun refGun;
+    private SpriteRenderer playerSpriteRenderer;
+    private SpriteRenderer gunSpriteRenderer;
+    private SpriteRenderer bombSpriteRenderer;
 
-    // Start is called before the first frame update
     void Start()
     {
         gun = GameObject.FindGameObjectWithTag("Gun");
         refGun = gun.GetComponent<Gun>();
 
         bomb = GameObject.FindGameObjectWithTag("BombHands");
-        refPickUpBomb = bomb.GetComponent<PickUpBomb>();
 
         playerSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         gunSpriteRenderer = gun.GetComponent<SpriteRenderer>();
         bombSpriteRenderer = bomb.GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         playerSpriteRenderer.flipX = refGun.firePoint.position.x > gameObject.transform.position.x;

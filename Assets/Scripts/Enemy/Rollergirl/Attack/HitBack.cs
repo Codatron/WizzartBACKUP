@@ -8,7 +8,6 @@ public class HitBack : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
         Rigidbody2D rb = collision.collider.GetComponent<Rigidbody2D>();
 
         if (rb != null)
@@ -16,6 +15,5 @@ public class HitBack : MonoBehaviour
             Vector3 direction = collision.transform.position - transform.position;
             rb.AddForce(direction.normalized * knockbackStrength, ForceMode2D.Impulse);
         }
-
     }
 }
