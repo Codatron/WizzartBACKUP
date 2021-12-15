@@ -71,13 +71,9 @@ public class Gun : MonoBehaviour
 
             if (GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled == true)
             {
-                Debug.Log("HEJ");
                 GameObject clone = Instantiate(bomb, dropBombPlace.transform.position, Quaternion.identity);
                 GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled = false;
-            }
-            
-            //GameObject clone = Instantiate(bomb, dropBombPlace.transform.position, Quaternion.identity);
-               
+            }             
         }
     }
 
