@@ -32,6 +32,8 @@ TagManager:
   - Factory
   - BoolKeeper
   - BombHands
+  - SpawnPositions
+  - PaintEnemy
   layers:
   - Default
   - TransparentFX
