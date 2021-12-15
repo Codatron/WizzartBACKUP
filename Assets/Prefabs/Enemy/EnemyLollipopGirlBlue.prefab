@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3dc56834564c804da5394b60b2d18e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lollipop: {fileID: 3010701067807811637, guid: 36afd17077987f844ad28c16695cace0, type: 3}
+  lollipopPrefab: {fileID: 3589829450812267120, guid: db85b7781769ca247b27937000eae5de, type: 3}
   fireRate: 3
 --- !u!70 &1829461455
 CapsuleCollider2D:

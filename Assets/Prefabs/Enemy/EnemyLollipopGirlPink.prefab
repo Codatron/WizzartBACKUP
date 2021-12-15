@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3dc56834564c804da5394b60b2d18e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lollipop: {fileID: 2493050801279447107, guid: eaf86ff8c04e30441bab43004b76d1a6, type: 3}
+  lollipopPrefab: {fileID: 2493050801279447107, guid: eaf86ff8c04e30441bab43004b76d1a6, type: 3}
   fireRate: 3
 --- !u!114 &-2332107395811294731
 MonoBehaviour:

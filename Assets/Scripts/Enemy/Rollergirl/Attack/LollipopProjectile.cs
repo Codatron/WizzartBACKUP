@@ -29,8 +29,8 @@ public class LollipopProjectile: MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
 
         transform.Rotate(Vector3.forward * rotationSpeed);
-        
-        if(transform.position.x == target.x && transform.position.y == target.y) // if lollipop hangs it could be this line
+
+        if (transform.position.x == target.x && transform.position.y == target.y) // if lollipop hangs it could be this line
         {
             DestroyLollipop();
         }

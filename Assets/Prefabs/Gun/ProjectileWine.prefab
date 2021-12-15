@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2401002829630320170}
   - component: {fileID: -6619862300052925648}
   m_Layer: 0
-  m_Name: AmoTest
+  m_Name: ProjectileWine
   m_TagString: ProjectilePlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 68831f6ed67ef8042a984b4e08ac143d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e87e04019c33a124c9404c41ae478d87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -135,5 +135,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletRb: {fileID: 4455235740079281239}
-  isEnemyDead: 0
   enemySpriteDead: {fileID: 0}
