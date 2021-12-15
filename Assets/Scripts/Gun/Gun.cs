@@ -65,16 +65,19 @@ public class Gun : MonoBehaviour
             boolKeeperRef.dontShoot = true;
             slider.value = ammoCount;
             Invoke("DontShoot", 0.2f);
+
             
             GetComponent<SpriteRenderer>().enabled = true;
-            GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled = false;
 
-            //TO DO FIXA SA BOMB TAPPAS
-            //if (GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled == true)
-            //{
-            //    GameObject clone = Instantiate(bomb, dropBombPlace.transform.position, Quaternion.identity);
-
-            //}
+            if (GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled == true)
+            {
+                Debug.Log("HEJ");
+                GameObject clone = Instantiate(bomb, dropBombPlace.transform.position, Quaternion.identity);
+                GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled = false;
+            }
+            
+            //GameObject clone = Instantiate(bomb, dropBombPlace.transform.position, Quaternion.identity);
+               
         }
     }
 
