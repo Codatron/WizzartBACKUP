@@ -66,7 +66,8 @@ public class PlayerHit : MonoBehaviour
     //andra farg vid skada
     IEnumerator color()
     {
-        rend = GetComponent<SpriteRenderer>();
+        rend = GameObject.FindGameObjectWithTag("PlayerSpriteRenderer").GetComponent<SpriteRenderer>();
+        //rend = GetComponent<SpriteRenderer>();
         rend.color = Color.red;
         yield return new WaitForSeconds(0.1f);
         rend.color = Color.white;
@@ -74,6 +75,7 @@ public class PlayerHit : MonoBehaviour
         rend.color = Color.red;
         yield return new WaitForSeconds(0.2f);
         rend.color = Color.white;
+        
     }
 
     void TakeDamage(int hpLost)

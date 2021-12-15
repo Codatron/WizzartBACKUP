@@ -35376,6 +35376,10 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 695397820}
+    - target: {fileID: 6616947217972633042, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
+      propertyPath: m_TagString
+      value: PlayerSpriteRenderer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
 --- !u!1001 &2097164249

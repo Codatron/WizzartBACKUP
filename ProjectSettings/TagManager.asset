@@ -34,6 +34,7 @@ TagManager:
   - BombHands
   - SpawnPositions
   - PaintEnemy
+  - PlayerSpriteRenderer
   layers:
   - Default
   - TransparentFX
