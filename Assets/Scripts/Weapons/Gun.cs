@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
+    //public GameObject[] wineProjectiles;  
     public GameObject bulletPrefab;
     public GameObject bomb;
     public GameObject dropBombPlace;
@@ -18,8 +19,10 @@ public class Gun : MonoBehaviour
     public int ammoCount;
 
     private Camera cam;
-    private float angle;
     private BoolKeeper refBoolKeeper;
+    private float angle;
+    private int projectileIndex = 4;
+
 
     void Start()
     {

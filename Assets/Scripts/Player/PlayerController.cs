@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public ParticleSystem dust;
     public AudioSource playerRunning;
+    public SpriteRenderer playerSpriteRenderer;
     
     private Rigidbody2D player;
     private float xAxis;
@@ -41,12 +42,12 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetAxis("Horizontal") > 0.01f)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            playerSpriteRenderer.flipX = false;
         }
 
         else if (Input.GetAxis("Horizontal") < -0.01f)
         {
-            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            playerSpriteRenderer.flipX = true;
         }
     }
     void CreateDust()

@@ -3301,6 +3301,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 988163916050992514, guid: 999e872220c0bce45b9b52e93e8525ed, type: 3}
   m_PrefabInstance: {fileID: 147745764}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &150353844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 150353845}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &150353845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150353844}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.364799, y: -8.514856, z: -180.35588}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &151388005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33588,11 +33618,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 988163916050992514, guid: 999e872220c0bce45b9b52e93e8525ed, type: 3}
   m_PrefabInstance: {fileID: 1994363063}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1998927737 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2374428679382569706, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
-  m_PrefabInstance: {fileID: 2086514905}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2002068923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35299,10 +35324,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2374428679382569706, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
-      propertyPath: m_Name
-      value: DropBombPos
-      objectReference: {fileID: 0}
     - target: {fileID: 2427590875717892631, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -35355,10 +35376,6 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 695397820}
-    - target: {fileID: 5857821858681598454, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
-      propertyPath: dropBombPos
-      value: 
-      objectReference: {fileID: 1998927737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
 --- !u!1001 &2097164249

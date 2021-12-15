@@ -6,12 +6,12 @@ public class PlayerFlip : MonoBehaviour
 {
     public Sprite playerSpriteBack;
     public Sprite playerSpriteFront;
+    public SpriteRenderer playerSpriteRenderer;
     
     private bool isOverY;
     private GameObject gun;
     private GameObject bomb;
     private Gun refGun;
-    private SpriteRenderer playerSpriteRenderer;
     private SpriteRenderer gunSpriteRenderer;
     private SpriteRenderer bombSpriteRenderer;
 
@@ -22,7 +22,7 @@ public class PlayerFlip : MonoBehaviour
 
         bomb = GameObject.FindGameObjectWithTag("BombHands");
 
-        playerSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        //playerSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         gunSpriteRenderer = gun.GetComponent<SpriteRenderer>();
         bombSpriteRenderer = bomb.GetComponent<SpriteRenderer>();
     }

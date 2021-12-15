@@ -7,15 +7,14 @@ public class EnemyFlip : MonoBehaviour
     public Sprite enemySpriteFront;
     public Sprite enemySpriteBack;
     public Sprite enemySpriteDead;
-    
-    private SpriteRenderer enemySpriteRenderer;
+    public SpriteRenderer enemySpriteRenderer;
+
     private Transform player;
     private bool isOverY;
 
     // Start is called before the first frame update
     void Start()
     {
-        enemySpriteRenderer = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
