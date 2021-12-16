@@ -136,3 +136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletRb: {fileID: 4455235740079281239}
   enemySpriteDead: {fileID: 0}
+  sprites:
+  - {fileID: -7428792696733995545, guid: 4a9bf2437967ddc4d8a19f6473bfb379, type: 3}
+  - {fileID: 1870739076812732979, guid: 4a9bf2437967ddc4d8a19f6473bfb379, type: 3}
+  - {fileID: -1275093251078487035, guid: 4a9bf2437967ddc4d8a19f6473bfb379, type: 3}
+  - {fileID: -2963080769092651726, guid: 4a9bf2437967ddc4d8a19f6473bfb379, type: 3}

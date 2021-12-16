@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class BulletHit : MonoBehaviour
 {
-    //public Rigidbody2D bulletRb;
-    //public Sprite enemySpriteDead;
+    public Rigidbody2D bulletRb;
+    public Sprite enemySpriteDead;
+    int damageMono = 0;
+   // public Sprite[] sprites;
+
+    //private void Start()
+    //{
+    //    GetComponent<SpriteRenderer>().sprite = sprites[Random.Range(0, sprites.Length)];
+    //}
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,6 +21,13 @@ public class BulletHit : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
+        }
+
+        if (other.gameObject.CompareTag("Mono"))
+        {
+            damageMono = 5;
+            Destroy(gameObject);
+            other.GetComponent<MonoHealth>().TakeDamage(damageMono);
         }
     }
 }

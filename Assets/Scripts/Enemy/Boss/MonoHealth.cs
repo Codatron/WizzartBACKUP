@@ -4,19 +4,32 @@ using UnityEngine;
 
 public class MonoHealth : MonoBehaviour
 {
-    public int currentHealth = 20;
+    public int currentHealth;
     public static bool isEnemyDead = false;
+    BossFight bossFight;
 
-    public void TakeDamage(int damage)
+    private void Start()
     {
-        currentHealth = currentHealth - damage;
+        currentHealth = 100;
+        Debug.Log(currentHealth + "hej");
+        bossFight = FindObjectOfType<BossFight>();
+    }
+
+    public void TakeDamage(int monoDamage)
+    {
+        currentHealth -= monoDamage;
+        Debug.Log(currentHealth + "hej");
+
+        if (currentHealth< 70 && bossFight.stage == BossFight.Stage.WatingToStart)
+        {
+            bossFight.stage = BossFight.Stage.Stage_2;
+            Debug.Log("Stage2");
+        }
 
         if (currentHealth <= 0 && isEnemyDead == false)
         {
            // gameObject.GetComponent<Animator>().Play("Dying");
             isEnemyDead = true;
-
-            //hit.collider.GetComponent<EnemyHealth>().TakeDamage(damage); + damage lägg till på bullet
         }
     }
 }
