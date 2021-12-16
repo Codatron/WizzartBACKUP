@@ -7,13 +7,6 @@ public class BulletHit : MonoBehaviour
     public Rigidbody2D bulletRb;
     public Sprite enemySpriteDead;
     int damageMono = 0;
-   // public Sprite[] sprites;
-
-    //private void Start()
-    //{
-    //    GetComponent<SpriteRenderer>().sprite = sprites[Random.Range(0, sprites.Length)];
-    //}
-
 
     private void OnTriggerEnter2D(Collider2D other)
     {

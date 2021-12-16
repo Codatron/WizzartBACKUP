@@ -698,6 +698,10 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 902839772}
+    - target: {fileID: 6842845916635093609, guid: 9d9c2e1d471d5ac499fd976f80fb1c18, type: 3}
+      propertyPath: wineProjectiles.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8175070238575605058, guid: 9d9c2e1d471d5ac499fd976f80fb1c18, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.6
@@ -1136,7 +1140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4407264836084964182, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
       propertyPath: m_Name
-      value: mono
+      value: Mono
       objectReference: {fileID: 0}
     - target: {fileID: 8833135264707101023, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
       propertyPath: m_RootOrder

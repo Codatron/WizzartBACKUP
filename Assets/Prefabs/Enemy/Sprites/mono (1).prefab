@@ -126,5 +126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4140e2c696afb74a84d6c3a74ca6de3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage: 0
   paintEnemy1: {fileID: 3826571666344718028, guid: a4698e781bac3ec4b8c82b1bc15a553a, type: 3}
   paintEnemy2: {fileID: 3247442076611821051, guid: 958bc0d1b7d43c7418f8ee2f4a38eaf6, type: 3}

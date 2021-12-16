@@ -97,7 +97,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ab6a9f754f0bf45952bc64374d8c71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 4455235740079281236, guid: cc216e83a21e2f14f9b1d2ee1050aab4, type: 3}
+  wineProjectiles:
+  - {fileID: 449332077713889637, guid: f24c65c0f2be62c42aa96dcdd0a90164, type: 3}
+  - {fileID: 484883345147044999, guid: 7013755021f969d4d97d5248a8f072b3, type: 3}
+  - {fileID: 2966915783463802246, guid: f7a5e18796d6e9f498b33bf22537308c, type: 3}
+  - {fileID: 8584147434389101481, guid: cd9cfc8ef69d2a44ea876745f98eb991, type: 3}
+  bombNoHandsPrefab: {fileID: 0}
+  dropBombPos: {fileID: 0}
   firePoint: {fileID: 7572246242996813094}
   slider: {fileID: 0}
   speaker: {fileID: 1607751376561341969}
@@ -105,8 +111,6 @@ MonoBehaviour:
   shoot: {fileID: 8300000, guid: 1bd29360e02f47c48a2d15ec897d829e, type: 3}
   speed: 35
   ammoCount: 0
-  bomb: {fileID: 3776409425967241247, guid: e27b9c338884f764e8ab0db35087f7ac, type: 3}
-  dropBombPlace: {fileID: 0}
 --- !u!82 &1607751376561341969
 AudioSource:
   m_ObjectHideFlags: 0
