@@ -36,6 +36,7 @@ TagManager:
   - PaintEnemy
   - PlayerSpriteRenderer
   - MuzzleFlashWhite
+  - Mono
   layers:
   - Default
   - TransparentFX
