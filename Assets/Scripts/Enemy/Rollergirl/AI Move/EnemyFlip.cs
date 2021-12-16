@@ -6,7 +6,6 @@ public class EnemyFlip : MonoBehaviour
 {
     public Sprite enemySpriteFront;
     public Sprite enemySpriteBack;
-    //public Sprite enemySpriteDead;
     public SpriteRenderer enemySpriteRenderer;
 
     private Transform player;

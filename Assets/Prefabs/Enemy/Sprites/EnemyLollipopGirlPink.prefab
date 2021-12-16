@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ed4420aed02a9d54794682a22e3a672f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2bda7181b8b30a45afe8f9055f340a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -115,9 +115,9 @@ GameObject:
   - component: {fileID: 7874896643641253946}
   - component: {fileID: 1314662959898882329}
   - component: {fileID: 1144951621273517104}
-  - component: {fileID: 666708331269580956}
   - component: {fileID: 2472860587467585133}
   - component: {fileID: -2332107395811294731}
+  - component: {fileID: 1918536260}
   m_Layer: 0
   m_Name: EnemyLollipopGirlPink
   m_TagString: EnemyLollipopGirlPink
@@ -188,38 +188,12 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.4, y: 0}
-  m_Size: {x: 2.84, y: 9.7}
-  m_Direction: 0
---- !u!61 &666708331269580956
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4035598533435291683}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.33898228, y: -0.011932373}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10, y: 10.8}
-    newSize: {x: 10, y: 10.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.057526, y: 8.286715}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: 6}
+  m_Size: {x: 3.54, y: 8.02}
+  m_Direction: 0
 --- !u!114 &2472860587467585133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,3 +223,19 @@ MonoBehaviour:
   enemySpriteFront: {fileID: 21300000, guid: a2bda7181b8b30a45afe8f9055f340a6, type: 3}
   enemySpriteBack: {fileID: 21300000, guid: 06c17758a93102647b40eb730dde2196, type: 3}
   enemySpriteRenderer: {fileID: 8260453155374831595}
+--- !u!114 &1918536260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4035598533435291683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfa12edea42d7f43b2856a6a3a9402c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpriteRenderer: {fileID: 8260453155374831595}
+  corpseSprite: {fileID: 21300000, guid: f89ab934430c4e948bd79ebce4167d1d, type: 3}
+  hitPointsMax: 2
+  isDead: 0

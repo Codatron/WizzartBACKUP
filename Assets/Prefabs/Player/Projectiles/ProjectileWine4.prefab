@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8584147434389101480}
   - component: {fileID: 5416377631658142814}
   - component: {fileID: 3832259326673518319}
+  - component: {fileID: -8585287964151753815}
   m_Layer: 0
   m_Name: ProjectileWine4
   m_TagString: ProjectilePlayer
@@ -136,3 +137,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.32
+--- !u!114 &-8585287964151753815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8584147434389101481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 683aa19da0d2dc34090dc34f85b4acb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 50
+  rb: {fileID: 5416377631658142814}

@@ -12,7 +12,6 @@ public class BulletHit : MonoBehaviour
     {
         if (other.gameObject.CompareTag("EnemyLollipopGirlBlue") || other.gameObject.CompareTag("EnemyLips") || other.gameObject.CompareTag("EnemyLollipopGirlPink"))
         {
-            Destroy(other.gameObject);
             Destroy(gameObject);
         }
 

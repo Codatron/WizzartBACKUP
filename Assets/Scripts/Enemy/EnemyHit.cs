@@ -2,32 +2,70 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHit : MonoBehaviour
+public class EnemyHit : MonoBehaviour, IGetKnockedBack
 {
-    private SpriteRenderer thisEnemySpriteRenderer;
+    public SpriteRenderer enemySpriteRenderer;
+    public Sprite corpseSprite;
+    public int hitPointsMax;
 
-    // Start is called before the first frame update
+    private Rigidbody2D enemyRb;
+    private int enemyHit;
+    public bool isDead = false;
+
     void Start()
     {
-        thisEnemySpriteRenderer = GetComponent<SpriteRenderer>();
+        enemyRb = GetComponent<Rigidbody2D>();
+        enemySpriteRenderer = transform.Find("SpriteRenderer").GetComponent<SpriteRenderer>();
+
+        enemyHit = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        StartCoroutine(EnemyTakeDamageColour());
     }
 
     IEnumerator EnemyTakeDamageColour()
     {
-        thisEnemySpriteRenderer.color = Color.red;
+        enemySpriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.1f);
-        thisEnemySpriteRenderer.color = Color.clear;
+        enemySpriteRenderer.color = Color.clear;
         yield return new WaitForSeconds(0.1f);
-        thisEnemySpriteRenderer.color = Color.red;
+        enemySpriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.2f);
-        thisEnemySpriteRenderer.color = Color.clear;
+        enemySpriteRenderer.color = Color.white;
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("ProjectilePlayer"))
+        {
+            enemyHit++;
+            StartCoroutine(EnemyTakeDamageColour());
+        }
+
+        if (enemyHit >= hitPointsMax)
+        {
+            KillMe();
+        }
+    }
+
+    private void KillMe()
+    {
+        GameObject Corpse = new GameObject("enemyCorpse");
+        SpriteRenderer corpseRenderer = Corpse.AddComponent<SpriteRenderer>();
+        Corpse.transform.position = transform.position;
+        corpseRenderer.sprite = corpseSprite;
+
+        corpseRenderer.flipX = enemySpriteRenderer.flipX;
+        Corpse.transform.localScale = transform.localScale;
+
+        Destroy(gameObject);
+    }
+
+    public void KnockMeBack(float magnitude, Vector2 direction)
+    {
+        direction = direction.normalized;
+        enemyRb.AddForce(magnitude * direction);
+        Debug.Log(direction);
+    }
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6586222748104660004}
   - component: {fileID: 3729508145427337869}
   - component: {fileID: 8043709455437727685}
+  - component: {fileID: 4571588324031954450}
   m_Layer: 0
   m_Name: ProjectileWine1
   m_TagString: ProjectilePlayer
@@ -136,3 +137,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletRb: {fileID: 0}
   enemySpriteDead: {fileID: 0}
+--- !u!114 &4571588324031954450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449332077713889637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 683aa19da0d2dc34090dc34f85b4acb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 50
+  rb: {fileID: 6586222748104660004}

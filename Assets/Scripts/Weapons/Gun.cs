@@ -25,7 +25,7 @@ public class Gun : MonoBehaviour
     private int projectileIndex = 4;
     private SpriteRenderer gunSpriteRenderer;
     private SpriteRenderer bombHandsSpriteRenderer;
-    private SpriteRenderer whiteMuzzleFlashSpriteRenderer;
+    //private SpriteRenderer whiteMuzzleFlashSpriteRenderer;
 
 
     void Start()
@@ -41,7 +41,7 @@ public class Gun : MonoBehaviour
         gunSpriteRenderer = GetComponent<SpriteRenderer>();
         bombHandsSpriteRenderer = GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>();
 
-        whiteMuzzleFlashSpriteRenderer = GameObject.FindGameObjectWithTag("MuzzleFlashWhite").GetComponent<SpriteRenderer>();
+        //whiteMuzzleFlashSpriteRenderer = GameObject.FindGameObjectWithTag("MuzzleFlashWhite").GetComponent<SpriteRenderer>();
         //whiteMuzzleFlashSpriteRenderer.enabled = false;
     }
 
@@ -91,7 +91,7 @@ public class Gun : MonoBehaviour
 
     public void Fire()
     {
-        int randomProjectile = (int)Random.Range(0, 3);
+        int randomProjectile = (int)Random.Range(0, wineProjectiles.Length);
         
         GameObject bulletClone = Instantiate(wineProjectiles[randomProjectile], firePoint.position, transform.rotation);
         bulletClone.GetComponent<Rigidbody2D>().velocity = transform.right * speed;

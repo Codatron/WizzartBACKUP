@@ -18970,8 +18970,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 834b5cbe04a26ad419f9d7ec2fe2715d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyBlue: {fileID: 8697673302569838742, guid: 53a3581f55a71b24a81e6f35cad63cac, type: 3}
-  enemyPink: {fileID: 4035598533435291683, guid: 8fe4fcebfba94c146a025f088e5617bf, type: 3}
+  enemyBlue: {fileID: 8697673302569838742, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+  enemyPink: {fileID: 4035598533435291683, guid: 53a3581f55a71b24a81e6f35cad63cac, type: 3}
   spawnRate: 6
 --- !u!4 &1114446538
 Transform:

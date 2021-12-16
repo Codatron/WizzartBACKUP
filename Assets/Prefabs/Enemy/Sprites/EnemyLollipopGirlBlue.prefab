@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 8697673302569838749}
   - component: {fileID: -8852916138026780274}
   - component: {fileID: 1829461455}
+  - component: {fileID: -5170554189899397346}
   m_Layer: 0
   m_Name: EnemyLollipopGirlBlue
   m_TagString: EnemyLollipopGirlBlue
@@ -245,6 +246,22 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.32010487, y: 0.10138444}
-  m_Size: {x: 5.5704556, y: 9.455181}
+  m_Offset: {x: 0.26, y: 6.91}
+  m_Size: {x: 3.54, y: 8.02}
   m_Direction: 0
+--- !u!114 &-5170554189899397346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8697673302569838742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccfa12edea42d7f43b2856a6a3a9402c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpriteRenderer: {fileID: 2037523870020670773}
+  corpseSprite: {fileID: 21300000, guid: bc1a7c6f042f80b49ad8ff22d943db5a, type: 3}
+  hitPointsMax: 3
+  isDead: 0
