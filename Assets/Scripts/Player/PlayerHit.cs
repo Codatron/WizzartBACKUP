@@ -26,7 +26,7 @@ public class PlayerHit : MonoBehaviour
     
     private GameObject managerGame;
     private PlayerHealthController refHealthController;
-    private SpriteRenderer rend;
+    private SpriteRenderer playerSpriteRenderer;
     private bool invincible = false;
     private int playerHit;
     private int hpLost = 1;
@@ -42,7 +42,7 @@ public class PlayerHit : MonoBehaviour
     {
         managerGame = GameObject.FindGameObjectWithTag("ManagerGame");
         refHealthController = managerGame.GetComponent<PlayerHealthController>();
-        rend = GetComponent<SpriteRenderer>();
+        playerSpriteRenderer = GetComponent<SpriteRenderer>();
 
         refHealthController.SetMaxHealth(playerHealthMax);
 
@@ -64,17 +64,17 @@ public class PlayerHit : MonoBehaviour
     }
 
     //andra farg vid skada
-    IEnumerator color()
+    IEnumerator PlayerTakeDamageColour()
     {
-        rend = GameObject.FindGameObjectWithTag("PlayerSpriteRenderer").GetComponent<SpriteRenderer>();
+        playerSpriteRenderer = GameObject.FindGameObjectWithTag("PlayerSpriteRenderer").GetComponent<SpriteRenderer>();
         //rend = GetComponent<SpriteRenderer>();
-        rend.color = Color.red;
+        playerSpriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.1f);
-        rend.color = Color.white;
+        playerSpriteRenderer.color = Color.white;
         yield return new WaitForSeconds(0.1f);
-        rend.color = Color.red;
+        playerSpriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.2f);
-        rend.color = Color.white;
+        playerSpriteRenderer.color = Color.white;
         
     }
 
@@ -83,6 +83,7 @@ public class PlayerHit : MonoBehaviour
         playerHealthCurrent -= hpLost;
         refHealthController.SetCurrentHealth(playerHealthCurrent);
     }
+
     void gameOver()
     {
         if (playerHit > 4)
@@ -109,7 +110,7 @@ public class PlayerHit : MonoBehaviour
             if (other.gameObject.CompareTag("EnemyLollipopGirlBlue") || other.gameObject.CompareTag("LollipopBlue") || other.gameObject.CompareTag("EnemyLips") || other.gameObject.CompareTag("LollipopPink") || other.gameObject.CompareTag("EnemyLollipopGirlPink"))
             {
                 playerHit++;
-                StartCoroutine(color());
+                StartCoroutine(PlayerTakeDamageColour());
 
                 //refHealthController.
                 //PlayerHP(hpLost);

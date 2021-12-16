@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BulletHit : MonoBehaviour
 {
-    public Rigidbody2D bulletRb;
-    public Sprite enemySpriteDead;
+    //public Rigidbody2D bulletRb;
+    //public Sprite enemySpriteDead;
 
     private void OnTriggerEnter2D(Collider2D other)
     {

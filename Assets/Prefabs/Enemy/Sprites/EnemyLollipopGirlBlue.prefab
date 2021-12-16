@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stepType: 0
   rigi: {fileID: 8697673302569838739}
-  speed: 5
+  speed: 3
   rotationAngle: 5
   bobbingHeight: 1
   localLerpPos: {x: 0, y: 0, z: 0}
@@ -217,7 +217,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpriteFront: {fileID: 21300000, guid: 06a8ab57c32c4c74ebfae31a0b8634f2, type: 3}
   enemySpriteBack: {fileID: 21300000, guid: 73c5913c265e3b54ab53bc0f2ee41aca, type: 3}
-  enemySpriteDead: {fileID: 21300000, guid: bc1a7c6f042f80b49ad8ff22d943db5a, type: 3}
   enemySpriteRenderer: {fileID: 2037523870020670773}
 --- !u!114 &-8852916138026780274
 MonoBehaviour:

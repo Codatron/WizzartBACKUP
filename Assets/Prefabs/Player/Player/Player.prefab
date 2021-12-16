@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2374428679382569707}
   m_Layer: 0
-  m_Name: DropBombPlace
+  m_Name: DropBombPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5272,6 +5272,10 @@ PrefabInstance:
       value: BombHands
       objectReference: {fileID: 0}
     - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
+      propertyPath: dropBombPos
+      value: 
+      objectReference: {fileID: 2374428679382569706}
+    - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
       propertyPath: leaveBombsPlace
       value: 
       objectReference: {fileID: 0}
@@ -5346,6 +5350,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7572246243167708581, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
+      propertyPath: bombPrefab
+      value: 
+      objectReference: {fileID: 6733123721817354280, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
+    - target: {fileID: 7572246243167708581, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 449332077713889637, guid: f24c65c0f2be62c42aa96dcdd0a90164, type: 3}
@@ -5353,6 +5361,26 @@ PrefabInstance:
       propertyPath: dropBombPlace
       value: 
       objectReference: {fileID: 2374428679382569706}
+    - target: {fileID: 7572246243167708581, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
+      propertyPath: wineProjectiles.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7572246243167708581, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
+      propertyPath: wineProjectiles.Array.data[0]
+      value: 
+      objectReference: {fileID: 449332077713889637, guid: f24c65c0f2be62c42aa96dcdd0a90164, type: 3}
+    - target: {fileID: 7572246243167708581, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
+      propertyPath: wineProjectiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 484883345147044999, guid: 7013755021f969d4d97d5248a8f072b3, type: 3}
+    - target: {fileID: 7572246243167708581, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
+      propertyPath: wineProjectiles.Array.data[2]
+      value: 
+      objectReference: {fileID: 2966915783463802246, guid: f7a5e18796d6e9f498b33bf22537308c, type: 3}
+    - target: {fileID: 7572246243167708581, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
+      propertyPath: wineProjectiles.Array.data[3]
+      value: 
+      objectReference: {fileID: 8584147434389101481, guid: cd9cfc8ef69d2a44ea876745f98eb991, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
 --- !u!4 &7377085932541473793 stripped

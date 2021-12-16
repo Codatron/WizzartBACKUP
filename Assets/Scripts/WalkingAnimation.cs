@@ -8,28 +8,20 @@ public enum StepType { None, Player, zero, one, two, three, four, five };
 
 public class WalkingAnimation : MonoBehaviour
 {
-
     public StepType stepType;
-
     public Rigidbody2D rigi;
+    public float speed;
+    public float rotationAngle;
+    public float bobbingHeight;
+    public Vector3 localLerpPos;
+    public Vector3 prevPos;
+    public bool readyForTouch;
 
+    private bool walking;
     private float rotationTimer;
     private float rotationSine;
     private float bobbingTimer;
     private float bobbingSine;
-
-    bool walking;
-
-    public float speed;
-
-    public float rotationAngle;
-    public float bobbingHeight;
-
-    public Vector3 localLerpPos;
-    public Vector3 prevPos;
-
-    public bool readyForTouch;
-
     //public ParticleSystem fartDust;
 
     private void Start()

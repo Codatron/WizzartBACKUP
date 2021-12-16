@@ -35,6 +35,7 @@ TagManager:
   - SpawnPositions
   - PaintEnemy
   - PlayerSpriteRenderer
+  - MuzzleFlashWhite
   layers:
   - Default
   - TransparentFX

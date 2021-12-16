@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class Gun : MonoBehaviour
 {
-    //public GameObject[] wineProjectiles;  
-    public GameObject bulletPrefab;
-    public GameObject bomb;
-    public GameObject dropBombPlace;
+    public GameObject[] wineProjectiles;
+    //public GameObject bulletPrefab;
+    public GameObject bombNoHandsPrefab;
+    public GameObject dropBombPos;
     public Transform firePoint;
     public Slider slider;
     public AudioSource speaker;
@@ -22,6 +23,9 @@ public class Gun : MonoBehaviour
     private BoolKeeper refBoolKeeper;
     private float angle;
     private int projectileIndex = 4;
+    private SpriteRenderer gunSpriteRenderer;
+    private SpriteRenderer bombHandsSpriteRenderer;
+    private SpriteRenderer whiteMuzzleFlashSpriteRenderer;
 
 
     void Start()
@@ -33,13 +37,20 @@ public class Gun : MonoBehaviour
 
         GameObject g = GameObject.FindGameObjectWithTag("BoolKeeper");
         refBoolKeeper = g.GetComponent<BoolKeeper>();
+
+        gunSpriteRenderer = GetComponent<SpriteRenderer>();
+        bombHandsSpriteRenderer = GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>();
+
+        whiteMuzzleFlashSpriteRenderer = GameObject.FindGameObjectWithTag("MuzzleFlashWhite").GetComponent<SpriteRenderer>();
+        //whiteMuzzleFlashSpriteRenderer.enabled = false;
     }
+
     public void Update()
     {
         Vector2 mouse = Input.mousePosition;
         Vector2 screenPoint = cam.WorldToScreenPoint(transform.position);
-        Vector2 offSet = new Vector2(mouse.x - screenPoint.x, mouse.y - screenPoint.y);
-        angle = Mathf.Atan2(offSet.y, offSet.x) * Mathf.Rad2Deg;
+        Vector2 offset = new Vector2(mouse.x - screenPoint.x, mouse.y - screenPoint.y);
+        angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
         ShootGun();
@@ -59,7 +70,7 @@ public class Gun : MonoBehaviour
 
     private void ShootGun()
     {
-        if (Input.GetMouseButtonDown(0) && ammoCount > 0 && refBoolKeeper.dontShoot == false)
+        if (Input.GetMouseButton(0) && ammoCount > 0 && refBoolKeeper.dontShoot == false)
         {
             Fire();
             speaker.PlayOneShot(shoot);
@@ -68,22 +79,28 @@ public class Gun : MonoBehaviour
             slider.value = ammoCount;
             Invoke("DontShoot", 0.2f);
 
-            
-            GetComponent<SpriteRenderer>().enabled = true;
+            gunSpriteRenderer.enabled = true;
 
-            if (GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled == true)
+            if (bombHandsSpriteRenderer.enabled == true)
             {
-                GameObject clone = Instantiate(bomb, dropBombPlace.transform.position, Quaternion.identity);
-                GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled = false;
+                GameObject clone = Instantiate(bombNoHandsPrefab, dropBombPos.transform.position, Quaternion.identity);
+                bombHandsSpriteRenderer.enabled = false;
             }             
         }
     }
 
     public void Fire()
     {
-        GameObject bulletClone = Instantiate(bulletPrefab, firePoint.position, transform.rotation);
+        int randomProjectile = (int)Random.Range(0, 3);
+        
+        GameObject bulletClone = Instantiate(wineProjectiles[randomProjectile], firePoint.position, transform.rotation);
         bulletClone.GetComponent<Rigidbody2D>().velocity = transform.right * speed;
-        Debug.Log("Fire");
+
+        //whiteMuzzleFlashSpriteRenderer.enabled = true;
+
+        //TODO: disable muzzle flash after firing
+        // is it better to use the Sprite Renderer to do this or to Instantiate then Destroy instead?
+        // Interesting: When all whiteMuzzleFlashSpriteRenderer are NOT commented out and the Circle Game Object is manually deactivated in the inspector, something really cool happens...
     }
 
     void DontShoot()
@@ -97,11 +114,11 @@ public class Gun : MonoBehaviour
         slider.value = ammoCount;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Enemy"))
-        {
-            Destroy(other.gameObject);
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.CompareTag("Enemy"))
+    //    {
+    //        Destroy(other.gameObject);
+    //    }
+    //}
 }
