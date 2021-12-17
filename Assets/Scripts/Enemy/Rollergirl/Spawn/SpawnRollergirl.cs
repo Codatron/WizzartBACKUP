@@ -42,7 +42,7 @@ public class SpawnRollergirl: MonoBehaviour
             GameObject cloneEnemyBottom = Instantiate(enemyBlue, whereToSpawn, Quaternion.identity);
             GameObject clonePinkBottom = Instantiate(enemyPink, whereToSpawn, Quaternion.identity);
 
-            mailBoxSpawnPosX = Random.Range(-105f, 85f);        //Random pos X Change values to increase random range
+            mailBoxSpawnPosX = Random.Range(-105f, -85f);        //Random pos X Change values to increase random range
             mailBoxSpawnPosY = Random.Range(-80f, -90f);        //Random pos Y Change values to increase random range
             whereToSpawn = new Vector2(mailBoxSpawnPosX, mailBoxSpawnPosY);
             GameObject cloneEnemyMailBox = Instantiate(enemyBlue, whereToSpawn, Quaternion.identity);
