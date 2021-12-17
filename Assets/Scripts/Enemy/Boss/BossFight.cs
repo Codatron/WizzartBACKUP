@@ -10,107 +10,88 @@ public class BossFight : MonoBehaviour
         Stage_1,
         Stage_2,
         Stage_3,
-
+        Dead,
     }
 
     public Stage stage;
 
-    //TO DO LAGG IN TRIGGER FOR ATT STARTA 
+    //TO DO LAGG IN TRIGGER FOR ATT STARTA
 
     List<GameObject> prefabList = new List<GameObject>();
-    List<Vector3> spawnPositionList = new List<Vector3>();
+    public List<Transform> spawnPositionList = new List<Transform>();
+    List<GameObject> enemySpawnList = new List<GameObject>();
 
     public GameObject paintEnemy1;
     public GameObject paintEnemy2;
+    //public GameObject[] spawnPoints;
+
 
     int spawnEnemycounter;
     int maxEnemy = 10;
 
-    void awake()
+    private void Start()
     {
-        
         prefabList.Add(paintEnemy1);
         prefabList.Add(paintEnemy2);
 
-        foreach(Transform spawnPosition in transform.Find("SpawnPositions"))
-        {
-            spawnPositionList.Add(spawnPosition.position);
-        }
+      
 
         stage = Stage.WatingToStart;
+        StartBattle();
+
+        Debug.Log("MAYA");
+    }
+
+    private void Update()
+    {
+        if (stage == Stage.Stage_1)
+        {
+            Debug.Log("HAHAHA");
+            SpawnEnemy();
+        }
+
+        if (stage == Stage.Dead)
+
+        {
+            DestroyAllEnemy();
+        }
+
+        Debug.Log("MAYA");
     }
 
 
-    private void startBattle()
+    private void StartBattle()
     {
         stage = Stage.Stage_1;
-        spawnEnemy();
-        StartNextStage();
-        //TODO LAGG IN KOD for hur ofta de ska spawn
+        //SpawnEnemy();
+        //TODO LAGG IN KOD for hur ofta de ska spawn?
 
     }
 
-    private void spawnEnemy()
+    private void SpawnEnemy()
+
     {// random prefab + position
 
         if (spawnEnemycounter < maxEnemy)
         {
-            Vector3 spawnPosition = spawnPositionList[Random.Range(0, spawnPositionList.Count)];
-            int prebRandom= UnityEngine.Random.Range(0, 1);
 
-            GameObject hitPrefab = Instantiate(prefabList[prebRandom], spawnPosition, Quaternion.identity);
+            Vector3 spawnPosition = spawnPositionList[Random.Range(0, spawnPositionList.Count)].position;
+            int enemyRandom = UnityEngine.Random.Range(0, 2);
+
+
+           GameObject enemySpawn = Instantiate(prefabList[enemyRandom], spawnPosition, Quaternion.identity);
             spawnEnemycounter++;
-        } 
-    }
-
-    private void MonoTakingDamage()
-    {
-        switch (stage)
-        {
-            case Stage.Stage_1:
-
-                if (GameObject.FindGameObjectWithTag("Mono").GetComponent<MonoHealth>().currentHealth < 70)
-                {
-                    Debug.Log("Stage1");
-                    StartNextStage();
-                }
-
-                break;
-
-            case Stage.Stage_2:
-                if (GameObject.FindGameObjectWithTag("Mono").GetComponent<MonoHealth>().currentHealth < 30)
-                {
-                    Debug.Log("Stage2");
-                    StartNextStage();
-                }
-
-                break;
-        }
-
-        if (GameObject.FindGameObjectWithTag("Mono").GetComponent<MonoHealth>().currentHealth <=0)
-        {
-            MonoisDead();
+            
+             enemySpawnList.Add(enemySpawn);
         }
     }
 
-    public void StartNextStage()
+    private void DestroyAllEnemy()
     {
-        switch(stage)
+        foreach (GameObject enemySpawn in enemySpawnList)
         {
-            case Stage.WatingToStart:
-                stage = Stage.Stage_1;
-                break;
-            case Stage.Stage_1:
-                stage = Stage.Stage_2;
-                break;
-            case Stage.Stage_2:
-                stage = Stage.Stage_3;
-                break;
+            Destroy(GameObject.FindWithTag("PaintEnemy"));
         }
-    }
-
-    private void MonoisDead()
-    {
-        Debug.Log("DÖD");
     }
 }
+

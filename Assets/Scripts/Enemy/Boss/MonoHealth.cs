@@ -5,7 +5,6 @@ using UnityEngine;
 public class MonoHealth : MonoBehaviour
 {
     public int currentHealth;
-    public static bool isEnemyDead = false;
     BossFight bossFight;
 
     private void Start()
@@ -15,21 +14,45 @@ public class MonoHealth : MonoBehaviour
         bossFight = FindObjectOfType<BossFight>();
     }
 
-    public void TakeDamage(int monoDamage)
+    public void TakeDamage(int monoDamage)//snygga till namn
     {
+        
+        if (bossFight.stage == BossFight.Stage.Dead)
+        {
+            return;
+        }
+
         currentHealth -= monoDamage;
         Debug.Log(currentHealth + "hej");
 
-        if (currentHealth< 70 && bossFight.stage == BossFight.Stage.WatingToStart)
+        if (currentHealth < 90 && bossFight.stage == BossFight.Stage.WatingToStart)
         {
-            bossFight.stage = BossFight.Stage.Stage_2;
-            Debug.Log("Stage2");
+            bossFight.stage = BossFight.Stage.Stage_1;
+            Debug.Log("StageTEST");
+            return;
         }
 
-        if (currentHealth <= 0 && isEnemyDead == false)
+        if (currentHealth < 70 && bossFight.stage == BossFight.Stage.Stage_1)
         {
-           // gameObject.GetComponent<Animator>().Play("Dying");
-            isEnemyDead = true;
+            bossFight.stage = BossFight.Stage.Stage_2;
+            Debug.Log("Stage1");
+            return;
+        }
+
+        if (currentHealth < 30 && bossFight.stage == BossFight.Stage.Stage_2)
+        {
+            bossFight.stage = BossFight.Stage.Stage_3;
+            Debug.Log("Stage2");
+            return;
+        }
+
+        if (currentHealth <= 0 && bossFight.stage == BossFight.Stage.Stage_3)
+        {
+            bossFight.stage = BossFight.Stage.Dead;
+           
+            // gameObject.GetComponent<Animator>().Play("Dying");
         }
     }
 }
+
+

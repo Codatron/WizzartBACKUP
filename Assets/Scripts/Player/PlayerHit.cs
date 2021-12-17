@@ -32,6 +32,7 @@ public class PlayerHit : MonoBehaviour
     private int hpLost = 1;
     private int playerHealthMax = 5;
     private int playerHealthCurrent;
+    public Integer2 HealthRef;
 
     private void Awake()
     {
@@ -44,7 +45,7 @@ public class PlayerHit : MonoBehaviour
         refHealthController = managerGame.GetComponent<PlayerHealthController>();
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
 
-        refHealthController.SetMaxHealth(playerHealthMax);
+        
 
         playerHit = 0;
 
@@ -97,6 +98,9 @@ public class PlayerHit : MonoBehaviour
         {
             gameOverScreen.SetActive(true);
         }
+
+        HealthRef.integerA = playerHealthCurrent;
+        HealthRef.integerB = playerHealthMax;
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

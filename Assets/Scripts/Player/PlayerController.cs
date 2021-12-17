@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public Transform firePoint; 
     public GameObject playerBullets;
-    public Animator animator;
     public ParticleSystem dust;
     public AudioSource playerRunning;
     public SpriteRenderer playerSpriteRenderer;

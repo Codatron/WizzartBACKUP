@@ -11,25 +11,25 @@ public class Gun : MonoBehaviour
     public GameObject bombNoHandsPrefab;
     public GameObject dropBombPos;
     public Transform firePoint;
-    public Slider slider;
     public AudioSource speaker;
     public AudioClip refill;
     public AudioClip shoot;
     public float speed;      
-    
-    private Camera cam;
+    public int ammoCount;
+    public Integer2 ammoRef;
+
     private BoolKeeper refBoolKeeper;
     private SpriteRenderer gunSpriteRenderer;
     private SpriteRenderer bombHandsSpriteRenderer;
     private SpriteRenderer muzzleFlashSpriteRenderer;
-    private int ammoCount;
+   
     private float angle;
 
+    //TODO ingen ref tillbombhands och ta bort boolkeeper
     void Start()
     {
-        cam = Camera.main;
-
-        slider.maxValue = ammoCount;
+        ammoCount = 20;
+        ammoRef.integerB = ammoCount;
 
         refBoolKeeper = GameObject.FindGameObjectWithTag("BoolKeeper").GetComponent<BoolKeeper>();
 
@@ -44,18 +44,10 @@ public class Gun : MonoBehaviour
 
     public void Update()
     {
-        Aim();
         ShootGun();
         Reload();
-    }
 
-    private void Aim()
-    {
-        Vector2 mouse = Input.mousePosition;
-        Vector2 screenPoint = cam.WorldToScreenPoint(transform.position);
-        Vector2 offset = new Vector2(mouse.x - screenPoint.x, mouse.y - screenPoint.y);
-        angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        ammoRef.integerA = ammoCount;
     }
 
     private void ShootGun()
@@ -67,7 +59,7 @@ public class Gun : MonoBehaviour
             ammoCount--;
             refBoolKeeper.dontShoot = true;
             muzzleFlashSpriteRenderer.enabled = true;
-            slider.value = ammoCount;
+            
             Invoke("DontShoot", 0.15f);
             Invoke("Muzzle", 0.05f);
 
@@ -116,7 +108,6 @@ public class Gun : MonoBehaviour
     public void RefillAmmo(int ammo)
     {
         ammoCount = ammo;
-        slider.value = ammoCount;
     }
 
     //private void OnTriggerEnter2D(Collider2D other)

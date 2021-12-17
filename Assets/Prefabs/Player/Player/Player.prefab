@@ -188,7 +188,6 @@ MonoBehaviour:
   speed: 10
   firePoint: {fileID: 5324855215983477673}
   playerBullets: {fileID: 4455235740079281236, guid: cc216e83a21e2f14f9b1d2ee1050aab4, type: 3}
-  animator: {fileID: 0}
   dust: {fileID: 3543270761517505348}
   playerRunning: {fileID: 2374428678998479452}
   playerSpriteRenderer: {fileID: 822843523876213687}
@@ -342,6 +341,7 @@ MonoBehaviour:
   speaker: {fileID: 2374428678998479452}
   gameOverScreen: {fileID: 0}
   invincibilityTime: 1.5
+  HealthRef: {fileID: 11400000, guid: 790099cc4b9841a45b486e56b69f24bc, type: 2}
 --- !u!114 &2374428680422438473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5431,6 +5431,10 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7572246243167708581, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
+      propertyPath: ammoRef
+      value: 
+      objectReference: {fileID: 11400000, guid: f9ce80058d608a34d966003276e301ad, type: 2}
     - target: {fileID: 7572246243167708581, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
       propertyPath: bombPrefab
       value: 
