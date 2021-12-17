@@ -27,11 +27,11 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
     IEnumerator EnemyTakeDamageColour()
     {
         enemySpriteRenderer.color = Color.red;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.05f);
         enemySpriteRenderer.color = Color.clear;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.05f);
         enemySpriteRenderer.color = Color.red;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.05f);
         enemySpriteRenderer.color = Color.white;
     }
 
@@ -41,11 +41,13 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
         {
             enemyHit++;
             StartCoroutine(EnemyTakeDamageColour());
+            // play audio
         }
 
         if (enemyHit >= hitPointsMax)
         {
             KillMe();
+            // play audio
         }
     }
 

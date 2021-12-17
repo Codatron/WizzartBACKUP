@@ -68,14 +68,13 @@ public class PlayerHit : MonoBehaviour
     {
         playerSpriteRenderer = GameObject.FindGameObjectWithTag("PlayerSpriteRenderer").GetComponent<SpriteRenderer>();
         //rend = GetComponent<SpriteRenderer>();
-        playerSpriteRenderer.color = Color.red;
-        yield return new WaitForSeconds(0.1f);
+        playerSpriteRenderer.color = Color.magenta;
+        yield return new WaitForSeconds(0.05f);
         playerSpriteRenderer.color = Color.white;
-        yield return new WaitForSeconds(0.1f);
-        playerSpriteRenderer.color = Color.red;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.05f);
+        playerSpriteRenderer.color = Color.magenta;
+        yield return new WaitForSeconds(0.05f);
         playerSpriteRenderer.color = Color.white;
-        
     }
 
     void TakeDamage(int hpLost)

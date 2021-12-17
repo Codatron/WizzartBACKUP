@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class KnockBack : MonoBehaviour
 {
-    private int strength = 350;
     public Rigidbody2D rb;
+    private int strength = 350;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
