@@ -112,9 +112,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3001665726187533156}
-  - component: {fileID: 7874896643641253946}
   - component: {fileID: 1314662959898882329}
   - component: {fileID: 1144951621273517104}
+  - component: {fileID: 7874896643641253946}
   - component: {fileID: 2472860587467585133}
   - component: {fileID: -2332107395811294731}
   - component: {fileID: 1918536260}
@@ -140,23 +140,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7874896643641253946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4035598533435291683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ced1d3374734fb146864d2fe6be086ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  stoppingDistance: 8
-  retreatDistance: 7
-  startTimeBtwShots: 3
-  lollipop: {fileID: 2493050801279447107, guid: eaf86ff8c04e30441bab43004b76d1a6, type: 3}
 --- !u!50 &1314662959898882329
 Rigidbody2D:
   serializedVersion: 4
@@ -194,6 +177,23 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 6}
   m_Size: {x: 3.54, y: 8.02}
   m_Direction: 0
+--- !u!114 &7874896643641253946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4035598533435291683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced1d3374734fb146864d2fe6be086ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  stoppingDistance: 8
+  retreatDistance: 7
+  startTimeBtwShots: 3
+  lollipop: {fileID: 2493050801279447107, guid: eaf86ff8c04e30441bab43004b76d1a6, type: 3}
 --- !u!114 &2472860587467585133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,5 +237,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpriteRenderer: {fileID: 8260453155374831595}
   corpseSprite: {fileID: 21300000, guid: f89ab934430c4e948bd79ebce4167d1d, type: 3}
+  lipsSmallPrefab: {fileID: 0}
   hitPointsMax: 2
-  isDead: 0
+  numberOfSwarm: 0

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 202307324146309699}
   - component: {fileID: 5026954642417648526}
   - component: {fileID: 8291095280226694386}
+  - component: {fileID: 347852895957579132}
   m_Layer: 0
   m_Name: LollipopBlueTEST
   m_TagString: LollipopBlue
@@ -51,7 +52,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -98,7 +99,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 545650d5c86c2d24fae0d2f91dccfae8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3972944, g: 0.9056604, b: 0.45449123, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -131,7 +132,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3589829450812267120}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d9914d3300e255c42a1b171bebd1fd49, type: 3}
   m_Name: 
@@ -150,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 683aa19da0d2dc34090dc34f85b4acb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockbackStrength: 50
+  rb: {fileID: 0}
 --- !u!114 &8291095280226694386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,7 +164,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09643c390bf3f404f97939ca8ad3e681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 8697673302569838742, guid: 53a3581f55a71b24a81e6f35cad63cac, type: 3}
-  target: {fileID: 90955207781393718, guid: 9d9c2e1d471d5ac499fd976f80fb1c18, type: 3}
-  speed: 15
+  player: {fileID: 0}
+  target: {fileID: 0}
   movePosition: {x: 0, y: 0, z: 0}
+  speed: 20.39
+--- !u!114 &347852895957579132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3589829450812267120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac5cb6f53b4d264e81110d88e0ce554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPoint: {x: -0, y: 0, z: 0}
+  endPoint: {x: -2, y: 2, z: 0}
+  startTangent: {x: 0, y: 5, z: 0}
+  endTangent: {x: 0, y: 5, z: 0}
+  targetArch: 0

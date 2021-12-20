@@ -37,6 +37,9 @@ TagManager:
   - PlayerSpriteRenderer
   - Mono
   - MuzzleFlash
+  - MuzzleFlashWhite
+  - EnemyLipsBig
+  - EnemyLipsSmall
   layers:
   - Default
   - TransparentFX

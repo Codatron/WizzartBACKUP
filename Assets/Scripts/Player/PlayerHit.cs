@@ -45,10 +45,7 @@ public class PlayerHit : MonoBehaviour
         refHealthController = managerGame.GetComponent<PlayerHealthController>();
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
 
-        
-
         playerHit = 0;
-
         playerHealthCurrent = playerHealthMax;
 
         //Add to sprit when hit list
@@ -94,14 +91,15 @@ public class PlayerHit : MonoBehaviour
     }
     private void Update()
     {
+        HealthRef.integerA = playerHealthCurrent;
+        HealthRef.integerB = playerHealthMax;
+        
         if(isGameOver)
         {
             gameOverScreen.SetActive(true);
         }
-
-        HealthRef.integerA = playerHealthCurrent;
-        HealthRef.integerB = playerHealthMax;
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         //For random play/sprite
@@ -110,7 +108,7 @@ public class PlayerHit : MonoBehaviour
 
         if (!invincible)
         {
-            if (other.gameObject.CompareTag("EnemyLollipopGirlBlue") || other.gameObject.CompareTag("LollipopBlue") || other.gameObject.CompareTag("EnemyLips") || other.gameObject.CompareTag("LollipopPink") || other.gameObject.CompareTag("EnemyLollipopGirlPink"))
+            if (other.gameObject.CompareTag("EnemyLollipopGirlBlue") || other.gameObject.CompareTag("LollipopBlue") || other.gameObject.CompareTag("EnemyLipsBig") || other.gameObject.CompareTag("EnemyLipsSmall") || other.gameObject.CompareTag("LollipopPink") || other.gameObject.CompareTag("EnemyLollipopGirlPink"))
             {
                 playerHit++;
                 StartCoroutine(PlayerTakeDamageColour());

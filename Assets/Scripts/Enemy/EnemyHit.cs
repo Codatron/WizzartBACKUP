@@ -1,27 +1,27 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemyHit : MonoBehaviour, IGetKnockedBack
 {
     public SpriteRenderer enemySpriteRenderer;
     public Sprite corpseSprite;
+    public GameObject lipsSmallPrefab;
     public int hitPointsMax;
+    public int numberInSwarm;
 
     private Rigidbody2D enemyRb;
+    Transform lipsBig;
     private int enemyHit;
-    public bool isDead = false;
 
     void Start()
     {
         enemyRb = GetComponent<Rigidbody2D>();
         enemySpriteRenderer = transform.Find("SpriteRenderer").GetComponent<SpriteRenderer>();
-
+       
         enemyHit = 0;
-    }
-
-    void Update()
-    {
     }
 
     IEnumerator EnemyTakeDamageColour()
@@ -46,12 +46,25 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
 
         if (enemyHit >= hitPointsMax)
         {
-            KillMe();
-            // play audio
+            if(gameObject.CompareTag("EnemyLollipopGirlBlue") || gameObject.CompareTag("EnemyLollipopGirlBlue"))
+            {
+                KillMeRollergirl();
+                // play audio
+            }
+
+            if (gameObject.CompareTag("EnemyLipsBig"))
+            {
+                KillMeLipsBig(numberInSwarm);
+            }
+
+            if (gameObject.CompareTag("EnemyLipsSmall"))
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
-    private void KillMe()
+    private void KillMeRollergirl()
     {
         GameObject Corpse = new GameObject("enemyCorpse");
         SpriteRenderer corpseRenderer = Corpse.AddComponent<SpriteRenderer>();
@@ -63,6 +76,20 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
 
         Destroy(gameObject);
     }
+
+    private void KillMeLipsBig(int numberToSpawn)
+    {
+        for (int i = 0; i < numberToSpawn; i++)
+        {
+            float smallLipsSpawnPosX = Random.Range(-2.0f, 2.0f);
+            float smallLipsSpawnPosY = Random.Range(-2.0f, 2.0f);
+
+            Instantiate(lipsSmallPrefab, transform.position + new Vector3(smallLipsSpawnPosX, smallLipsSpawnPosY), Quaternion.identity);
+        }
+
+        Destroy(gameObject);
+    }
+
 
     public void KnockMeBack(float magnitude, Vector2 direction)
     {

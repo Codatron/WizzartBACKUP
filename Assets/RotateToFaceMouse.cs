@@ -6,6 +6,7 @@ public class RotateToFaceMouse : MonoBehaviour
 {
     private Camera cam;
     private float angle;
+
     void Start()
     {
         cam = Camera.main;

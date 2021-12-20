@@ -12,10 +12,10 @@ public class LollipopProjectile: MonoBehaviour
 { 
     public Target targetName;
     public float speed;
+    public float rotationSpeed;
     
     private Transform player;
     private Vector2 target;
-    private float rotationSpeed = 15.0f;
 
     private void Start()
     {

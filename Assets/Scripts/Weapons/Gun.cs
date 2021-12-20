@@ -60,7 +60,7 @@ public class Gun : MonoBehaviour
             refBoolKeeper.dontShoot = true;
             muzzleFlashSpriteRenderer.enabled = true;
             
-            Invoke("DontShoot", 0.15f);
+            Invoke("DontShoot", 0.125f);
             Invoke("Muzzle", 0.05f);
 
             gunSpriteRenderer.enabled = true;
@@ -109,12 +109,4 @@ public class Gun : MonoBehaviour
     {
         ammoCount = ammo;
     }
-
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.CompareTag("Enemy"))
-    //    {
-    //        Destroy(other.gameObject);
-    //    }
-    //}
 }
