@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: be4fac09de7f1564aa0a05acc00f77f9
+  - enabled: 1
+    path: Assets/Scenes/SpelTest.unity
+    guid: 679d02ea191b5af4291a85b6c7211637
   - enabled: 0
     path: Assets/Scenes/ScenePopArt.unity
     guid: 43c0db35feb1f13448c33ce81549ac44
@@ -35,7 +38,4 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/SpelTest.unity
-    guid: 679d02ea191b5af4291a85b6c7211637
   m_configObjects: {}
