@@ -39,15 +39,20 @@ public class Gun : MonoBehaviour
         
         muzzleFlashSpriteRenderer.enabled = false;
         
-        ammoCount = 20;
+        ammoCount = 40;
     }
 
     public void Update()
     {
         ShootGun();
-        Reload();
+        
 
         ammoRef.integerA = ammoCount;
+
+        if (ammoCount==0 && refBoolKeeper.dontShoot == false)
+        {
+            Reload();
+        }
     }
 
     private void ShootGun()
@@ -86,13 +91,11 @@ public class Gun : MonoBehaviour
 
     private void Reload()
     {
-        if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.R) && refBoolKeeper.dontShoot == false)
-        {
-            ammoCount = 20;
+              
+            ammoCount = 40;
             speaker.PlayOneShot(refill);
             refBoolKeeper.dontShoot = true;
-            Invoke("DontShoot", 1.5f);
-        }
+            Invoke("DontShoot", 1.5f);     
     }
 
     void DontShoot()

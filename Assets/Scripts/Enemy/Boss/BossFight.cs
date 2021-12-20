@@ -23,31 +23,37 @@ public class BossFight : MonoBehaviour
 
     public GameObject paintEnemy1;
     public GameObject paintEnemy2;
-    //public GameObject[] spawnPoints;
-
 
     int spawnEnemycounter;
     int maxEnemy = 10;
+    private float nextSpawn;
+    public float spawnRate = 0.002f;
 
     private void Start()
     {
         prefabList.Add(paintEnemy1);
         prefabList.Add(paintEnemy2);
 
-      
-
         stage = Stage.WatingToStart;
         StartBattle();
 
-        Debug.Log("MAYA");
     }
 
     private void Update()
     {
         if (stage == Stage.Stage_1)
         {
-            Debug.Log("HAHAHA");
+            
+        }
+
+        if (stage == Stage.Stage_2)
+        {
             SpawnEnemy();
+        }
+
+        if (stage == Stage.Stage_3)
+        {
+            
         }
 
         if (stage == Stage.Dead)
@@ -55,34 +61,26 @@ public class BossFight : MonoBehaviour
         {
             DestroyAllEnemy();
         }
-
-        Debug.Log("MAYA");
     }
-
 
     private void StartBattle()
     {
         stage = Stage.Stage_1;
-        //SpawnEnemy();
-        //TODO LAGG IN KOD for hur ofta de ska spawn?
-
     }
 
     private void SpawnEnemy()
 
     {// random prefab + position
-
-        if (spawnEnemycounter < maxEnemy)
+        if (Time.time > nextSpawn && spawnEnemycounter < maxEnemy)
         {
-
+            nextSpawn = Time.time + spawnRate;
             Vector3 spawnPosition = spawnPositionList[Random.Range(0, spawnPositionList.Count)].position;
             int enemyRandom = UnityEngine.Random.Range(0, 2);
 
-
-           GameObject enemySpawn = Instantiate(prefabList[enemyRandom], spawnPosition, Quaternion.identity);
+            GameObject enemySpawn = Instantiate(prefabList[enemyRandom], spawnPosition, Quaternion.identity);
             spawnEnemycounter++;
             
-             enemySpawnList.Add(enemySpawn);
+            enemySpawnList.Add(enemySpawn);
         }
     }
 

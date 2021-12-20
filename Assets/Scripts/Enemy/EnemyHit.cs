@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class EnemyHit : MonoBehaviour, IGetKnockedBack
+public class PaintEnemyHit : MonoBehaviour, IGetKnockedBack
 {
     public SpriteRenderer enemySpriteRenderer;
     public Sprite corpseSprite;

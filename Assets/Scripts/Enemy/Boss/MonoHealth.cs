@@ -14,7 +14,7 @@ public class MonoHealth : MonoBehaviour
         bossFight = FindObjectOfType<BossFight>();
     }
 
-    public void TakeDamage(int monoDamage)//snygga till namn
+    public void TakeDamage(int damage)
     {
         
         if (bossFight.stage == BossFight.Stage.Dead)
@@ -22,17 +22,17 @@ public class MonoHealth : MonoBehaviour
             return;
         }
 
-        currentHealth -= monoDamage;
+        currentHealth -= damage;
         Debug.Log(currentHealth + "hej");
 
-        if (currentHealth < 90 && bossFight.stage == BossFight.Stage.WatingToStart)
+        if (currentHealth < 70 && bossFight.stage == BossFight.Stage.WatingToStart) //ANDRA TO STAGE 1
         {
             bossFight.stage = BossFight.Stage.Stage_1;
             Debug.Log("StageTEST");
             return;
         }
 
-        if (currentHealth < 70 && bossFight.stage == BossFight.Stage.Stage_1)
+        if (currentHealth < 50 && bossFight.stage == BossFight.Stage.Stage_1)
         {
             bossFight.stage = BossFight.Stage.Stage_2;
             Debug.Log("Stage1");
@@ -45,6 +45,7 @@ public class MonoHealth : MonoBehaviour
             Debug.Log("Stage2");
             return;
         }
+
 
         if (currentHealth <= 0 && bossFight.stage == BossFight.Stage.Stage_3)
         {
