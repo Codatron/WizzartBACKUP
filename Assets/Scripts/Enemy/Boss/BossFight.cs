@@ -6,7 +6,8 @@ public class BossFight : MonoBehaviour
 {
     public enum Stage
     {
-        WatingToStart,
+        Idel,
+        Movment,
         Stage_1,
         Stage_2,
         Stage_3,
@@ -27,14 +28,14 @@ public class BossFight : MonoBehaviour
     int spawnEnemycounter;
     int maxEnemy = 10;
     private float nextSpawn;
-    public float spawnRate = 0.002f;
+    public float spawnRate;
 
     private void Start()
     {
         prefabList.Add(paintEnemy1);
         prefabList.Add(paintEnemy2);
 
-        stage = Stage.WatingToStart;
+        stage = Stage.Idel;
         StartBattle();
 
     }

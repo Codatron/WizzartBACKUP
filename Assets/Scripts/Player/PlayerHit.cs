@@ -61,20 +61,6 @@ public class PlayerHit : MonoBehaviour
         hitSoundList.Add(Sound5);
     }
 
-    //andra farg vid skada
-    IEnumerator PlayerTakeDamageColour()
-    {
-        playerSpriteRenderer = GameObject.FindGameObjectWithTag("PlayerSpriteRenderer").GetComponent<SpriteRenderer>();
-        //rend = GetComponent<SpriteRenderer>();
-        playerSpriteRenderer.color = Color.magenta;
-        yield return new WaitForSeconds(0.05f);
-        playerSpriteRenderer.color = Color.white;
-        yield return new WaitForSeconds(0.05f);
-        playerSpriteRenderer.color = Color.magenta;
-        yield return new WaitForSeconds(0.05f);
-        playerSpriteRenderer.color = Color.white;
-    }
-
     void TakeDamage(int hpLost)
     {
         playerHealthCurrent -= hpLost;
@@ -137,6 +123,20 @@ public class PlayerHit : MonoBehaviour
                 }
             }
         }
+    }
+
+    //andra farg vid skada
+    IEnumerator PlayerTakeDamageColour()
+    {
+        playerSpriteRenderer = GameObject.FindGameObjectWithTag("PlayerSpriteRenderer").GetComponent<SpriteRenderer>();
+        //rend = GetComponent<SpriteRenderer>();
+        playerSpriteRenderer.color = Color.magenta;
+        yield return new WaitForSeconds(0.05f);
+        playerSpriteRenderer.color = Color.white;
+        yield return new WaitForSeconds(0.05f);
+        playerSpriteRenderer.color = Color.magenta;
+        yield return new WaitForSeconds(0.05f);
+        playerSpriteRenderer.color = Color.white;
     }
 
     // so that the player dont take damage after hit

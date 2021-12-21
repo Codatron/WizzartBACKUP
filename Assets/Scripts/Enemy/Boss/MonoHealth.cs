@@ -9,8 +9,7 @@ public class MonoHealth : MonoBehaviour
 
     private void Start()
     {
-        currentHealth = 100;
-        Debug.Log(currentHealth + "hej");
+        currentHealth = 100;      
         bossFight = FindObjectOfType<BossFight>();
     }
 
@@ -22,27 +21,24 @@ public class MonoHealth : MonoBehaviour
             return;
         }
 
-        currentHealth -= damage;
-        Debug.Log(currentHealth + "hej");
+        currentHealth -= damage;       
 
-        if (currentHealth < 70 && bossFight.stage == BossFight.Stage.WatingToStart) //ANDRA TO STAGE 1
+        if (currentHealth < 800 && bossFight.stage == BossFight.Stage.Idel) //ANDRA TO STAGE 1
         {
-            bossFight.stage = BossFight.Stage.Stage_1;
-            Debug.Log("StageTEST");
+            bossFight.stage = BossFight.Stage.Stage_1;            
             return;
         }
 
-        if (currentHealth < 50 && bossFight.stage == BossFight.Stage.Stage_1)
+        if (currentHealth < 500 && bossFight.stage == BossFight.Stage.Stage_1)
         {
-            bossFight.stage = BossFight.Stage.Stage_2;
-            Debug.Log("Stage1");
+            bossFight.stage = BossFight.Stage.Stage_2;            
             return;
         }
 
-        if (currentHealth < 30 && bossFight.stage == BossFight.Stage.Stage_2)
+        if (currentHealth < 200 && bossFight.stage == BossFight.Stage.Stage_2)
         {
             bossFight.stage = BossFight.Stage.Stage_3;
-            Debug.Log("Stage2");
+        
             return;
         }
 

@@ -28,7 +28,7 @@ public class Gun : MonoBehaviour
     //TODO ingen ref tillbombhands och ta bort boolkeeper
     void Start()
     {
-        ammoCount = 20;
+        ammoCount = 50;
         ammoRef.integerB = ammoCount;
 
         refBoolKeeper = GameObject.FindGameObjectWithTag("BoolKeeper").GetComponent<BoolKeeper>();
@@ -38,8 +38,7 @@ public class Gun : MonoBehaviour
         muzzleFlashSpriteRenderer = GameObject.FindGameObjectWithTag("MuzzleFlash").GetComponent<SpriteRenderer>();
         
         muzzleFlashSpriteRenderer.enabled = false;
-        
-        ammoCount = 40;
+    
     }
 
     public void Update()
@@ -92,7 +91,7 @@ public class Gun : MonoBehaviour
     private void Reload()
     {
               
-            ammoCount = 40;
+            ammoCount = 50;
             speaker.PlayOneShot(refill);
             refBoolKeeper.dontShoot = true;
             Invoke("DontShoot", 1.5f);     

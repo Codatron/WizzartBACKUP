@@ -17,7 +17,7 @@ public class BulletHit : MonoBehaviour
 
         if (other.gameObject.CompareTag("Mono"))
         {
-            damageMono = 5;
+            damageMono = 3;
             other.GetComponent<MonoHealth>().TakeDamage(damageMono);
             Destroy(gameObject);
            

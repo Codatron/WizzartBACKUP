@@ -1,5 +1,52 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &154723143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 154723144}
+  - component: {fileID: 154723145}
+  m_Layer: 8
+  m_Name: PaintBlobSpawnCircle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &154723144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154723143}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.90974736, y: 0.3563034, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8833135264707101023}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154723145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154723143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b75f4345de44474082f20a17c23524d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfPaintBlobs: 10
+  paintBlobs: {fileID: 126638070414477445, guid: b158a72831ad2dc4ea3ebf7e8692b263, type: 3}
+  startPoint: {fileID: 154723143}
+  spawnPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &4407264836084964182
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,6 +60,7 @@ GameObject:
   - component: {fileID: 934085706}
   - component: {fileID: 934085702}
   - component: {fileID: 934085703}
+  - component: {fileID: 1875096666}
   m_Layer: 0
   m_Name: mono (1)
   m_TagString: Mono
@@ -30,7 +78,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 154723144}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -113,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c47ee24f484136d49b13df2f1598dbe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 20
+  currentHealth: 100
 --- !u!114 &934085703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,5 +176,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stage: 0
+  spawnPositionList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   paintEnemy1: {fileID: 3826571666344718028, guid: a4698e781bac3ec4b8c82b1bc15a553a, type: 3}
   paintEnemy2: {fileID: 3247442076611821051, guid: 958bc0d1b7d43c7418f8ee2f4a38eaf6, type: 3}
+  spawnRate: 2
+--- !u!114 &1875096666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4407264836084964182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 125d8bd76add61945a65c8ab5ab6be30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movePoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 10

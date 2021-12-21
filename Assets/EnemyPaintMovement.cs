@@ -41,12 +41,4 @@ public class EnemyPaintMovement : MonoBehaviour
         RBEnemy.MovePosition((Vector3)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        //Destroys lollipop when it hits player
-        if (other.CompareTag("Player"))
-        {
-            Destroy(lips);
-        }
-    }
 }
