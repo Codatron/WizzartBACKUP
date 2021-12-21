@@ -96,7 +96,8 @@ GameObject:
   - component: {fileID: -8975785398472717707}
   - component: {fileID: 5574002559415487119}
   - component: {fileID: 5574002559415487115}
-  - component: {fileID: 5574002559415487116}
+  - component: {fileID: 7563276597572181651}
+  - component: {fileID: 215792244}
   m_Layer: 0
   m_Name: LipsBig
   m_TagString: EnemyLipsBig
@@ -222,9 +223,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92816c115da594242a623c8137288423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aiRb: {fileID: 5574002559415487112}
   speed: 3000
   nextWaypointDistance: 1
---- !u!114 &5574002559415487116
+  attackDistance: 12.5
+  isTargetWithinRange: 0
+--- !u!114 &7563276597572181651
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -236,8 +240,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfa12edea42d7f43b2856a6a3a9402c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpriteRenderer: {fileID: 5574002558828173072}
+  enemySpriteRenderer: {fileID: 0}
   corpseSprite: {fileID: 0}
   lipsSmallPrefab: {fileID: 1860392362154862023, guid: 85d016f78b5601a4589536507e819732, type: 3}
   hitPointsMax: 3
-  numberInSwarm: 5
+  numberInSwarm: 7
+--- !u!114 &215792244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5574002559415487122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dcfd146709b23f40b2601126a83fb8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPoints:
+  - {x: -59, y: 12}
+  - {x: -59, y: 0}
+  force: 10
+  stopDistance: 1
+  alertDistance: 7
+  isTargetInSight: 0

@@ -5,19 +5,25 @@ using UnityEngine;
 public class EnemyRollergirlAttack : MonoBehaviour
 {
     public GameObject lollipopPrefab;
+    public Transform firePoint;
     public float fireRate;
 
     private GameObject lollipopClone;
+    private EnemyAIPathfind refEnemyAIPAthfind;
     private float timeBtwShots;
 
     void Start()
     {
         timeBtwShots = fireRate;
+        refEnemyAIPAthfind = GetComponent<EnemyAIPathfind>();
     }
 
     void Update()
     {
-        ShootLollipop();
+        if (refEnemyAIPAthfind.isTargetWithinRange)
+        {
+            ShootLollipop();
+        }
     }
 
     void ShootLollipop()
@@ -25,9 +31,8 @@ public class EnemyRollergirlAttack : MonoBehaviour
         //Governs how long it takes for the enemy to attack again
         if (timeBtwShots <= 0)
         {
-            Instantiate(lollipopPrefab, transform.position, Quaternion.identity);
+            Instantiate(lollipopPrefab, firePoint.position, Quaternion.identity);
             //lollipopClone.GetComponent<Rigidbody2D>().velocity = transform.rigth * ;
-            Debug.Log("lollipopClone");
             
             timeBtwShots = fireRate;
         }

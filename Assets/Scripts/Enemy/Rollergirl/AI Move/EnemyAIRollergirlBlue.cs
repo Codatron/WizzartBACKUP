@@ -5,21 +5,22 @@ using Pathfinding;
 
 public class EnemyAIRollergirlBlue : MonoBehaviour
 {
-    public float speed = 200f;
+    public Rigidbody2D aiRb;
+    public float speed;
     public float nextWaypointDistance = 3f;     // how close enemy needs to be to a waypoint before moving on to the next
+    public float attackDistance;
 
     private Transform target;                    // reference to target
     private Path path;                          // current path we are following
     private Seeker seeker;
-    private Rigidbody2D lollipopGirlRb;
     private int currentWaypoint = 0;            // stores current waypoint along path we are targeting
+    private float distanceToTarget;
     private bool reachedEndOfPath = false;
 
     // Start is called before the first frame update
     void Start()
     {
         seeker = GetComponent<Seeker>();
-        lollipopGirlRb = GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
         // Generate path - (start point position, target position, function to invoke when calculation of path is complete) 
@@ -30,7 +31,7 @@ public class EnemyAIRollergirlBlue : MonoBehaviour
     {
         if(seeker.IsDone())
         {
-            seeker.StartPath(lollipopGirlRb.position, target.position, OnPathComplete);
+            seeker.StartPath(aiRb.position, target.position, OnPathComplete);
         }
     }
 
@@ -62,28 +63,22 @@ public class EnemyAIRollergirlBlue : MonoBehaviour
             reachedEndOfPath = false;
         }
 
-        // move the enemy
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - lollipopGirlRb.position).normalized;
-        Vector2 force = direction * speed * Time.deltaTime;
-
-        lollipopGirlRb.AddForce(force);
-
-        // distance to next waypoint
-        float distance = Vector2.Distance(lollipopGirlRb.position, path.vectorPath[currentWaypoint]);
-
-        if (distance < nextWaypointDistance)
+        distanceToTarget = Vector3.Distance(target.position, transform.position);
+        if (distanceToTarget <= attackDistance)
         {
-            currentWaypoint++;
-        }
+            // move the enemy
+            Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - aiRb.position).normalized;
+            Vector2 force = direction * speed * Time.deltaTime;
 
-        // flip sprite
-        //if (force.x >= 0.01f)
-        //{
-        //    lollipopGirlGFX.localScale = new Vector3(-0.25f, 0.25f, 1.0f);
-        //}
-        //else if (force.x <= -0.01f)
-        //{
-        //    lollipopGirlGFX.localScale = new Vector3(0.25f, 0.25f, 1.0f);
-        //}
+            aiRb.AddForce(force);
+
+            // distance to next waypoint
+            float distance = Vector2.Distance(aiRb.position, path.vectorPath[currentWaypoint]);
+
+            if (distance < nextWaypointDistance)
+            {
+                currentWaypoint++;
+            }
+        }
     }
 }

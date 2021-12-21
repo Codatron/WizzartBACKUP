@@ -130,8 +130,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92816c115da594242a623c8137288423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aiRb: {fileID: 1860392362154862016}
   speed: 2500
   nextWaypointDistance: 1
+  attackDistance: 20
 --- !u!114 &1860392362154862021
 MonoBehaviour:
   m_ObjectHideFlags: 0

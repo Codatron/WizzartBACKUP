@@ -7,6 +7,7 @@ public class EnemyFlip : MonoBehaviour
     public Sprite enemySpriteFront;
     public Sprite enemySpriteBack;
     public SpriteRenderer enemySpriteRenderer;
+    //public Transform firePoint;
 
     private Transform player;
     private bool isOverY;
@@ -23,5 +24,14 @@ public class EnemyFlip : MonoBehaviour
         enemySpriteRenderer.flipX = player.position.x < transform.position.x;
         isOverY = player.position.y > transform.position.y;
         enemySpriteRenderer.sprite = isOverY ? enemySpriteBack : enemySpriteFront;
+
+        //if (enemySpriteRenderer.flipX)
+        //{
+        //    firePoint.localScale = new Vector3(-0.175f, -0.175f, 1.0f);
+        //}
+        //else
+        //{
+        //    firePoint.localScale = new Vector3(0.175f, 0.175f, 1.0f);
+        //}
     }
 }

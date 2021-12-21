@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class PaintEnemyHit : MonoBehaviour, IGetKnockedBack
+public class EnemyHit : MonoBehaviour, IGetKnockedBack
 {
     public SpriteRenderer enemySpriteRenderer;
     public Sprite corpseSprite;
@@ -95,6 +95,5 @@ public class PaintEnemyHit : MonoBehaviour, IGetKnockedBack
     {
         direction = direction.normalized;
         enemyRb.AddForce(magnitude * direction);
-        Debug.Log(direction);
     }
 }

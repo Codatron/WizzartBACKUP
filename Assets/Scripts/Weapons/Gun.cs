@@ -22,8 +22,6 @@ public class Gun : MonoBehaviour
     private SpriteRenderer gunSpriteRenderer;
     private SpriteRenderer bombHandsSpriteRenderer;
     private SpriteRenderer muzzleFlashSpriteRenderer;
-   
-    private float angle;
 
     //TODO ingen ref tillbombhands och ta bort boolkeeper
     void Start()
@@ -45,7 +43,6 @@ public class Gun : MonoBehaviour
     {
         ShootGun();
         
-
         ammoRef.integerA = ammoCount;
 
         if (ammoCount==0 && refBoolKeeper.dontShoot == false)
