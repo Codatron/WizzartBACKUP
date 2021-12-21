@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PainCircleSpawn : MonoBehaviour
+public class PaintCircleSpawn : MonoBehaviour
 {
     public int numberOfPaintBlobs;
 
@@ -21,26 +21,17 @@ public class PainCircleSpawn : MonoBehaviour
     {
         radius = 5f;
         speed = 7f;
-
         bossFight = FindObjectOfType<BossFight>();       
     }
     
     void Update()
     {    
-        spawnPosition = startPoint.transform.position;
-
-        if (bossFight.stage == BossFight.Stage.Stage_1)
-        {
-            if (!IsInvoking(nameof(SpawnPaintBlobs)))
-            {
-                Invoke(nameof(SpawnPaintBlobs),0);
-            }
-        }  
+        spawnPosition = startPoint.transform.position;       
     }
 
-    void SpawnPaintBlobs()
+    public void SpawnPaintBlobs()
     {
-        float angleSteps = 360f / numberOfPaintBlobs;
+        float angleSteps = 360f / numberOfPaintBlobs; //TODO HALF CIRCLE?
         float angle = 0f;
 
         for (int i = 0; i <= numberOfPaintBlobs - 1; i++)
@@ -60,7 +51,19 @@ public class PainCircleSpawn : MonoBehaviour
 
         delay++;//test
         delay %= 3;//test
-        Invoke(nameof(SpawnPaintBlobs), 2+delay);//tva minsta tid
-       
+        Invoke(nameof(SpawnPaintBlobs), 2+delay);//tva minsta tid      
+    }
+
+    internal void StartSpawningBlobs()
+    {
+        if (!IsInvoking(nameof(SpawnPaintBlobs)))
+        {
+            Invoke(nameof(SpawnPaintBlobs), 0);
+        }
+    }
+    
+    internal void StopSpawningBlobs()
+    {
+        CancelInvoke(nameof(SpawnPaintBlobs));
     }
 }

@@ -16,19 +16,20 @@ public class BossFight : MonoBehaviour
 
     public Stage stage;
 
-    //TO DO LAGG IN TRIGGER FOR ATT STARTA
+    public List<Transform> spawnPositionList = new List<Transform>();
 
     List<GameObject> prefabList = new List<GameObject>();
-    public List<Transform> spawnPositionList = new List<Transform>();
     List<GameObject> enemySpawnList = new List<GameObject>();
 
     public GameObject paintEnemy1;
     public GameObject paintEnemy2;
 
     int spawnEnemycounter;
-    int maxEnemy = 10;
+    int maxEnemy = 15;
     private float nextSpawn;
     public float spawnRate;
+
+    public PaintCircleSpawn paintCircleSpawn;
 
     private void Start()
     {
@@ -37,18 +38,20 @@ public class BossFight : MonoBehaviour
 
         stage = Stage.Idel;
         StartBattle();
-
     }
 
     private void Update()
     {
         if (stage == Stage.Stage_1)
         {
-            
+
+           paintCircleSpawn.StartSpawningBlobs();
         }
 
         if (stage == Stage.Stage_2)
         {
+
+            paintCircleSpawn.StopSpawningBlobs();
             SpawnEnemy();
         }
 
@@ -58,7 +61,6 @@ public class BossFight : MonoBehaviour
         }
 
         if (stage == Stage.Dead)
-
         {
             DestroyAllEnemy();
         }
@@ -66,7 +68,7 @@ public class BossFight : MonoBehaviour
 
     private void StartBattle()
     {
-        stage = Stage.Stage_1;
+        //stage = Stage.Stage_1;
     }
 
     private void SpawnEnemy()

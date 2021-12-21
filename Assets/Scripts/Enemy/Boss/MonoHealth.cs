@@ -23,19 +23,19 @@ public class MonoHealth : MonoBehaviour
 
         currentHealth -= damage;       
 
-        if (currentHealth < 800 && bossFight.stage == BossFight.Stage.Idel) //ANDRA TO STAGE 1
+        if (currentHealth < 80 && bossFight.stage == BossFight.Stage.Idel) //ANDRA TO STAGE 1
         {
             bossFight.stage = BossFight.Stage.Stage_1;            
             return;
         }
 
-        if (currentHealth < 500 && bossFight.stage == BossFight.Stage.Stage_1)
+        if (currentHealth < 50 && bossFight.stage == BossFight.Stage.Stage_1)
         {
             bossFight.stage = BossFight.Stage.Stage_2;            
             return;
         }
 
-        if (currentHealth < 200 && bossFight.stage == BossFight.Stage.Stage_2)
+        if (currentHealth < 20 && bossFight.stage == BossFight.Stage.Stage_2)
         {
             bossFight.stage = BossFight.Stage.Stage_3;
         

@@ -1253,21 +1253,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 154723144, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 154723144, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 154723145, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
-      propertyPath: numberOfPaintBlobs
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 934085702, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
       propertyPath: currentHealth
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 934085703, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
       propertyPath: spawnPositionList.Array.data[0]
@@ -1317,14 +1305,6 @@ PrefabInstance:
       propertyPath: spawnPositionList.Array.data[11]
       value: 
       objectReference: {fileID: 700834025}
-    - target: {fileID: 934085706, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 934085706, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1875096666, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
       propertyPath: movePoints.Array.data[0]
       value: 
@@ -2102,32 +2082,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832408701}
   m_CullTransparentMesh: 1
---- !u!1 &1875096665 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4407264836084964182, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
-  m_PrefabInstance: {fileID: 934085700}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1875096672
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875096665}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1890220990
 GameObject:
   m_ObjectHideFlags: 0

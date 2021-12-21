@@ -19,7 +19,7 @@ public class MonoMovmentState : MonoBehaviour
     {
         Movement();
         timer += Time.deltaTime;
-        if (timer > 5.05f)
+        if (timer > 2f)
         {
             randoming();
             timer = 0f;
