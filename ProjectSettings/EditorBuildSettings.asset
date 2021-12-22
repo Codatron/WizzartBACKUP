@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: be4fac09de7f1564aa0a05acc00f77f9
   - enabled: 1
+    path: Assets/Scenes/SceneAteljen.unity
+    guid: db2aecb16fc49d04dbd9874e6d3796b9
+  - enabled: 1
     path: Assets/Scenes/SpelTest.unity
     guid: 679d02ea191b5af4291a85b6c7211637
   - enabled: 0
@@ -20,9 +23,6 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/SceneAteljen.unity
-    guid: db2aecb16fc49d04dbd9874e6d3796b9
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

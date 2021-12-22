@@ -19,6 +19,8 @@ public class PlayerHit : MonoBehaviour
     public GameObject Prefab2;
     public GameObject Prefab3;
 
+    public GameObject deadGun;
+
     public AudioSource speaker;
     public GameObject gameOverScreen;
     public float invincibilityTime = 1.5f;
@@ -73,14 +75,15 @@ public class PlayerHit : MonoBehaviour
         {
             Time.timeScale = 0f;
             isGameOver = true;
+            Destroy(gameObject);
         }
     }
     private void Update()
     {
         HealthRef.integerA = playerHealthCurrent;
         HealthRef.integerB = playerHealthMax;
-        
-        if(isGameOver)
+
+        if (isGameOver)
         {
             gameOverScreen.SetActive(true);
         }
