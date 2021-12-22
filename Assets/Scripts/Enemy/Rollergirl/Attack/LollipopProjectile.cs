@@ -16,12 +16,15 @@ public class LollipopProjectile: MonoBehaviour
     
     private Transform player;
     private Vector2 target;
+    private float lifeSpan = 1.25f;
 
     private void Start()
     {
         //Makes lollipop find the position of the Player
         player = GameObject.FindGameObjectWithTag(targetName.ToString()).transform;
         target = player.position;
+
+        Destroy(gameObject, lifeSpan);
     }
 
     private void Update()

@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class BulletHit : MonoBehaviour
 {
-    public Rigidbody2D bulletRb;
-    public Sprite enemySpriteDead;
     int damageMono = 0;
+
+    private float lifeSpan = 0.5f;
+
+    private void Start()
+    {
+        Destroy(gameObject, lifeSpan);
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
