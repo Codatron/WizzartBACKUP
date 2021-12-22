@@ -20,7 +20,7 @@ public class PlayerHit : MonoBehaviour
     public GameObject Prefab3;
 
     public GameObject deadGun;
-
+    public Sprite playerCorpseSprite;
     public AudioSource speaker;
     public GameObject gameOverScreen;
     public float invincibilityTime = 1.5f;
@@ -69,26 +69,47 @@ public class PlayerHit : MonoBehaviour
         refHealthController.SetCurrentHealth(playerHealthCurrent);
     }
 
+    void KillMePlayer()
+    {
+        GameObject playerCorpse = new GameObject("enemyCorpse");
+        SpriteRenderer playerCorpseRenderer = playerCorpse.AddComponent<SpriteRenderer>();
+        playerCorpse.transform.position = transform.position;
+        playerCorpseRenderer.sprite = playerCorpseSprite;
+        playerCorpseRenderer.flipX = playerSpriteRenderer.flipX;
+        playerCorpseRenderer.transform.localScale = transform.localScale;
+        isGameOver = true;
+        Destroy(gameObject);
+    }
     void gameOver()
     {
         if (playerHit > 4)
         {
-            
             Time.timeScale = 0f;
-            isGameOver = true;
-            
         }
     }
+
     private void Update()
     {
         HealthRef.integerA = playerHealthCurrent;
         HealthRef.integerB = playerHealthMax;
 
-        if (isGameOver)
+        if (playerHit > 1)
         {
-            //Destroy(gameObject);
-            gameOverScreen.SetActive(true);
+            KillMePlayer();
+            float timeLimit = 1.5f;
+
+            if(Time.time > timeLimit)
+            {
+                Time.timeScale = 0f;
+                gameOverScreen.SetActive(true);
+            }
         }
+
+        //if (isGameOver)
+        //{
+        //    //Destroy(gameObject);
+        //    gameOverScreen.SetActive(true);
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -338,8 +338,10 @@ MonoBehaviour:
   Prefab1: {fileID: 3332534145781009569, guid: 0f8abd16943bca244bb97efcb8b7d26e, type: 3}
   Prefab2: {fileID: 2810520077929371884, guid: 8a17ccbe7c131534091da7f4697c5f3d, type: 3}
   Prefab3: {fileID: 2691085504822098689, guid: f2129ec5a7716584693bd82bd6867f08, type: 3}
+  deadGun: {fileID: 0}
   speaker: {fileID: 2374428678998479452}
   gameOverScreen: {fileID: 0}
+  playerCorpseSprite: {fileID: 0}
   invincibilityTime: 1.5
   HealthRef: {fileID: 11400000, guid: 790099cc4b9841a45b486e56b69f24bc, type: 2}
 --- !u!114 &2374428680422438473
@@ -5311,11 +5313,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2398815585731241150, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6100006
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 2398815585731241150, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.4299994
+      value: 6.95
       objectReference: {fileID: 0}
     - target: {fileID: 2398815585731241150, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
       propertyPath: m_LocalPosition.z
