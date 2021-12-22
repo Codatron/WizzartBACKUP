@@ -16,7 +16,7 @@ public class PickUpBomb : MonoBehaviour
 
 
     private BoolKeeper refBoolKeeper;
-    private int bombCounter = 0;
+    public int bombCounter = 0;
 
     public SpawnBomb refSpawnBomb;
 
@@ -84,6 +84,7 @@ public class PickUpBomb : MonoBehaviour
     private void bombExposition()
     {
         Destroy(clone,2);
+        StartCoroutine(cameraShake.Shake(.15f, .4f));
         Invoke(nameof(ChangeFactory), 2);
     }
 }
