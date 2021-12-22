@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class SpawnBomb : MonoBehaviour
 {
-
     public GameObject objectToSpaw;
+    public GameObject bombSpawnPlace;
     public float spawnRate = 3f;
     
     private float lifeTime = 15f;
     private float nextSpawn = 2f;
     private int maxPickUp = 1;
-    private int pickUpCounter;
+    public int bombSpawnCounter = 0;
 
     private void Update()
     {
@@ -20,16 +20,12 @@ public class SpawnBomb : MonoBehaviour
 
     void spawnPickUp()
     {
-        if (Time.time > nextSpawn && pickUpCounter < maxPickUp)
+        if (bombSpawnCounter < maxPickUp)
         {
             nextSpawn = Time.time + spawnRate;
-            Vector2 whereToSpawn = new Vector2(Random.Range(-14f, 14f), Random.Range(-25f, 25f));
+            Vector2 whereToSpawn = new Vector2(bombSpawnPlace.transform.position.x, bombSpawnPlace.transform.position.y);
             GameObject clone = Instantiate(objectToSpaw, whereToSpawn, Quaternion.identity);
-            pickUpCounter++;
-
-            Destroy(clone, lifeTime);
-        }
-
-        pickUpCounter = 0;
+            bombSpawnCounter++;          
+        }    
     }
 }

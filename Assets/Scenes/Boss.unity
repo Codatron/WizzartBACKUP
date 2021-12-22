@@ -291,6 +291,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154723145 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 154723145, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
+  m_PrefabInstance: {fileID: 934085700}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b75f4345de44474082f20a17c23524d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &224882126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,6 +1269,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 934085703, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
+      propertyPath: paintCircleSpawn
+      value: 
+      objectReference: {fileID: 154723145}
+    - target: {fileID: 934085703, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
       propertyPath: spawnPositionList.Array.data[0]
       value: 
       objectReference: {fileID: 1405468556}
@@ -1305,6 +1320,10 @@ PrefabInstance:
       propertyPath: spawnPositionList.Array.data[11]
       value: 
       objectReference: {fileID: 700834025}
+    - target: {fileID: 1875096666, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1875096666, guid: bf2910ea09e727a42870f03ab941babd, type: 3}
       propertyPath: movePoints.Array.data[0]
       value: 
