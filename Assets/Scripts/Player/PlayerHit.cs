@@ -73,9 +73,10 @@ public class PlayerHit : MonoBehaviour
     {
         if (playerHit > 4)
         {
+            
             Time.timeScale = 0f;
             isGameOver = true;
-            Destroy(gameObject);
+            
         }
     }
     private void Update()
@@ -85,6 +86,7 @@ public class PlayerHit : MonoBehaviour
 
         if (isGameOver)
         {
+            //Destroy(gameObject);
             gameOverScreen.SetActive(true);
         }
     }
