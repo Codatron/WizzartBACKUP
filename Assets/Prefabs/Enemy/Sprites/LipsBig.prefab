@@ -263,4 +263,3 @@ MonoBehaviour:
   force: 10
   stopDistance: 1
   alertDistance: 7
-  isTargetInSight: 0

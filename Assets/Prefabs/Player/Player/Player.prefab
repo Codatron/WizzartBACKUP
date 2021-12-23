@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1376815586}
   - component: {fileID: 1376815587}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: MuzzleFlash
   m_TagString: MuzzleFlash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 1, g: 0.9877009, b: 0.83396226, a: 1}
   m_FlipX: 0
@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 2427590875717892651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -24, y: -16, z: 0}
-  m_LocalScale: {x: 0.125, y: 0.1209, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_Children:
   - {fileID: 3083688110134356288}
   - {fileID: 2374428679382569707}
@@ -339,9 +339,9 @@ MonoBehaviour:
   Prefab2: {fileID: 2810520077929371884, guid: 8a17ccbe7c131534091da7f4697c5f3d, type: 3}
   Prefab3: {fileID: 2691085504822098689, guid: f2129ec5a7716584693bd82bd6867f08, type: 3}
   deadGun: {fileID: 0}
+  playerCorpseSprite: {fileID: 0}
   speaker: {fileID: 2374428678998479452}
   gameOverScreen: {fileID: 0}
-  playerCorpseSprite: {fileID: 0}
   invincibilityTime: 1.5
   HealthRef: {fileID: 11400000, guid: 790099cc4b9841a45b486e56b69f24bc, type: 2}
 --- !u!114 &2374428680422438473
