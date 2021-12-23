@@ -10,6 +10,7 @@ public class CameraControl : MonoBehaviour
     public float minX;
     public float maxY;
     public float minY;
+    
     void Start()
     {
         Camera camera = Camera.main;

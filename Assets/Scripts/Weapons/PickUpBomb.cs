@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using EZCameraShake;
 
 public class PickUpBomb : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PickUpBomb : MonoBehaviour
     public GameObject factory_1;
     public GameObject boom;
     public Sprite factory_2;
+    public Sprite factory_3;
     public GameObject clone;
     public CameraShake cameraShake;
     public SpawnBomb refSpawnBomb;
@@ -34,22 +36,19 @@ public class PickUpBomb : MonoBehaviour
         {          
             Boom();
 
-            StartCoroutine(cameraShake.Shake(.15f, .4f));
+           
             factory_1.GetComponent<SpriteRenderer>().sprite = factory_2;
         }
 
         if (bombCounter == 2)
         {
             Boom();
-            factory_1.GetComponent<SpriteRenderer>().sprite = factory_2;//ANDRA HAR
+            factory_1.GetComponent<SpriteRenderer>().sprite = factory_3;//ANDRA HAR
         }
 
         if (bombCounter == 3)
-        {
-            GameObject boomClone = Instantiate(boom, boomPlace.transform.position, Quaternion.identity); //Byt bild har
-            Destroy(boomClone, 0.8f);
-
-            StartCoroutine(cameraShake.Shake(.15f, .4f));
+        { 
+            Boom();
             factory_1.GetComponent<SpriteRenderer>().sprite = factory_2;//ANDRA HAR
         }
     }
@@ -58,6 +57,8 @@ public class PickUpBomb : MonoBehaviour
     {
         GameObject boomClone = Instantiate(boom, boomPlace.transform.position, Quaternion.identity);
         Destroy(boomClone, 0.8f);
+
+        //CameraShaker.Instance.ShakeOnce(6f,6f,.1f,1f);
 
         StartCoroutine(cameraShake.Shake(.15f, .4f));
     }
@@ -72,7 +73,7 @@ public class PickUpBomb : MonoBehaviour
             Destroy(other.gameObject);    
         }
 
-        if (other.gameObject.CompareTag("Factory")) //TO DO FIX
+        if (other.gameObject.CompareTag("Factory") && GetComponent<SpriteRenderer>().enabled == true) //TO DO BOX COLLIDER FoLJER INTE MED NAR MAN BYTER
         {
             GetComponent<SpriteRenderer>().enabled = false;
             GameObject.FindGameObjectWithTag("Gun").GetComponent<SpriteRenderer>().enabled = true;
