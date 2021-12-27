@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: b8b43c6515b3f2d46bcbbb1d1f8a2350
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2317238225015883372
+    second: Popart_Assets_ts_0
+  - first:
+      213: -7551818717849091003
+    second: Popart_Assets_ts_1
+  - first:
+      213: 2906738286713433146
+    second: Popart_Assets_ts_2
+  - first:
+      213: -7633057162908478355
+    second: Popart_Assets_ts_3
+  - first:
+      213: -5410408253201617095
+    second: Popart_Assets_ts_4
+  - first:
+      213: 8565279105249060909
+    second: Popart_Assets_ts_5
+  - first:
+      213: 4780516113469415572
+    second: Popart_Assets_ts_6
+  - first:
+      213: -6760261201074421658
+    second: Popart_Assets_ts_7
+  - first:
+      213: 7828508166787741598
+    second: Popart_Assets_ts_8
+  - first:
+      213: -8662383037290022880
+    second: Popart_Assets_ts_9
+  - first:
+      213: 6293762381348007147
+    second: Popart_Assets_ts_10
+  - first:
+      213: 805646299510153740
+    second: Popart_Assets_ts_11
+  - first:
+      213: -3242504124483332438
+    second: Popart_Assets_ts_12
+  - first:
+      213: 1237870902328037703
+    second: Popart_Assets_ts_13
+  - first:
+      213: -3160297828072381447
+    second: Popart_Assets_ts_14
+  - first:
+      213: 38785808198415089
+    second: Popart_Assets_ts_15
+  - first:
+      213: 4418948000416891744
+    second: Popart_Assets_ts_16
+  - first:
+      213: 2247776863672646507
+    second: Popart_Assets_ts_17
+  - first:
+      213: 123860173236469041
+    second: Popart_Assets_ts_18
+  - first:
+      213: 8183408198893978523
+    second: Popart_Assets_ts_19
+  - first:
+      213: -4929229813044517918
+    second: Popart_Assets_ts_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 120
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Popart_Assets_ts_0
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 921
+        width: 82
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66470e63eb782020800000000000000
+      internalID: 2317238225015883372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_1
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 927
+        width: 82
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544857a23ec823790800000000000000
+      internalID: -7551818717849091003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_2
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 921
+        width: 110
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ce49a321fc65820800000000000000
+      internalID: 2906738286713433146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_3
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1097
+        width: 155
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64d696b3fee11690800000000000000
+      internalID: -7633057162908478355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_4
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1098
+        width: 267
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f631afb5e5ae4b0800000000000000
+      internalID: -5410408253201617095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_5
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 1097
+        width: 155
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28227627fbfdd670800000000000000
+      internalID: 8565279105249060909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_6
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 621
+        width: 120
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4902062b31ec75240800000000000000
+      internalID: 4780516113469415572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_7
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 596
+        width: 114
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6608a19414abe22a0800000000000000
+      internalID: -6760261201074421658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_8
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 609
+        width: 114
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97b0a253b274ac60800000000000000
+      internalID: 7828508166787741598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_9
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 693
+        width: 155
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02875f9d58809c780800000000000000
+      internalID: -8662383037290022880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_10
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 694
+        width: 267
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bece6f04a8fe75750800000000000000
+      internalID: 6293762381348007147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_11
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 693
+        width: 155
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0229e87a0b3e2b00800000000000000
+      internalID: 805646299510153740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_12
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 628
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa69e65adaf4003d0800000000000000
+      internalID: -3242504124483332438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_13
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 404
+        width: 120
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7411e03f60dcd2110800000000000000
+      internalID: 1237870902328037703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_14
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 126
+        width: 339
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3ae4d8edd5424d0800000000000000
+      internalID: -3160297828072381447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_15
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 338
+        width: 114
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f23effac7bc98000800000000000000
+      internalID: 38785808198415089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_16
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 295
+        width: 155
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06385c53bc1435d30800000000000000
+      internalID: 4418948000416891744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_17
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 296
+        width: 267
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6bbc85f525b13f10800000000000000
+      internalID: 2247776863672646507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_18
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 295
+        width: 155
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13df39bdb2a08b100800000000000000
+      internalID: 123860173236469041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_19
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 86
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93481b366e419170800000000000000
+      internalID: 8183408198893978523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Popart_Assets_ts_20
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 34
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e36739e99bd79bb0800000000000000
+      internalID: -4929229813044517918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
