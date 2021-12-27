@@ -18,6 +18,9 @@ public class PlayerHit : MonoBehaviour
     public GameObject Prefab1;
     public GameObject Prefab2;
     public GameObject Prefab3;
+    public GameObject Prefab4;
+    public GameObject Prefab5;
+    public GameObject Prefab6;
 
     public GameObject deadGun;
     public Sprite playerCorpseSprite;
@@ -32,7 +35,7 @@ public class PlayerHit : MonoBehaviour
     private bool invincible = false;
     private int playerHit;
     private int hpLost = 1;
-    private int playerHealthMax = 5;
+    private int playerHealthMax = 10;
     private int playerHealthCurrent;
     public Integer2 HealthRef;
 
@@ -54,6 +57,9 @@ public class PlayerHit : MonoBehaviour
         prefabList.Add(Prefab1);
         prefabList.Add(Prefab2);
         prefabList.Add(Prefab3);
+        prefabList.Add(Prefab4);
+        prefabList.Add(Prefab5);
+        prefabList.Add(Prefab6);
 
         //Add sound when hit to list
         hitSoundList.Add(Sound1);
@@ -78,11 +84,11 @@ public class PlayerHit : MonoBehaviour
         playerCorpseRenderer.flipX = playerSpriteRenderer.flipX;
         playerCorpseRenderer.transform.localScale = transform.localScale;
         isGameOver = true;
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
     void gameOver()
     {
-        if (playerHit > 4)
+        if (playerHit >= 10)
         {
             Time.timeScale = 0f;
         }
@@ -93,7 +99,7 @@ public class PlayerHit : MonoBehaviour
         HealthRef.integerA = playerHealthCurrent;
         HealthRef.integerB = playerHealthMax;
 
-        if (playerHit > 1)
+        if (playerHit >= 10)
         {
             KillMePlayer();
             float timeLimit = 1.5f;
@@ -115,7 +121,7 @@ public class PlayerHit : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         //For random play/sprite
-        int prefabIndex = UnityEngine.Random.Range(0, 3);
+        int prefabIndex = UnityEngine.Random.Range(0, 5);
         int soundIndex = UnityEngine.Random.Range(0, 4);
 
         if (!invincible)
@@ -142,7 +148,7 @@ public class PlayerHit : MonoBehaviour
 
                 //TODO lagg till så att ett ljud får spelas klart innan nästa
 
-                if (playerHit > 4)
+                if (playerHit >= 10)
                 {
                     Time.timeScale = 0f;
                     isGameOver = true;

@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         pauseMenuUI.SetActive(false);
+        Resume();
     }
     
     private void Update()
