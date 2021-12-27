@@ -113,5 +113,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetName: 0
-  speed: 12.5
+  speed: 16
   rotationSpeed: 0
