@@ -86,8 +86,7 @@ public class Gun : MonoBehaviour
     }
 
     private void Reload()
-    {
-              
+    {              
             ammoCount = 50;
             speaker.PlayOneShot(refill);
             refBoolKeeper.dontShoot = true;
