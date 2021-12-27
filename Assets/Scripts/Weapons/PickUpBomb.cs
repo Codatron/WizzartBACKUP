@@ -60,7 +60,11 @@ public class PickUpBomb : MonoBehaviour
 
         //CameraShaker.Instance.ShakeOnce(6f,6f,.1f,1f);
 
-        StartCoroutine(cameraShake.Shake(.15f, .4f));
+        StartCoroutine(cameraShake.Shake(.25f, .8f)); //LAGG TILL SMOOTHING
+
+        //Vector3.Lerp (vector3pos, vector3pos you want, smoothingfloat)
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
