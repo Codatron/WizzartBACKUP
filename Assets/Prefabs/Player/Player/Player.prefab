@@ -369,6 +369,9 @@ MonoBehaviour:
   Prefab1: {fileID: 3332534145781009569, guid: 0f8abd16943bca244bb97efcb8b7d26e, type: 3}
   Prefab2: {fileID: 2810520077929371884, guid: 8a17ccbe7c131534091da7f4697c5f3d, type: 3}
   Prefab3: {fileID: 2691085504822098689, guid: f2129ec5a7716584693bd82bd6867f08, type: 3}
+  Prefab4: {fileID: 0}
+  Prefab5: {fileID: 0}
+  Prefab6: {fileID: 0}
   deadGun: {fileID: 52778683023559438, guid: 4d8588da6d29c7f4d9445af892422f2c, type: 3}
   playerCorpseSprite: {fileID: 0}
   speaker: {fileID: 2374428678998479452}
@@ -5475,6 +5478,10 @@ PrefabInstance:
     - target: {fileID: 5085415946498263694, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7572246243167708581, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
+      propertyPath: refill
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7572246243167708581, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
       propertyPath: slider
