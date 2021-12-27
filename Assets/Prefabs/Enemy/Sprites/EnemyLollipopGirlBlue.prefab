@@ -102,7 +102,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 06a8ab57c32c4c74ebfae31a0b8634f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3dc56834564c804da5394b60b2d18e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lollipopPrefab: {fileID: 3010701067807811637, guid: 36afd17077987f844ad28c16695cace0, type: 3}
+  lollipopPrefab: {fileID: 2493050801279447107, guid: eaf86ff8c04e30441bab43004b76d1a6, type: 3}
   firePoint: {fileID: 924403637}
   fireRate: 3
 --- !u!114 &-5170554189899397346

@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &211555466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 211555467}
+  m_Layer: 0
+  m_Name: CameraFollow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &211555467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211555466}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2427590875717892631}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1376815585
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +179,7 @@ Transform:
   - {fileID: 3083688110134356288}
   - {fileID: 2374428679382569707}
   - {fileID: 733829487083432598}
+  - {fileID: 211555467}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -338,7 +369,7 @@ MonoBehaviour:
   Prefab1: {fileID: 3332534145781009569, guid: 0f8abd16943bca244bb97efcb8b7d26e, type: 3}
   Prefab2: {fileID: 2810520077929371884, guid: 8a17ccbe7c131534091da7f4697c5f3d, type: 3}
   Prefab3: {fileID: 2691085504822098689, guid: f2129ec5a7716584693bd82bd6867f08, type: 3}
-  deadGun: {fileID: 0}
+  deadGun: {fileID: 52778683023559438, guid: 4d8588da6d29c7f4d9445af892422f2c, type: 3}
   playerCorpseSprite: {fileID: 0}
   speaker: {fileID: 2374428678998479452}
   gameOverScreen: {fileID: 0}
@@ -373,7 +404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3083688110134356288
 Transform:
   m_ObjectHideFlags: 0
@@ -5355,6 +5386,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: BombHands
       objectReference: {fileID: 0}
+    - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
+      propertyPath: boom
+      value: 
+      objectReference: {fileID: 2532445909582639313, guid: efcbf25dac45486489ffc94050c9b549, type: 3}
+    - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
+      propertyPath: clone
+      value: 
+      objectReference: {fileID: 3776409425967241247, guid: e27b9c338884f764e8ab0db35087f7ac, type: 3}
+    - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
+      propertyPath: factory_2
+      value: 
+      objectReference: {fileID: 21300000, guid: 6f2f3b767bb6c4d4892a1f4e68fc9634, type: 3}
+    - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
+      propertyPath: factory_3
+      value: 
+      objectReference: {fileID: 21300000, guid: b5ac13530ca3c664ea58ed93cd281ac0, type: 3}
     - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
       propertyPath: dropBombPos
       value: 
