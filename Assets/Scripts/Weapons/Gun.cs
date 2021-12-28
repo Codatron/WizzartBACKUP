@@ -90,7 +90,7 @@ public class Gun : MonoBehaviour
             ammoCount = 50;
             speaker.PlayOneShot(refill);
             refBoolKeeper.dontShoot = true;
-            Invoke("DontShoot", 1.5f);     
+            Invoke("DontShoot", 1.0f);     
     }
 
     void DontShoot()
