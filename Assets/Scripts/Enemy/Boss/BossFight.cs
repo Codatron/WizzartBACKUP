@@ -23,13 +23,16 @@ public class BossFight : MonoBehaviour
 
     public GameObject paintEnemy1;
     public GameObject paintEnemy2;
+    
 
     int spawnEnemycounter;
     int maxEnemy = 15;
     private float nextSpawn;
     public float spawnRate;
-
+   
     public PaintCircleSpawn paintCircleSpawn;
+    public MonoClones MonoClones;
+    public MonoShoot MonoShoot;
 
     private void Start()
     {
@@ -42,29 +45,40 @@ public class BossFight : MonoBehaviour
 
     private void Update()
     {
-        if (stage == Stage.Stage_1)
+        if (stage == Stage.Idel) //TODO SWITHC
         {
 
-           paintCircleSpawn.StartSpawningBlobs();
+            MonoShoot.MonoShoots();
+        }
+
+
+        if (stage == Stage.Stage_1) //TODO SWITHC
+        {
+
+            SpawnEnemy();
+            MonoShoot.MonoShoots();
         }
 
         if (stage == Stage.Stage_2)
         {
-
-            paintCircleSpawn.StopSpawningBlobs();
+            paintCircleSpawn.StartSpawningBlobs();
             SpawnEnemy();
         }
 
         if (stage == Stage.Stage_3)
-        {
-            
+        {            
+            paintCircleSpawn.StopSpawningBlobs();
+            MonoClones.MonoClone();
+            MonoShoot.MonoShoots();
+            DestroyAllEnemy();
         }
 
         if (stage == Stage.Dead)
         {
-            DestroyAllEnemy();
+            
         }
     }
+
 
     private void StartBattle()
     {

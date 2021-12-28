@@ -40,6 +40,8 @@ TagManager:
   - MuzzleFlashWhite
   - EnemyLipsBig
   - EnemyLipsSmall
+  - Environment
+  - MonoClone
   layers:
   - Default
   - TransparentFX
