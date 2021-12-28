@@ -15,7 +15,7 @@ public class BulletHit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("EnemyLollipopGirlBlue") || other.gameObject.CompareTag("EnemyLips") || other.gameObject.CompareTag("EnemyLollipopGirlPink")|| other.gameObject.CompareTag("PaintEnemy"))
+        if (other.gameObject.CompareTag("EnemyLollipopGirlBlue") || other.gameObject.CompareTag("EnemyLips") || other.gameObject.CompareTag("EnemyLollipopGirlPink")|| other.gameObject.CompareTag("PaintEnemy") || other.gameObject.CompareTag("Environment"))
         {
             Destroy(gameObject);
         }
