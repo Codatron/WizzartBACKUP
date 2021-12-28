@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem dust;
     public AudioSource playerRunning;
     public SpriteRenderer playerSpriteRenderer;
-    
+
+    private NPCController npc;
     private Rigidbody2D player;
     private float xAxis;
     private float yAxis;
@@ -52,5 +53,31 @@ public class PlayerController : MonoBehaviour
     void CreateDust()
     {
         dust.Play();
+    }
+    private bool inDialogue()
+    {
+        //TODO make time stop when in dialogue 
+
+        if(npc != null)
+        
+            return npc.DialogueActive();
+        else
+            return false;
+     
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == ("Ally"))
+        {
+            npc = collision.gameObject.GetComponent<NPCController>();
+
+            Debug.Log("Hi!");
+            if (Input.GetKey(KeyCode.E))
+            npc.ActivateDialogue();
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        npc = null;
     }
 }
