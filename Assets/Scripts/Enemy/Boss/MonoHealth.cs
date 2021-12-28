@@ -6,6 +6,7 @@ public class MonoHealth : MonoBehaviour
 {
     public int currentHealth;
     BossFight bossFight;
+    public SpriteRenderer monoSpriteRenderer;
 
     private void Start()
     {
@@ -15,7 +16,8 @@ public class MonoHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        
+        StartCoroutine(MonoTakeDamageColour());
+
         if (bossFight.stage == BossFight.Stage.Dead)
         {
             return;
@@ -37,6 +39,7 @@ public class MonoHealth : MonoBehaviour
 
         if (currentHealth < 20 && bossFight.stage == BossFight.Stage.Stage_2)
         {
+            
             bossFight.stage = BossFight.Stage.Stage_3;
         
             return;
@@ -49,6 +52,17 @@ public class MonoHealth : MonoBehaviour
            
             // gameObject.GetComponent<Animator>().Play("Dying");
         }
+    }
+
+    IEnumerator MonoTakeDamageColour()
+    {
+        monoSpriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.05f);
+        monoSpriteRenderer.color = Color.clear;
+        yield return new WaitForSeconds(0.05f);
+        monoSpriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.05f);
+        monoSpriteRenderer.color = Color.white;
     }
 }
 

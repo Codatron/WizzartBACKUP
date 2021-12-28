@@ -131,9 +131,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiRb: {fileID: 1860392362154862016}
-  speed: 2500
+  speed: 1700
   nextWaypointDistance: 1
   attackDistance: 20
+  isTargetWithinRange: 0
 --- !u!114 &1860392362154862021
 MonoBehaviour:
   m_ObjectHideFlags: 0
