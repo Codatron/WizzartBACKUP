@@ -15,10 +15,30 @@ public class DialogManager : MonoBehaviour
     {
         Instance = this;
     }
+    Dialog dialog;
+    int currentLine = 0;
     public void ShowDialog(Dialog dialog)
     {
+        this.dialog = dialog;
         dialogBox.SetActive(true);
         StartCoroutine(TypeDialog(dialog.Lines[0]));
+    }
+    public void CycleDialog()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ++currentLine;
+
+            if(currentLine < dialog.Lines.Count)
+            {
+                StartCoroutine(TypeDialog(dialog.Lines[currentLine]));
+            }
+            else
+            {
+                dialogBox.SetActive(false);
+                
+            }
+        }
     }
 
     public IEnumerator TypeDialog(string line)
