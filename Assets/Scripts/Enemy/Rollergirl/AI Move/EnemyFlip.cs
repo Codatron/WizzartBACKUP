@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class EnemyFlip : MonoBehaviour
 {
-    public Sprite enemySpriteFront;
-    public Sprite enemySpriteBack;
+    public Sprite enemySpriteFrontA;
+    public Sprite enemySpriteFrontB;
+    public Sprite enemySpriteBackA;
+    public Sprite enemySpriteBackB;
     public SpriteRenderer enemySpriteRenderer;
     //public Transform firePoint;
 
     private Transform player;
     private bool isOverY;
+    private float timeToNextChange = 0.667f;
+    private float time;
 
     // Start is called before the first frame update
     void Start()
@@ -21,17 +25,41 @@ public class EnemyFlip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        time += Time.deltaTime;
         enemySpriteRenderer.flipX = player.position.x < transform.position.x;
         isOverY = player.position.y > transform.position.y;
-        enemySpriteRenderer.sprite = isOverY ? enemySpriteBack : enemySpriteFront;
 
-        //if (enemySpriteRenderer.flipX)
-        //{
-        //    firePoint.localScale = new Vector3(-0.175f, -0.175f, 1.0f);
-        //}
-        //else
-        //{
-        //    firePoint.localScale = new Vector3(0.175f, 0.175f, 1.0f);
-        //}
+        if (time > timeToNextChange)
+        {
+            if (!isOverY)
+            {
+                if (enemySpriteRenderer.sprite == enemySpriteFrontB)
+                {
+                    enemySpriteRenderer.sprite = enemySpriteFrontA;
+                }
+                else
+                {
+                    enemySpriteRenderer.sprite = enemySpriteFrontB;
+                }
+
+                time = 0.0f;
+            }
+            else
+            {
+                if (enemySpriteRenderer.sprite == enemySpriteBackB)
+                {
+                    enemySpriteRenderer.sprite = enemySpriteBackA;
+                }
+                else
+                {
+                    enemySpriteRenderer.sprite = enemySpriteBackB;
+                }
+
+                time = 0.0f;
+            }
+
+            time = 0.0f;
+        }      
+        //enemySpriteRenderer.sprite = isOverY ? enemySpriteBackA : enemySpriteFrontA;
     }
 }

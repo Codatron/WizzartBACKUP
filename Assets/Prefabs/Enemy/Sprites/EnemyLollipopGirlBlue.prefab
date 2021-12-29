@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924403636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalPosition: {x: 0, y: 0.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5015918794287940046}
@@ -103,7 +103,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 06a8ab57c32c4c74ebfae31a0b8634f2, type: 3}
+  m_Sprite: {fileID: -5917115579450213187, guid: a44034680f3d9ae4c89e4c7b1af8a3b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846719022639033286}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6790572890b0c1341aaf78eca8d179a2, type: 3}
   m_Name: 
@@ -166,7 +166,7 @@ Transform:
   m_GameObject: {fileID: 8697673302569838742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.85, y: 0.89, z: 0}
-  m_LocalScale: {x: 0.175, y: 0.175, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5015918794287940046}
   m_Father: {fileID: 0}
@@ -192,7 +192,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Constraints: 4
 --- !u!70 &1829461455
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -206,8 +206,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.26, y: 6.91}
-  m_Size: {x: 3.54, y: 8.02}
+  m_Offset: {x: 0.02, y: 1.06}
+  m_Size: {x: 0.62, y: 1.68}
   m_Direction: 0
 --- !u!114 &8697673302569838737
 MonoBehaviour:
@@ -266,8 +266,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a880780dee70348ab419fc0e7a1a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpriteFront: {fileID: 21300000, guid: 06a8ab57c32c4c74ebfae31a0b8634f2, type: 3}
-  enemySpriteBack: {fileID: 21300000, guid: 73c5913c265e3b54ab53bc0f2ee41aca, type: 3}
+  enemySpriteFrontA: {fileID: -5917115579450213187, guid: a44034680f3d9ae4c89e4c7b1af8a3b6, type: 3}
+  enemySpriteFrontB: {fileID: 8159458256136534987, guid: a44034680f3d9ae4c89e4c7b1af8a3b6, type: 3}
+  enemySpriteBackA: {fileID: -6053591037491099815, guid: a44034680f3d9ae4c89e4c7b1af8a3b6, type: 3}
+  enemySpriteBackB: {fileID: 7723392101171285792, guid: a44034680f3d9ae4c89e4c7b1af8a3b6, type: 3}
   enemySpriteRenderer: {fileID: 2037523870020670773}
 --- !u!114 &-8852916138026780274
 MonoBehaviour:
@@ -297,7 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySpriteRenderer: {fileID: 2037523870020670773}
-  corpseSprite: {fileID: 21300000, guid: bc1a7c6f042f80b49ad8ff22d943db5a, type: 3}
+  corpseSprite: {fileID: 5484397287130244845, guid: a44034680f3d9ae4c89e4c7b1af8a3b6, type: 3}
   lipsSmallPrefab: {fileID: 0}
   hitPointsMax: 3
   numberInSwarm: 0
