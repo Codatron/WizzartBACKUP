@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 namespace DialogueSystem
+   
 {
 
 public class DialogueBaseClass : MonoBehaviour
     {
        public bool finished { get; protected set; }
-       protected IEnumerator WriteText(string input, Text textHolder,  float delay, AudioClip sound, float delayBetweenLines)
+       protected IEnumerator WriteText(string input, TextMeshProUGUI textHolder,  float delay, AudioClip sound, float delayBetweenLines)
        {
             for (int i = 0; i < input.Length; i++)
            {
