@@ -1,35 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1310368024
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1310368025}
-  m_Layer: 0
-  m_Name: FirePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1310368025
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310368024}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.45999998, y: -1.4200001, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7840284031961407589}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1611111573765816957
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,7 +82,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 1611111573765816946}
-  - {fileID: 1310368025}
+  - {fileID: 2289066883168272251}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -240,7 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwShots: 2
   fireRate: 2
-  firePoint: {fileID: 1310368025}
+  firePoint: {fileID: 0}
   paintShoot: {fileID: 1547307247055698776, guid: 355fb3ec3eef8cc42a3ea4055dd0aecc, type: 3}
 --- !u!114 &6108591582717200337
 MonoBehaviour:
@@ -272,8 +242,8 @@ MonoBehaviour:
   paintEnemy2: {fileID: 3247442076611821051, guid: 958bc0d1b7d43c7418f8ee2f4a38eaf6, type: 3}
   spawnRate: 2
   paintCircleSpawn: {fileID: 1611111573765816947}
-  MonoClones: {fileID: -2648444039507967539}
-  MonoShoot: {fileID: 294846164}
+  monoClones: {fileID: 0}
+  monoShoot: {fileID: 0}
 --- !u!114 &-2648444039507967539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,3 +259,33 @@ MonoBehaviour:
   clonePoints: []
   monoClone: {fileID: 7527845643012428061, guid: c67f5a585a66c3440b9c996497136672, type: 3}
   refBoolKeeper: {fileID: 0}
+--- !u!1 &5016198693007059165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2289066883168272251}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2289066883168272251
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5016198693007059165}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.3, y: -1.3, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7840284031961407589}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

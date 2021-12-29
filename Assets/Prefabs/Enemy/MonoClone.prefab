@@ -13,11 +13,11 @@ GameObject:
   - component: {fileID: 2989823168794579958}
   - component: {fileID: 9045004679480810576}
   - component: {fileID: 2804286119567233046}
-  - component: {fileID: 8820873329981479694}
   - component: {fileID: 8233433596199926725}
+  - component: {fileID: 2993445839436829238}
   m_Layer: 0
   m_Name: MonoClone
-  m_TagString: MonoClone
+  m_TagString: Mono
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,7 +147,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8820873329981479694
+--- !u!114 &8233433596199926725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527845643012428061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d4b2f0e64172a428fa3bc586dc9364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 50
+  monoSpriteRenderer: {fileID: 8919775490882595921}
+--- !u!114 &2993445839436829238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,20 +177,6 @@ MonoBehaviour:
   fireRate: 2
   firePoint: {fileID: 1522952550997213618}
   paintShoot: {fileID: 1547307247055698776, guid: 355fb3ec3eef8cc42a3ea4055dd0aecc, type: 3}
---- !u!114 &8233433596199926725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7527845643012428061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d4b2f0e64172a428fa3bc586dc9364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 50
-  monoSpriteRenderer: {fileID: 8919775490882595921}
 --- !u!1001 &8123741737985206887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191,6 +191,10 @@ PrefabInstance:
     - target: {fileID: 7322792894768196565, guid: c5a31d3dab4ac244588abbaa71947816, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7322792894768196565, guid: c5a31d3dab4ac244588abbaa71947816, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7322792894768196565, guid: c5a31d3dab4ac244588abbaa71947816, type: 3}
       propertyPath: m_LocalPosition.x

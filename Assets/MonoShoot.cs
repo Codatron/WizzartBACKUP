@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MonoShoot : MonoBehaviour
 {
-
     private float timeBtwShots;
     public float startTimeBtwShots;
     public float fireRate;
@@ -14,12 +13,6 @@ public class MonoShoot : MonoBehaviour
     void Start()
     {
         timeBtwShots = fireRate;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void MonoShoots()

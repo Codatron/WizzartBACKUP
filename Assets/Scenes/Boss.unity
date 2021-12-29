@@ -264,7 +264,7 @@ Transform:
   - {fileID: 1213842082}
   - {fileID: 1604895619}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &224882127 stripped
 Transform:
@@ -431,6 +431,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 100
   monoSpriteRenderer: {fileID: 294846170}
+--- !u!114 &294846165 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -2648444039507967539, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
+  m_PrefabInstance: {fileID: 1611111572984358270}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294846163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb697811b90f7624fa16c327da3cb485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &294846170 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 5536855720576252951, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
@@ -1928,6 +1939,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -2648444039507967539, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
+      propertyPath: monoClone
+      value: 
+      objectReference: {fileID: 7527845643012428061, guid: c67f5a585a66c3440b9c996497136672, type: 3}
+    - target: {fileID: -2648444039507967539, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
       propertyPath: refBoolKeeper
       value: 
       objectReference: {fileID: 1604895620}
@@ -1959,6 +1974,10 @@ PrefabInstance:
       propertyPath: clonePoints.Array.data[5]
       value: 
       objectReference: {fileID: 1405468556}
+    - target: {fileID: 294846164, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1611111572984358256, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -1995,6 +2014,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mono
       objectReference: {fileID: 0}
+    - target: {fileID: 5832915655468161950, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6108591582717200337, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
+      propertyPath: monoShoot
+      value: 
+      objectReference: {fileID: 2993445839436829238, guid: c67f5a585a66c3440b9c996497136672, type: 3}
+    - target: {fileID: 6108591582717200337, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
+      propertyPath: monoClones
+      value: 
+      objectReference: {fileID: 294846165}
     - target: {fileID: 6108591582717200337, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
       propertyPath: spawnPositionList.Array.data[0]
       value: 
@@ -2098,7 +2129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5758417037651295012, guid: 900a5c3d712173b4ab0e7bb42318797c, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5758417037651295012, guid: 900a5c3d712173b4ab0e7bb42318797c, type: 3}
       propertyPath: m_LocalPosition.x
