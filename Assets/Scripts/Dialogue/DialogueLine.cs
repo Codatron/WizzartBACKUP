@@ -11,8 +11,8 @@ namespace DialogueSystem
 
         [Header("Text Options")]
         [SerializeField] private string input;
-        [SerializeField] private Color textColor;
-        [SerializeField] private Font textFont;
+        //[SerializeField] private Color textColor;
+        //[SerializeField] private Font textFont;
 
         [Header("Time parameters")]
         [SerializeField] private float delay;
@@ -36,12 +36,13 @@ namespace DialogueSystem
         private void OnEnable()
         {
             ResetLine();
-            lineAppear = (WriteText(input, textHolder, textColor, textFont, delay, sound, delayBetweenLines));
+            //textColor, textFont,
+            lineAppear = (WriteText(input, textHolder,  delay, sound, delayBetweenLines));
             StartCoroutine(lineAppear);
         }
         private void Update()
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (textHolder.text != input)
                 {

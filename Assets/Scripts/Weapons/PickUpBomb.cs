@@ -94,10 +94,10 @@ public class PickUpBomb : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Jump"))
-        {
-            PlayExplosion();
-        }
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    PlayExplosion();
+        //}
     }
 
     public void PlayExplosion()

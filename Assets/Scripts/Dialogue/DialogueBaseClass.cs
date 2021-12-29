@@ -8,10 +8,11 @@ namespace DialogueSystem
 public class DialogueBaseClass : MonoBehaviour
     {
        public bool finished { get; protected set; }
-       protected IEnumerator WriteText(string input, Text textHolder, Color textColor, Font textFont, float delay, AudioClip sound, float delayBetweenLines)
+        //Color textColor, Font textFont,
+       protected IEnumerator WriteText(string input, Text textHolder,  float delay, AudioClip sound, float delayBetweenLines)
        {
-            textHolder.color = textColor;
-            textHolder.font = textFont;
+            //textHolder.color = textColor;
+            //textHolder.font = textFont;
 
             for (int i = 0; i < input.Length; i++)
            {
