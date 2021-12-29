@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4761130662035507548}
   - component: {fileID: 7682941363060495529}
   - component: {fileID: 7124456386565804152}
+  - component: {fileID: -3207833296701212139}
   m_Layer: 0
   m_Name: Lampost_Left
   m_TagString: Environment
@@ -109,3 +110,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.30598962, y: 0.37718248}
   m_EdgeRadius: 0
+--- !u!58 &-3207833296701212139
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5504868661299501501}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.75}
+  serializedVersion: 2
+  m_Radius: 0.11
