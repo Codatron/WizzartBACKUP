@@ -7,6 +7,7 @@ public class NPCController : MonoBehaviour
     public void ActivateDialogue()
     {
         dialogue.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public bool DialogueActive()

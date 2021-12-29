@@ -369,9 +369,9 @@ MonoBehaviour:
   Prefab1: {fileID: 3332534145781009569, guid: 0f8abd16943bca244bb97efcb8b7d26e, type: 3}
   Prefab2: {fileID: 2810520077929371884, guid: 8a17ccbe7c131534091da7f4697c5f3d, type: 3}
   Prefab3: {fileID: 2691085504822098689, guid: f2129ec5a7716584693bd82bd6867f08, type: 3}
-  Prefab4: {fileID: 0}
-  Prefab5: {fileID: 0}
-  Prefab6: {fileID: 0}
+  Prefab4: {fileID: 3768072259054866278, guid: a75dd2b014484764c88eba6d7cb119a8, type: 3}
+  Prefab5: {fileID: 8013986125968811, guid: 9ac7ac9915b93304b8ded37c582248a1, type: 3}
+  Prefab6: {fileID: 4523929877079602744, guid: 3a8079447973fbc428d12156a8af5ade, type: 3}
   deadGun: {fileID: 52778683023559438, guid: 4d8588da6d29c7f4d9445af892422f2c, type: 3}
   playerCorpseSprite: {fileID: 0}
   speaker: {fileID: 2374428678998479452}

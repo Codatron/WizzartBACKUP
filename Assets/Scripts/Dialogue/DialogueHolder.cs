@@ -30,6 +30,7 @@ public class DialogueHolder : MonoBehaviour
                 yield return new WaitUntil(() => transform.GetChild(i).GetComponent<DialogueLine>().finished);
             }
             gameObject.SetActive(false);
+            Time.timeScale = 1;
         }
 
         private void Deactivate()
