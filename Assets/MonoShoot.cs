@@ -13,6 +13,7 @@ public class MonoShoot : MonoBehaviour
     void Start()
     {
         timeBtwShots = fireRate;
+        FindObjectOfType<BossFight>().shootDelagate += MonoShoots;
     }
 
     public void MonoShoots()

@@ -17,12 +17,6 @@ public class MonoClones : MonoBehaviour
             {
                 Vector3 spawnPosition = clonePoints[i].position;
                 GameObject mClone = Instantiate(monoClone, spawnPosition, Quaternion.identity);
-
-                mClone.AddComponent<MonoHealth>().currentHealth = 50;
-                mClone.AddComponent<MonoShoot>();
-                mClone.AddComponent<MonoMovmentState>();
-
-
             }
 
             refBoolKeeper.cloneing = true;
