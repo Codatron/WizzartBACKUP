@@ -8,6 +8,7 @@ public class EnemyPatrol : MonoBehaviour
     public float force;
     public float stopDistance;
     public float alertDistance;
+    public bool isOnPatrol;
 
     private Rigidbody2D rb;
     private Transform target;
@@ -26,14 +27,15 @@ public class EnemyPatrol : MonoBehaviour
     {
         distanceToTarget = Vector3.Distance(target.position, transform.position);
         
-
         if (distanceToTarget <= alertDistance)
         {
             patrolPoints.Clear();
+            isOnPatrol = false;
         }
         else
         {
             Patrol();
+            isOnPatrol = true;
         }
     }
 
