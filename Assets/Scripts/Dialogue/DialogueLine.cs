@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace DialogueSystem
 {
     public class DialogueLine : DialogueBaseClass
     {
-        private Text textHolder;
+        private TextMeshProUGUI textHolder;
 
         [Header("Text Options")]
         [SerializeField] private string input;
-        //[SerializeField] private Color textColor;
-        //[SerializeField] private Font textFont;
 
         [Header("Time parameters")]
         [SerializeField] private float delay;
@@ -33,13 +32,14 @@ namespace DialogueSystem
             imageHolder.sprite = characterSprite;
             imageHolder.preserveAspect = true;
         }
-        private void OnEnable()
+        private void Start()
         {
             ResetLine();
-            //textColor, textFont,
             lineAppear = (WriteText(input, textHolder,  delay, sound, delayBetweenLines));
             StartCoroutine(lineAppear);
         }
+
+
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -55,7 +55,7 @@ namespace DialogueSystem
         }
         private void ResetLine()
         {
-            textHolder = GetComponent<Text>();
+            textHolder = GetComponent<TextMeshProUGUI>();
             textHolder.text = "";
             finished = false;
         }

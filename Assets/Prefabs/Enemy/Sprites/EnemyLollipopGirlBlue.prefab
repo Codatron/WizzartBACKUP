@@ -258,6 +258,7 @@ GameObject:
   - component: {fileID: 8697673302569838749}
   - component: {fileID: -8852916138026780274}
   - component: {fileID: -5170554189899397346}
+  - component: {fileID: 3784537392717757118}
   m_Layer: 0
   m_Name: EnemyLollipopGirlBlue
   m_TagString: EnemyLollipopGirlBlue
@@ -427,3 +428,19 @@ MonoBehaviour:
   lipsSmallPrefab: {fileID: 0}
   hitPointsMax: 3
   numberInSwarm: 0
+--- !u!114 &3784537392717757118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8697673302569838742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dcfd146709b23f40b2601126a83fb8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPoints: []
+  force: 0
+  stopDistance: 0
+  alertDistance: 0

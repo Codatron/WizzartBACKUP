@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 104390385154527377}
   - component: {fileID: 104390385154527379}
   - component: {fileID: 1829003546100191123}
+  - component: {fileID: 568434457}
   m_Layer: 0
   m_Name: Char2_0
   m_TagString: Ally
@@ -126,3 +127,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.398056, y: 9.179264}
   m_EdgeRadius: 0
+--- !u!114 &568434457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104390385154527380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790d3c506d83c67419eb64e7ba5f1c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
