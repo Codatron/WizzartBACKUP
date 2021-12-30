@@ -43,6 +43,8 @@ TagManager:
   - Environment
   - MonoClone
   - Cage1
+  - Cage2
+  - Cage3
   layers:
   - Default
   - TransparentFX

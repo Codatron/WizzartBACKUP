@@ -4,7 +4,20 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
-       public IEnumerator Shake(float duration, float magnitut)
+
+
+    //public IEnumerator Explosion(GameObject crash, GameObject crashPlace)//SpriteRenderer spriteRenderer
+    //{
+    //    yield return new WaitForSecondsRealtime(1f);
+    //    GameObject boomClone = Instantiate(crash, crashPlace.transform.position, Quaternion.identity);
+    //    StartCoroutine(Shake(.25f, .8f));
+
+    //   // spriteRenderer.sprite = cage_4; //HUR FIXAR JAG DET HÄR?
+    //    Destroy(boomClone, 1);
+
+    //}      
+    
+    public IEnumerator Shake(float duration, float magnitut)
     {      
         
         Vector3 originalPos = transform.localPosition;

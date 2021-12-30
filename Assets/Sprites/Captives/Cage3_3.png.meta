@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: f3f37e14bee1fc94983a731b2d758a9a
+guid: 5a0d8cd692327f648889e189a7dcace7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8296291790904117310
-    second: Cage3_0
+      213: 2472308438182360287
+    second: Cage3_3_0
   - first:
-      213: -9069596847515606693
-    second: Cage3_1
+      213: -2933683338788258548
+    second: Cage3_3_1
   - first:
-      213: -7783328780944687250
-    second: Cage3_2
+      213: -4922693963284881243
+    second: Cage3_3_2
   - first:
-      213: -9135505359388716256
-    second: Cage3_4
+      213: 2855133880772098368
+    second: Cage3_3_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,11 +103,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cage3_0
+      name: Cage3_3_0
       rect:
         serializedVersion: 2
         x: 209
-        y: 1682
+        y: 1676
         width: 1094
         height: 1614
       alignment: 0
@@ -117,14 +117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c7bb226296addc80800000000000000
-      internalID: -8296291790904117310
+      spriteID: fd47f09fc676f4220800000000000000
+      internalID: 2472308438182360287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cage3_1
+      name: Cage3_3_1
       rect:
         serializedVersion: 2
         x: 1517
@@ -138,17 +138,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5164df48b1522280800000000000000
-      internalID: -9069596847515606693
+      spriteID: c0d3b04fb867947d0800000000000000
+      internalID: -2933683338788258548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cage3_2
+      name: Cage3_3_2
       rect:
         serializedVersion: 2
-        x: 2811
+        x: 2805
         y: 1676
         width: 1093
         height: 1614
@@ -159,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6fb7b926bf0cf390800000000000000
-      internalID: -7783328780944687250
+      spriteID: 5a0e1740ce31fabb0800000000000000
+      internalID: -4922693963284881243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cage3_4
+      name: Cage3_3_4
       rect:
         serializedVersion: 2
         x: 182
@@ -180,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02355f1174a283180800000000000000
-      internalID: -9135505359388716256
+      spriteID: 0497a9d23297f9720800000000000000
+      internalID: 2855133880772098368
       vertices: []
       indices: 
       edges: []

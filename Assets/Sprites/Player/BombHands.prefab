@@ -97,7 +97,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombFactory: {fileID: 3776409425967241247, guid: e27b9c338884f764e8ab0db35087f7ac, type: 3}
-  leaveBombsPlace: {fileID: 0}
+  dropBombPos: {fileID: 0}
+  factory_1: {fileID: 0}
+  boom: {fileID: 2532445909582639313, guid: efcbf25dac45486489ffc94050c9b549, type: 3}
+  factory_2: {fileID: 21300000, guid: 6f2f3b767bb6c4d4892a1f4e68fc9634, type: 3}
+  factory_3: {fileID: 21300000, guid: b5ac13530ca3c664ea58ed93cd281ac0, type: 3}
+  clone: {fileID: 3776409425967241247, guid: e27b9c338884f764e8ab0db35087f7ac, type: 3}
+  cameraShake: {fileID: 0}
+  refSpawnBomb: {fileID: 0}
+  boomPlace: {fileID: 0}
+  camera2: {fileID: 0}
+  bombCounter: 0
 --- !u!58 &6276935021206414192
 CircleCollider2D:
   m_ObjectHideFlags: 0
