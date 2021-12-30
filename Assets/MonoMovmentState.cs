@@ -7,6 +7,7 @@ public class MonoMovmentState : MonoBehaviour
     public Transform[] movePoints;
     public float speed;
     private int amount;
+    private int offSet;
     private Transform currentTarget;
     private float timer = 0f;
 
@@ -27,7 +28,8 @@ public class MonoMovmentState : MonoBehaviour
     }
 
     void randoming()
-    {
+    {   
+        offSet = Random.Range(-5,5);
         amount = Random.Range(0, movePoints.Length);
         currentTarget = movePoints[amount];
     }
@@ -35,19 +37,20 @@ public class MonoMovmentState : MonoBehaviour
     void Movement()
 
     {
+        
+        Vector3 clonePosition = new Vector3(currentTarget.position.x + offSet, currentTarget.position.y+ offSet);
+        transform.position = Vector3.MoveTowards(transform.position, clonePosition, speed * Time.deltaTime);
 
-        var collider = Physics2D.OverlapCircle(transform.position, 1.5f,0 >> 1);
+    }
 
-        if (collider == null)
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("MonoClone") || other.CompareTag("Mono"))
+
         {
-            transform.position = Vector3.MoveTowards(transform.position, currentTarget.position, speed * Time.deltaTime);
+            Movement();
         }
-
-        else
-        {
-            return;
-        }
-
+        
     }
 
 }

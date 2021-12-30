@@ -33,7 +33,6 @@ public class PickUpBomb : MonoBehaviour
         GameObject g = GameObject.FindGameObjectWithTag("BoolKeeper");
         refBoolKeeper = g.GetComponent<BoolKeeper>();
     }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("BombNoHands"))
@@ -60,7 +59,6 @@ public class PickUpBomb : MonoBehaviour
             Debug.Log(refSpawnBomb.bombSpawnCounter);
         }
     }
-
     private void bombExposition()
     {
         Destroy(clone, 2);
