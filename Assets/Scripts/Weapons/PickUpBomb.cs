@@ -34,30 +34,6 @@ public class PickUpBomb : MonoBehaviour
         refBoolKeeper = g.GetComponent<BoolKeeper>();
     }
 
-    //public void ChangeFactory()
-    //{
-    //    if (bombCounter == 1)
-    //    {
-    //        PlayExplosion();
-
-
-    //        factory_1.GetComponent<SpriteRenderer>().sprite = factory_2;
-    //    }
-
-    //    if (bombCounter == 2)
-    //    {
-    //        PlayExplosion();
-    //        factory_1.GetComponent<SpriteRenderer>().sprite = factory_3;//ANDRA HAR
-    //    }
-
-    //    if (bombCounter == 3)
-    //    {
-    //        PlayExplosion();
-    //        factory_1.GetComponent<SpriteRenderer>().sprite = factory_2;//ANDRA HAR
-    //    }
-    //}
-
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("BombNoHands"))
@@ -90,14 +66,6 @@ public class PickUpBomb : MonoBehaviour
         Destroy(clone, 2);
 
         Invoke(nameof(PlayExplosion), 2);
-    }
-
-    private void Update()
-    {
-        //if (Input.GetButtonDown("Jump"))
-        //{
-        //    PlayExplosion();
-        //}
     }
 
     public void PlayExplosion()
@@ -137,7 +105,5 @@ public class PickUpBomb : MonoBehaviour
     {
         Time.timeScale = 1;
     }
-
- 
 }
 

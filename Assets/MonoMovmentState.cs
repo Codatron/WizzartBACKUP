@@ -33,7 +33,24 @@ public class MonoMovmentState : MonoBehaviour
     }
 
     void Movement()
+
     {
-        transform.position = Vector3.MoveTowards(transform.position, currentTarget.position, speed * Time.deltaTime);
+
+        var collider = Physics2D.OverlapCircle(transform.position, 1.5f,0 >> 1);
+
+        if (collider == null)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, currentTarget.position, speed * Time.deltaTime);
+        }
+
+        else
+        {
+            return;
+        }
+
     }
+
 }
+
+  
+
