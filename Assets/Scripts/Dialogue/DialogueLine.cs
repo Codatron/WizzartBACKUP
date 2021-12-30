@@ -11,7 +11,7 @@ namespace DialogueSystem
         private TextMeshProUGUI textHolder;
 
         [Header("Text Options")]
-        [SerializeField] private string input;
+        [SerializeField, TextArea] private string input;
 
         [Header("Time parameters")]
         [SerializeField] private float delay;
