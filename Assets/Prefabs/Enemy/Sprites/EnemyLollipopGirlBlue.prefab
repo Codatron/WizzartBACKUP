@@ -259,6 +259,7 @@ GameObject:
   - component: {fileID: -8852916138026780274}
   - component: {fileID: -5170554189899397346}
   - component: {fileID: 3784537392717757118}
+  - component: {fileID: 2070248278}
   m_Layer: 0
   m_Name: EnemyLollipopGirlBlue
   m_TagString: EnemyLollipopGirlBlue
@@ -424,6 +425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySpriteRenderer: {fileID: 2037523870020670773}
+  slideTarget: {fileID: 0}
   corpseSprite: {fileID: 5484397287130244845, guid: a44034680f3d9ae4c89e4c7b1af8a3b6, type: 3}
   lipsSmallPrefab: {fileID: 0}
   hitPointsMax: 3
@@ -435,12 +437,38 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8697673302569838742}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5dcfd146709b23f40b2601126a83fb8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolPoints: []
-  force: 0
-  stopDistance: 0
-  alertDistance: 0
+  patrolPoints:
+  - {x: -35, y: -16}
+  - {x: -20, y: -16}
+  force: 7
+  stopDistance: 1
+  alertDistance: 17.5
+  isOnPatrol: 0
+--- !u!114 &2070248278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8697673302569838742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e28cef77fa4a4448b32973a7d763df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sineRight:
+    sineSpeed: 0
+    sineMag: 0
+    sine: 0
+    timer: 0
+  sineUp:
+    sineSpeed: 0
+    sineMag: 0
+    sine: 0
+    timer: 0
+  startPos: {x: 0, y: 0, z: 0}

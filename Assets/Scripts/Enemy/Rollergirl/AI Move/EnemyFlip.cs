@@ -13,73 +13,134 @@ public class EnemyFlip : MonoBehaviour
 
     private Transform player;
     private Rigidbody2D rb;
-    private EnemyPatrol enemyPatrolScript;
+    private SinePatrol sinePatrolScript;
     private bool isOverY;
     private float timeToNextChange = 0.667f;
     private float time;
+    //private EnemyPatrol enemyPatrolScript;
 
-    // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = GetComponent<Rigidbody2D>();
-        enemyPatrolScript = GetComponent<EnemyPatrol>();
+        //enemyPatrolScript = GetComponent<EnemyPatrol>();
+        sinePatrolScript = GetComponent<SinePatrol>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;
 
-        if (!enemyPatrolScript.isOnPatrol)
+        if (!sinePatrolScript.isOnPatrol)
         {
-            transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
             enemySpriteRenderer.flipX = player.position.x < transform.position.x;
             isOverY = player.position.y > transform.position.y;
-
-            if (time > timeToNextChange)
-            {
-                if (!isOverY)
-                {
-                    if (enemySpriteRenderer.sprite == enemySpriteFrontB)
-                    {
-                        enemySpriteRenderer.sprite = enemySpriteFrontA;
-                    }
-                    else
-                    {
-                        enemySpriteRenderer.sprite = enemySpriteFrontB;
-                    }
-
-                    time = 0.0f;
-                }
-                else
-                {
-                    if (enemySpriteRenderer.sprite == enemySpriteBackB)
-                    {
-                        enemySpriteRenderer.sprite = enemySpriteBackA;
-                    }
-                    else
-                    {
-                        enemySpriteRenderer.sprite = enemySpriteBackB;
-                    }
-
-                    time = 0.0f;
-                }
-
-                time = 0.0f;
-            }      
+            TimeToChangeSprite();
         }
         else
         {
-            if (rb.velocity.x >= 0.01f)
+            // TODO:
+            // - Add animations to the patroling sprites
+
+            float sineLimit = 7.0f;
+
+            if (sinePatrolScript.sineHorizontal.sine > sineLimit) 
             {
-                transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+                enemySpriteRenderer.flipX = true;
+
+                TimeToChangeSprite();
             }
-            if (rb.velocity.x <= 0.01f)
+            if (sinePatrolScript.sineHorizontal.sine < -sineLimit)
             {
-                transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+                enemySpriteRenderer.flipX = false;
+
+                TimeToChangeSprite();
+            }
+
+
+            //if (transform.position.y < sinePatrolScript.sineUp.sine/*-0.5f*/)
+            //{
+            //    enemySpriteRenderer.sprite = enemySpriteFrontA;
+
+            //    time = 0.0f;
+            //}
+            //if (transform.position.y >= -sinePatrolScript.sineUp.sine /*0.5f*/)
+            //{
+            //    enemySpriteRenderer.sprite = enemySpriteBackA;
+
+            //    time = 0.0f;
+            //}
+
+
+            //if (rb.velocity.x < 0.0f)
+            //{
+            //    enemySpriteRenderer.flipX = true;
+
+            //    TimeToChangeSprite();
+            //}
+            //if (rb.velocity.x >= 0.0f)
+            //{
+            //    enemySpriteRenderer.flipX = false;
+
+            //    TimeToChangeSprite();
+            //}
+
+            //if (rb.velocity.y < -0.5f)
+            //{
+            //    enemySpriteRenderer.sprite = enemySpriteFrontA;
+
+            //    time = 0.0f;
+            //}
+            //if (rb.velocity.y >= 0.5f)
+            //{
+            //    enemySpriteRenderer.sprite = enemySpriteBackA;
+
+            //    time = 0.0f;
+            //}
+        }
+    }
+    private void ChangeSpriteBack()
+    {
+        if (enemySpriteRenderer.sprite == enemySpriteBackB)
+        {
+            enemySpriteRenderer.sprite = enemySpriteBackA;
+        }
+        else
+        {
+            enemySpriteRenderer.sprite = enemySpriteBackB;
+        }
+    }
+
+    private void ChangeSpriteFront()
+    {
+        if (enemySpriteRenderer.sprite == enemySpriteFrontB)
+        {
+            enemySpriteRenderer.sprite = enemySpriteFrontA;
+        }
+        else
+        {
+            enemySpriteRenderer.sprite = enemySpriteFrontB;
+        }
+    }
+
+    private void TimeToChangeSprite()
+    {
+        if (time > timeToNextChange)
+        {
+            if (!isOverY)
+            {
+                ChangeSpriteFront();
+
+                time = 0.0f;
+            }
+            else
+            {
+                ChangeSpriteBack();
+
+                time = 0.0f;
             }
         }
     }
+
 }
         //enemySpriteRenderer.sprite = isOverY ? enemySpriteBackA : enemySpriteFrontA;

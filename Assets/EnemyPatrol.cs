@@ -9,6 +9,7 @@ public class EnemyPatrol : MonoBehaviour
     public float stopDistance;
     public float alertDistance;
     public bool isOnPatrol;
+   
 
     private Rigidbody2D rb;
     private Transform target;
@@ -39,6 +40,11 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+      
+    }
+
     private void Patrol()
     {
         float distanceToPoint = (patrolPoints[currentPatrolPoint] - (Vector2)transform.position).magnitude;
@@ -58,3 +64,7 @@ public class EnemyPatrol : MonoBehaviour
         rb.velocity = new Vector2(direction.x, direction.y) * force;
     }
 }
+
+// 2 bools -- l r and u d
+// if true take pos = start pos + vector2right * sine
+// mag increases speed

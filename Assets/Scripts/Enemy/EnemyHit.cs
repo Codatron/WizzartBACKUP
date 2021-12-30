@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 public class EnemyHit : MonoBehaviour, IGetKnockedBack
 {
     public SpriteRenderer enemySpriteRenderer;
+    public Transform slideTarget;
     public Sprite corpseSprite;
     public GameObject lipsSmallPrefab;
     public int hitPointsMax;
@@ -64,17 +65,34 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
         }
     }
 
+    // TODO: 
+    // - why do two corpses show up sometimes?
     private void KillMeRollergirl()
     {
         GameObject Corpse = new GameObject("enemyCorpse");
         SpriteRenderer corpseRenderer = Corpse.AddComponent<SpriteRenderer>();
+        Rigidbody2D corpseRb = Corpse.AddComponent<Rigidbody2D>();
+        CapsuleCollider2D corpseCapCollider = Corpse.AddComponent<CapsuleCollider2D>();
+        
+        corpseRb.gravityScale = 0.0f;
+        corpseRb.freezeRotation = true;
+        
+        corpseCapCollider.direction = CapsuleDirection2D.Horizontal;
+        corpseCapCollider.size = new Vector2(1.77f, 0.36f);
+        corpseCapCollider.offset = new Vector2(0.0f, -0.17f);
+
         Corpse.transform.position = transform.position;
         corpseRenderer.sprite = corpseSprite;
-
         corpseRenderer.flipX = enemySpriteRenderer.flipX;
         Corpse.transform.localScale = transform.localScale;
+        
+        Vector2 slideDirection = (slideTarget.position - Corpse.transform.position).normalized;
+        Vector2 slideForce = slideDirection * 600f;
+        corpseRb.AddForce(slideForce);
+        corpseRb.drag = 1.25f;
 
         Destroy(gameObject);
+        Destroy(corpseCapCollider, 0.75f);
     }
 
     private void KillMeLipsBig(int numberToSpawn)
@@ -89,7 +107,6 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
 
         Destroy(gameObject);
     }
-
 
     public void KnockMeBack(float magnitude, Vector2 direction)
     {
