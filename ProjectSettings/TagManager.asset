@@ -42,6 +42,7 @@ TagManager:
   - EnemyLipsSmall
   - Environment
   - MonoClone
+  - Cage1
   layers:
   - Default
   - TransparentFX
