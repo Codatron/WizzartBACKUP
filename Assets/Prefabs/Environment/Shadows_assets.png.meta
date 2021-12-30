@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 95c0b8bcb7ba100419d176ff9519c5f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5025048165509501616
+    second: Shadows_assets_0
+  - first:
+      213: 8836259748015514024
+    second: Shadows_assets_1
+  - first:
+      213: 4418267132489319221
+    second: Shadows_assets_2
+  - first:
+      213: -6849899163398872258
+    second: Shadows_assets_3
+  - first:
+      213: 985050255927281293
+    second: Shadows_assets_4
+  - first:
+      213: 8703379110457969680
+    second: Shadows_assets_5
+  - first:
+      213: -1239464148762890892
+    second: Shadows_assets_6
+  - first:
+      213: -3540516177013911140
+    second: Shadows_assets_7
+  - first:
+      213: -3279513176717979038
+    second: Shadows_assets_8
+  - first:
+      213: 5176967830346455299
+    second: Shadows_assets_9
+  - first:
+      213: -8225033888104107013
+    second: Shadows_assets_10
+  - first:
+      213: -3147018965651173065
+    second: Shadows_assets_11
+  - first:
+      213: -4654431321420266037
+    second: Shadows_assets_12
+  - first:
+      213: 2893438842868424725
+    second: Shadows_assets_13
+  - first:
+      213: -6701082321310198510
+    second: Shadows_assets_14
+  - first:
+      213: 8388159276399630035
+    second: Shadows_assets_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 120
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shadows_assets_0
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1420
+        width: 137
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b21c64ceae8cb540800000000000000
+      internalID: 5025048165509501616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_1
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 1334
+        width: 51
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a12c8f9c63b0aa70800000000000000
+      internalID: 8836259748015514024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_2
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1334
+        width: 114
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5334fca4c86d05d30800000000000000
+      internalID: 4418267132489319221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_3
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1486
+        width: 256
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e336d52d00540f0a0800000000000000
+      internalID: -6849899163398872258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_4
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 1362
+        width: 51
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86047e1df99bad00800000000000000
+      internalID: 985050255927281293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_5
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 1362
+        width: 114
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c0760403d98c870800000000000000
+      internalID: 8703379110457969680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_6
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1452
+        width: 270
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47de7257ce98ccee0800000000000000
+      internalID: -1239464148762890892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_7
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1418
+        width: 252
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91df83ab4f8ddec0800000000000000
+      internalID: -3540516177013911140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_8
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1076
+        width: 198
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26213813424dc72d0800000000000000
+      internalID: -3279513176717979038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_9
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 986
+        width: 372
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309dc6d10d848d740800000000000000
+      internalID: 5176967830346455299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_10
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 910
+        width: 128
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf33102c14fcadd80800000000000000
+      internalID: -8225033888104107013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_11
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 903
+        width: 195
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731d1f2acea8354d0800000000000000
+      internalID: -3147018965651173065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_12
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 552
+        width: 399
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc50b479f53286fb0800000000000000
+      internalID: -4654431321420266037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_13
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 134
+        width: 495
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5106d782c4f872820800000000000000
+      internalID: 2893438842868424725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_14
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 136
+        width: 401
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215d7a3f129f003a0800000000000000
+      internalID: -6701082321310198510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_assets_15
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 115
+        width: 422
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d692356b6ab86470800000000000000
+      internalID: 8388159276399630035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
