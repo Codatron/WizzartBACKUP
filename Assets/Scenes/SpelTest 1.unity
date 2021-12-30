@@ -5150,8 +5150,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 418584134}
     - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: sineX.sineMag
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: sineY.sineMag
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: sineUp.sineMag
       value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: sineX.sineSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: sineY.sineSpeed
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: sineMagRightHalf
@@ -7823,21 +7839,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12e28cef77fa4a4448b32973a7d763df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sineHorizontal:
+  sineX:
     sineSpeed: 0
     sineMag: 0
     sine: 0
     timer: 0
-  sineVertical:
+  sineY:
     sineSpeed: 0
     sineMag: 0
     sine: 0
     timer: 0
   isOnPatrol: 0
-  isOverSineMidHorizontal: 0
-  isOverSineMidVertical: 0
-  sineMagRightHalf: 0
-  sineMagUpHalf: 0
+  isOverSineMidX: 0
+  isOverSineMidY: 0
+  sineMagHalfX: 0
+  sineMagHalfY: 0
 --- !u!212 &667732712
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20433,6 +20449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2427590875717892651, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5857821858681598454, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: camera2
       value: 
@@ -28250,38 +28270,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932204126}
   m_CullTransparentMesh: 1
---- !u!1 &1937212316 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8697673302569838742, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
-  m_PrefabInstance: {fileID: 2073798296}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1937212326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937212316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12e28cef77fa4a4448b32973a7d763df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sineHorizontal:
-    sineSpeed: 0
-    sineMag: 0
-    sine: 0
-    timer: 0
-  sineVertical:
-    sineSpeed: 0
-    sineMag: 0
-    sine: 0
-    timer: 0
-  isOnPatrol: 0
-  isOverSineMidHorizontal: 0
-  isOverSineMidVertical: 0
-  sineMagRightHalf: 0
-  sineMagUpHalf: 0
 --- !u!1001 &1938070512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33683,6 +33671,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 169126741}
     m_Modifications:
+    - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: sineX.sineMag
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: sineY.sineMag
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: sineX.sineSpeed
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: sineY.sineSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1846719022639033286, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -33717,7 +33721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838742, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838748, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_RootOrder
@@ -33725,11 +33729,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838748, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -45.32
+      value: -45.24
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838748, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.31
+      value: 0.82
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838748, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_LocalPosition.z

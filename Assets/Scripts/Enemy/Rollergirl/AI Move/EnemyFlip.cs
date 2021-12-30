@@ -17,7 +17,11 @@ public class EnemyFlip : MonoBehaviour
     private bool isOverY;
     private float timeToNextChange = 0.667f;
     private float time;
+    private float sineLimitX;
+    private float sineLimitY;
     //private EnemyPatrol enemyPatrolScript;
+
+    //float sineLimitX = 7.0f;
 
     void Start()
     {
@@ -25,6 +29,9 @@ public class EnemyFlip : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         //enemyPatrolScript = GetComponent<EnemyPatrol>();
         sinePatrolScript = GetComponent<SinePatrol>();
+
+        sineLimitX = sinePatrolScript.sineX.sineMag / 2f;
+        sineLimitY = sinePatrolScript.sineY.sineMag / 2f;
     }
 
     void Update()
@@ -39,23 +46,70 @@ public class EnemyFlip : MonoBehaviour
         }
         else
         {
-            // TODO:
-            // - Add animations to the patroling sprites
+            
+                if (rb.velocity.x < sineLimitX)
+                {
+                    TimeToChangeSpriteFront();
 
-            float sineLimit = 7.0f;
+                    if (sinePatrolScript.sineX.sine > sineLimitX)
+                    {
+                        enemySpriteRenderer.flipX = true;
+                    }
+                }
+                if (rb.velocity.x >= -sineLimitX)
+                {
+                    TimeToChangeSpriteFront();
 
-            if (sinePatrolScript.sineHorizontal.sine > sineLimit) 
-            {
-                enemySpriteRenderer.flipX = true;
+                    if (sinePatrolScript.sineX.sine < -sineLimitX)
+                    {
+                        enemySpriteRenderer.flipX = false;
+                    }
+                }
 
-                TimeToChangeSprite();
-            }
-            if (sinePatrolScript.sineHorizontal.sine < -sineLimit)
-            {
-                enemySpriteRenderer.flipX = false;
+                //if (rb.velocity.y > -sineLimitY)
+                //{
+                //    enemySpriteRenderer.sprite = enemySpriteFrontA;
 
-                TimeToChangeSprite();
-            }
+                //    time = 0.0f;
+                //}
+                //if (rb.velocity.y < sineLimitY)
+                //{
+                //    enemySpriteRenderer.sprite = enemySpriteBackA;
+
+                //    time = 0.0f;
+                //}
+
+                //if (sinePatrolScript.sineX.sine > sineLimitX)
+                //{
+                //    enemySpriteRenderer.flipX = true;
+                //    ChangeSpriteFront();
+                //    //ChangeSpriteBack();
+                //    time = 0.0f;
+                //}
+
+                //if (sinePatrolScript.sineX.sine < -sineLimitX)
+                //{
+                //    enemySpriteRenderer.flipX = false;
+                //    ChangeSpriteFront();
+                //    //ChangeSpriteBack();
+                //    time = 0.0f;
+                //}
+
+                //if (sinePatrolScript.sineY.sine > sineLimitY)
+                //{
+                //    enemySpriteRenderer.sprite = enemySpriteFrontA;
+
+                //    time = 0.0f;
+                //}
+                //if (sinePatrolScript.sineY.sine < -sineLimitY)
+                //{
+                //    enemySpriteRenderer.sprite = enemySpriteBackA;
+
+                //    time = 0.0f;
+                //}
+            
+
+
 
 
             //if (transform.position.y < sinePatrolScript.sineUp.sine/*-0.5f*/)
@@ -142,5 +196,17 @@ public class EnemyFlip : MonoBehaviour
         }
     }
 
+    private void TimeToChangeSpriteFront()
+    {
+        if (time > timeToNextChange)
+        {
+            ChangeSpriteFront();
+
+            time = 0.0f;
+        }
+    }
 }
+
+
+
         //enemySpriteRenderer.sprite = isOverY ? enemySpriteBackA : enemySpriteFrontA;

@@ -19,50 +19,70 @@ public class SinePatrol : MonoBehaviour
         }
     }
 
-    public Sine sineHorizontal;
-    public Sine sineVertical;
+    public Sine sineX;
+    public Sine sineY;
     public bool isOnPatrol;
-    public bool isOverSineMidHorizontal;
-    public bool isOverSineMidVertical;
-    public float sineMagRightHalf;
-    public float sineMagUpHalf;
+    public bool isOverSineMidX;
+    public bool isOverSineMidY;
+    public float sineMagHalfX;
+    public float sineMagHalfY;
 
     private Vector3 startPos;
     private EnemyAIPathfind enemyAIPathfindScript;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         enemyAIPathfindScript = GetComponent<EnemyAIPathfind>();
         startPos = transform.position;
-
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         //Sine sineWave = new Sine();
-        
-        sineHorizontal.Tick();
-        sineVertical.Tick();
 
-        transform.position = startPos + (Vector3.right * sineHorizontal.sine) + (Vector3.up * sineVertical.sine);
+        sineX.Tick();
+        sineY.Tick();
+
+        transform.position = startPos + (Vector3.right * sineX.sine) + (Vector3.up * sineY.sine);
 
         isOnPatrol = true;
+        CrossSineMidX();
+        CrossSineMidY();
+        KillScriptWithinRange();
+    }
 
-        if (sineVertical.sine > 0.0f)
-        {
-            isOverSineMidVertical = true;
-        }
-        else if (sineVertical.sine <= -0.1f)
-        {
-            isOverSineMidVertical = false;
-        }
-
+    private void KillScriptWithinRange()
+    {
         if (enemyAIPathfindScript.isTargetWithinRange)
         {
             isOnPatrol = false;
             Destroy(this);
+        }
+    }
+
+    private void CrossSineMidY()
+    {
+        if (sineX.sine > 0.0f)
+        {
+            isOverSineMidY = true;
+        }
+        else if (sineX.sine <= -0.1f)
+        {
+            isOverSineMidY = false;
+        }
+    }
+
+    private void CrossSineMidX()
+    {
+        if (sineY.sine > 0.0f)
+        {
+            isOverSineMidX = true;
+        }
+        else if (sineY.sine <= -0.1f)
+        {
+            isOverSineMidX = false;
         }
     }
 }
