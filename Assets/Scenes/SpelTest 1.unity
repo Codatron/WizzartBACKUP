@@ -20597,6 +20597,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1802915286}
     - target: {fileID: 5857821858681598454, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
+      propertyPath: smoke_1
+      value: 
+      objectReference: {fileID: 9052500864648585006, guid: 95af9d4713ee495498f11e53ac6dfcb0, type: 3}
+    - target: {fileID: 5857821858681598454, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
+      propertyPath: smoke_2
+      value: 
+      objectReference: {fileID: 9052500864648585006, guid: 30f25fd278323064e933c31c270eea9e, type: 3}
+    - target: {fileID: 5857821858681598454, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: boomPlace
       value: 
       objectReference: {fileID: 868330416}
