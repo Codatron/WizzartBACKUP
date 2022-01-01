@@ -7,6 +7,12 @@ public class MoveCamera : MonoBehaviour
 {
     Vector3 cameraOrgPos;
     public Transform camera2;
+
+    public CameraShake cameraShake;
+    public GameObject Crash;
+    public GameObject CrashPlace;
+    public CageHealth cageHealth;
+
     public void CameraMoveTo(GameObject goToObject)
     {
 
@@ -22,16 +28,17 @@ public class MoveCamera : MonoBehaviour
 
     }
 
-    //public IEnumerator Explosion(GameObject crash, GameObject crashPlace, SpriteRenderer spriteRenderer )
-    //{
-    //    yield return new WaitForSecondsRealtime(1f);
-    //    GameObject boomClone = Instantiate(Crash, CrashPlace.transform.position, Quaternion.identity);
-    //    StartCoroutine(cameraShake.Shake(.25f, .8f));
+    public IEnumerator Explosion()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        GameObject boomClone = Instantiate(Crash, CrashPlace.transform.position, Quaternion.identity);
+        StartCoroutine(cameraShake.Shake(.25f, .8f));
 
-    //    GetComponent<SpriteRenderer>().sprite = cage_4;
-    //    Destroy(boomClone, 1);
+        cageHealth.spriteRend++;
 
-    //}
+        Destroy(boomClone, 0.5f);
+
+    }
 
 
     private void Reset()

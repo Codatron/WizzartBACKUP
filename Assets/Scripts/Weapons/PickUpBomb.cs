@@ -92,27 +92,32 @@ public class PickUpBomb : MonoBehaviour
 
         if (bombCounter==1)
         {
-            factory_1.GetComponent<SpriteRenderer>().sprite = factory_2;
-           GameObject smallSmokeClone = Instantiate(smoke_1, smokePlace.transform.position, Quaternion.identity);
+            GameObject smallSmokeClone = Instantiate(smoke_1, smokePlace.transform.position, Quaternion.identity);
             GameObject smallSmokeClone2 = Instantiate(smoke_1, smokePlace2.transform.position, Quaternion.identity);
 
         }
 
         if (bombCounter==2)
         {
+            factory_1.GetComponent<SpriteRenderer>().sprite = factory_2;
+            GameObject largeSmokeClone1 = Instantiate(smoke_1, smokePlace.transform.position, Quaternion.identity);
+            GameObject largeSmokeClone2 = Instantiate(smoke_2, smokePlace2.transform.position, Quaternion.identity);
+        }
+
+        if (bombCounter == 3)
+        {
             factory_1.GetComponent<SpriteRenderer>().sprite = factory_3;
             GameObject largeSmokeClone1 = Instantiate(smoke_2, smokePlace.transform.position, Quaternion.identity);
             GameObject largeSmokeClone2 = Instantiate(smoke_2, smokePlace2.transform.position, Quaternion.identity);
         }
-        //if (bombCounter == 3)
-        //{
-        //    factory_1.GetComponent<SpriteRenderer>().sprite = factory_4;
-        //}
     }
 
     private void Reset()
     {
         Time.timeScale = 1;
     }
+
+
+    //TO DO SLICA OM FABRIKEN SÅ DE HAR SAMMA STORLEK.
 }
 

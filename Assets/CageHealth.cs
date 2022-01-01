@@ -12,19 +12,16 @@ public class CageHealth : MonoBehaviour
     public Sprite cage_4;
     public Sprite cage_5;
     public Transform camera2;
-    public CameraShake cameraShake;
-    public GameObject Crash;
-    public GameObject CrashPlace;
-    //GameObject cage1;
+    public GameObject moveCameraTo;
 
-    //public MoveCamera moveCamera;
+    public MoveCamera moveCamera;
 
     Vector3 cameraOrgPos;
 
     bool OnlyOnce = true;
     bool pickUpBomb= false;
 
-    int spriteRend = 0;
+    public int spriteRend = 0;
     //public AudioClip brookenGlas;
     //public AudioSource speaker;
 
@@ -33,10 +30,9 @@ public class CageHealth : MonoBehaviour
     {
         
         health = 100;
-       // cage1 = GameObject.FindGameObjectWithTag("Cage1");
+       
     }
 
-    // Update is called once per frame
     void Update()
     {
         HealthCage();
@@ -66,6 +62,8 @@ public class CageHealth : MonoBehaviour
            
             GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled = true;
             GameObject.FindGameObjectWithTag("Gun").GetComponent<SpriteRenderer>().enabled = false;
+
+            pickUpBomb = false;
         }
     }
 
@@ -84,50 +82,16 @@ public class CageHealth : MonoBehaviour
             
         }
 
-        if (health <= 0 && OnlyOnce|| Input.GetMouseButton(1)) //HAR DET AR FEL. behover jag gore nya obcjet?
+        if (health <= 0 && OnlyOnce) 
         {
             
             OnlyOnce = false;            
-            MoveCamera();
-            //moveCamera.CameraMoveTo(cage1);                     
+            moveCamera.CameraMoveTo(moveCameraTo);
+                                 
             pickUpBomb = true;
         }
     }
 
-    public void MoveCamera()
-    {
-
-        Time.timeScale = 0;
-        cameraOrgPos = camera2.transform.position;
-        Vector3 targetPos = GameObject.FindGameObjectWithTag("Cage1").transform.position;
-        targetPos.z = cameraOrgPos.z;
-        camera2.transform.DOMove(targetPos, 1).SetUpdate(true);
-
-        StartCoroutine("Explosion");
-
-        camera2.transform.DOMove(cameraOrgPos, 1).SetDelay(2).SetUpdate(true).OnComplete(Reset);
-
-    }
-
-    private void Reset()
-    {
-
-        Time.timeScale = 1;
-    }
-    public IEnumerator Explosion()
-    {
-        yield return new WaitForSecondsRealtime(1f);
-        GameObject boomClone = Instantiate(Crash, CrashPlace.transform.position, Quaternion.identity);
-        StartCoroutine(cameraShake.Shake(.25f, .8f));
-
-        spriteRend = 1;
-        Destroy(boomClone, 0.5f);
-
-    }
-
-
     //TODO lägg in krossa glas ljud istallet for pang. 
-    //TODO flytta kamera bara sista gången.
 
-    //TODO fixa scripet för flytta kamera + explosition
 }

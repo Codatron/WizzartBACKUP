@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 528583292600493414}
   - component: {fileID: 6574690913365163809}
   - component: {fileID: 566984276317655865}
+  - component: {fileID: 2394116689279669549}
   m_Layer: 0
   m_Name: Cage3
   m_TagString: Cage3
@@ -204,6 +205,23 @@ MonoBehaviour:
   cage_4: {fileID: 2855133880772098368, guid: 5a0d8cd692327f648889e189a7dcace7, type: 3}
   cage_5: {fileID: -9135505359388716256, guid: f3f37e14bee1fc94983a731b2d758a9a, type: 3}
   camera2: {fileID: 0}
+  moveCameraTo: {fileID: 6077889928939245199}
+  moveCamera: {fileID: 2394116689279669549}
+  spriteRend: 0
+--- !u!114 &2394116689279669549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6077889928939245199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178b336f29723524a95d4f57b6fa649f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera2: {fileID: 0}
   cameraShake: {fileID: 0}
-  Crash: {fileID: 3768072259054866278, guid: a75dd2b014484764c88eba6d7cb119a8, type: 3}
-  CrashPlace: {fileID: 0}
+  Crash: {fileID: 0}
+  CrashPlace: {fileID: 4390332617062399751}
+  cageHealth: {fileID: 566984276317655865}
