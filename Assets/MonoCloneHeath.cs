@@ -16,7 +16,10 @@ public class MonoCloneHeath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
         
     }
 
@@ -28,6 +31,8 @@ public class MonoCloneHeath : MonoBehaviour
             currentHealth--;
         }
     }
+
+
 
     IEnumerator MonoTakeDamageColour2()
     {

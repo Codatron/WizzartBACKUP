@@ -34,6 +34,8 @@ public class PickUpBomb : MonoBehaviour
 
     public StartBossFight startBossFight;
 
+    public bool fixedCamera = false;
+
     private void Start()
     {
         GetComponent<SpriteRenderer>().enabled = false;
@@ -112,6 +114,7 @@ public class PickUpBomb : MonoBehaviour
             factoryBombTimes = false;
 
             startBossFight.StartMono();
+            fixedCamera = true;
         }
     }
 

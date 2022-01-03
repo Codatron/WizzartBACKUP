@@ -14,7 +14,7 @@ public class MonoClones : MonoBehaviour
     {       
         if (cloning == false)
         {
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 2; i++)
             {
                 Vector3 spawnPosition = clonePoints[i].position;
                 GameObject mClone = Instantiate(monoClone, spawnPosition, Quaternion.identity);

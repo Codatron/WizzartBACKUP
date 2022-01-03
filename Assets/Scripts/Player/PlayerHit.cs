@@ -14,13 +14,11 @@ public class PlayerHit : MonoBehaviour
     public AudioClip Sound5;
 
     //Code for random sprite when taking hit
-    List<GameObject> prefabList = new List<GameObject>();
-    public GameObject Prefab1;
-    public GameObject Prefab2;
-    public GameObject Prefab3;
-    public GameObject Prefab4;
-    public GameObject Prefab5;
-    public GameObject Prefab6;
+    List<GameObject> phrasesList = new List<GameObject>();
+    
+    public GameObject phrases1;
+    public GameObject phrases2;
+    public GameObject phrases3;
 
     public GameObject deadGun;
     public Sprite playerCorpseSprite;
@@ -54,12 +52,10 @@ public class PlayerHit : MonoBehaviour
         playerHealthCurrent = playerHealthMax;
 
         //Add to sprit when hit list
-        prefabList.Add(Prefab1);
-        prefabList.Add(Prefab2);
-        prefabList.Add(Prefab3);
-        prefabList.Add(Prefab4);
-        prefabList.Add(Prefab5);
-        prefabList.Add(Prefab6);
+        
+        phrasesList.Add(phrases1);
+        phrasesList.Add(phrases2);
+        phrasesList.Add(phrases3);
 
         //Add sound when hit to list
         hitSoundList.Add(Sound1);
@@ -121,7 +117,7 @@ public class PlayerHit : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         //For random play/sprite
-        int prefabIndex = UnityEngine.Random.Range(0, 5);
+        int phrasesIndex = UnityEngine.Random.Range(0, 4);
         int soundIndex = UnityEngine.Random.Range(0, 4);
 
         if (!invincible)
@@ -137,7 +133,7 @@ public class PlayerHit : MonoBehaviour
                 StartCoroutine(Invulnerability());
 
                 //random prefab for skada
-               GameObject hitPrefab = Instantiate(prefabList[prefabIndex], transform.position, Quaternion.identity);
+               GameObject hitPrefab = Instantiate(phrasesList[phrasesIndex], transform.position, Quaternion.identity);
                 Destroy(hitPrefab, 0.5f);
 
                 //Play random sound hit

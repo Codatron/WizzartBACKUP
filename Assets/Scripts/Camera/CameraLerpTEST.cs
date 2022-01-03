@@ -12,6 +12,8 @@ public class CameraLerpTEST : MonoBehaviour
     [Range(0, 1)]
     public float smoothingValue;
 
+    PickUpBomb refPickUpBomb;
+   
     private void Start()
     {
         Camera camera = Camera.main;
@@ -20,7 +22,9 @@ public class CameraLerpTEST : MonoBehaviour
         maxX -= camera.orthographicSize * camera.aspect;
         maxY -= camera.orthographicSize;
 
-        transform.position = target.position;   
+        transform.position = target.position;
+
+        refPickUpBomb = GameObject.FindGameObjectWithTag("BombHands").GetComponent<PickUpBomb>();
     }
 
     private void FixedUpdate()
@@ -28,6 +32,14 @@ public class CameraLerpTEST : MonoBehaviour
         FollowTarget();
 
         CamStayInBoundaries();
+    }
+
+    private void Update()
+    {
+        if (refPickUpBomb.fixedCamera==true)
+        {
+           
+        }
     }
 
     private void FollowTarget()
