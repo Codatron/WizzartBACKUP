@@ -77,14 +77,14 @@ public class PlayerHit : MonoBehaviour
 
     void KillMePlayer()
     {
-        GameObject playerCorpse = new GameObject("enemyCorpse");
+        GameObject playerCorpse = new GameObject("playerCorpse");
         SpriteRenderer playerCorpseRenderer = playerCorpse.AddComponent<SpriteRenderer>();
         playerCorpse.transform.position = transform.position;
         playerCorpseRenderer.sprite = playerCorpseSprite;
         playerCorpseRenderer.flipX = playerSpriteRenderer.flipX;
         playerCorpseRenderer.transform.localScale = transform.localScale;
         isGameOver = true;
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
     void gameOver()
     {
@@ -130,9 +130,6 @@ public class PlayerHit : MonoBehaviour
             {
                 playerHit++;
                 StartCoroutine(PlayerTakeDamageColour());
-
-                //refHealthController.
-                //PlayerHP(hpLost);
 
                 TakeDamage(hpLost);
 
