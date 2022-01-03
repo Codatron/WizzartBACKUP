@@ -22,34 +22,28 @@ public class SinePatrol : MonoBehaviour
     public Sine sineX;
     public Sine sineY;
     public bool isOnPatrol;
-    public bool isOverSineMidX;
-    public bool isOverSineMidY;
-    public float sineMagHalfX;
-    public float sineMagHalfY;
+    public bool isPositiveSineX;
+    public bool isPositiveSineY;
 
     private Vector3 startPos;
     private EnemyAIPathfind enemyAIPathfindScript;
-
     
     void Start()
     {
         enemyAIPathfindScript = GetComponent<EnemyAIPathfind>();
         startPos = transform.position;
     }
-
    
     void Update()
     {
-        //Sine sineWave = new Sine();
-
         sineX.Tick();
         sineY.Tick();
 
         transform.position = startPos + (Vector3.right * sineX.sine) + (Vector3.up * sineY.sine);
 
         isOnPatrol = true;
-        CrossSineMidX();
-        CrossSineMidY();
+        SineXPositiveAmplitude();
+        SineYPositiveAmplitude();
         KillScriptWithinRange();
     }
 
@@ -62,27 +56,27 @@ public class SinePatrol : MonoBehaviour
         }
     }
 
-    private void CrossSineMidY()
+    private void SineYPositiveAmplitude()
     {
         if (sineX.sine > 0.0f)
         {
-            isOverSineMidY = true;
+            isPositiveSineY = true;
         }
         else if (sineX.sine <= -0.1f)
         {
-            isOverSineMidY = false;
+            isPositiveSineY = false;
         }
     }
 
-    private void CrossSineMidX()
+    private void SineXPositiveAmplitude()
     {
         if (sineY.sine > 0.0f)
         {
-            isOverSineMidX = true;
+            isPositiveSineX = true;
         }
         else if (sineY.sine <= -0.1f)
         {
-            isOverSineMidX = false;
+            isPositiveSineX = false;
         }
     }
 }

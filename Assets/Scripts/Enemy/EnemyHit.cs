@@ -15,7 +15,7 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
 
     private Rigidbody2D enemyRb;
     Transform lipsBig;
-    private int enemyHit;
+    public int enemyHit;
 
     void Start()
     {
@@ -36,6 +36,9 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
         enemySpriteRenderer.color = Color.white;
     }
 
+    // TODO: 
+    // - why does enemyHit increase by two sometimes?
+    // - Clue ? If circle collider is removed then everything works as it should.
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("ProjectilePlayer"))
@@ -43,11 +46,12 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
             enemyHit++;
             StartCoroutine(EnemyTakeDamageColour());
             // play audio
+            Debug.Log(enemyHit);
         }
 
         if (enemyHit >= hitPointsMax)
         {
-            if(gameObject.CompareTag("EnemyLollipopGirlBlue") || gameObject.CompareTag("EnemyLollipopGirlBlue"))
+            if(gameObject.CompareTag("EnemyLollipopGirlBlue"))
             {
                 KillMeRollergirl();
                 // play audio
@@ -66,11 +70,12 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
     }
 
     // TODO: 
-    // - why do two corpses show up sometimes?
+    // - why do two corpses appear sometimes?
     private void KillMeRollergirl()
     {
         GameObject Corpse = new GameObject("enemyCorpse");
         SpriteRenderer corpseRenderer = Corpse.AddComponent<SpriteRenderer>();
+        Destroy(gameObject);
         Rigidbody2D corpseRb = Corpse.AddComponent<Rigidbody2D>();
         CapsuleCollider2D corpseCapCollider = Corpse.AddComponent<CapsuleCollider2D>();
         
@@ -85,13 +90,12 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
         corpseRenderer.sprite = corpseSprite;
         corpseRenderer.flipX = enemySpriteRenderer.flipX;
         Corpse.transform.localScale = transform.localScale;
-        
+
         Vector2 slideDirection = (slideTarget.position - Corpse.transform.position).normalized;
         Vector2 slideForce = slideDirection * 600f;
         corpseRb.AddForce(slideForce);
         corpseRb.drag = 1.25f;
 
-        Destroy(gameObject);
         Destroy(corpseCapCollider, 0.75f);
     }
 
@@ -114,3 +118,5 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
         enemyRb.AddForce(magnitude * direction);
     }
 }
+
+
