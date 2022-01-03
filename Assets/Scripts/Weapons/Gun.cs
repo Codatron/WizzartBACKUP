@@ -18,6 +18,7 @@ public class Gun : MonoBehaviour
     public int ammoCount;
     public Integer2 ammoRef;
 
+    private int ammoMax = 50;
     private BoolKeeper refBoolKeeper;
     private SpriteRenderer gunSpriteRenderer;
     private SpriteRenderer bombHandsSpriteRenderer;
@@ -26,7 +27,7 @@ public class Gun : MonoBehaviour
     //TODO ingen ref tillbombhands och ta bort boolkeeper
     void Start()
     {
-        ammoCount = 50;
+        ammoCount = ammoMax;
         ammoRef.integerB = ammoCount;
 
         refBoolKeeper = GameObject.FindGameObjectWithTag("BoolKeeper").GetComponent<BoolKeeper>();
@@ -45,9 +46,9 @@ public class Gun : MonoBehaviour
         
         ammoRef.integerA = ammoCount;
 
-        if (ammoCount==0 && refBoolKeeper.dontShoot == false)
+        if (ammoCount <= 0 && refBoolKeeper.dontShoot == false)
         {
-            Reload();
+            Reload(ammoMax);
         }
     }
 
@@ -79,18 +80,16 @@ public class Gun : MonoBehaviour
         
         GameObject bulletClone = Instantiate(wineProjectiles[randomProjectile], firePoint.position, transform.rotation);
         bulletClone.GetComponent<Rigidbody2D>().velocity = transform.right * speed;
-
-        //TODO: disable muzzle flash after firing
-        // is it better to use the Sprite Renderer to do this or to Instantiate then Destroy instead?
-        // Interesting: When all whiteMuzzleFlashSpriteRenderer are NOT commented out and the Circle Game Object is manually deactivated in the inspector, something really cool happens...
     }
 
-    private void Reload()
+    private void Reload(int ammoToRefill)
     {              
-            ammoCount = 50;
-            speaker.PlayOneShot(refill);
+            //ammoCount = 50;
             refBoolKeeper.dontShoot = true;
-            Invoke("DontShoot", 1.0f);     
+            Invoke("DontShoot", 1.0f);
+            speaker.PlayOneShot(refill);
+            //RefillAmmo(ammoCount);
+            ammoCount = ammoToRefill;
     }
 
     void DontShoot()

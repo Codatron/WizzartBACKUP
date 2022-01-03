@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8584147434389101494}
   - component: {fileID: 8584147434389101495}
-  - component: {fileID: 8584147434389101480}
   - component: {fileID: 5416377631658142814}
   - component: {fileID: 3832259326673518319}
+  - component: {fileID: 8584147434389101480}
   - component: {fileID: -8585287964151753815}
   m_Layer: 0
   m_Name: ProjectileWine4
@@ -86,18 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8584147434389101480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8584147434389101481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8944449e443ffcb4a8ad8a609eb618be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &5416377631658142814
 Rigidbody2D:
   serializedVersion: 4
@@ -135,6 +123,18 @@ CircleCollider2D:
   m_Offset: {x: 0.39, y: 0}
   serializedVersion: 2
   m_Radius: 0.3
+--- !u!114 &8584147434389101480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8584147434389101481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8944449e443ffcb4a8ad8a609eb618be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-8585287964151753815
 MonoBehaviour:
   m_ObjectHideFlags: 0

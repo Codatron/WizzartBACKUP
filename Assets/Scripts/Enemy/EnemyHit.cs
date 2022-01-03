@@ -17,12 +17,16 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
     Transform lipsBig;
     public int enemyHit;
 
+    bool isDead;
+
     void Start()
     {
         enemyRb = GetComponent<Rigidbody2D>();
         enemySpriteRenderer = transform.Find("SpriteRenderer").GetComponent<SpriteRenderer>();
        
         enemyHit = 0;
+
+        isDead = false;
     }
 
     IEnumerator EnemyTakeDamageColour()
@@ -49,8 +53,10 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
             Debug.Log(enemyHit);
         }
 
-        if (enemyHit >= hitPointsMax)
+        if (enemyHit >= hitPointsMax && !isDead)
         {
+            isDead = true;
+
             if(gameObject.CompareTag("EnemyLollipopGirlBlue"))
             {
                 KillMeRollergirl();
@@ -97,6 +103,8 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
         corpseRb.drag = 1.25f;
 
         Destroy(corpseCapCollider, 0.75f);
+
+        
     }
 
     private void KillMeLipsBig(int numberToSpawn)
