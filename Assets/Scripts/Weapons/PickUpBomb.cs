@@ -16,7 +16,6 @@ public class PickUpBomb : MonoBehaviour
     public Sprite factory_3;
     public GameObject clone;
 
-    public SpawnBomb refSpawnBomb;
     public GameObject boomPlace;
 
     public Transform camera2;
@@ -34,8 +33,6 @@ public class PickUpBomb : MonoBehaviour
     bool factoryBombTimes = true;
 
     public StartBossFight startBossFight;
-
-    
 
     private void Start()
     {
@@ -65,9 +62,7 @@ public class PickUpBomb : MonoBehaviour
             refBoolKeeper.dontShoot = false;
 
             bombCounter++;
-            refSpawnBomb.bombSpawnCounter = 0;
-
-            Debug.Log(refSpawnBomb.bombSpawnCounter);
+          
         }
     }
     private void bombExposition()

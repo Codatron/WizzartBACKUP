@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4362113953053773403}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,7 +97,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.022932291, y: -0.8140943}
+  m_Offset: {x: -0.04621792, y: -0.6510906}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -108,7 +108,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.2375312, y: 0.5884781}
+  m_Size: {x: 2.0791836, y: 0.7654524}
   m_EdgeRadius: 0
 --- !u!114 &1221453543
 MonoBehaviour:
@@ -124,5 +124,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   lipsPrefab: {fileID: 5574002559415487112, guid: e5ce4f9e53ae333499cd08b436e01352, type: 3}
-  distanceToTarget: 8.5
   spawnRate: 3
+  alertDistance: 0

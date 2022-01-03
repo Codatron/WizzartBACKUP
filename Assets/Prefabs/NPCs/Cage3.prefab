@@ -209,8 +209,6 @@ MonoBehaviour:
   moveCameraTo: {fileID: 6077889928939245199}
   moveCamera: {fileID: 2394116689279669549}
   spriteRend: 0
-  brookenGlas: {fileID: 8300000, guid: ff839dc3c6ef56e4682147e565c961a6, type: 3}
-  speaker: {fileID: 5013372615901778549}
 --- !u!114 &2394116689279669549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera2: {fileID: 0}
   cameraShake: {fileID: 0}
-  Crash: {fileID: 0}
+  Crash: {fileID: 3768072259054866278, guid: a75dd2b014484764c88eba6d7cb119a8, type: 3}
   CrashPlace: {fileID: 4390332617062399751}
   cageHealth: {fileID: 566984276317655865}
 --- !u!82 &5013372615901778549
