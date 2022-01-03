@@ -96,13 +96,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e87fda646ba969d459b2fc2e9cc246cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bombFactory: {fileID: 3776409425967241247, guid: e27b9c338884f764e8ab0db35087f7ac, type: 3}
+  bombFactory: {fileID: 6904187513140425104, guid: 14b6e61aa42c74744b0890fc41b7c6de, type: 3}
   dropBombPos: {fileID: 0}
-  factory_1: {fileID: 0}
+  factory_1: {fileID: 3671086159987676483, guid: d1e002628042abf4f9403459f9b99086, type: 3}
   boom: {fileID: 0}
   factory_2: {fileID: 0}
   factory_3: {fileID: 0}
-  clone: {fileID: 0}
+  clone: {fileID: 6904187513140425104, guid: 14b6e61aa42c74744b0890fc41b7c6de, type: 3}
   refSpawnBomb: {fileID: 0}
   boomPlace: {fileID: 0}
   camera2: {fileID: 0}
@@ -110,7 +110,9 @@ MonoBehaviour:
   smoke_1: {fileID: 9052500864648585006, guid: 95af9d4713ee495498f11e53ac6dfcb0, type: 3}
   smoke_2: {fileID: 9052500864648585006, guid: 30f25fd278323064e933c31c270eea9e, type: 3}
   smokePlace: {fileID: 9052500864648585006, guid: 30f25fd278323064e933c31c270eea9e, type: 3}
+  smokePlace2: {fileID: 0}
   bombCounter: 0
+  startBossFight: {fileID: 0}
 --- !u!58 &-2904663444369944948
 CircleCollider2D:
   m_ObjectHideFlags: 0

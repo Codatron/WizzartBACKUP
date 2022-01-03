@@ -31,6 +31,11 @@ public class PickUpBomb : MonoBehaviour
     public int bombCounter = 0;
 
     Vector3 cameraOrgPos;
+    bool factoryBombTimes = true;
+
+    public StartBossFight startBossFight;
+
+    
 
     private void Start()
     {
@@ -90,25 +95,28 @@ public class PickUpBomb : MonoBehaviour
         StartCoroutine(cameraShake.Shake(.25f, .8f));
         Destroy(boomClone, 0.8f);
 
-        if (bombCounter==1)
+        if (bombCounter==1 && factoryBombTimes)
         {
             GameObject smallSmokeClone = Instantiate(smoke_1, smokePlace.transform.position, Quaternion.identity);
             GameObject smallSmokeClone2 = Instantiate(smoke_1, smokePlace2.transform.position, Quaternion.identity);
 
         }
 
-        if (bombCounter==2)
+        if (bombCounter==2 && factoryBombTimes)
         {
             factory_1.GetComponent<SpriteRenderer>().sprite = factory_2;
             GameObject largeSmokeClone1 = Instantiate(smoke_1, smokePlace.transform.position, Quaternion.identity);
             GameObject largeSmokeClone2 = Instantiate(smoke_2, smokePlace2.transform.position, Quaternion.identity);
         }
 
-        if (bombCounter == 3)
+        if (bombCounter == 3 && factoryBombTimes)
         {
             factory_1.GetComponent<SpriteRenderer>().sprite = factory_3;
             GameObject largeSmokeClone1 = Instantiate(smoke_2, smokePlace.transform.position, Quaternion.identity);
             GameObject largeSmokeClone2 = Instantiate(smoke_2, smokePlace2.transform.position, Quaternion.identity);
+            factoryBombTimes = false;
+
+            startBossFight.StartMono();
         }
     }
 

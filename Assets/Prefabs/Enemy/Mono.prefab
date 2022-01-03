@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 1611111574191101274}
   - component: {fileID: 294846164}
   - component: {fileID: 6108591582717200337}
-  - component: {fileID: -2648444039507967539}
+  - component: {fileID: 3217666680543275188}
   m_Layer: 0
   m_Name: Mono
   m_TagString: Mono
@@ -166,14 +166,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 5311104528735824546, guid: c8676043af13f8040a6785baf983f4b1, type: 3}
+  - {fileID: 1525130311410367674, guid: de4356f01e12e77499426c0013fe3865, type: 3}
+  - {fileID: 6412192414724220462, guid: 044a669911309e34faabebdb1539013c, type: 3}
+  - {fileID: 1525130311410367674, guid: de4356f01e12e77499426c0013fe3865, type: 3}
+  - {fileID: 6412192414724220462, guid: 044a669911309e34faabebdb1539013c, type: 3}
+  - {fileID: 1525130311410367674, guid: de4356f01e12e77499426c0013fe3865, type: 3}
+  - {fileID: 6412192414724220462, guid: 044a669911309e34faabebdb1539013c, type: 3}
+  - {fileID: 1525130311410367674, guid: de4356f01e12e77499426c0013fe3865, type: 3}
+  - {fileID: 6412192414724220462, guid: 044a669911309e34faabebdb1539013c, type: 3}
   speed: 20
 --- !u!50 &1611111574191101274
 Rigidbody2D:
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwShots: 2
   fireRate: 2
-  firePoint: {fileID: 0}
+  firePoint: {fileID: 2289066883168272251}
   paintShoot: {fileID: 1547307247055698776, guid: 355fb3ec3eef8cc42a3ea4055dd0aecc, type: 3}
 --- !u!114 &6108591582717200337
 MonoBehaviour:
@@ -226,25 +226,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stage: 0
   spawnPositionList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1525130311410367674, guid: de4356f01e12e77499426c0013fe3865, type: 3}
+  - {fileID: 6412192414724220462, guid: 044a669911309e34faabebdb1539013c, type: 3}
+  - {fileID: 1525130311410367674, guid: de4356f01e12e77499426c0013fe3865, type: 3}
+  - {fileID: 6412192414724220462, guid: 044a669911309e34faabebdb1539013c, type: 3}
+  - {fileID: 1525130311410367674, guid: de4356f01e12e77499426c0013fe3865, type: 3}
+  - {fileID: 6412192414724220462, guid: 044a669911309e34faabebdb1539013c, type: 3}
+  - {fileID: 1525130311410367674, guid: de4356f01e12e77499426c0013fe3865, type: 3}
+  - {fileID: 6412192414724220462, guid: 044a669911309e34faabebdb1539013c, type: 3}
+  - {fileID: 6412192414724220462, guid: 044a669911309e34faabebdb1539013c, type: 3}
+  - {fileID: 1525130311410367674, guid: de4356f01e12e77499426c0013fe3865, type: 3}
+  - {fileID: 6412192414724220462, guid: 044a669911309e34faabebdb1539013c, type: 3}
+  - {fileID: 1525130311410367674, guid: de4356f01e12e77499426c0013fe3865, type: 3}
   paintEnemy1: {fileID: 3826571666344718028, guid: a4698e781bac3ec4b8c82b1bc15a553a, type: 3}
   paintEnemy2: {fileID: 3247442076611821051, guid: 958bc0d1b7d43c7418f8ee2f4a38eaf6, type: 3}
   spawnRate: 2
   paintCircleSpawn: {fileID: 1611111573765816947}
-  monoClones: {fileID: 0}
-  monoShoot: {fileID: 0}
---- !u!114 &-2648444039507967539
+  monoShoot: {fileID: 294846164}
+--- !u!114 &3217666680543275188
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,12 +252,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3130583881813064300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb697811b90f7624fa16c327da3cb485, type: 3}
+  m_Script: {fileID: 11500000, guid: c47ee24f484136d49b13df2f1598dbe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clonePoints: []
-  monoClone: {fileID: 7527845643012428061, guid: c67f5a585a66c3440b9c996497136672, type: 3}
-  refBoolKeeper: {fileID: 0}
+  currentHealth: 0
+  monoSpriteRenderer: {fileID: 5536855720576252951}
 --- !u!1 &5016198693007059165
 GameObject:
   m_ObjectHideFlags: 0

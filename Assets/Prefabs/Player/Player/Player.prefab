@@ -5396,7 +5396,7 @@ PrefabInstance:
     - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
       propertyPath: clone
       value: 
-      objectReference: {fileID: 3776409425967241247, guid: e27b9c338884f764e8ab0db35087f7ac, type: 3}
+      objectReference: {fileID: 5278589069400425860, guid: ab67869b09d06ac45a400df6c820695c, type: 3}
     - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
       propertyPath: factory_2
       value: 

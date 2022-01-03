@@ -30,10 +30,12 @@ public class BossFight : MonoBehaviour
     public float spawnRate;
    
     public PaintCircleSpawn paintCircleSpawn;
-    public MonoClones monoClones;
+    //public MonoClones monoClones;
     public MonoShoot monoShoot;
     public delegate void ShootDelegate();
     public ShootDelegate shootDelagate;
+
+    MonoClones monoClones;
 
     private void Start()
     {
@@ -44,12 +46,16 @@ public class BossFight : MonoBehaviour
         StartBattle();
 
         shootDelagate += monoShoot.MonoShoots;
+
+        monoClones = GameObject.FindGameObjectWithTag("MonoClone").GetComponent<MonoClones>();
+
     }
 
     private void Update()
     {
         if (stage == Stage.Idel) //TODO SWITHC
         {
+
             shootDelagate?.Invoke();
         }
 
@@ -68,6 +74,7 @@ public class BossFight : MonoBehaviour
         if (stage == Stage.Stage_3)
         {          
             paintCircleSpawn.StopSpawningBlobs();
+            
             monoClones.MonoClone();
             shootDelagate?.Invoke();
             DestroyAllEnemy();

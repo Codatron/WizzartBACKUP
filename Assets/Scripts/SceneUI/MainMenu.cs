@@ -4,7 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
-{ 
+{
+    AudioSource m_MyAudioSource;
+    float m_MySliderValue;
+
+
+    private void Start()
+    {
+        m_MyAudioSource = GetComponent<AudioSource>();
+        
+
+    }
     public void ExitLevel()
     {
         SceneManager.LoadScene(sceneBuildIndex: 2);
@@ -12,6 +22,10 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(sceneBuildIndex: 1);
+        m_MyAudioSource.volume = 0.5f;
+
+
+
     }
     public void QuitGame()
     {

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2993445839436829238}
   m_Layer: 0
   m_Name: MonoClone
-  m_TagString: Mono
+  m_TagString: MonoClone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
