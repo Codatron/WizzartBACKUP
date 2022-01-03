@@ -6,21 +6,23 @@ public class MonoClones : MonoBehaviour
 {
     public Transform[] clonePoints;
     public GameObject monoClone;
-    public BoolKeeper refBoolKeeper;
+    bool cloning;
+    public BossFight bossFight;
 
     public void MonoClone()
 
-    {
-        if (refBoolKeeper.cloneing == false)
+    {       
+        if (cloning == false)
         {
             for (int i = 0; i < 4; i++)
             {
                 Vector3 spawnPosition = clonePoints[i].position;
                 GameObject mClone = Instantiate(monoClone, spawnPosition, Quaternion.identity);
+                mClone.GetComponent<MonoMovmentState>().movePoints = GetComponent<MonoMovmentState>().movePoints;
+               bossFight.cloneSpawnList.Add(mClone);
             }
 
-            refBoolKeeper.cloneing = true;
+            cloning = true;
         }
-    }
-       
+    }      
 }

@@ -11,6 +11,7 @@ public class BossFight : MonoBehaviour
         Stage_1,
         Stage_2,
         Stage_3,
+        Stage_4,
         Dead,
     }
 
@@ -20,6 +21,7 @@ public class BossFight : MonoBehaviour
 
     List<GameObject> prefabList = new List<GameObject>();
     List<GameObject> enemySpawnList = new List<GameObject>();
+   public List<GameObject> cloneSpawnList = new List<GameObject>();
 
     public GameObject paintEnemy1;
     public GameObject paintEnemy2;
@@ -35,8 +37,6 @@ public class BossFight : MonoBehaviour
     public delegate void ShootDelegate();
     public ShootDelegate shootDelagate;
 
-    //MonoClones monoClones;
-
     private void Start()
     {
         prefabList.Add(paintEnemy1);
@@ -46,8 +46,6 @@ public class BossFight : MonoBehaviour
         StartBattle();
 
         shootDelagate += monoShoot.MonoShoots;
-
-       // monoClones = GameObject.FindGameObjectWithTag("MonoClone").GetComponent<MonoClones>();
 
     }
 
@@ -72,17 +70,24 @@ public class BossFight : MonoBehaviour
         }
 
         if (stage == Stage.Stage_3)
-        {          
+        {
+            Debug.Log("HEJ");
             paintCircleSpawn.StopSpawningBlobs();
 
             monoClones.MonoClone();
             shootDelagate?.Invoke();
-            DestroyAllEnemy();
+            DestroyAllSpawnEnemy();
+        }
+
+        if (stage == Stage.Stage_4)
+        {
+           DestroyAllClone();           
+           shootDelagate?.Invoke();    
         }
 
         if (stage == Stage.Dead)
         {
-            
+            DestroyAllSpawnEnemy();
         }
     }
 
@@ -108,12 +113,22 @@ public class BossFight : MonoBehaviour
         }
     }
 
-    private void DestroyAllEnemy()
+    private void DestroyAllSpawnEnemy()
     {
         foreach (GameObject enemySpawn in enemySpawnList)
         {
             Destroy(GameObject.FindWithTag("PaintEnemy"));
         }
     }
+
+    private void DestroyAllClone()
+    {
+        foreach (GameObject monoClones in cloneSpawnList)
+        {
+            Destroy(GameObject.FindWithTag("MonoClone"));
+        }
+    }
+
+
 }
 
