@@ -73,7 +73,7 @@ public class PlayerHit : MonoBehaviour
 
     void KillMePlayer()
     {
-	//gameObject.GetComponent<Animator>().Play("Gundeath");
+	playerSpriteRenderer.GetComponent<Animator>().enabled=true;
         GameObject playerCorpse = new GameObject("playerCorpse");
         SpriteRenderer playerCorpseRenderer = playerCorpse.AddComponent<SpriteRenderer>();
         playerCorpse.transform.position = transform.position;
