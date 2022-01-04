@@ -36,11 +36,9 @@ public class MonoMovmentState : MonoBehaviour
 
     void Movement()
 
-    {
-        
+    {       
         Vector3 clonePosition = new Vector3(currentTarget.position.x + offSet, currentTarget.position.y+ offSet);
         transform.position = Vector3.MoveTowards(transform.position, clonePosition, speed * Time.deltaTime);
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)

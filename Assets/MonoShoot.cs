@@ -30,8 +30,7 @@ public class MonoShoot : MonoBehaviour
             if (shootCounter==5)
             {
                 shootCounter = 0;
-            }
-            
+            }           
         }
         else
         {

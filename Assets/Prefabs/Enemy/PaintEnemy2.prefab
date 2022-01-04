@@ -116,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpriteRenderer: {fileID: 2116002846168059477}
   hitPointsMax: 3
+  enemyRb: {fileID: -2933188528250627609}
   isDead: 0
 --- !u!50 &-2933188528250627609
 Rigidbody2D:

@@ -137,6 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpriteRenderer: {fileID: 4383779315965522455}
   hitPointsMax: 3
+  enemyRb: {fileID: 1559383849}
   isDead: 0
 --- !u!114 &-4786504259113278009
 MonoBehaviour:

@@ -32,7 +32,7 @@ public class PickUpBomb : MonoBehaviour
     Vector3 cameraOrgPos;
     bool factoryBombTimes = true;
 
-    public StartBossFight startBossFight;
+    StartBossFight startBossFight;
 
     public bool fixedCamera = false;
 
@@ -42,6 +42,8 @@ public class PickUpBomb : MonoBehaviour
 
         GameObject g = GameObject.FindGameObjectWithTag("BoolKeeper");
         refBoolKeeper = g.GetComponent<BoolKeeper>();
+
+       startBossFight = GameObject.FindGameObjectWithTag("Factory").GetComponent<StartBossFight>();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

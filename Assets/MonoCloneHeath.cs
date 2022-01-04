@@ -8,19 +8,16 @@ public class MonoCloneHeath : MonoBehaviour
     public SpriteRenderer monoSpriteRenderer;
     
     void Start()
-    {
-        
+    {      
         currentHealth = 50;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
-        }
-        
+        }       
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,8 +28,6 @@ public class MonoCloneHeath : MonoBehaviour
             currentHealth--;
         }
     }
-
-
 
     IEnumerator MonoTakeDamageColour2()
     {

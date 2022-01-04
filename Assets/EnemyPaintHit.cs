@@ -7,7 +7,7 @@ public class EnemyPaintHit : MonoBehaviour, IGetKnockedBack
     public SpriteRenderer enemySpriteRenderer;
     public int hitPointsMax;
 
-    private Rigidbody2D enemyRb;
+    public Rigidbody2D enemyRb;
     private int enemyHit;
     public bool isDead;
 

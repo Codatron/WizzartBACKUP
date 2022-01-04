@@ -29,7 +29,7 @@ public class CageHealth : MonoBehaviour
     void Start()
     {
         
-        health = 100;
+        health = 50;
        
     }
 
@@ -56,15 +56,15 @@ public class CageHealth : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        if (other.gameObject.CompareTag("Player") && pickUpBomb )
-        {
-            spriteRend = 2;
+        //if (other.gameObject.CompareTag("Player") && pickUpBomb )
+        //{
+        //    spriteRend = 2;
            
-            GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled = true;
-            GameObject.FindGameObjectWithTag("Gun").GetComponent<SpriteRenderer>().enabled = false;
+        //    GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled = true;
+        //    GameObject.FindGameObjectWithTag("Gun").GetComponent<SpriteRenderer>().enabled = false;
 
-            pickUpBomb = false;
-        }
+        //    pickUpBomb = false;
+        //}
     }
 
     public void HealthCage()

@@ -100,10 +100,9 @@ MonoBehaviour:
   dropBombPos: {fileID: 0}
   factory_1: {fileID: 3671086159987676483, guid: d1e002628042abf4f9403459f9b99086, type: 3}
   boom: {fileID: 2532445909582639313, guid: efcbf25dac45486489ffc94050c9b549, type: 3}
-  factory_2: {fileID: 21300000, guid: 6f2f3b767bb6c4d4892a1f4e68fc9634, type: 3}
-  factory_3: {fileID: 21300000, guid: b5ac13530ca3c664ea58ed93cd281ac0, type: 3}
+  factory_2: {fileID: -168999006757192785, guid: 6f2f3b767bb6c4d4892a1f4e68fc9634, type: 3}
+  factory_3: {fileID: 6186198610658311686, guid: b5ac13530ca3c664ea58ed93cd281ac0, type: 3}
   clone: {fileID: 6904187513140425104, guid: 14b6e61aa42c74744b0890fc41b7c6de, type: 3}
-  refSpawnBomb: {fileID: 0}
   boomPlace: {fileID: 0}
   camera2: {fileID: 0}
   cameraShake: {fileID: 0}
@@ -113,6 +112,7 @@ MonoBehaviour:
   smokePlace2: {fileID: 0}
   bombCounter: 0
   startBossFight: {fileID: 0}
+  fixedCamera: 0
 --- !u!58 &-2904663444369944948
 CircleCollider2D:
   m_ObjectHideFlags: 0

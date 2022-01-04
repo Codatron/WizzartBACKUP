@@ -18,11 +18,10 @@ public class BossFight : MonoBehaviour
     public Stage stage;
 
     public List<Transform> spawnPositionList = new List<Transform>();
-
+    public List<GameObject> cloneSpawnList = new List<GameObject>();
     List<GameObject> prefabList = new List<GameObject>();
     List<GameObject> enemySpawnList = new List<GameObject>();
-   public List<GameObject> cloneSpawnList = new List<GameObject>();
-
+    
     public GameObject paintEnemy1;
     public GameObject paintEnemy2;
     
@@ -46,7 +45,6 @@ public class BossFight : MonoBehaviour
         StartBattle();
 
         shootDelagate += monoShoot.MonoShoots;
-
     }
 
     private void Update()
@@ -70,8 +68,7 @@ public class BossFight : MonoBehaviour
         }
 
         if (stage == Stage.Stage_3)
-        {
-            Debug.Log("HEJ");
+        {           
             paintCircleSpawn.StopSpawningBlobs();
 
             monoClones.MonoClone();
