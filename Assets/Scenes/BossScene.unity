@@ -1259,6 +1259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuMusic: {fileID: 0}
   levelMusic: {fileID: 0}
+  bossMusic: {fileID: 0}
   source: {fileID: 0}
 --- !u!1 &119359039
 GameObject:
@@ -3276,6 +3277,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3130583881813064300, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
   m_PrefabInstance: {fileID: 1161724498}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &880759085
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880759084}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2a42a119570d2a047a367d13802bc6f3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &899318308
 GameObject:
   m_ObjectHideFlags: 0

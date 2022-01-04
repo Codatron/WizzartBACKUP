@@ -8,7 +8,7 @@ public class MonoHealth : MonoBehaviour
     public Slider slider;
     public SpriteRenderer monoSpriteRenderer;
 
-    private int maxHealth = 500;
+    private int maxHealth = 5;
     private int currentHealth;
     private BossFight bossFight;
 
