@@ -21,6 +21,7 @@ public class PlayerHealthController : MonoBehaviour
 
     public void SetCurrentHealth(int health)
     {
+     
         slider.value = health;
     }
 }

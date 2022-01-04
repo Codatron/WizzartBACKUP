@@ -9,7 +9,7 @@ public class MonoCloneHeath : MonoBehaviour
     
     void Start()
     {      
-        currentHealth = 50;
+        currentHealth = 30;
     }
 
     void Update()

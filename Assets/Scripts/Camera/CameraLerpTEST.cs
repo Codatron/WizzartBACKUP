@@ -44,9 +44,16 @@ public class CameraLerpTEST : MonoBehaviour
 
     private void FollowTarget()
     {
+        if (target==null)
+        {
+            return;
+        }
+
         Vector3 targetPos = target.position + camOffset;
         Vector3 camSmoothPos = Vector3.Lerp(transform.position, targetPos, smoothingValue);
         transform.position = camSmoothPos;
+
+
     }
     //TODO: Camera follows ahead of player after completing LERP?
 

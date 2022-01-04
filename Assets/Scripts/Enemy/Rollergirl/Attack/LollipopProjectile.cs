@@ -21,10 +21,22 @@ public class LollipopProjectile: MonoBehaviour
     private void Start()
     {
         //Makes lollipop find the position of the Player
-        player = GameObject.FindGameObjectWithTag(targetName.ToString()).transform;
-        target = player.position;
+        GameObject p = GameObject.FindGameObjectWithTag(targetName.ToString());
 
-        Destroy(gameObject, lifeSpan);
+
+        if (p ==null)
+        {
+            Destroy(gameObject);
+            
+        }
+
+        else
+        {
+            player = p.transform;
+            target = player.position;
+            Destroy(gameObject, lifeSpan);
+        }
+    
     }
 
     private void Update()

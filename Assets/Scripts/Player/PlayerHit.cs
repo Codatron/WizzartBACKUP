@@ -36,6 +36,7 @@ public class PlayerHit : MonoBehaviour
     public int playerHealthMax = 10;
     public int playerHealthCurrent;
     public Integer2 HealthRef;
+    public RuntimeAnimatorController deathController;
 
     private void Awake()
     {
@@ -73,39 +74,44 @@ public class PlayerHit : MonoBehaviour
 
     void KillMePlayer()
     {
-	playerSpriteRenderer.GetComponent<Animator>().enabled=true;
+	    
         GameObject playerCorpse = new GameObject("playerCorpse");
         SpriteRenderer playerCorpseRenderer = playerCorpse.AddComponent<SpriteRenderer>();
         playerCorpse.transform.position = transform.position;
         playerCorpseRenderer.sprite = playerCorpseSprite;
         playerCorpseRenderer.flipX = playerSpriteRenderer.flipX;
-        playerCorpseRenderer.transform.localScale = transform.localScale;
+      //  playerCorpseRenderer.transform.localScale = transform.localScale;
+        Animator anim = playerCorpse.AddComponent<Animator>();
+        anim.runtimeAnimatorController = deathController;
+
+        anim.Play("Gundeath");
         isGameOver = true;
         Destroy(gameObject);
     }
-    void gameOver()
-    {
-        if (playerHit >= 10)
-        {
-            Time.timeScale = 0f;
-        }
-    }
+    //void gameOver()
+    //{
+    //    if (playerHit >= 10)
+    //    {
+    //        Time.timeScale = 0f;
+    //    }
+    //}
 
     private void Update()
     {
         HealthRef.integerA = playerHealthCurrent;
         HealthRef.integerB = playerHealthMax;
 
-        if (playerHit >= 10)
+        if (playerHealthCurrent <= 0)
         {
             KillMePlayer();
-            float timeLimit = 1.5f;
 
-            if(Time.time > timeLimit)
-            {
-                Time.timeScale = 0f;
-                gameOverScreen.SetActive(true);
-            }
+            //float timeLimit = 1.5f;
+
+            //if (Time.time > timeLimit)
+            //{
+            //    Time.timeScale = 0f;
+            //    gameOverScreen.SetActive(true);
+            //}
         }
 
         //if (isGameOver)
@@ -118,7 +124,7 @@ public class PlayerHit : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         //For random play/sprite
-        int phrasesIndex = UnityEngine.Random.Range(0, 4);
+        int phrasesIndex = UnityEngine.Random.Range(0, 3);
         int soundIndex = UnityEngine.Random.Range(0, 4);
 
         if (!invincible)
@@ -134,7 +140,7 @@ public class PlayerHit : MonoBehaviour
                 StartCoroutine(Invulnerability());
 
                 //random prefab for skada
-               GameObject hitPrefab = Instantiate(phrasesList[phrasesIndex], transform.position, Quaternion.identity);
+                GameObject hitPrefab = Instantiate(phrasesList[phrasesIndex], transform.position, Quaternion.identity);
                 Destroy(hitPrefab, 0.5f);
 
                 //Play random sound hit
@@ -142,11 +148,16 @@ public class PlayerHit : MonoBehaviour
 
                 //TODO lagg till så att ett ljud får spelas klart innan nästa
 
-                if (playerHit >= 10)
-                {
-                    Time.timeScale = 0f;
-                    isGameOver = true;
-                }
+                //if (playerHit >= 10)
+                //{
+                //    Time.timeScale = 0f;
+                //    isGameOver = true;
+                //}
+
+
+
+
+
             }
         }
     }

@@ -24,8 +24,7 @@ using DialogueSystem;
         private void Start()
         {
             player = GetComponent<Rigidbody2D>();
-            cageHealth = FindObjectOfType<CageHealth>();
-            
+            cageHealth = FindObjectOfType<CageHealth>();     
         }
         private void FixedUpdate()
         {

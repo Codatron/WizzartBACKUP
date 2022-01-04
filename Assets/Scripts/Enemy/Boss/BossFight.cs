@@ -56,7 +56,6 @@ public class BossFight : MonoBehaviour
     {
         if (stage == Stage.Idel) //TODO SWITHC
         {
-
             shootDelagate?.Invoke();
         }
 
@@ -83,7 +82,8 @@ public class BossFight : MonoBehaviour
 
         if (stage == Stage.Stage_4)
         {
-           DestroyAllClone();           
+            SpawnEnemy();
+            DestroyAllClone();           
            shootDelagate?.Invoke();    
         }
 
@@ -99,8 +99,6 @@ public class BossFight : MonoBehaviour
             camera2.transform.DOMove(cameraOrgPos, 1).SetDelay(2).SetUpdate(true).OnComplete(Reset);
         }
     }
-
-
     private void StartBattle()
     {
         //stage = Stage.Stage_1;
@@ -142,7 +140,5 @@ public class BossFight : MonoBehaviour
     {
          Time.timeScale = 1;
     }
-
-
 }
 

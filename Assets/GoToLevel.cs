@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class GoToLevel : MonoBehaviour
 {
-    
+    PlayerHit playerHit;
 
     private void Start()
     {
-        
+        playerHit = FindObjectOfType<PlayerHit>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -26,6 +26,9 @@ public class GoToLevel : MonoBehaviour
         {
             SceneManager.LoadScene("BossScene");
             MusicSound.PlayBossMusic();
+            //playerHit.playerHealthCurrent = 50;
+
+
         }
         
     }

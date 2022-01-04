@@ -86,7 +86,7 @@ public class MusicSound : MonoBehaviour
             if (instance.source != null)
             {
                 instance.source.Stop();
-                instance.source.clip = instance.levelMusic;
+                instance.source.clip = instance.bossMusic;
                 instance.source.Play();
             }
         }
