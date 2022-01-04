@@ -44865,6 +44865,10 @@ PrefabInstance:
       propertyPath: smokePlace2
       value: 
       objectReference: {fileID: 45328420}
+    - target: {fileID: 5857821858681598454, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
+      propertyPath: clipFactoryExplosion
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bb378da975d1eb459ead638cb95aaf7, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
 --- !u!1001 &1421625138
@@ -55793,7 +55797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1770099145
 Transform:
   m_ObjectHideFlags: 0

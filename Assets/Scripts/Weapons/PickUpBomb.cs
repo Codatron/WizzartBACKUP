@@ -36,8 +36,13 @@ public class PickUpBomb : MonoBehaviour
 
     public bool fixedCamera = false;
 
+    public AudioClip clipFactoryExplosion;
+    private AudioSource audioSource;
+
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         GetComponent<SpriteRenderer>().enabled = false;
 
         GameObject g = GameObject.FindGameObjectWithTag("BoolKeeper");
@@ -76,6 +81,7 @@ public class PickUpBomb : MonoBehaviour
         Invoke(nameof(PlayExplosion), 2);
     }
 
+
     public void PlayExplosion()
     {
         Time.timeScale = 0;
@@ -86,6 +92,7 @@ public class PickUpBomb : MonoBehaviour
 
         StartCoroutine("Explosion");
         camera2.transform.DOMove(cameraOrgPos, 1).SetDelay(2).SetUpdate(true).OnComplete(Reset);//1 sek tillbaka 2sek som allt tog
+        GameManager.PlaySFXDirty(clipFactoryExplosion, 0.2f);
     }
    public IEnumerator Explosion()
     {

@@ -3,7 +3,22 @@ guid: e87fda646ba969d459b2fc2e9cc246cb
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - bombFactory: {instanceID: 0}
+  - dropBombPos: {instanceID: 0}
+  - factory_1: {instanceID: 0}
+  - boom: {instanceID: 0}
+  - factory_2: {instanceID: 0}
+  - factory_3: {instanceID: 0}
+  - clone: {instanceID: 0}
+  - boomPlace: {instanceID: 0}
+  - camera2: {instanceID: 0}
+  - cameraShake: {instanceID: 0}
+  - smoke_1: {instanceID: 0}
+  - smoke_2: {instanceID: 0}
+  - smokePlace: {instanceID: 0}
+  - smokePlace2: {instanceID: 0}
+  - clipFactoryExplosion: {fileID: 8300000, guid: 8bb378da975d1eb459ead638cb95aaf7, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

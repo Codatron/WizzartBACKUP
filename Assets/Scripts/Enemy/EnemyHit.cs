@@ -55,34 +55,26 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
         if (enemyHit >= hitPointsMax && !isDead)
         {
             isDead = true;
+            GameManager.PlaySFXDirty(clipHit, 0.2f);
 
-            if(gameObject.CompareTag("EnemyLollipopGirlBlue"))
+            if (gameObject.CompareTag("EnemyLollipopGirlBlue"))
             {
-                ImpactFX();
+                
                 KillMeRollergirl();
             }
 
             if (gameObject.CompareTag("EnemyLipsBig"))
             {
-                ImpactFX();
+               
                 KillMeLipsBig(numberInSwarm);
             }
 
             if (gameObject.CompareTag("EnemyLipsSmall"))
             {
-                ImpactFX();
+                
                 Destroy(gameObject);
             }
         }
-    }
-
-    void ImpactFX()
-    {
-        AudioSource s = new GameObject().AddComponent<AudioSource>();
-
-        s.PlayOneShot(clipHit);
-
-        Destroy(s.gameObject, 0.5f);
     }
 
     private void KillMeRollergirl()
