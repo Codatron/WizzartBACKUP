@@ -111,7 +111,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &2374428679382569706
 GameObject:
   m_ObjectHideFlags: 0
@@ -5275,7 +5275,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &3961631476931814705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5529,6 +5529,10 @@ PrefabInstance:
       propertyPath: wineProjectiles.Array.data[3]
       value: 
       objectReference: {fileID: 8584147434389101481, guid: cd9cfc8ef69d2a44ea876745f98eb991, type: 3}
+    - target: {fileID: 7992713213519745481, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
 --- !u!4 &5324855215983477673 stripped
