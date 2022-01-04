@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class BossFight : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class BossFight : MonoBehaviour
     
     public GameObject paintEnemy1;
     public GameObject paintEnemy2;
+    public GameObject Mono;
     
     int spawnEnemycounter;
     int maxEnemy = 15;
@@ -35,6 +37,9 @@ public class BossFight : MonoBehaviour
     public MonoShoot monoShoot;
     public delegate void ShootDelegate();
     public ShootDelegate shootDelagate;
+
+    Vector3 cameraOrgPos;
+    public Transform camera2;
 
     private void Start()
     {
@@ -82,9 +87,16 @@ public class BossFight : MonoBehaviour
            shootDelagate?.Invoke();    
         }
 
-        if (stage == Stage.Dead)
+        if (stage == Stage.Dead || Input.GetMouseButtonDown(1))
         {
             DestroyAllSpawnEnemy();
+
+            Time.timeScale = 0;
+            cameraOrgPos = camera2.transform.position;
+            Vector3 targetPos = Mono.transform.position;
+            targetPos.z = cameraOrgPos.z;
+            camera2.transform.DOMove(targetPos, 1).SetUpdate(true);
+            camera2.transform.DOMove(cameraOrgPos, 1).SetDelay(2).SetUpdate(true).OnComplete(Reset);
         }
     }
 
@@ -124,6 +136,11 @@ public class BossFight : MonoBehaviour
         {
             Destroy(GameObject.FindWithTag("MonoClone"));
         }
+    }
+
+    private void Reset()
+    {
+         Time.timeScale = 1;
     }
 
 

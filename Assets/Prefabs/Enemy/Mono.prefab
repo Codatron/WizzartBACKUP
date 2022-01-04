@@ -211,6 +211,13 @@ MonoBehaviour:
   fireRate: 2
   firePoint: {fileID: 2289066883168272251}
   paintShoot: {fileID: 1547307247055698776, guid: 355fb3ec3eef8cc42a3ea4055dd0aecc, type: 3}
+  paintShoot1: {fileID: 8739538310733331011, guid: 5d0b303f582332a49950963c309b7549, type: 3}
+  paintShoot2: {fileID: 8242906354251202192, guid: 6702e85c96cabe440bb10942588934eb, type: 3}
+  paintShoot3: {fileID: 2586528286436047602, guid: a704ba81f306ac742af0aa2ab83cbec6, type: 3}
+  paintShoot4: {fileID: 3094878471713238197, guid: 5aed6cc347ff9164b83ee75c0251ea84, type: 3}
+  paintShoot5: {fileID: 3510757317734417712, guid: 2af196cf6588429459c6279af0a26c38, type: 3}
+  paintShoot6: {fileID: 8881552103289262218, guid: f188475a90fa6e54d91372f83645f721, type: 3}
+  monoShootPaint: []
 --- !u!114 &6108591582717200337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,10 +246,12 @@ MonoBehaviour:
   cloneSpawnList: []
   paintEnemy1: {fileID: 3826571666344718028, guid: a4698e781bac3ec4b8c82b1bc15a553a, type: 3}
   paintEnemy2: {fileID: 3247442076611821051, guid: 958bc0d1b7d43c7418f8ee2f4a38eaf6, type: 3}
+  Mono: {fileID: 0}
   spawnRate: 2
   paintCircleSpawn: {fileID: 1611111573765816947}
   monoClones: {fileID: -436301454132409129}
   monoShoot: {fileID: 294846164}
+  camera2: {fileID: 0}
 --- !u!114 &3217666680543275188
 MonoBehaviour:
   m_ObjectHideFlags: 0
