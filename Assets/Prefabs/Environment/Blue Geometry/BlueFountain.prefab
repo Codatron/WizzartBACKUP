@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 5344105930036767081, guid: 23f49347dd5b2ad47a8891dcdd54e1d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -111,6 +111,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FX Fountain
       objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252674, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252674, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: cullingMode
       value: 3
@@ -125,11 +133,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: ShapeModule.type
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: ShapeModule.angle
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: TrailModule.enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: VelocityModule.enabled
@@ -144,6 +156,10 @@ PrefabInstance:
       value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: ClampVelocityModule.dampen
       value: 1
       objectReference: {fileID: 0}
@@ -153,7 +169,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: ShapeModule.radiusThickness
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: TrailModule.lifetime.scalar
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: InheritVelocityModule.m_Mode
@@ -169,11 +189,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: InitialModule.maxNumParticles
-      value: 1000
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 1.47
+      value: 3.17
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: ClampVelocityModule.drag.scalar
@@ -181,7 +201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 46.95
+      value: 10.21
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: ClampVelocityModule.separateAxis
@@ -189,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 41.9
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
@@ -229,11 +249,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252684, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252684, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.12
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252684, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: m_LocalPosition.z
