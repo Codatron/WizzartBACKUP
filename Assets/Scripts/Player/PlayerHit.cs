@@ -150,7 +150,6 @@ public class PlayerHit : MonoBehaviour
         }
     }
 
-    //andra farg vid skada
     IEnumerator PlayerTakeDamageColour()
     {
         playerSpriteRenderer = GameObject.FindGameObjectWithTag("PlayerSpriteRenderer").GetComponent<SpriteRenderer>();
@@ -164,7 +163,6 @@ public class PlayerHit : MonoBehaviour
         playerSpriteRenderer.color = Color.white;
     }
 
-    // so that the player dont take damage after hit
     IEnumerator Invulnerability()
     {
         invincible = true;

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2341682723881603889}
   - component: {fileID: 4232046363016170694}
   - component: {fileID: 4272534689135992819}
+  - component: {fileID: 6594674152330611855}
   m_Layer: 0
   m_Name: Cage1
   m_TagString: Cage1
@@ -184,6 +185,19 @@ MonoBehaviour:
   Crash: {fileID: 3768072259054866278, guid: a75dd2b014484764c88eba6d7cb119a8, type: 3}
   CrashPlace: {fileID: 9011005540136007304}
   cageHealth: {fileID: 2341682723881603889}
+--- !u!114 &6594674152330611855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2341682723881603883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790d3c506d83c67419eb64e7ba5f1c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
 --- !u!1 &3491130815812448824
 GameObject:
   m_ObjectHideFlags: 0

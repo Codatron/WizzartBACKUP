@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 1994631021642389055}
   - component: {fileID: 4189190655825386595}
   - component: {fileID: 4789806951382713346}
+  - component: {fileID: 7584866543030239400}
   m_Layer: 0
   m_Name: Cage2
   m_TagString: Cage2
@@ -202,7 +203,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.12786484, y: -4.9713306}
+  m_Offset: {x: -0.07510424, y: -4.9713306}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -213,7 +214,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.838051, y: 1.8206906}
+  m_Size: {x: 7.7325296, y: 1.8206906}
   m_EdgeRadius: 0
 --- !u!58 &1994631021642389055
 CircleCollider2D:
@@ -272,3 +273,16 @@ MonoBehaviour:
   Crash: {fileID: 3768072259054866278, guid: a75dd2b014484764c88eba6d7cb119a8, type: 3}
   CrashPlace: {fileID: 2399965304086708290}
   cageHealth: {fileID: 4189190655825386595}
+--- !u!114 &7584866543030239400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7778698399237053798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790d3c506d83c67419eb64e7ba5f1c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}

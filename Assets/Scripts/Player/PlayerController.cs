@@ -65,14 +65,15 @@ public class PlayerController : MonoBehaviour
             return false;
      
     }
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision) // OM COLLISION
     {
-        if (collision.gameObject.tag == ("Ally"))
+        if (collision.gameObject.tag == ("Cage1") || collision.gameObject.tag == ("Cage2") || collision.gameObject.tag == ("Cage3"))
         {
             npc = collision.gameObject.GetComponent<NPCController>();
 
             Debug.Log("Hi!");
-            if (Input.GetKey(KeyCode.E))
+
+            if (Input.GetKey(KeyCode.E)) //HAR PRATAR DOM 
             npc.ActivateDialogue();
         }
     }

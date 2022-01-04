@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueAteljéToggle : MonoBehaviour
 {
@@ -15,6 +16,12 @@ public class DialogueAteljéToggle : MonoBehaviour
             {
                 nextDialogue.SetActive(true);
             }
-        }    
+        }
+
+        if (!currentDialogue.activeSelf && !nextDialogue.activeSelf)
+        {
+            SceneManager.LoadScene(sceneBuildIndex: 1);
+            //BYT LÅT
+        }
     }
 }
