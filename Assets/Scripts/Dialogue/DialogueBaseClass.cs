@@ -7,7 +7,7 @@ namespace DialogueSystem
    
 {
 
-public class DialogueBaseClass : MonoBehaviour
+    public class DialogueBaseClass : MonoBehaviour
     {
        public bool finished { get; protected set; }
        protected IEnumerator WriteText(string input, TextMeshProUGUI textHolder,  float delay, AudioClip sound, float delayBetweenLines)

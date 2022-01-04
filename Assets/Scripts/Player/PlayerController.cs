@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class PlayerController : MonoBehaviour
 {   
@@ -16,9 +17,12 @@ public class PlayerController : MonoBehaviour
     private float xAxis;
     private float yAxis;
 
+    CageHealth cageHealth;
+
     private void Start()
     {
         player = GetComponent<Rigidbody2D>();
+        cageHealth = FindObjectOfType<CageHealth>();
     }
     private void FixedUpdate()
     {
@@ -65,20 +69,38 @@ public class PlayerController : MonoBehaviour
             return false;
      
     }
-    private void OnTriggerStay2D(Collider2D collision) // OM COLLISION
+    //private void OnTriggerStay2D(Collider2D collision) // OM COLLISION
+    //{
+    //    if (collision.gameObject.tag == ("Cage1") || collision.gameObject.tag == ("Cage2") || collision.gameObject.tag == ("Cage3"))
+    //    {
+    //        npc = collision.gameObject.GetComponent<NPCController>();
+
+
+    //        if (cageHealth.startDialog) //HAR PRATAR DOM 
+            
+    //            npc.ActivateDialogue();                      
+    //    }
+    //}
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    npc = null;
+    //}
+
+    public void StartDialog(GameObject cage)
     {
-        if (collision.gameObject.tag == ("Cage1") || collision.gameObject.tag == ("Cage2") || collision.gameObject.tag == ("Cage3"))
-        {
-            npc = collision.gameObject.GetComponent<NPCController>();
+        Debug.Log("Hej");
+        npc = cage.GetComponent<NPCController>();
 
-            Debug.Log("Hi!");
-
-            if (Input.GetKey(KeyCode.E)) //HAR PRATAR DOM 
-            npc.ActivateDialogue();
-        }
+        npc.ActivateDialogue();
+        StopDialog(); //GOR DEN HAR NAGONT?
+         
     }
-    private void OnTriggerExit2D(Collider2D collision)
+
+    public void StopDialog()
     {
+
         npc = null;
     }
+ 
+
 }

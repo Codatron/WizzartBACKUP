@@ -13,6 +13,7 @@ public class CageHealth : MonoBehaviour
     public Sprite cage_5;
     public Transform camera2;
     public GameObject moveCameraTo;
+    public GameObject startDialogCage;
 
     public MoveCamera moveCamera;
 
@@ -20,15 +21,18 @@ public class CageHealth : MonoBehaviour
 
     bool OnlyOnce = true;
     public bool pickUpBomb= false;
+    public bool startDialog = false;
 
     public int spriteRend = 0;
     //public AudioClip brookenGlas;
     //public AudioSource speaker;
     public CircleCollider2D circleCol;
+    
 
     void Start()
     {        
-        health = 30;      
+        health = 30;
+        
     }
 
     void Update()
@@ -78,6 +82,8 @@ public class CageHealth : MonoBehaviour
                                  
             pickUpBomb = true;      
             Destroy(circleCol);
+            startDialog = true;
+           
         }
     }
 }
