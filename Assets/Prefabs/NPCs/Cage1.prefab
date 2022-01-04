@@ -154,11 +154,12 @@ MonoBehaviour:
   camera2: {fileID: 0}
   moveCameraTo: {fileID: 2341682723881603883}
   moveCamera: {fileID: 4272534689135992819}
-  pickUpBomb: 0
+  startDialogCage: {fileID: 2341682723881603883}
+  circleCol: {fileID: 0}
+  clipBrokenGlass: {fileID: 8300000, guid: 2d42d66a4be4c214684fcb243f513b3a, type: 3}
   startDialog: 0
   spriteRend: 0
-  circleCol: {fileID: 0}
-  startDialogCage: {fileID: 2341682723881603883}
+  pickUpBomb: 0
 --- !u!114 &4232046363016170694
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -44,13 +44,16 @@ public class PauseMenu : MonoBehaviour
     }
     public void ExitLevel()
     {
-        SceneManager.LoadScene(sceneBuildIndex: 0);
+        SceneManager.LoadScene("Introduction");
     }
     public void PlayGame()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(sceneBuildIndex: 1);
+        SceneManager.LoadScene("Level");
+   
     }
+
+
     public void QuitGame()
     {
         Debug.Log("Quit Game");

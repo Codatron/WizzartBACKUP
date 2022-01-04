@@ -33,7 +33,7 @@ public class PlayerHit : MonoBehaviour
     private bool invincible = false;
     private int playerHit;
     private int hpLost = 1;
-    public int playerHealthMax = 10;
+    public int playerHealthMax = 20;
     public int playerHealthCurrent;
     public Integer2 HealthRef;
     public RuntimeAnimatorController deathController;
@@ -88,13 +88,13 @@ public class PlayerHit : MonoBehaviour
         isGameOver = true;
         Destroy(gameObject);
     }
-    //void gameOver()
-    //{
-    //    if (playerHit >= 10)
-    //    {
-    //        Time.timeScale = 0f;
-    //    }
-    //}
+    void gameOver()
+    {
+        if (playerHit >= 20)
+        {
+            Time.timeScale = 0f;
+        }
+    }
 
     private void Update()
     {
@@ -105,20 +105,20 @@ public class PlayerHit : MonoBehaviour
         {
             KillMePlayer();
 
-            //float timeLimit = 1.5f;
+            float timeLimit = 1.5f;
 
-            //if (Time.time > timeLimit)
-            //{
-            //    Time.timeScale = 0f;
-            //    gameOverScreen.SetActive(true);
-            //}
+            if (Time.time > timeLimit)
+            {
+                Time.timeScale = 0f;
+                gameOverScreen.SetActive(true);
+            }
         }
 
-        //if (isGameOver)
-        //{
-        //    //Destroy(gameObject);
-        //    gameOverScreen.SetActive(true);
-        //}
+        if (isGameOver)
+        {
+            //Destroy(gameObject);
+            gameOverScreen.SetActive(true);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

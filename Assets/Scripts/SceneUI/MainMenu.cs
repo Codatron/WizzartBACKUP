@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene("SceneAteljen");
+        SceneManager.LoadScene(sceneBuildIndex: 3);
         m_MyAudioSource.volume = 0.5f;
 
 
