@@ -92,13 +92,13 @@ public class PickUpBomb : MonoBehaviour
 
         StartCoroutine("Explosion");
         camera2.transform.DOMove(cameraOrgPos, 1).SetDelay(2).SetUpdate(true).OnComplete(Reset);//1 sek tillbaka 2sek som allt tog
-        GameManager.PlaySFXDirty(clipFactoryExplosion, 0.2f);
     }
    public IEnumerator Explosion()
     {
         yield return new WaitForSecondsRealtime(1f);
         GameObject boomClone = Instantiate(boom, boomPlace.transform.position, Quaternion.identity);
         StartCoroutine(cameraShake.Shake(.25f, .8f));
+        GameManager.PlaySFXDirty(clipFactoryExplosion, 0.2f);
         Destroy(boomClone, 0.8f);
 
         if (bombCounter==1 && factoryBombTimes)

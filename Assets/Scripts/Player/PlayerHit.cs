@@ -122,7 +122,7 @@ public class PlayerHit : MonoBehaviour
 
         if (!invincible)
         {
-            if (other.gameObject.CompareTag("EnemyLollipopGirlBlue") || other.gameObject.CompareTag("LollipopBlue") || other.gameObject.CompareTag("EnemyLipsBig") || other.gameObject.CompareTag("EnemyLipsSmall") || other.gameObject.CompareTag("LollipopPink") || other.gameObject.CompareTag("EnemyLollipopGirlPink"))
+            if (other.gameObject.CompareTag("EnemyLollipopGirlBlue") || other.gameObject.CompareTag("LollipopBlue") || other.gameObject.CompareTag("EnemyLipsBig") || other.gameObject.CompareTag("EnemyLipsSmall") || other.gameObject.CompareTag("LollipopPink") || other.gameObject.CompareTag("EnemyLollipopGirlPink") || other.gameObject.CompareTag("PaintBlob") || other.gameObject.CompareTag("PaintRay") || other.gameObject.CompareTag("PaintEnemy"))
             {
                 playerHit++;
                 StartCoroutine(PlayerTakeDamageColour());

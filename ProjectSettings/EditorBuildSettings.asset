@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceneAteljen.unity
     guid: db2aecb16fc49d04dbd9874e6d3796b9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SpelTest 1.unity
     guid: eda3e8a9aa6b83b4c935ad25c278f4ea
   - enabled: 0
@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Level.unity
+    guid: 0d42d1a85103b404cae9c2c0749722fa
+  - enabled: 1
+    path: Assets/Scenes/BossScene.unity
+    guid: 26836c8eeff557f48870b07211e4dd7f
   m_configObjects: {}

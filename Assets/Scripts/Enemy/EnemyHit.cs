@@ -74,14 +74,15 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
                 
                 Destroy(gameObject);
             }
+
         }
     }
 
     private void KillMeRollergirl()
     {
+        Destroy(gameObject);
         GameObject Corpse = new GameObject("enemyCorpse");
         SpriteRenderer corpseRenderer = Corpse.AddComponent<SpriteRenderer>();
-        Destroy(gameObject);
         Rigidbody2D corpseRb = Corpse.AddComponent<Rigidbody2D>();
         CapsuleCollider2D corpseCapCollider = Corpse.AddComponent<CapsuleCollider2D>();
         
@@ -102,7 +103,7 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
         corpseRb.AddForce(slideForce);
         corpseRb.drag = 1.25f;
 
-        Destroy(corpseCapCollider, 0.75f);
+        Destroy(corpseCapCollider, 0.5f);
 
         
     }

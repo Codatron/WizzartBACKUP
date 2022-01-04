@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2536211283208983140}
   m_Layer: 8
   m_Name: NicePng_blob-png_2424273
-  m_TagString: Untagged
+  m_TagString: PaintBlob
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
