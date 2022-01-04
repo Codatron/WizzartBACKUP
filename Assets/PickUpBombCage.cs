@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class PickUpBombCage : MonoBehaviour
 {
-    public bool pickUpBomb = true;
+    
     public CageHealth cageHealth;
 
     public void OnTriggerEnter2D(Collider2D other)
     {   
-        if (other.gameObject.CompareTag("Player") && pickUpBomb)
-	    {
+        if (other.gameObject.CompareTag("Player") && cageHealth.pickUpBomb)//&& pickUpBomb )//&& pickUpBomb
+
+        {
 
             cageHealth.spriteRend = 2;
 
             GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled = true;
             GameObject.FindGameObjectWithTag("Gun").GetComponent<SpriteRenderer>().enabled = false;
 
-            pickUpBomb = true;
+           cageHealth.pickUpBomb = false;
 
 	    }               
     }

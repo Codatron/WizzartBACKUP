@@ -19,18 +19,16 @@ public class CageHealth : MonoBehaviour
     Vector3 cameraOrgPos;
 
     bool OnlyOnce = true;
-    bool pickUpBomb= false;
+    public bool pickUpBomb= false;
 
     public int spriteRend = 0;
     //public AudioClip brookenGlas;
     //public AudioSource speaker;
+    public CircleCollider2D circleCol;
 
-   
     void Start()
-    {
-        
-        health = 50;
-       
+    {        
+        health = 30;      
     }
 
     void Update()
@@ -55,27 +53,17 @@ public class CageHealth : MonoBehaviour
             health--;
             Destroy(other.gameObject);
         }
-
-        //if (other.gameObject.CompareTag("Player") && pickUpBomb )
-        //{
-        //    spriteRend = 2;
-           
-        //    GameObject.FindGameObjectWithTag("BombHands").GetComponent<SpriteRenderer>().enabled = true;
-        //    GameObject.FindGameObjectWithTag("Gun").GetComponent<SpriteRenderer>().enabled = false;
-
-        //    pickUpBomb = false;
-        //}
     }
 
     public void HealthCage()
     {                     
-        if (health < 70 )
+        if (health < 20 )
 
         {                      
             GetComponent<SpriteRenderer>().sprite = cage_2;
             //speaker.PlayOneShot(brookenGlas); //FUNKAR EJ BRA
         }
-        if (health < 30)
+        if (health < 10)
         {            
             
             GetComponent<SpriteRenderer>().sprite = cage_3;
@@ -88,10 +76,8 @@ public class CageHealth : MonoBehaviour
             OnlyOnce = false;            
             moveCamera.CameraMoveTo(moveCameraTo);
                                  
-            pickUpBomb = true;
+            pickUpBomb = true;      
+            Destroy(circleCol);
         }
     }
-
-    //TODO lägg in krossa glas ljud istallet for pang. 
-
 }
