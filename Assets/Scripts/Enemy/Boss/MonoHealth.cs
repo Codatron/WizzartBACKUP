@@ -1,17 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MonoHealth : MonoBehaviour
 {
-    public int currentHealth;
-    BossFight bossFight;
+    public Slider slider;
     public SpriteRenderer monoSpriteRenderer;
+
+    private int maxHealth = 500;
+    private int currentHealth;
+    private BossFight bossFight;
 
     private void Start()
     {
-        currentHealth = 500;      
+        currentHealth = maxHealth;
+        SetMaxHealth(currentHealth);
         bossFight = FindObjectOfType<BossFight>();
+    }
+
+    void SetMaxHealth(int health)
+    {
+        slider.maxValue = health;
+        slider.value = health;
+    }
+
+    void SetCurrentHealth(int health)
+    {
+        slider.value = health;
     }
 
     public void TakeDamage(int damage)
@@ -23,7 +39,8 @@ public class MonoHealth : MonoBehaviour
             return;
         }
 
-        currentHealth -= damage;       
+        currentHealth -= damage;
+        SetCurrentHealth(currentHealth);
 
         if (currentHealth < 400 && bossFight.stage == BossFight.Stage.Idel) //ANDRA TO STAGE 1
         {

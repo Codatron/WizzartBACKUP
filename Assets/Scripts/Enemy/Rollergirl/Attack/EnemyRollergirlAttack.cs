@@ -6,10 +6,10 @@ public class EnemyRollergirlAttack : MonoBehaviour
 {
     public GameObject lollipopPrefab;
     public Transform firePoint;
-    public float fireRate;
 
     private GameObject lollipopClone;
     private EnemyAIPathfind refEnemyAIPAthfind;
+    private float fireRate = 1.5f;
     private float timeBtwShots;
 
     void Start()
@@ -33,7 +33,7 @@ public class EnemyRollergirlAttack : MonoBehaviour
         {
             Instantiate(lollipopPrefab, firePoint.position, Quaternion.identity);
             //lollipopClone.GetComponent<Rigidbody2D>().velocity = transform.rigth * ;
-            
+
             timeBtwShots = fireRate;
         }
         else
