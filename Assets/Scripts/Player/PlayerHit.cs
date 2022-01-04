@@ -33,7 +33,7 @@ public class PlayerHit : MonoBehaviour
     private bool invincible = false;
     private int playerHit;
     private int hpLost = 1;
-    public int playerHealthMax = 100;
+    public int playerHealthMax = 10;
     public int playerHealthCurrent;
     public Integer2 HealthRef;
 
@@ -73,6 +73,7 @@ public class PlayerHit : MonoBehaviour
 
     void KillMePlayer()
     {
+	//gameObject.GetComponent<Animator>().Play("Gundeath");
         GameObject playerCorpse = new GameObject("playerCorpse");
         SpriteRenderer playerCorpseRenderer = playerCorpse.AddComponent<SpriteRenderer>();
         playerCorpse.transform.position = transform.position;
@@ -84,7 +85,7 @@ public class PlayerHit : MonoBehaviour
     }
     void gameOver()
     {
-        if (playerHit >= 100)
+        if (playerHit >= 10)
         {
             Time.timeScale = 0f;
         }
@@ -95,7 +96,7 @@ public class PlayerHit : MonoBehaviour
         HealthRef.integerA = playerHealthCurrent;
         HealthRef.integerB = playerHealthMax;
 
-        if (playerHit >= 100)
+        if (playerHit >= 10)
         {
             KillMePlayer();
             float timeLimit = 1.5f;
