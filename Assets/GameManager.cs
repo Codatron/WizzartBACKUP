@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public static void PlaySFXDirty(AudioClip clip, float timeUntilDestroy)
     {
         AudioSource s = new GameObject().AddComponent<AudioSource>();
+        s.transform.position = Vector3.zero;
         s.PlayOneShot(clip);
         Destroy(s.gameObject, timeUntilDestroy);
     }

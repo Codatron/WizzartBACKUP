@@ -19,6 +19,7 @@ public class EnemyFlip : MonoBehaviour
     private float time;
     private float sineLimitX;
     private float sineLimitY;
+    private bool useA;
     
 
     void Start()
@@ -28,43 +29,90 @@ public class EnemyFlip : MonoBehaviour
 
         sineLimitX = sinePatrolScript.sineX.sineMag / 1.2f;
         sineLimitY = sinePatrolScript.sineY.sineMag / 1.2f;
+        useA = true;
     }
 
-    void Update()
+    private void Update()
     {
         time += Time.deltaTime;
 
-        if (!sinePatrolScript.isOnPatrol)
+        enemySpriteRenderer.flipX = sinePatrolScript.sineX.delta < 0.0f;
+
+        bool facingUp = sinePatrolScript.sineY.delta > 0.0f;
+
+        if (time > timeToNextChange)
         {
-            enemySpriteRenderer.flipX = player.position.x < transform.position.x;
-            isOverY = player.position.y > transform.position.y;
-            CounterToChangeSpritePathfind();
+            time = 0;
+            useA = !useA;
+        }
+
+        if (useA)
+        {
+            enemySpriteRenderer.sprite = facingUp ? enemySpriteBackA : enemySpriteFrontA;
         }
         else
         {
-            if (isOnHorizontalPatrol)
-            {
-                CounterToChangeSpriteFront();
-                SpriteFlipX();
-
-                if (!sinePatrolScript.isPositiveSineX)
-                {
-                    enemySpriteRenderer.sprite = enemySpriteBackA;
-                }
-                else
-                {
-                    enemySpriteRenderer.sprite = enemySpriteFrontB;
-                }
-
-            }
-
-            if (isOnVerticalPatrol)
-            {
-                SpriteFlipX();
-                ChangeSpriteOnY();
-            }
+            enemySpriteRenderer.sprite = facingUp ? enemySpriteBackB : enemySpriteFrontB;
         }
+
+        //if (useA)
+        //{
+        //    if (facingUp)
+        //    {
+        //        enemySpriteRenderer.sprite = enemySpriteBackA;
+        //    }
+        //    else
+        //    {
+        //        enemySpriteRenderer.sprite = enemySpriteFrontA;
+        //    }
+        //}
+        //else
+        //{
+        //    if (facingUp)
+        //    {
+        //        enemySpriteRenderer.sprite = enemySpriteFrontB;
+        //    }
+        //    else
+        //    {
+        //        enemySpriteRenderer.sprite = enemySpriteFrontB;
+        //    }
+        //}
     }
+    //void Update()
+    //{
+    //    time += Time.deltaTime;
+
+    //    if (!sinePatrolScript.isOnPatrol)
+    //    {
+    //        enemySpriteRenderer.flipX = player.position.x < transform.position.x;
+    //        isOverY = player.position.y > transform.position.y;
+    //        CounterToChangeSpritePathfind();
+    //    }
+    //    else
+    //    {
+    //        if (isOnHorizontalPatrol)
+    //        {
+    //            CounterToChangeSpriteFront();
+    //            SpriteFlipX();
+
+    //            if (!sinePatrolScript.isPositiveSineX)
+    //            {
+    //                enemySpriteRenderer.sprite = enemySpriteBackA;
+    //            }
+    //            else
+    //            {
+    //                enemySpriteRenderer.sprite = enemySpriteFrontB;
+    //            }
+
+    //        }
+
+    //        if (isOnVerticalPatrol)
+    //        {
+    //            SpriteFlipX();
+    //            ChangeSpriteOnY();
+    //        }
+    //    }
+    //}
 
     private void ChangeSpriteOnY()
     {

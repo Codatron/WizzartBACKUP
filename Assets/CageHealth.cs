@@ -13,46 +13,40 @@ public class CageHealth : MonoBehaviour
     public Sprite cage_5;
     public Transform camera2;
     public GameObject moveCameraTo;
- 
     public MoveCamera moveCamera;
-
-    Vector3 cameraOrgPos;
-
-    bool OnlyOnce = true;
-    public bool pickUpBomb= false;
-    public bool startDialog = false;
-
-    public int spriteRend = 0;
-    //public AudioClip brookenGlas;
-    //public AudioSource speaker;
-    public CircleCollider2D circleCol;
-
-    PlayerController playerController;
     public GameObject startDialogCage;
+    public CircleCollider2D circleCol;
+    public AudioClip clipBrokenGlass;
+    public bool startDialog = false;
+    public int spriteRend = 0;
+    public bool pickUpBomb = false;
 
-    PlayerHit playerHit;
-
+    private AudioSource speaker;
+    private PlayerController playerController;
+    private PlayerHit playerHit;
+    private SpriteRenderer cageSprRend;
+    private Vector3 cameraOrgPos;
+    private bool OnlyOnce = true;
 
     void Start()
     {        
         health = 30;
         playerController = FindObjectOfType<PlayerController>();
         playerHit = FindObjectOfType<PlayerHit>();
-
+        cageSprRend = GetComponent<SpriteRenderer>();
+        speaker = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        HealthCage();
-
         if (spriteRend == 1)
         {
-            GetComponent<SpriteRenderer>().sprite = cage_4;
+            cageSprRend.sprite = cage_4;
         }
 
         if (spriteRend == 2)
         {
-            GetComponent<SpriteRenderer>().sprite = cage_5;
+            cageSprRend.sprite = cage_5;
         }
     }
 
@@ -61,28 +55,30 @@ public class CageHealth : MonoBehaviour
         if (other.gameObject.CompareTag("ProjectilePlayer"))
         {
             health--;
+            HealthCage();
             Destroy(other.gameObject);
         }
     }
 
     public void HealthCage()
-    {                     
-        if (health < 20 )
-
-        {                      
-            GetComponent<SpriteRenderer>().sprite = cage_2;
-            //speaker.PlayOneShot(brookenGlas); //FUNKAR EJ BRA
+    {          
+        if (health % 10 == 0)
+        {
+            GameManager.PlaySFXDirty(clipBrokenGlass, 2.0f);
         }
+
+        if (health < 20 )
+        {
+            cageSprRend.sprite = cage_2;
+        }
+
         if (health < 10)
-        {            
-            
-            GetComponent<SpriteRenderer>().sprite = cage_3;
-            
+        {
+            cageSprRend.sprite = cage_3;
         }
 
         if (health <= 0 && OnlyOnce) 
         {
-            
             OnlyOnce = false;            
             moveCamera.CameraMoveTo(moveCameraTo);
             playerController.StartDialog(startDialogCage);
@@ -91,7 +87,6 @@ public class CageHealth : MonoBehaviour
             Destroy(circleCol);
             startDialog = true;
             playerHit.playerHealthCurrent = 20;
-          
         }
     }
 }

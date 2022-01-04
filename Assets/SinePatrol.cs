@@ -11,11 +11,17 @@ public class SinePatrol : MonoBehaviour
         public float sineMag;
         public float sine;
         public float timer;
+        [Range(0f,1f)] public float offset;
+        public float delta;
+
+        private float previous;
 
         public void Tick()
         {
             timer += Time.deltaTime * sineSpeed;
-            sine = Mathf.Sin(timer) * sineMag;
+            sine = Mathf.Sin(timer + (offset * sineMag)) * sineMag;
+            delta = sine - previous;
+            previous = sine;
         }
     }
 
@@ -58,26 +64,30 @@ public class SinePatrol : MonoBehaviour
 
     private void SineYPositiveAmplitude()
     {
-        if (sineX.sine > 0.0f)
-        {
-            isPositiveSineY = true;
-        }
-        else if (sineX.sine <= -0.1f)
-        {
-            isPositiveSineY = false;
-        }
+        //if (sineX.sine > 0.0f)
+        //{
+        //    isPositiveSineY = true;
+        //}
+        //else if (sineX.sine <= -0.1f)
+        //{
+        //    isPositiveSineY = false;
+        //}
+
+        isPositiveSineY = sineX.sine > 0.0f;
     }
 
     private void SineXPositiveAmplitude()
     {
-        if (sineY.sine > 0.0f)
-        {
-            isPositiveSineX = true;
-        }
-        else if (sineY.sine <= -0.1f)
-        {
-            isPositiveSineX = false;
-        }
+        //if (sineY.sine > 0.0f)
+        //{
+        //    isPositiveSineX = true;
+        //}
+        //else if (sineY.sine <= -0.1f)
+        //{
+        //    isPositiveSineX = false;
+        //}
+
+        isPositiveSineX = sineY.sine > 0.0f;
     }
 }
 
