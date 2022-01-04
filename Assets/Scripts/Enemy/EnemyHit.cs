@@ -6,24 +6,26 @@ using Random = UnityEngine.Random;
 
 public class EnemyHit : MonoBehaviour, IGetKnockedBack
 {
+    public AudioClip clipHit;
     public SpriteRenderer enemySpriteRenderer;
     public Transform slideTarget;
     public Sprite corpseSprite;
     public GameObject lipsSmallPrefab;
     public int hitPointsMax;
     public int numberInSwarm;
-
-    private Rigidbody2D enemyRb;
-    Transform lipsBig;
     public int enemyHit;
 
-    bool isDead;
+    private AudioSource audioSource;
+    private Rigidbody2D enemyRb;
+    private Transform lipsBig;
+    private bool isDead;
 
     void Start()
     {
         enemyRb = GetComponent<Rigidbody2D>();
         enemySpriteRenderer = transform.Find("SpriteRenderer").GetComponent<SpriteRenderer>();
-       
+        audioSource = GetComponent<AudioSource>();
+
         enemyHit = 0;
 
         isDead = false;
@@ -40,16 +42,13 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
         enemySpriteRenderer.color = Color.white;
     }
 
-    // TODO: 
-    // - why does enemyHit increase by two sometimes?
-    // - Clue ? If circle collider is removed then everything works as it should.
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("ProjectilePlayer"))
         {
             enemyHit++;
+            audioSource.PlayOneShot(clipHit);
             StartCoroutine(EnemyTakeDamageColour());
-            // play audio
             Debug.Log(enemyHit);
         }
 
@@ -59,24 +58,33 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
 
             if(gameObject.CompareTag("EnemyLollipopGirlBlue"))
             {
+                ImpactFX();
                 KillMeRollergirl();
-                // play audio
             }
 
             if (gameObject.CompareTag("EnemyLipsBig"))
             {
+                ImpactFX();
                 KillMeLipsBig(numberInSwarm);
             }
 
             if (gameObject.CompareTag("EnemyLipsSmall"))
             {
+                ImpactFX();
                 Destroy(gameObject);
             }
         }
     }
 
-    // TODO: 
-    // - why do two corpses appear sometimes?
+    void ImpactFX()
+    {
+        AudioSource s = new GameObject().AddComponent<AudioSource>();
+
+        s.PlayOneShot(clipHit);
+
+        Destroy(s.gameObject, 0.5f);
+    }
+
     private void KillMeRollergirl()
     {
         GameObject Corpse = new GameObject("enemyCorpse");

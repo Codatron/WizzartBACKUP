@@ -11088,7 +11088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838742, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838748, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_RootOrder
@@ -19015,7 +19015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838742, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838748, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_RootOrder
@@ -34207,7 +34207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838742, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838748, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_RootOrder
@@ -36456,7 +36456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3130583881813064300, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3217666680543275188, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
       propertyPath: slider
@@ -41623,7 +41623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838742, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838748, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_RootOrder
@@ -44791,11 +44791,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2427590875717892631, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.8
+      value: -31.83
       objectReference: {fileID: 0}
     - target: {fileID: 2427590875717892631, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.5
+      value: -28.62
       objectReference: {fileID: 0}
     - target: {fileID: 2427590875717892631, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -55793,7 +55793,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1770099145
 Transform:
   m_ObjectHideFlags: 0
@@ -56388,6 +56388,10 @@ PrefabInstance:
     - target: {fileID: 8697673302569838742, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_Name
       value: RollergirlSWPark
+      objectReference: {fileID: 0}
+    - target: {fileID: 8697673302569838742, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838748, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_RootOrder
@@ -71572,7 +71576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838742, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8697673302569838748, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_RootOrder

@@ -5,8 +5,9 @@ using UnityEngine;
 public class BulletHit : MonoBehaviour
 {
     int damageMono = 0;
-
+    
     private float lifeSpan = 0.5f;
+   
 
     private void Start()
     {
