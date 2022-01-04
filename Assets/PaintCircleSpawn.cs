@@ -36,6 +36,7 @@ public class PaintCircleSpawn : MonoBehaviour
 
         for (int i = 0; i <= numberOfPaintBlobs - 1; i++)
         {
+		gameObject.GetComponent<Animator>().Play("Attack2");
             float paintBlobsDirX = spawnPosition.x + Mathf.Sin((angle * Mathf.PI) / 180) * radius;
             float paintBlobsDirY = spawnPosition.y + Mathf.Cos((angle * Mathf.PI) / 180) * radius;
 

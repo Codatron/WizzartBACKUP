@@ -42,6 +42,7 @@ public class MonoShoot : MonoBehaviour
     {
         if (timeBtwShots <= 0)
         {
+		gameObject.GetComponent<Animator>().Play("Attack1");
             int monoShootRandom = UnityEngine.Random.Range(0, monoShootPaint.Count);
             Instantiate(monoShootPaint[monoShootRandom], firePoint.position, Quaternion.identity);
             timeBtwShots = fireRate;
