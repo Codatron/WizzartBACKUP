@@ -112,6 +112,14 @@ PrefabInstance:
       value: FX Fountain
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252674, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: m_SortMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252674, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: m_SortingFudge
+      value: 83.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252674, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: m_Materials.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -125,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: lengthInSec
-      value: 50
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: simulationSpeed
@@ -161,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: ClampVelocityModule.dampen
-      value: 1
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: ClampVelocityModule.enabled
@@ -189,23 +197,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: InitialModule.maxNumParticles
-      value: 300
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 3.17
+      value: 2.37
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: ClampVelocityModule.drag.scalar
-      value: 17.76
+      value: 16.17
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 10.21
+      value: 8.55
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: ClampVelocityModule.separateAxis
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
@@ -213,7 +221,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 2.2
+      value: 3.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0.07058824
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: VelocityModule.speedModifier.scalar
@@ -221,11 +233,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: ClampVelocityModule.magnitude.scalar
-      value: 31.77
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: InitialModule.gravityModifier.scalar
-      value: 0.6
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: VelocityModule.orbitalOffsetX.scalar
@@ -234,6 +246,38 @@ PrefabInstance:
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: VelocityModule.orbitalOffsetY.scalar
       value: 1.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: LifetimeByEmitterSpeedModule.m_Range.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: LifetimeByEmitterSpeedModule.m_Range.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.ctime1
+      value: 63415
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 0.9056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 0.7715898
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 0.17515129
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.g
+      value: 0.99561214
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.r
+      value: 0.5518868
       objectReference: {fileID: 0}
     - target: {fileID: 7806315656104252675, guid: 5e32d20fd2f2d8545aaefdbf62f936b3, type: 3}
       propertyPath: ClampVelocityModule.multiplyDragByParticleSize
