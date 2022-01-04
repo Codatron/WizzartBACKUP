@@ -23,14 +23,19 @@ public class DialogueHolder : MonoBehaviour
         }
         private IEnumerator dialogueSequence()
         {
+            Time.timeScale = 0;
+            //Deactivate();
+            //yield return new WaitForSecondsRealtime(3);
+
             for (int i = 0; i < transform.childCount; i++)
             {
                 Deactivate();
                 transform.GetChild(i).gameObject.SetActive(true);
                 yield return new WaitUntil(() => transform.GetChild(i).GetComponent<DialogueLine>().finished);
             }
-            gameObject.SetActive(false);
+            
             Time.timeScale = 1;
+            gameObject.SetActive(false);
         }
 
         private void Deactivate()

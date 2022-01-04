@@ -13,7 +13,7 @@ public class CageHealth : MonoBehaviour
     public Sprite cage_5;
     public Transform camera2;
     public GameObject moveCameraTo;
-    public GameObject startDialogCage;
+ 
 
     public MoveCamera moveCamera;
 
@@ -27,12 +27,16 @@ public class CageHealth : MonoBehaviour
     //public AudioClip brookenGlas;
     //public AudioSource speaker;
     public CircleCollider2D circleCol;
-    
+
+    PlayerController playerController;
+    public GameObject startDialogCage;
+
 
     void Start()
     {        
         health = 30;
-        
+        playerController = FindObjectOfType<PlayerController>();
+
     }
 
     void Update()
@@ -79,7 +83,8 @@ public class CageHealth : MonoBehaviour
             
             OnlyOnce = false;            
             moveCamera.CameraMoveTo(moveCameraTo);
-                                 
+            playerController.StartDialog(startDialogCage);
+
             pickUpBomb = true;      
             Destroy(circleCol);
             startDialog = true;

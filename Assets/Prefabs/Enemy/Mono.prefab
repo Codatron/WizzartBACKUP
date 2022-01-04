@@ -167,10 +167,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movePoints:
-  - {fileID: 5879018740988850498, guid: de4356f01e12e77499426c0013fe3865, type: 3}
-  - {fileID: 9062836833627624150, guid: 044a669911309e34faabebdb1539013c, type: 3}
-  - {fileID: 988594442992145144, guid: dd8030c00bb65e04c8320596df78b400, type: 3}
-  - {fileID: 2005084829743756546, guid: 695264c4e0a26f84b870b1265f5271a2, type: 3}
+  - {fileID: 3293354040166004719, guid: f630ff1b784578942ae22f3b64504efe, type: 3}
+  - {fileID: 7056102626767045724, guid: ac277bb3b019af04eb582153e3c7df13, type: 3}
+  - {fileID: 5869762994244603530, guid: b6fce04bda76f844fa5e892905c4443a, type: 3}
+  - {fileID: 3356843245965225884, guid: dcbbbcf20be71514ea800d97debb9fdf, type: 3}
+  - {fileID: 1761174908606642149, guid: 42c1a90406649d048bce0ec9dfd1bae0, type: 3}
+  - {fileID: 2905699963607033196, guid: c0111d30a668ea14691472754dc1b4dc, type: 3}
   speed: 20
 --- !u!50 &1611111574191101274
 Rigidbody2D:
@@ -223,17 +225,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stage: 0
   spawnPositionList:
-  - {fileID: 5879018740988850498, guid: de4356f01e12e77499426c0013fe3865, type: 3}
-  - {fileID: 9062836833627624150, guid: 044a669911309e34faabebdb1539013c, type: 3}
-  - {fileID: 988594442992145144, guid: dd8030c00bb65e04c8320596df78b400, type: 3}
-  - {fileID: 2005084829743756546, guid: 695264c4e0a26f84b870b1265f5271a2, type: 3}
-  - {fileID: 5879018740988850498, guid: de4356f01e12e77499426c0013fe3865, type: 3}
-  - {fileID: 9062836833627624150, guid: 044a669911309e34faabebdb1539013c, type: 3}
-  - {fileID: 988594442992145144, guid: dd8030c00bb65e04c8320596df78b400, type: 3}
-  - {fileID: 2005084829743756546, guid: 695264c4e0a26f84b870b1265f5271a2, type: 3}
-  - {fileID: 5879018740988850498, guid: de4356f01e12e77499426c0013fe3865, type: 3}
-  - {fileID: 9062836833627624150, guid: 044a669911309e34faabebdb1539013c, type: 3}
-  - {fileID: 2005084829743756546, guid: 695264c4e0a26f84b870b1265f5271a2, type: 3}
+  - {fileID: 3293354040166004719, guid: f630ff1b784578942ae22f3b64504efe, type: 3}
+  - {fileID: 7056102626767045724, guid: ac277bb3b019af04eb582153e3c7df13, type: 3}
+  - {fileID: 5869762994244603530, guid: b6fce04bda76f844fa5e892905c4443a, type: 3}
+  - {fileID: 1761174908606642149, guid: 42c1a90406649d048bce0ec9dfd1bae0, type: 3}
+  - {fileID: 3356843245965225884, guid: dcbbbcf20be71514ea800d97debb9fdf, type: 3}
+  - {fileID: 2905699963607033196, guid: c0111d30a668ea14691472754dc1b4dc, type: 3}
+  - {fileID: 7056102626767045724, guid: ac277bb3b019af04eb582153e3c7df13, type: 3}
+  - {fileID: 3293354040166004719, guid: f630ff1b784578942ae22f3b64504efe, type: 3}
+  - {fileID: 5869762994244603530, guid: b6fce04bda76f844fa5e892905c4443a, type: 3}
+  - {fileID: 3356843245965225884, guid: dcbbbcf20be71514ea800d97debb9fdf, type: 3}
+  - {fileID: 1761174908606642149, guid: 42c1a90406649d048bce0ec9dfd1bae0, type: 3}
   cloneSpawnList: []
   paintEnemy1: {fileID: 3826571666344718028, guid: a4698e781bac3ec4b8c82b1bc15a553a, type: 3}
   paintEnemy2: {fileID: 3247442076611821051, guid: 958bc0d1b7d43c7418f8ee2f4a38eaf6, type: 3}
@@ -253,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c47ee24f484136d49b13df2f1598dbe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 0
+  slider: {fileID: 0}
   monoSpriteRenderer: {fileID: 5536855720576252951}
 --- !u!114 &-436301454132409129
 MonoBehaviour:
@@ -268,11 +270,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clonePoints:
-  - {fileID: 5879018740988850498, guid: de4356f01e12e77499426c0013fe3865, type: 3}
-  - {fileID: 9062836833627624150, guid: 044a669911309e34faabebdb1539013c, type: 3}
-  - {fileID: 988594442992145144, guid: dd8030c00bb65e04c8320596df78b400, type: 3}
-  - {fileID: 2005084829743756546, guid: 695264c4e0a26f84b870b1265f5271a2, type: 3}
-  - {fileID: 5879018740988850498, guid: de4356f01e12e77499426c0013fe3865, type: 3}
+  - {fileID: 3293354040166004719, guid: f630ff1b784578942ae22f3b64504efe, type: 3}
+  - {fileID: 7056102626767045724, guid: ac277bb3b019af04eb582153e3c7df13, type: 3}
+  - {fileID: 5869762994244603530, guid: b6fce04bda76f844fa5e892905c4443a, type: 3}
+  - {fileID: 3356843245965225884, guid: dcbbbcf20be71514ea800d97debb9fdf, type: 3}
+  - {fileID: 1761174908606642149, guid: 42c1a90406649d048bce0ec9dfd1bae0, type: 3}
   monoClone: {fileID: 7527845643012428061, guid: c67f5a585a66c3440b9c996497136672, type: 3}
   bossFight: {fileID: 6108591582717200337}
 --- !u!1 &5016198693007059165

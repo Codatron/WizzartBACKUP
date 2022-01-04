@@ -22,17 +22,18 @@ public class MoveCamera : MonoBehaviour
 
     public void CameraMoveTo(GameObject goToObject)
     {
-
         Time.timeScale = 0;
         cameraOrgPos = camera2.transform.position;
         Vector3 targetPos = goToObject.transform.position;
         targetPos.z = cameraOrgPos.z;
         camera2.transform.DOMove(targetPos, 1).SetUpdate(true);
 
+      //  playerController.StartDialog(startDialogCage);
+
         StartCoroutine("Explosion" );
-        playerController.StartDialog(startDialogCage);
 
         camera2.transform.DOMove(cameraOrgPos, 1).SetDelay(2).SetUpdate(true).OnComplete(Reset);
+        //playerController.StartDialog(startDialogCage);
     }
 
     public IEnumerator Explosion()
@@ -48,6 +49,6 @@ public class MoveCamera : MonoBehaviour
 
     private void Reset()
     {
-        Time.timeScale = 1;
+       // Time.timeScale = 1;
     }
 }

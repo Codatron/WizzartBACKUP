@@ -6,7 +6,6 @@ using TMPro;
 namespace DialogueSystem
    
 {
-
     public class DialogueBaseClass : MonoBehaviour
     {
        public bool finished { get; protected set; }
@@ -15,7 +14,7 @@ namespace DialogueSystem
             for (int i = 0; i < input.Length; i++)
            {
                 textHolder.text += input[i];
-                DialogueSound.instance.PlayDialogueSound(sound);
+                DialogueSound.instance?.PlayDialogueSound(sound);
                 yield return new WaitForSecondsRealtime(delay);
            }
             yield return new WaitUntil(() => Input.GetKey(KeyCode.Space));
