@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4497799375265752770}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.306, y: -3.241, z: 3.2319624}
+  m_LocalPosition: {x: -1.306, y: -2.79, z: 3.2319624}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4761130662035507548}
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 8388159276399630035, guid: 95c0b8bcb7ba100419d176ff9519c5f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -155,7 +155,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: 2906738286713433146, guid: b8b43c6515b3f2d46bcbbb1d1f8a2350, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -166,7 +166,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!61 &7124456386565804152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -180,10 +180,10 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.30533856, y: -1.7031252}
+  m_Offset: {x: 0.30533856, y: 0.09883022}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 0.9166667, y: 3.7833333}
     newSize: {x: 0.9166667, y: 3.7833333}
     adaptiveTilingThreshold: 0.5
@@ -191,7 +191,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.30598962, y: 0.37718248}
+  m_Size: {x: 0.30598962, y: 0.13330889}
   m_EdgeRadius: 0
 --- !u!58 &-3207833296701212139
 CircleCollider2D:
@@ -206,6 +206,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.75}
+  m_Offset: {x: 0.3116163, y: 0.07905257}
   serializedVersion: 2
-  m_Radius: 0.11
+  m_Radius: 0.09645152
