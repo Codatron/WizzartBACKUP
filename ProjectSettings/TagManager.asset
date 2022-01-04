@@ -47,6 +47,7 @@ TagManager:
   - Cage3
   - PaintRay
   - PaintBlob
+  - Painting
   layers:
   - Default
   - TransparentFX

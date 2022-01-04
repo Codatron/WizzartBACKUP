@@ -13,6 +13,9 @@ public class MusicSound : MonoBehaviour
     private AudioClip levelMusic;
 
     [SerializeField]
+    private AudioClip bossMusic;
+
+    [SerializeField]
     private AudioSource source;
     private static MusicSound instance = null;
 
@@ -75,4 +78,22 @@ public class MusicSound : MonoBehaviour
             Debug.LogError("Unavailable MusicPlayer component");
         }
     }
+
+    static public void PlayBossMusic()
+    {
+        if (instance != null)
+        {
+            if (instance.source != null)
+            {
+                instance.source.Stop();
+                instance.source.clip = instance.levelMusic;
+                instance.source.Play();
+            }
+        }
+        else
+        {
+            Debug.LogError("Unavailable MusicPlayer component");
+        }
+    }
+
 }

@@ -1834,6 +1834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuMusic: {fileID: 0}
   levelMusic: {fileID: 0}
+  bossMusic: {fileID: 0}
   source: {fileID: 0}
 --- !u!114 &65396834
 MonoBehaviour:
@@ -38313,6 +38314,14 @@ PrefabInstance:
       propertyPath: smokePlace2
       value: 
       objectReference: {fileID: 45328420}
+    - target: {fileID: 5857821858681598454, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
+      propertyPath: goToBossLevel
+      value: 
+      objectReference: {fileID: 8480802566111355651, guid: 1a91c3af08e61454d9f8084b484f4503, type: 3}
+    - target: {fileID: 5857821858681598454, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
+      propertyPath: goToBossLevelPlace
+      value: 
+      objectReference: {fileID: 3402674315076389550, guid: b8b02d7f3c323ac43808d8b406c4cbd3, type: 3}
     - target: {fileID: 5857821858681598454, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: clipFactoryExplosion
       value: 

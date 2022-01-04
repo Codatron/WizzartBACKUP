@@ -14,7 +14,6 @@ public class CageHealth : MonoBehaviour
     public Transform camera2;
     public GameObject moveCameraTo;
  
-
     public MoveCamera moveCamera;
 
     Vector3 cameraOrgPos;
@@ -31,11 +30,14 @@ public class CageHealth : MonoBehaviour
     PlayerController playerController;
     public GameObject startDialogCage;
 
+    PlayerHit playerHit;
+
 
     void Start()
     {        
         health = 30;
         playerController = FindObjectOfType<PlayerController>();
+        playerHit = FindObjectOfType<PlayerHit>();
 
     }
 
@@ -88,7 +90,8 @@ public class CageHealth : MonoBehaviour
             pickUpBomb = true;      
             Destroy(circleCol);
             startDialog = true;
-           
+            playerHit.playerHealthCurrent = 20;
+          
         }
     }
 }

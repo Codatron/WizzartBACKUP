@@ -326,12 +326,12 @@ MonoBehaviour:
   cage_5: {fileID: -9135505359388716256, guid: f3f37e14bee1fc94983a731b2d758a9a, type: 3}
   camera2: {fileID: 0}
   moveCameraTo: {fileID: 6077889928939245199}
-  startDialogCage: {fileID: 6077889928939245199}
   moveCamera: {fileID: 2394116689279669549}
   pickUpBomb: 0
   startDialog: 0
   spriteRend: 0
   circleCol: {fileID: 6574690913365163809}
+  startDialogCage: {fileID: 6077889928939245199}
 --- !u!114 &2394116689279669549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,7 +346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera2: {fileID: 0}
   cameraShake: {fileID: 0}
-  Crash: {fileID: 3768072259054866278, guid: a75dd2b014484764c88eba6d7cb119a8, type: 3}
+  Crash: {fileID: 7417975771039024277, guid: e8566b27df58ca6409c68d541ae9b9f0, type: 3}
   CrashPlace: {fileID: 4390332617062399751}
   cageHealth: {fileID: 566984276317655865}
   startDialogCage: {fileID: 6077889928939245199}

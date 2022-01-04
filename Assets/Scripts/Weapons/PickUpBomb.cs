@@ -32,12 +32,13 @@ public class PickUpBomb : MonoBehaviour
     Vector3 cameraOrgPos;
     bool factoryBombTimes = true;
 
-    StartBossFight startBossFight;
-
     public bool fixedCamera = false;
 
     public AudioClip clipFactoryExplosion;
     private AudioSource audioSource;
+
+    public GameObject goToBossLevel;
+    public GameObject goToBossLevelPlace;
 
     private void Start()
     {
@@ -47,9 +48,9 @@ public class PickUpBomb : MonoBehaviour
 
         GameObject g = GameObject.FindGameObjectWithTag("BoolKeeper");
         refBoolKeeper = g.GetComponent<BoolKeeper>();
-
-       startBossFight = GameObject.FindGameObjectWithTag("Factory").GetComponent<StartBossFight>();
     }
+
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("BombNoHands"))
@@ -122,8 +123,10 @@ public class PickUpBomb : MonoBehaviour
             GameObject largeSmokeClone2 = Instantiate(smoke_2, smokePlace2.transform.position, Quaternion.identity);
             factoryBombTimes = false;
 
-            startBossFight.StartMono();
             fixedCamera = true;
+
+            Vector3 newLevelPlace = new Vector3(goToBossLevelPlace.transform.position.x, goToBossLevelPlace.transform.position.y);
+            GameObject goToBoss = Instantiate(goToBossLevel, newLevelPlace, Quaternion.identity);
         }
     }
 

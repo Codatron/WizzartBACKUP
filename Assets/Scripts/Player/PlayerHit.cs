@@ -33,8 +33,8 @@ public class PlayerHit : MonoBehaviour
     private bool invincible = false;
     private int playerHit;
     private int hpLost = 1;
-    private int playerHealthMax = 10;
-    private int playerHealthCurrent;
+    public int playerHealthMax = 100;
+    public int playerHealthCurrent;
     public Integer2 HealthRef;
 
     private void Awake()
@@ -84,7 +84,7 @@ public class PlayerHit : MonoBehaviour
     }
     void gameOver()
     {
-        if (playerHit >= 10)
+        if (playerHit >= 100)
         {
             Time.timeScale = 0f;
         }
@@ -95,7 +95,7 @@ public class PlayerHit : MonoBehaviour
         HealthRef.integerA = playerHealthCurrent;
         HealthRef.integerB = playerHealthMax;
 
-        if (playerHit >= 10)
+        if (playerHit >= 100)
         {
             KillMePlayer();
             float timeLimit = 1.5f;
