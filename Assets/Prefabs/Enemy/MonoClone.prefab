@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2804286119567233046}
   - component: {fileID: 8233433596199926725}
   - component: {fileID: 2993445839436829238}
+  - component: {fileID: 3791081472416023050}
   m_Layer: 0
   m_Name: MonoClone
   m_TagString: MonoClone
@@ -177,6 +178,32 @@ MonoBehaviour:
   fireRate: 2
   firePoint: {fileID: 1522952550997213618}
   paintShoot: {fileID: 1547307247055698776, guid: 355fb3ec3eef8cc42a3ea4055dd0aecc, type: 3}
+  paintShoot1: {fileID: 0}
+  paintShoot2: {fileID: 0}
+  paintShoot3: {fileID: 0}
+  paintShoot4: {fileID: 0}
+  paintShoot5: {fileID: 0}
+  paintShoot6: {fileID: 0}
+  monoShootPaint: []
+--- !u!95 &3791081472416023050
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527845643012428061}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2a42a119570d2a047a367d13802bc6f3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &8123741737985206887
 PrefabInstance:
   m_ObjectHideFlags: 0
