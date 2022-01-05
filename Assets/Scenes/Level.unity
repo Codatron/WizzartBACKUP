@@ -4146,6 +4146,10 @@ PrefabInstance:
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
+    - target: {fileID: -1576088496122680304, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 1829461455, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -4531,6 +4535,10 @@ PrefabInstance:
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
+    - target: {fileID: -1576088496122680304, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 1846719022639033286, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -14975,6 +14983,10 @@ PrefabInstance:
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
+    - target: {fileID: -1576088496122680304, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: sineX.sineMag
       value: 8
@@ -18216,6 +18228,10 @@ PrefabInstance:
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
+    - target: {fileID: -1576088496122680304, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 1846719022639033286, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -33856,6 +33872,10 @@ PrefabInstance:
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
+    - target: {fileID: -1576088496122680304, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: sineX.sine
       value: 0
@@ -48297,6 +48317,10 @@ PrefabInstance:
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
+    - target: {fileID: -1576088496122680304, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: sineX.sineMag
       value: 9
@@ -51402,6 +51426,10 @@ PrefabInstance:
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
+    - target: {fileID: -1576088496122680304, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: sineX.sineMag
       value: 15
@@ -53232,6 +53260,10 @@ PrefabInstance:
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
+    - target: {fileID: -1576088496122680304, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: sineX.sineMag
       value: 0.7
@@ -53978,6 +54010,10 @@ PrefabInstance:
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
+    - target: {fileID: -1576088496122680304, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 1846719022639033286, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -61125,6 +61161,10 @@ PrefabInstance:
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
+    - target: {fileID: -1576088496122680304, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: sineX.sineMag
       value: 12
