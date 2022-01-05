@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1611111573765816946}
-  - component: {fileID: 1611111573765816947}
   m_Layer: 8
   m_Name: PaintBlobSpawnCircle
   m_TagString: Untagged
@@ -31,22 +30,6 @@ Transform:
   m_Father: {fileID: 7840284031961407589}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1611111573765816947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1611111573765816957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b75f4345de44474082f20a17c23524d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberOfPaintBlobs: 10
-  paintBlobs: {fileID: 126638070414477445, guid: b158a72831ad2dc4ea3ebf7e8692b263, type: 3}
-  startPoint: {fileID: 1611111573765816957}
-  spawnPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &3130583881813064300
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,6 +47,7 @@ GameObject:
   - component: {fileID: 6108591582717200337}
   - component: {fileID: 3217666680543275188}
   - component: {fileID: -436301454132409129}
+  - component: {fileID: 7841636476748532603}
   m_Layer: 0
   m_Name: Mono
   m_TagString: Mono
@@ -248,10 +232,11 @@ MonoBehaviour:
   paintEnemy2: {fileID: 7796363368362777649, guid: 057da99f3ab2d9542826f233ef95e553, type: 3}
   Mono: {fileID: 0}
   spawnRate: 2
-  paintCircleSpawn: {fileID: 1611111573765816947}
+  paintCircleSpawn: {fileID: 7841636476748532603}
   monoClones: {fileID: -436301454132409129}
   monoShoot: {fileID: 294846164}
   camera2: {fileID: 0}
+  monoMovmentState: {fileID: 0}
 --- !u!114 &3217666680543275188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,6 +271,22 @@ MonoBehaviour:
   - {fileID: 1761174908606642149, guid: 42c1a90406649d048bce0ec9dfd1bae0, type: 3}
   monoClone: {fileID: 7527845643012428061, guid: c67f5a585a66c3440b9c996497136672, type: 3}
   bossFight: {fileID: 6108591582717200337}
+--- !u!114 &7841636476748532603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3130583881813064300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b75f4345de44474082f20a17c23524d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfPaintBlobs: 10
+  paintBlobs: {fileID: 126638070414477445, guid: b158a72831ad2dc4ea3ebf7e8692b263, type: 3}
+  startPoint: {fileID: 1611111573765816957}
+  spawnPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &5016198693007059165
 GameObject:
   m_ObjectHideFlags: 0

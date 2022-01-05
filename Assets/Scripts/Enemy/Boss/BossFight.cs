@@ -68,13 +68,13 @@ public class BossFight : MonoBehaviour
             shootDelagate?.Invoke();
         }
 
-        if (stage == Stage.Stage_2)
+        if (stage == Stage.Stage_2 )
         {
             paintCircleSpawn.StartSpawningBlobs();
             SpawnEnemy();
         }
 
-        if (stage == Stage.Stage_3)
+        if (stage == Stage.Stage_3 || Input.GetMouseButtonDown(1))
         {           
             paintCircleSpawn.StopSpawningBlobs();
 
@@ -90,7 +90,7 @@ public class BossFight : MonoBehaviour
            shootDelagate?.Invoke();    
         }
 
-        if (stage == Stage.Dead || Input.GetMouseButtonDown(1))
+        if (stage == Stage.Dead)
         {
             gameObject.GetComponent<Animator>().Play("Death");
             monoMovmentState.speed = 0;
