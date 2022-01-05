@@ -8,7 +8,7 @@ public class MonoHealth : MonoBehaviour
     public Slider slider;
     public SpriteRenderer monoSpriteRenderer;
 
-    private int maxHealth = 5;
+    private int maxHealth = 400;
     private int currentHealth;
     private BossFight bossFight;
 
@@ -42,25 +42,25 @@ public class MonoHealth : MonoBehaviour
         currentHealth -= damage;
         SetCurrentHealth(currentHealth);
 
-        if (currentHealth < 400 && bossFight.stage == BossFight.Stage.Idel) //ANDRA TO STAGE 1
+        if (currentHealth < 350 && bossFight.stage == BossFight.Stage.Idel) //ANDRA TO STAGE 1
         {
             bossFight.stage = BossFight.Stage.Stage_1;            
             return;
         }
 
-        if (currentHealth < 300 && bossFight.stage == BossFight.Stage.Stage_1)
+        if (currentHealth < 200 && bossFight.stage == BossFight.Stage.Stage_1)
         {
             bossFight.stage = BossFight.Stage.Stage_2;            
             return;
         }
 
-        if (currentHealth < 200 && bossFight.stage == BossFight.Stage.Stage_2)
+        if (currentHealth < 100 && bossFight.stage == BossFight.Stage.Stage_2)
         {         
             bossFight.stage = BossFight.Stage.Stage_3;       
             return;
         }
 
-        if (currentHealth < 100 && bossFight.stage == BossFight.Stage.Stage_3)
+        if (currentHealth < 50 && bossFight.stage == BossFight.Stage.Stage_3)
         {
             bossFight.stage = BossFight.Stage.Stage_4;
             return;           
@@ -68,9 +68,7 @@ public class MonoHealth : MonoBehaviour
 
         if (currentHealth <= 0 && bossFight.stage == BossFight.Stage.Stage_4)
         {
-            bossFight.stage = BossFight.Stage.Dead;
-
-            
+            bossFight.stage = BossFight.Stage.Dead;          
         }
     }
 

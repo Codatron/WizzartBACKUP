@@ -156,11 +156,6 @@ public class PlayerHit : MonoBehaviour
                 //    Time.timeScale = 0f;
                 //    isGameOver = true;
                 //}
-
-
-
-
-
             }
         }
     }

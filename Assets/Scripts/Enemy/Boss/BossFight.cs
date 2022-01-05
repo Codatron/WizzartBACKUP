@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class BossFight : MonoBehaviour
 {
@@ -94,13 +95,7 @@ public class BossFight : MonoBehaviour
             gameObject.GetComponent<Animator>().Play("Death");
             monoMovmentState.speed = 0;
             DestroyAllSpawnEnemy();
-
-            //Time.timeScale = 0;
-            //cameraOrgPos = camera2.transform.position;
-            //Vector3 targetPos = Mono.transform.position;
-            //targetPos.z = cameraOrgPos.z;
-            //camera2.transform.DOMove(targetPos, 1).SetUpdate(true);
-            //camera2.transform.DOMove(cameraOrgPos, 1).SetDelay(2).SetUpdate(true).OnComplete(Reset);
+            goBack();
         }
     }
     private void StartBattle()
@@ -140,9 +135,13 @@ public class BossFight : MonoBehaviour
         }
     }
 
-    private void Reset()
+    IEnumerator goBack()
     {
-         Time.timeScale = 1;
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(sceneBuildIndex: 0); ;
+        MusicSound.PlayMenuMusic();
+
+
     }
 }
 
