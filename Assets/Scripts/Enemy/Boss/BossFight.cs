@@ -41,6 +41,8 @@ public class BossFight : MonoBehaviour
     Vector3 cameraOrgPos;
     public Transform camera2;
 
+   public MonoMovmentState monoMovmentState;
+
     private void Start()
     {
         prefabList.Add(paintEnemy1);
@@ -90,6 +92,7 @@ public class BossFight : MonoBehaviour
         if (stage == Stage.Dead || Input.GetMouseButtonDown(1))
         {
             gameObject.GetComponent<Animator>().Play("Death");
+            monoMovmentState.speed = 0;
             DestroyAllSpawnEnemy();
 
             //Time.timeScale = 0;
