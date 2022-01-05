@@ -244,8 +244,8 @@ MonoBehaviour:
   - {fileID: 3356843245965225884, guid: dcbbbcf20be71514ea800d97debb9fdf, type: 3}
   - {fileID: 1761174908606642149, guid: 42c1a90406649d048bce0ec9dfd1bae0, type: 3}
   cloneSpawnList: []
-  paintEnemy1: {fileID: 3826571666344718028, guid: a4698e781bac3ec4b8c82b1bc15a553a, type: 3}
-  paintEnemy2: {fileID: 3247442076611821051, guid: 958bc0d1b7d43c7418f8ee2f4a38eaf6, type: 3}
+  paintEnemy1: {fileID: 7796363368362777649, guid: 057da99f3ab2d9542826f233ef95e553, type: 3}
+  paintEnemy2: {fileID: 7796363368362777649, guid: 057da99f3ab2d9542826f233ef95e553, type: 3}
   Mono: {fileID: 0}
   spawnRate: 2
   paintCircleSpawn: {fileID: 1611111573765816947}

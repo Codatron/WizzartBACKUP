@@ -38,6 +38,8 @@ public class PlayerHit : MonoBehaviour
     public Integer2 HealthRef;
     public RuntimeAnimatorController deathController;
 
+    public GameObject exPoint;
+
     private void Awake()
     {
         isGameOver = false;
@@ -140,7 +142,8 @@ public class PlayerHit : MonoBehaviour
                 StartCoroutine(Invulnerability());
 
                 //random prefab for skada
-                GameObject hitPrefab = Instantiate(phrasesList[phrasesIndex], transform.position, Quaternion.identity);
+                Vector3 prefab = new Vector3(exPoint.transform.position.x, exPoint.transform.position.y);
+                GameObject hitPrefab = Instantiate(phrasesList[phrasesIndex], prefab, Quaternion.identity);
                 Destroy(hitPrefab, 0.5f);
 
                 //Play random sound hit
