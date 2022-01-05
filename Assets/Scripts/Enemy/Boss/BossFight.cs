@@ -95,7 +95,7 @@ public class BossFight : MonoBehaviour
             gameObject.GetComponent<Animator>().Play("Death");
             monoMovmentState.speed = 0;
             DestroyAllSpawnEnemy();
-            goBack();
+            StartCoroutine(goBack());
         }
     }
     private void StartBattle()

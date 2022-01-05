@@ -230,13 +230,13 @@ MonoBehaviour:
   cloneSpawnList: []
   paintEnemy1: {fileID: 7796363368362777649, guid: 057da99f3ab2d9542826f233ef95e553, type: 3}
   paintEnemy2: {fileID: 7796363368362777649, guid: 057da99f3ab2d9542826f233ef95e553, type: 3}
-  Mono: {fileID: 0}
+  Mono: {fileID: 3130583881813064300}
   spawnRate: 2
   paintCircleSpawn: {fileID: 7841636476748532603}
   monoClones: {fileID: -436301454132409129}
   monoShoot: {fileID: 294846164}
   camera2: {fileID: 0}
-  monoMovmentState: {fileID: 0}
+  monoMovmentState: {fileID: 1611111574191101280}
 --- !u!114 &3217666680543275188
 MonoBehaviour:
   m_ObjectHideFlags: 0
