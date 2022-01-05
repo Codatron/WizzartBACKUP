@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4662907448280884653}
   - component: {fileID: 48777952818239577}
   - component: {fileID: -1663620043134470736}
-  - component: {fileID: -6387938681388309343}
   - component: {fileID: 5509357276773219016}
   - component: {fileID: -1905417076690806594}
+  - component: {fileID: 3231456900282252983}
   m_Layer: 0
   m_Name: Blue_Blob
   m_TagString: PaintEnemy
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5d03d6963f9468745b957a74e7040ae0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -119,19 +119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
---- !u!114 &-6387938681388309343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7796363368362777649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e14924bd194fae4685a5f68f4db6f46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 8
 --- !u!50 &5509357276773219016
 Rigidbody2D:
   serializedVersion: 4
@@ -169,3 +156,19 @@ CircleCollider2D:
   m_Offset: {x: 0.3065846, y: 0.005378604}
   serializedVersion: 2
   m_Radius: 0.6878896
+--- !u!114 &3231456900282252983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7796363368362777649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a0d382f084914458100a35c9057a37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpriteRenderer: {fileID: 4662907448280884653}
+  hitPointsMax: 2
+  enemyRb: {fileID: 5509357276773219016}
+  isDead: 0

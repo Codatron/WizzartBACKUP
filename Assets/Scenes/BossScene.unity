@@ -2283,7 +2283,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &299820039
 GameObject:
@@ -17238,6 +17238,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1611111573765816947, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
+      propertyPath: paintBlobs
+      value: 
+      objectReference: {fileID: 8739538310733331011, guid: 5d0b303f582332a49950963c309b7549, type: 3}
     - target: {fileID: 1611111574191101280, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
       propertyPath: speed
       value: 15
@@ -18408,7 +18412,7 @@ PrefabInstance:
       objectReference: {fileID: 3678538437872668931, guid: ccdd6da16417c474abd5eada13ffb4cc, type: 3}
     - target: {fileID: 2427590875717892631, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2427590875717892631, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: m_LocalScale.x
@@ -18461,6 +18465,14 @@ PrefabInstance:
     - target: {fileID: 2427590875717892651, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528862319310659713, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528862319310659713, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.4
       objectReference: {fileID: 0}
     - target: {fileID: 5857821858681598454, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: clone
