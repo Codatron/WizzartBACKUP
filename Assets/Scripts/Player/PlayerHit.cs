@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class PlayerHit : MonoBehaviour
 {
     //List for sound when hit
@@ -68,6 +69,8 @@ public class PlayerHit : MonoBehaviour
         hitSoundList.Add(Sound5);
     }
 
+    
+
     void TakeDamage(int hpLost)
     {
         playerHealthCurrent -= hpLost;
@@ -120,6 +123,12 @@ public class PlayerHit : MonoBehaviour
         {
             //Destroy(gameObject);
             gameOverScreen.SetActive(true);
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            SceneManager.LoadScene("BossScene");
+            MusicSound.PlayBossMusic();
         }
     }
 

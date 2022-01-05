@@ -46,7 +46,7 @@ public class PaintCircleSpawn : MonoBehaviour
             GameObject painBlobClone = Instantiate(paintBlobs, spawnPosition, Quaternion.identity);
 
             painBlobClone.GetComponent<Rigidbody2D>().velocity = new Vector2(paintBlobsMoveDirection.x, paintBlobsMoveDirection.y);
-            Destroy(painBlobClone, 3);
+            Destroy(painBlobClone, 2);
             angle += angleSteps;           
         }
 

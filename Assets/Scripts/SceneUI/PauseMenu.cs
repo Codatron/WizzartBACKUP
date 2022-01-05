@@ -59,4 +59,9 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Quit Game");
         Application.Quit();
     }
+
+    public void tryAgain()
+    {
+        SceneManager.LoadScene("BossScene");
+    }
 }

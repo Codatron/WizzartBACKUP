@@ -20,7 +20,7 @@ public class PaintBlobHealth : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("PaintEnemy"))
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("PaintEnemy")|| other.gameObject.CompareTag("Environment"))
         {
             Destroy(gameObject);
         }

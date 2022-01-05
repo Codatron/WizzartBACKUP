@@ -68,13 +68,13 @@ public class BossFight : MonoBehaviour
             shootDelagate?.Invoke();
         }
 
-        if (stage == Stage.Stage_2 )
+        if (stage == Stage.Stage_2 || Input.GetMouseButtonDown(1))
         {
             paintCircleSpawn.StartSpawningBlobs();
             SpawnEnemy();
         }
 
-        if (stage == Stage.Stage_3 || Input.GetMouseButtonDown(1))
+        if (stage == Stage.Stage_3)
         {           
             paintCircleSpawn.StopSpawningBlobs();
 
