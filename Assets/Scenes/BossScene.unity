@@ -4226,6 +4226,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &880759092 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1611111574191101280, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
+  m_PrefabInstance: {fileID: 1161724498}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880759084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 125d8bd76add61945a65c8ab5ab6be30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &899318308
 GameObject:
   m_ObjectHideFlags: 0
@@ -17368,6 +17379,10 @@ PrefabInstance:
       propertyPath: camera2
       value: 
       objectReference: {fileID: 213499082}
+    - target: {fileID: 6108591582717200337, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
+      propertyPath: monoMovmentState
+      value: 
+      objectReference: {fileID: 880759092}
     - target: {fileID: 7840284031961407589, guid: cfc67ddb439c40845b59efbf707daf86, type: 3}
       propertyPath: m_RootOrder
       value: 12
