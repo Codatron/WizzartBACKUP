@@ -137,7 +137,7 @@ public class BossFight : MonoBehaviour
 
     IEnumerator goBack()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(sceneBuildIndex: 0); ;
         MusicSound.PlayMenuMusic();
 

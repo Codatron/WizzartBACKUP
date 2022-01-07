@@ -27,8 +27,9 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
         audioSource = GetComponent<AudioSource>();
 
         enemyHit = 0;
+        hitPointsMax= 10;
 
-        isDead = false;
+    isDead = false;
     }
 
     IEnumerator EnemyTakeDamageColour()

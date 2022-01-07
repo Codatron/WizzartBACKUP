@@ -9,16 +9,8 @@ public class MoveCamera : MonoBehaviour
     public Transform camera2;
 
     public CameraShake cameraShake;
-    public GameObject Crash;
-    public GameObject CrashPlace;
     public CageHealth cageHealth;
-    PlayerController playerController;
     public GameObject startDialogCage;
-
-    private void Start()
-    {
-        playerController = FindObjectOfType<PlayerController>();
-    }
 
     public void CameraMoveTo(GameObject goToObject)
     {
@@ -28,7 +20,6 @@ public class MoveCamera : MonoBehaviour
         targetPos.z = cameraOrgPos.z;
         camera2.transform.DOMove(targetPos, 1).SetUpdate(true);
 
-      //  playerController.StartDialog(startDialogCage);
 
         StartCoroutine("Explosion" );
 
@@ -39,12 +30,12 @@ public class MoveCamera : MonoBehaviour
     public IEnumerator Explosion()
     {
         yield return new WaitForSecondsRealtime(1f);
-        GameObject boomClone = Instantiate(Crash, CrashPlace.transform.position, Quaternion.identity);
+        //GameObject boomClone = Instantiate(Crash, CrashPlace.transform.position, Quaternion.identity);
         StartCoroutine(cameraShake.Shake(.25f, .8f));
 
         cageHealth.spriteRend++;
 
-        Destroy(boomClone, 0.5f);
+        //Destroy(boomClone, 0.5f);
     }
 
     private void Reset()
