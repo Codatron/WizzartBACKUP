@@ -729,8 +729,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Sample text to see how this \ncharacters dialogue lines up with the other
-    characters dialogue"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 81b65c5e072fea14da6c80ea9dc5f3a1, type: 2}
   m_sharedMaterial: {fileID: -6715300545173555261, guid: 81b65c5e072fea14da6c80ea9dc5f3a1, type: 2}
