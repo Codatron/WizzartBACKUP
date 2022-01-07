@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &7572246243167708581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,12 +105,13 @@ MonoBehaviour:
   bombNoHandsPrefab: {fileID: 0}
   dropBombPos: {fileID: 0}
   firePoint: {fileID: 7572246242996813094}
-  slider: {fileID: 0}
   speaker: {fileID: 1607751376561341969}
   refill: {fileID: 8300000, guid: 53db248f1ec94da4c8420a8523c7c845, type: 3}
   shoot: {fileID: 8300000, guid: 1bd29360e02f47c48a2d15ec897d829e, type: 3}
   speed: 35
   ammoCount: 0
+  ammoRef: {fileID: 0}
+  pickUpBomb: {fileID: 0}
 --- !u!82 &1607751376561341969
 AudioSource:
   m_ObjectHideFlags: 0
@@ -231,7 +232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7572246242996813095}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.5, y: 0, z: 0}
+  m_LocalPosition: {x: 10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5085415946498263694}
