@@ -5,14 +5,18 @@ using UnityEngine;
 public class PauseResumeTime : MonoBehaviour
 {
     public bool gameIsPaused;
-    public void Resume()
+    public GameObject dialogue;
+    public void Update()
     {
-        Time.timeScale = 1f;
-        gameIsPaused = false;
-    }
-    void Pause()
-    {
-        Time.timeScale = 0f;
-        gameIsPaused = true;
+        if (!dialogue.activeSelf)
+        {
+            Time.timeScale = 1f;
+            gameIsPaused = false;
+        }
+        if (dialogue.activeSelf)
+        {
+                Time.timeScale = 0f;
+                gameIsPaused = true;
+        }  
     }
 }
