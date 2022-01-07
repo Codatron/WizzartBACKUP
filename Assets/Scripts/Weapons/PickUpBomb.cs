@@ -41,6 +41,8 @@ public class PickUpBomb : MonoBehaviour
     public GameObject goToBossLevel;
     public GameObject goToBossLevelPlace;
 
+    public bool allowed = false;
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -56,10 +58,16 @@ public class PickUpBomb : MonoBehaviour
     {
         if (other.gameObject.CompareTag("BombNoHands"))
         {
-            GetComponent<SpriteRenderer>().enabled = true;
-            GameObject.FindGameObjectWithTag("Gun").GetComponent<SpriteRenderer>().enabled = false;
+            if (allowed)
+            {
+               GetComponent<SpriteRenderer>().enabled = true;
+               GameObject.FindGameObjectWithTag("Gun").GetComponent<SpriteRenderer>().enabled = false;
 
-            Destroy(other.gameObject);
+                Destroy(other.gameObject);
+
+                allowed = false;
+            }
+          
         }
 
         if (other.gameObject.CompareTag("Factory") && GetComponent<SpriteRenderer>().enabled == true) //TO DO BOX COLLIDER FoLJER INTE MED NAR MAN BYTER
