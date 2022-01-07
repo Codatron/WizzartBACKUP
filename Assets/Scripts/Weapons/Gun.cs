@@ -25,6 +25,7 @@ public class Gun : MonoBehaviour
     private SpriteRenderer muzzleFlashSpriteRenderer;
 
     //TODO ingen ref tillbombhands och ta bort boolkeeper
+    public PickUpBomb pickUpBomb;
     void Start()
     {
         ammoCount = ammoMax;
@@ -37,7 +38,9 @@ public class Gun : MonoBehaviour
         muzzleFlashSpriteRenderer = GameObject.FindGameObjectWithTag("MuzzleFlash").GetComponent<SpriteRenderer>();
         
         muzzleFlashSpriteRenderer.enabled = false;
-    
+
+        
+
     }
 
     public void Update()
@@ -66,10 +69,12 @@ public class Gun : MonoBehaviour
             Invoke("Muzzle", 0.05f);
 
             gunSpriteRenderer.enabled = true;
+
             if (bombHandsSpriteRenderer.enabled == true)
             {
                 GameObject clone = Instantiate(bombNoHandsPrefab, dropBombPos.transform.position, Quaternion.identity);
                 bombHandsSpriteRenderer.enabled = false;
+                StartCoroutine("allowPickUp");
             }             
         }
     }
@@ -105,5 +110,11 @@ public class Gun : MonoBehaviour
     public void RefillAmmo(int ammo)
     {
         ammoCount = ammo;
+    }
+
+    IEnumerator allowPickUp()
+    {
+        yield return new WaitForSeconds(0.1f);
+        pickUpBomb.allowed = true;
     }
 }

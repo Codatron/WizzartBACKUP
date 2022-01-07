@@ -5453,6 +5453,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2398815585731241150, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
   m_PrefabInstance: {fileID: 2374428678464552920}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5857821858681598454 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
+  m_PrefabInstance: {fileID: 2374428678464552920}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e87fda646ba969d459b2fc2e9cc246cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2374428680077753999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5528,6 +5539,10 @@ PrefabInstance:
       propertyPath: bombPrefab
       value: 
       objectReference: {fileID: 6733123721817354280, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
+    - target: {fileID: 7572246243167708581, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
+      propertyPath: pickUpBomb
+      value: 
+      objectReference: {fileID: 5857821858681598454}
     - target: {fileID: 7572246243167708581, guid: 95b9a1f5d4e895c4dbdb87dd1902440f, type: 3}
       propertyPath: dropBombPos
       value: 
