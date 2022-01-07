@@ -144,8 +144,8 @@ public class PickUpBomb : MonoBehaviour
     {
         if (goToBossLevel.activeSelf)
         {
-            Time.timeScale = 0;
             dialogue.SetActive(true);
+            Time.timeScale = 0;
         }
         if (!dialogue.activeSelf)
         {
