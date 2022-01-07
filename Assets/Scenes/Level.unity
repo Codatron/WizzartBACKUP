@@ -4281,6 +4281,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 13513099}
     m_Modifications:
     - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: clipHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 592c5ae2f0a8f774cbac01d102e56e01, type: 3}
+    - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
@@ -4669,6 +4673,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 13513099}
     m_Modifications:
+    - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: clipHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 592c5ae2f0a8f774cbac01d102e56e01, type: 3}
     - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: slideTarget
       value: 
@@ -6189,6 +6197,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1566954456}
     m_Modifications:
+    - target: {fileID: 1707300940790688877, guid: 0c0ba12673666664988e8fe1bf43068d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1707300940790688877, guid: 0c0ba12673666664988e8fe1bf43068d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 5627774728677548640, guid: 0c0ba12673666664988e8fe1bf43068d, type: 3}
       propertyPath: m_Name
       value: BlueFountain
@@ -15151,6 +15167,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 13513099}
     m_Modifications:
     - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: clipHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 592c5ae2f0a8f774cbac01d102e56e01, type: 3}
+    - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
@@ -15158,6 +15178,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: -1576088496122680304, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 592c5ae2f0a8f774cbac01d102e56e01, type: 3}
     - target: {fileID: 2070248278, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: sineX.sineMag
       value: 8
@@ -18411,6 +18435,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 13513099}
     m_Modifications:
+    - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: clipHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 592c5ae2f0a8f774cbac01d102e56e01, type: 3}
     - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: slideTarget
       value: 
@@ -34076,6 +34104,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 13513099}
     m_Modifications:
     - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: clipHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 592c5ae2f0a8f774cbac01d102e56e01, type: 3}
+    - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
@@ -38946,6 +38978,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5324855216154385194, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
+      propertyPath: shoot
+      value: 
+      objectReference: {fileID: 8300000, guid: 9479ff29ea0184343b94bee152d03d96, type: 3}
+    - target: {fileID: 5372512353387130320, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
+      propertyPath: m_Name
+      value: shadow_player
+      objectReference: {fileID: 0}
     - target: {fileID: 5857821858681598454, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: clone
       value: 
@@ -39001,7 +39041,7 @@ PrefabInstance:
     - target: {fileID: 5857821858681598454, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: clipFactoryExplosion
       value: 
-      objectReference: {fileID: 8300000, guid: 8bb378da975d1eb459ead638cb95aaf7, type: 3}
+      objectReference: {fileID: 8300000, guid: 8c76c45c581e98f4e880c2a3b5a4bf0a, type: 3}
     - target: {fileID: 7377085932541473793, guid: 43b3630a8b0df8a43ae8c1463a97d80b, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
@@ -48710,6 +48750,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 13513099}
     m_Modifications:
     - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: clipHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 592c5ae2f0a8f774cbac01d102e56e01, type: 3}
+    - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
@@ -51823,6 +51867,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 13513099}
     m_Modifications:
     - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: clipHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 592c5ae2f0a8f774cbac01d102e56e01, type: 3}
+    - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
@@ -53662,6 +53710,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 13513099}
     m_Modifications:
     - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: clipHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 592c5ae2f0a8f774cbac01d102e56e01, type: 3}
+    - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: slideTarget
       value: 
       objectReference: {fileID: 829302800}
@@ -54415,6 +54467,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 13513099}
     m_Modifications:
+    - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: clipHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 592c5ae2f0a8f774cbac01d102e56e01, type: 3}
     - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: slideTarget
       value: 
@@ -61570,6 +61626,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 13513099}
     m_Modifications:
+    - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
+      propertyPath: clipHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 592c5ae2f0a8f774cbac01d102e56e01, type: 3}
     - target: {fileID: -5170554189899397346, guid: f8a75bed21cd12243b3d029208aed3a4, type: 3}
       propertyPath: slideTarget
       value: 

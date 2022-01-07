@@ -101,6 +101,7 @@ MonoBehaviour:
   dropBombPos: {fileID: 0}
   factory_1: {fileID: 3671086159987676483, guid: d1e002628042abf4f9403459f9b99086, type: 3}
   boom: {fileID: 6476650028538282571, guid: 98376705c44ca7b4fbd21e56da601718, type: 3}
+  dialogue: {fileID: 0}
   factory_2: {fileID: -9207390453470557721, guid: e07d06db81e0b2548a1343dcca49ba2d, type: 3}
   factory_3: {fileID: 5917111224157973321, guid: e07d06db81e0b2548a1343dcca49ba2d, type: 3}
   clone: {fileID: 6904187513140425104, guid: 14b6e61aa42c74744b0890fc41b7c6de, type: 3}
@@ -116,6 +117,7 @@ MonoBehaviour:
   clipFactoryExplosion: {fileID: 0}
   goToBossLevel: {fileID: 0}
   goToBossLevelPlace: {fileID: 0}
+  allowed: 0
 --- !u!58 &-2904663444369944948
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -142,7 +144,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8bb378da975d1eb459ead638cb95aaf7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8c76c45c581e98f4e880c2a3b5a4bf0a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

@@ -148,12 +148,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfa12edea42d7f43b2856a6a3a9402c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipHit: {fileID: 8300000, guid: 9dac1736b29b15940b55c53d074e361f, type: 3}
+  clipHit: {fileID: 8300000, guid: 9454c0ba21dcc2647afb4f5b402ca838, type: 3}
   enemySpriteRenderer: {fileID: 1860392363527189070}
   slideTarget: {fileID: 0}
   corpseSprite: {fileID: 0}
   lipsSmallPrefab: {fileID: 0}
-  hitPointsMax: 1
+  hitPointsMax: 100
   numberInSwarm: 0
   enemyHit: 0
 --- !u!82 &1279920762649292858
@@ -166,7 +166,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9dac1736b29b15940b55c53d074e361f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9454c0ba21dcc2647afb4f5b402ca838, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.21
   m_Pitch: 1
