@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: EEIIIIK!! Get away from me!!
-  delay: 0.08
+  delay: 0
   delayBetweenLines: 0.2
   sound: {fileID: 8300000, guid: bf44f7527269182479f29d12b557008f, type: 3}
   characterSprite: {fileID: -170657022586593802, guid: 50e67e24b7d2ad8409f06eba81aa2115, type: 3}
@@ -487,7 +487,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8438037611422860857}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

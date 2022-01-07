@@ -12,6 +12,7 @@ public class PickUpBomb : MonoBehaviour
     public GameObject dropBombPos;
     public GameObject factory_1;
     public GameObject boom;
+    public GameObject dialogue;
     public Sprite factory_2;
     public Sprite factory_3;
     public GameObject clone;
@@ -127,6 +128,20 @@ public class PickUpBomb : MonoBehaviour
 
             Vector3 newLevelPlace = new Vector3(goToBossLevelPlace.transform.position.x, goToBossLevelPlace.transform.position.y);
             GameObject goToBoss = Instantiate(goToBossLevel, newLevelPlace, Quaternion.identity);
+            PreBossDialogue();
+        }
+    }
+
+    public void PreBossDialogue()
+    {
+        if (goToBossLevel.activeSelf)
+        {
+            Time.timeScale = 0;
+            dialogue.SetActive(true);
+        }
+        if (!dialogue.activeSelf)
+        {
+            Time.timeScale = 1;
         }
     }
 
