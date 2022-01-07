@@ -100,7 +100,7 @@ MonoBehaviour:
   bombFactory: {fileID: 6904187513140425104, guid: 14b6e61aa42c74744b0890fc41b7c6de, type: 3}
   dropBombPos: {fileID: 0}
   factory_1: {fileID: 3671086159987676483, guid: d1e002628042abf4f9403459f9b99086, type: 3}
-  boom: {fileID: 2532445909582639313, guid: efcbf25dac45486489ffc94050c9b549, type: 3}
+  boom: {fileID: 6476650028538282571, guid: 98376705c44ca7b4fbd21e56da601718, type: 3}
   factory_2: {fileID: -9207390453470557721, guid: e07d06db81e0b2548a1343dcca49ba2d, type: 3}
   factory_3: {fileID: 5917111224157973321, guid: e07d06db81e0b2548a1343dcca49ba2d, type: 3}
   clone: {fileID: 6904187513140425104, guid: 14b6e61aa42c74744b0890fc41b7c6de, type: 3}
