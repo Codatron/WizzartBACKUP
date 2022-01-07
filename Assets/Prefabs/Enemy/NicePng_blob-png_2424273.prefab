@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6623819047866761718}
   - component: {fileID: 5952314032394352741}
   - component: {fileID: 4070737437685061396}
-  - component: {fileID: 3004511377557030682}
   - component: {fileID: 2536211283208983140}
+  - component: {fileID: 4424415276914414412}
+  - component: {fileID: 3633157966992307148}
   m_Layer: 8
   m_Name: NicePng_blob-png_2424273
   m_TagString: PaintBlob
@@ -106,22 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &3004511377557030682
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 126638070414477445}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.040086746}
-  serializedVersion: 2
-  m_Radius: 1.5268068
 --- !u!114 &2536211283208983140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,3 +119,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0af75524e0857584790e801db7f3067c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &4424415276914414412
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126638070414477445}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.027449528}
+  serializedVersion: 2
+  m_Radius: 1.6036625
+--- !u!58 &3633157966992307148
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126638070414477445}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00686119, y: -0.03431161}
+  serializedVersion: 2
+  m_Radius: 1.4664159

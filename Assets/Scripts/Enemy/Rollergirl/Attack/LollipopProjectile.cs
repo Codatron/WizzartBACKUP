@@ -16,7 +16,7 @@ public class LollipopProjectile: MonoBehaviour
     
     private Transform player;
     private Vector2 target;
-    private float lifeSpan = 1.25f;
+    public float lifeSpan;
 
     private void Start()
     {

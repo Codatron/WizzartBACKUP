@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5509357276773219016}
   - component: {fileID: -1905417076690806594}
   - component: {fileID: 3231456900282252983}
+  - component: {fileID: 8437880557120791685}
   m_Layer: 0
   m_Name: Blue_Blob
   m_TagString: PaintEnemy
@@ -153,9 +154,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3065846, y: 0.005378604}
+  m_Offset: {x: 0.29060233, y: 0.019933999}
   serializedVersion: 2
-  m_Radius: 0.6878896
+  m_Radius: 0.5535544
 --- !u!114 &3231456900282252983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,3 +173,19 @@ MonoBehaviour:
   hitPointsMax: 2
   enemyRb: {fileID: 5509357276773219016}
   isDead: 0
+--- !u!58 &8437880557120791685
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7796363368362777649}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.2982422, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.6322807

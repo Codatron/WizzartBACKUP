@@ -48,6 +48,8 @@ GameObject:
   - component: {fileID: 3217666680543275188}
   - component: {fileID: -436301454132409129}
   - component: {fileID: 7841636476748532603}
+  - component: {fileID: 1766706611179356182}
+  - component: {fileID: 880759085}
   m_Layer: 0
   m_Name: Mono
   m_TagString: Mono
@@ -110,7 +112,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b7b3a8a81a2be454d9125e8f271319eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -155,9 +157,7 @@ MonoBehaviour:
   - {fileID: 7056102626767045724, guid: ac277bb3b019af04eb582153e3c7df13, type: 3}
   - {fileID: 5869762994244603530, guid: b6fce04bda76f844fa5e892905c4443a, type: 3}
   - {fileID: 3356843245965225884, guid: dcbbbcf20be71514ea800d97debb9fdf, type: 3}
-  - {fileID: 1761174908606642149, guid: 42c1a90406649d048bce0ec9dfd1bae0, type: 3}
-  - {fileID: 2905699963607033196, guid: c0111d30a668ea14691472754dc1b4dc, type: 3}
-  speed: 20
+  speed: 15
 --- !u!50 &1611111574191101274
 Rigidbody2D:
   serializedVersion: 4
@@ -178,7 +178,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!114 &294846164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +287,41 @@ MonoBehaviour:
   paintBlobs: {fileID: 126638070414477445, guid: b158a72831ad2dc4ea3ebf7e8692b263, type: 3}
   startPoint: {fileID: 1611111573765816957}
   spawnPosition: {x: 0, y: 0, z: 0}
+--- !u!70 &1766706611179356182
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3130583881813064300}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.065693855, y: -1.3467009}
+  m_Size: {x: 2.8670533, y: 3.0491986}
+  m_Direction: 0
+--- !u!95 &880759085
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3130583881813064300}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2a42a119570d2a047a367d13802bc6f3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5016198693007059165
 GameObject:
   m_ObjectHideFlags: 0

@@ -99,6 +99,7 @@ MonoBehaviour:
   targetName: 0
   speed: 20
   rotationSpeed: 0
+  lifeSpan: 2
 --- !u!60 &8711936756704755869
 PolygonCollider2D:
   m_ObjectHideFlags: 0

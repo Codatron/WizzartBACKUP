@@ -174,7 +174,7 @@ Transform:
   m_GameObject: {fileID: 2427590875717892651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -24, y: -16, z: 0}
-  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children:
   - {fileID: 5450635391126223083}
   - {fileID: 3528862319310659713}
@@ -252,8 +252,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 9.1875, y: 19.4375}
+  m_Offset: {x: -3.3017921, y: 0.5663967}
+  m_Size: {x: 7.1648026, y: 15.82819}
   m_Direction: 0
 --- !u!82 &2374428678998479452
 AudioSource:
@@ -372,15 +372,17 @@ MonoBehaviour:
   phrases2: {fileID: 4523929877079602744, guid: 3a8079447973fbc428d12156a8af5ade, type: 3}
   phrases3: {fileID: 3768072259054866278, guid: a75dd2b014484764c88eba6d7cb119a8, type: 3}
   deadGun: {fileID: 52778683023559438, guid: 4d8588da6d29c7f4d9445af892422f2c, type: 3}
-  playerCorpseSprite: {fileID: 0}
+  playerCorpseSprite: {fileID: 3678538437872668931, guid: ccdd6da16417c474abd5eada13ffb4cc, type: 3}
   speaker: {fileID: 2374428678998479452}
   gameOverScreen: {fileID: 0}
   invincibilityTime: 1.5
   playerHealthMax: 20
   playerHealthCurrent: 0
   HealthRef: {fileID: 11400000, guid: 790099cc4b9841a45b486e56b69f24bc, type: 2}
-  deathController: {fileID: 0}
+  deathController: {fileID: 9100000, guid: 502ac43b4f08b6e44a31c37a600da026, type: 2}
   exPoint: {fileID: 4516609521188636494}
+  phrasesIndex: 0
+  soundIndex: 0
 --- !u!114 &2374428680422438473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,7 +419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4516609521188636494}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 80.9, y: 20.1, z: 3.0009634}
+  m_LocalPosition: {x: 21.7, y: 5.4, z: 3.0009634}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 2427590875717892631}
@@ -5253,7 +5255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6616947217972633042}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7377085932541473793}
@@ -5429,7 +5431,11 @@ PrefabInstance:
     - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
       propertyPath: clone
       value: 
-      objectReference: {fileID: 5278589069400425860, guid: ab67869b09d06ac45a400df6c820695c, type: 3}
+      objectReference: {fileID: 6904187513140425104, guid: 14b6e61aa42c74744b0890fc41b7c6de, type: 3}
+    - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
+      propertyPath: factory_1
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
       propertyPath: factory_2
       value: 
@@ -5439,9 +5445,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: b5ac13530ca3c664ea58ed93cd281ac0, type: 3}
     - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
+      propertyPath: smokePlace
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
       propertyPath: dropBombPos
       value: 
-      objectReference: {fileID: 2374428679382569706}
+      objectReference: {fileID: 0}
     - target: {fileID: 8194444366557548078, guid: c96b266f2fa5c224abd51fb2a7c5fe9c, type: 3}
       propertyPath: leaveBombsPlace
       value: 

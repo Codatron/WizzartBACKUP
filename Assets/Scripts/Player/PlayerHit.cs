@@ -41,9 +41,14 @@ public class PlayerHit : MonoBehaviour
 
     public GameObject exPoint;
 
+    public int phrasesIndex;
+    public int soundIndex;
+
     private void Awake()
     {
         isGameOver = false;
+        phrasesIndex = UnityEngine.Random.Range(0, 3);
+        soundIndex = UnityEngine.Random.Range(0, 4);
     }
 
     void Start()
@@ -68,8 +73,7 @@ public class PlayerHit : MonoBehaviour
         hitSoundList.Add(Sound4);
         hitSoundList.Add(Sound5);
     }
-
-    
+   
 
     void TakeDamage(int hpLost)
     {
@@ -125,48 +129,51 @@ public class PlayerHit : MonoBehaviour
             gameOverScreen.SetActive(true);
         }
 
-        if (Input.GetMouseButtonDown(1))
+        //if (Input.GetMouseButtonDown(1))
+        //{
+        //    SceneManager.LoadScene("BossScene");
+        //    MusicSound.PlayBossMusic();
+        //}
+    }
+ 
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (!invincible)
         {
-            SceneManager.LoadScene("BossScene");
-            MusicSound.PlayBossMusic();
+            if (other.gameObject.CompareTag("EnemyLollipopGirlBlue") || other.gameObject.CompareTag("EnemyLipsBig") || other.gameObject.CompareTag("EnemyLipsSmall") || other.gameObject.CompareTag("EnemyLollipopGirlPink") || other.gameObject.CompareTag("PaintEnemy"))
+            {
+                getHit(phrasesIndex, soundIndex);      
+            }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //For random play/sprite
-        int phrasesIndex = UnityEngine.Random.Range(0, 3);
-        int soundIndex = UnityEngine.Random.Range(0, 4);
-
         if (!invincible)
         {
-            if (other.gameObject.CompareTag("EnemyLollipopGirlBlue") || other.gameObject.CompareTag("LollipopBlue") || other.gameObject.CompareTag("EnemyLipsBig") || other.gameObject.CompareTag("EnemyLipsSmall") || other.gameObject.CompareTag("LollipopPink") || other.gameObject.CompareTag("EnemyLollipopGirlPink") || other.gameObject.CompareTag("PaintBlob") || other.gameObject.CompareTag("PaintRay") || other.gameObject.CompareTag("PaintEnemy"))
+            if (other.gameObject.CompareTag("LollipopBlue") || other.gameObject.CompareTag("LollipopPink") || other.gameObject.CompareTag("PaintRay")|| other.gameObject.CompareTag("PaintBlob"))
             {
-                playerHit++;
-                StartCoroutine(PlayerTakeDamageColour());
-
-                TakeDamage(hpLost);
-
-                //For att inte ta skada
-                StartCoroutine(Invulnerability());
-
-                //random prefab for skada
-                Vector3 prefab = new Vector3(exPoint.transform.position.x, exPoint.transform.position.y);
-                GameObject hitPrefab = Instantiate(phrasesList[phrasesIndex], prefab, Quaternion.identity);
-                Destroy(hitPrefab, 0.5f);
-
-                //Play random sound hit
-                speaker.PlayOneShot(hitSoundList[soundIndex]);
-
-                //TODO lagg till så att ett ljud får spelas klart innan nästa
-
-                //if (playerHit >= 10)
-                //{
-                //    Time.timeScale = 0f;
-                //    isGameOver = true;
-                //}
+                getHit(phrasesIndex, soundIndex);
             }
         }
+    }
+
+    private void getHit(int phrasesIndex, int soundIndex)
+    {
+        playerHealthCurrent--;
+        StartCoroutine(PlayerTakeDamageColour());
+
+        TakeDamage(hpLost);
+
+        StartCoroutine(Invulnerability());
+
+        Vector3 prefab = new Vector3(exPoint.transform.position.x, exPoint.transform.position.y);
+        GameObject hitPrefab = Instantiate(phrasesList[phrasesIndex], prefab, Quaternion.identity);
+        Destroy(hitPrefab, 0.5f);
+
+        speaker.PlayOneShot(hitSoundList[soundIndex]);
+
+        //TODO lagg till så att ett ljud får spelas klart innan nästa
     }
 
     IEnumerator PlayerTakeDamageColour()
@@ -183,9 +190,13 @@ public class PlayerHit : MonoBehaviour
     }
 
     IEnumerator Invulnerability()
-    {
+    {       
         invincible = true;
+        playerSpriteRenderer.color = Color.magenta;
         yield return new WaitForSeconds(invincibilityTime);
-        invincible = false;
+        playerSpriteRenderer.color = Color.white;
+        invincible = false; 
+
+        //TO DO FÄRG ANDRA FUNKAR EJ
     }
 }

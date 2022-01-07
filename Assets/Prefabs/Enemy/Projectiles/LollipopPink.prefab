@@ -198,3 +198,4 @@ MonoBehaviour:
   targetName: 0
   speed: 16
   rotationSpeed: 3.5
+  lifeSpan: 1.25
