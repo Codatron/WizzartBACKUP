@@ -116,11 +116,11 @@ public class PlayerHit : MonoBehaviour
 
             float timeLimit = 1.5f;
 
-            //if (Time.time > timeLimit)
-            //{
-            //    Time.timeScale = 0f;
-            //    gameOverScreen.SetActive(true);
-            //}
+            if (Time.time > timeLimit)
+            {
+                Time.timeScale = 0f;
+                gameOverScreen.SetActive(true);
+            }
         }
 
         if (isGameOver)

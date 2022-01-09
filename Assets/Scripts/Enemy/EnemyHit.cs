@@ -56,6 +56,8 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
         if (enemyHit >= hitPointsMax && !isDead)
         {
             isDead = true;
+
+
             GameManager.PlaySFXDirty(clipHit, 0.2f);
 
             if (gameObject.CompareTag("EnemyLollipopGirlBlue"))
