@@ -28,6 +28,9 @@ public class CageHealth : MonoBehaviour
     private Vector3 cameraOrgPos;
     private bool OnlyOnce = true;
 
+    GameObject player;
+   public AudioSource playerAudio;
+
     void Start()
     {        
         health = 30;
@@ -35,6 +38,10 @@ public class CageHealth : MonoBehaviour
         playerHit = FindObjectOfType<PlayerHit>();
         cageSprRend = GetComponent<SpriteRenderer>();
         speaker = GetComponent<AudioSource>();
+
+        player = GameObject.FindGameObjectWithTag("Player");
+
+        playerAudio= player.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -48,6 +55,8 @@ public class CageHealth : MonoBehaviour
         {
             cageSprRend.sprite = cage_5;
         }
+
+        playerAudio.enabled = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -86,7 +95,11 @@ public class CageHealth : MonoBehaviour
             pickUpBomb = true;      
             Destroy(circleCol);
             startDialog = true;
+
+            playerAudio.enabled = false;         
             playerHit.playerHealthCurrent = 20;
+
+            
         }
     }
 }
