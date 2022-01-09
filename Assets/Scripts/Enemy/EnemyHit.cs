@@ -119,6 +119,8 @@ public class EnemyHit : MonoBehaviour, IGetKnockedBack
             Instantiate(lipsSmallPrefab, transform.position + new Vector3(smallLipsSpawnPosX, smallLipsSpawnPosY), Quaternion.identity);
         }
 
+        //LAGG TÌLL LISTA
+
         Destroy(gameObject);
     }
 

@@ -116,25 +116,28 @@ public class PlayerHit : MonoBehaviour
 
             float timeLimit = 1.5f;
 
-            if (Time.time > timeLimit)
-            {
-                Time.timeScale = 0f;
-                gameOverScreen.SetActive(true);
-            }
+            //if (Time.time > timeLimit)
+            //{
+            //    Time.timeScale = 0f;
+            //    gameOverScreen.SetActive(true);
+            //}
         }
 
         if (isGameOver)
         {
-            //Destroy(gameObject);
-            gameOverScreen.SetActive(true);
-        }
+            StartCoroutine("GameOver");
 
-        //if (Input.GetMouseButtonDown(1))
-        //{
-        //    SceneManager.LoadScene("BossScene");
-        //    MusicSound.PlayBossMusic();
-        //}
+        }
     }
+
+
+    public IEnumerator GameOver ()
+    {
+        yield return new WaitForSecondsRealtime(1.5f);
+        gameOverScreen.SetActive(true);
+
+    }
+
  
     private void OnTriggerStay2D(Collider2D other)
     {

@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using EZCameraShake;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class PickUpBomb : MonoBehaviour
 {
@@ -43,6 +44,8 @@ public class PickUpBomb : MonoBehaviour
 
     public bool allowed = false;
 
+    SpawnLips spawnLips;
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -51,9 +54,9 @@ public class PickUpBomb : MonoBehaviour
 
         GameObject g = GameObject.FindGameObjectWithTag("BoolKeeper");
         refBoolKeeper = g.GetComponent<BoolKeeper>();
+
+        spawnLips = FindObjectOfType<SpawnLips>();
     }
-
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("BombNoHands"))
@@ -66,8 +69,7 @@ public class PickUpBomb : MonoBehaviour
                 Destroy(other.gameObject);
 
                 allowed = false;
-            }
-          
+            }          
         }
 
         if (other.gameObject.CompareTag("Factory") && GetComponent<SpriteRenderer>().enabled == true) //TO DO BOX COLLIDER FoLJER INTE MED NAR MAN BYTER
@@ -90,7 +92,6 @@ public class PickUpBomb : MonoBehaviour
 
         Invoke(nameof(PlayExplosion), 2);
     }
-
 
     public void PlayExplosion()
     {
@@ -115,7 +116,6 @@ public class PickUpBomb : MonoBehaviour
         {
             GameObject smallSmokeClone = Instantiate(smoke_1, smokePlace.transform.position, Quaternion.identity);
             GameObject smallSmokeClone2 = Instantiate(smoke_1, smokePlace2.transform.position, Quaternion.identity);
-
         }
 
         if (bombCounter==2 && factoryBombTimes)
@@ -136,20 +136,7 @@ public class PickUpBomb : MonoBehaviour
 
             Vector3 newLevelPlace = new Vector3(goToBossLevelPlace.transform.position.x, goToBossLevelPlace.transform.position.y);
             GameObject goToBoss = Instantiate(goToBossLevel, newLevelPlace, Quaternion.identity);
-            PreBossDialogue();
-        }
-    }
-
-    public void PreBossDialogue()
-    {
-        if (goToBossLevel.activeSelf)
-        {
-            dialogue.SetActive(true);
-            Time.timeScale = 0;
-        }
-        if (!dialogue.activeSelf)
-        {
-            Time.timeScale = 1;
+            StartCoroutine("goToBoss");
         }
     }
 
@@ -159,6 +146,12 @@ public class PickUpBomb : MonoBehaviour
     }
 
 
-    //TO DO SLICA OM FABRIKEN SÅ DE HAR SAMMA STORLEK.
+    public IEnumerator goToBoss()
+    {
+        yield return new WaitForSecondsRealtime(2);
+        SceneManager.LoadScene("BossScene");
+        MusicSound.PlayBossMusic();
+
+    }
 }
 

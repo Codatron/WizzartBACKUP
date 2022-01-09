@@ -44,17 +44,35 @@ namespace DialogueSystem
             {
                 if (textHolder.text != input)
                 {
-                    if (lineAppear!= null)
+                    if (lineAppear != null)
                     {
                         StopCoroutine(lineAppear);
-                    }   
-                    
+                    }
+
                     textHolder.text = input;
-                }  
+                }
                 else
                     finished = true;
             }
         }
+
+        private void Line()
+        {
+            if (textHolder.text != input)
+            {
+                if (lineAppear != null)
+                {
+                    StopCoroutine(lineAppear);
+                }
+
+                textHolder.text = input;
+            }
+            else
+                finished = true;
+        }
+
+    
+
         private void ResetLine()
         {
             textHolder = GetComponent<TextMeshProUGUI>();

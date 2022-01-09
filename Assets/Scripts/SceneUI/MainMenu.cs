@@ -8,7 +8,6 @@ public class MainMenu : MonoBehaviour
     AudioSource m_MyAudioSource;
     float m_MySliderValue;
 
-
     private void Start()
     {
         m_MyAudioSource = GetComponent<AudioSource>();

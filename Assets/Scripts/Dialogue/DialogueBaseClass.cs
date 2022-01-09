@@ -17,7 +17,9 @@ namespace DialogueSystem
                 DialogueSound.instance?.PlayDialogueSound(sound);
                 yield return new WaitForSecondsRealtime(delay);
            }
-            yield return new WaitUntil(() => Input.GetKey(KeyCode.Space));
+            //yield return new WaitUntil(() => Input.GetKey(KeyCode.Space));
+
+            yield return new WaitForSeconds(1.5f);
 
             finished = true;
        }

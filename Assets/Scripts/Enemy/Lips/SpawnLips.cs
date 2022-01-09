@@ -13,6 +13,9 @@ public class SpawnLips: MonoBehaviour
     private float nextSpawn = 1.0f;
     private bool isWithinRange;
 
+    public List<Rigidbody2D> cloneBigLipsList = new List<Rigidbody2D>();
+
+ 
     void Update()
     {
 
@@ -39,8 +42,23 @@ public class SpawnLips: MonoBehaviour
     void SpawnBigLips()
     {
         Rigidbody2D lipsClone = Instantiate(lipsPrefab, transform.position + new Vector3(0.0f, 1.0f), Quaternion.identity);
+        cloneBigLipsList.Add(lipsClone);
+
+        //Spara i lista
+    }
+
+
+    public void DestroyBigLips()
+    {
+
+        foreach (Rigidbody2D lipsClone in cloneBigLipsList)
+        {
+            Debug.Log("HEJ2");
+            Destroy(GameObject.FindWithTag("EnemyLipsBig"));
+        }
     }
 }
+
 
 
 //public GameObject enemyBlue;

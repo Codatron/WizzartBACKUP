@@ -48,7 +48,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void PlayGame()
     {
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         SceneManager.LoadScene("Level");
    
     }
