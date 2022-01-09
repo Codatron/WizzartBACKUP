@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfa12edea42d7f43b2856a6a3a9402c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipHit: {fileID: 8300000, guid: 9454c0ba21dcc2647afb4f5b402ca838, type: 3}
+  clipHit: {fileID: 8300000, guid: 3932735446681a0488eb2d0cbd1e6958, type: 3}
   enemySpriteRenderer: {fileID: 1860392363527189070}
   slideTarget: {fileID: 0}
   corpseSprite: {fileID: 0}
