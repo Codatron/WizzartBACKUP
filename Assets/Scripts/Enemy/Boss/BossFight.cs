@@ -54,6 +54,7 @@ public class BossFight : MonoBehaviour
     {
         prefabList.Add(paintEnemy1);
         prefabList.Add(paintEnemy2);
+    
 
         stage = Stage.Idel;
         StartBattle();

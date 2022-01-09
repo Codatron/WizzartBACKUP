@@ -49178,6 +49178,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1662567727}
     m_Modifications:
+    - target: {fileID: 761884338, guid: cc815028da543ab4da438edcd1f23485, type: 3}
+      propertyPath: input
+      value: I believe in you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187089999583092420, guid: cc815028da543ab4da438edcd1f23485, type: 3}
+      propertyPath: input
+      value: "I've been stuck in here for ages!\nLet's celebrate with a glass of
+        wine sometime! \n\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 4187090000318730241, guid: cc815028da543ab4da438edcd1f23485, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -49269,6 +49278,10 @@ PrefabInstance:
     - target: {fileID: 4187090000318730246, guid: cc815028da543ab4da438edcd1f23485, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187090000409550883, guid: cc815028da543ab4da438edcd1f23485, type: 3}
+      propertyPath: input
+      value: I knew you'd make it Gunilla!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc815028da543ab4da438edcd1f23485, type: 3}
@@ -62781,7 +62794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2060121228
 Transform:
   m_ObjectHideFlags: 0

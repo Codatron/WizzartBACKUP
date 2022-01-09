@@ -48,13 +48,13 @@ public class MonoHealth : MonoBehaviour
             return;
         }
 
-        if (currentHealth < 400 && bossFight.stage == BossFight.Stage.Stage_1)
+        if (currentHealth < 500 && bossFight.stage == BossFight.Stage.Stage_1)
         {
             bossFight.stage = BossFight.Stage.Stage_2;            
             return;
         }
 
-        if (currentHealth < 200 && bossFight.stage == BossFight.Stage.Stage_2)
+        if (currentHealth < 300 && bossFight.stage == BossFight.Stage.Stage_2)
         {         
             bossFight.stage = BossFight.Stage.Stage_3;       
             return;

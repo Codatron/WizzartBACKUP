@@ -29,7 +29,7 @@ public class MonoMovmentState : MonoBehaviour
 
     void randoming()
     {   
-        offSet = Random.Range(-5,5);
+        offSet = Random.Range(-2,2);
         amount = Random.Range(0, movePoints.Length);
         currentTarget = movePoints[amount];
     }
