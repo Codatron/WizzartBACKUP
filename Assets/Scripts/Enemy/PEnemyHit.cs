@@ -11,10 +11,13 @@ public class PEnemyHit : MonoBehaviour, IGetKnockedBack
     private int enemyHit;
     public bool isDead = false;
 
+    private AudioSource audioSource;
+    public AudioClip clipHit;
     void Start()
     {
         enemyHit = 0;
-        
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     void Update()
@@ -39,7 +42,7 @@ public class PEnemyHit : MonoBehaviour, IGetKnockedBack
         {
             enemyHit++;
             StartCoroutine(EnemyTakeDamageColour());
-            // play audio
+            audioSource.PlayOneShot(clipHit);
         }
 
         if (enemyHit >= hitPointsMax)

@@ -20,14 +20,22 @@ public class EnemyPaintMovement : MonoBehaviour
 
     void Update()
     {
-        Vector3 direction = player.transform.position - transform.position;
 
-        //calculates angle and makes enemy face player
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        RBEnemy.rotation = angle;
+        if (player == null)
+        {
+            Destroy(gameObject);
+        }
+
+        else
+        {
+            Vector3 direction = player.transform.position - transform.position;
+         //calculates angle and makes enemy face player
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            RBEnemy.rotation = angle;
         //Makes the enemy move in the direction it's facing
-        direction.Normalize();
-        movement = direction;
+            direction.Normalize();
+            movement = direction;
+        }              
     }
 
     private void FixedUpdate()
@@ -40,5 +48,4 @@ public class EnemyPaintMovement : MonoBehaviour
         //Handles movement speed of the enemy
         RBEnemy.MovePosition((Vector3)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
-
 }

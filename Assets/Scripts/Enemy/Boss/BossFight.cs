@@ -44,6 +44,12 @@ public class BossFight : MonoBehaviour
 
    public MonoMovmentState monoMovmentState;
 
+    public AudioClip monoLaugh;
+    private AudioSource speaker;
+
+    bool playSound;
+  
+     
     private void Start()
     {
         prefabList.Add(paintEnemy1);
@@ -53,25 +59,45 @@ public class BossFight : MonoBehaviour
         StartBattle();
 
         shootDelagate += monoShoot.MonoShoots;
+
+        speaker = GetComponent<AudioSource>();
+
+        playSound = false;
+
+
     }
 
     private void Update()
     {
+        
+
         if (stage == Stage.Idel) //TODO SWITHC
         {
-            shootDelagate?.Invoke();
+            shootDelagate?.Invoke();           
         }
 
         if (stage == Stage.Stage_1)
         {
             SpawnEnemy();
             shootDelagate?.Invoke();
+
+            if (!playSound)
+            {
+                speaker.PlayOneShot(monoLaugh);
+                playSound = true;
+            }
         }
 
-        if (stage == Stage.Stage_2 || Input.GetMouseButtonDown(1))
+        if (stage == Stage.Stage_2)
         {
             paintCircleSpawn.StartSpawningBlobs();
             SpawnEnemy();
+
+            if (playSound)
+            {
+                speaker.PlayOneShot(monoLaugh);
+                playSound = false;
+            }
         }
 
         if (stage == Stage.Stage_3)
@@ -81,13 +107,25 @@ public class BossFight : MonoBehaviour
             monoClones.MonoClone();
             shootDelagate?.Invoke();
             DestroyAllSpawnEnemy();
+
+            if (!playSound)
+            {
+                speaker.PlayOneShot(monoLaugh);
+                playSound = true;
+            }
         }
 
         if (stage == Stage.Stage_4)
         {
             SpawnEnemy();
             DestroyAllClone();           
-           shootDelagate?.Invoke();    
+            shootDelagate?.Invoke();
+
+            if (playSound)
+            {
+                speaker.PlayOneShot(monoLaugh);
+                playSound = false;
+            }
         }
 
         if (stage == Stage.Dead)
@@ -138,10 +176,8 @@ public class BossFight : MonoBehaviour
     IEnumerator goBack()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(sceneBuildIndex: 0); ;
+        SceneManager.LoadScene(sceneBuildIndex: 4);
         MusicSound.PlayMenuMusic();
-
-
     }
 }
 

@@ -7,7 +7,7 @@ public class gameOverScreen : MonoBehaviour
 {
     public void Restart()
     {      
-       SceneManager.LoadScene(sceneBuildIndex: 2);
+       SceneManager.LoadScene(sceneBuildIndex: 3);
        MusicSound.PlayBossMusic();  
     }
     public void QuitGame()

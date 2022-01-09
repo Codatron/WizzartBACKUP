@@ -11,10 +11,14 @@ public class EnemyPaintHit : MonoBehaviour, IGetKnockedBack
     private int enemyHit;
     public bool isDead;
 
+    private AudioSource audioSource;
+    public AudioClip clipHit;
+
     void Start()
     {
         enemyHit = 0;
         isDead = false;
+        audioSource = GetComponent<AudioSource>();
     }
 
     IEnumerator EnemyTakeDamageColour()
@@ -34,7 +38,7 @@ public class EnemyPaintHit : MonoBehaviour, IGetKnockedBack
         {
             enemyHit++;
             StartCoroutine(EnemyTakeDamageColour());
-            // play audio
+            audioSource.PlayOneShot(clipHit);
         }
 
         if (enemyHit >= hitPointsMax)
@@ -46,6 +50,5 @@ public class EnemyPaintHit : MonoBehaviour, IGetKnockedBack
     {
         direction = direction.normalized;
         enemyRb.AddForce(magnitude * direction);
-        Debug.Log(direction);
     }
 }

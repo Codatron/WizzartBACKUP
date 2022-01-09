@@ -93,13 +93,13 @@ public class PlayerHit : MonoBehaviour
         isGameOver = true;
         Destroy(gameObject);
     }
-    void gameOver()
-    {
-        if (playerHit >= 20)
-        {
-            Time.timeScale = 0f;
-        }
-    }
+    //void gameOver()
+    //{
+    //    if (playerHit >= 20)
+    //    {
+    //        Time.timeScale = 0f;
+    //    }
+    //}
 
     private void Update()
     {

@@ -262,7 +262,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2427590875717892651}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e03c89fd66fd4744b84e2f0fe01d5e8f, type: 3}
@@ -363,11 +363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6bf84f3dcff914e9e0b58f4443eb8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sound1: {fileID: 8300000, guid: e59ff44a209eaa84a9dfac1a56998416, type: 3}
+  Sound1: {fileID: 8300000, guid: 48d10c877db4e12499f9d985e2a58b16, type: 3}
   Sound2: {fileID: 8300000, guid: 5860e99e1ca60bd4ab627d17d3c69faf, type: 3}
-  Sound3: {fileID: 8300000, guid: c6570e83970e872469db75f548708ef3, type: 3}
-  Sound4: {fileID: 8300000, guid: 377c1a5ba2d54ff41a7282408a9ac3ff, type: 3}
-  Sound5: {fileID: 8300000, guid: 48d10c877db4e12499f9d985e2a58b16, type: 3}
   phrases1: {fileID: 8013986125968811, guid: 9ac7ac9915b93304b8ded37c582248a1, type: 3}
   phrases2: {fileID: 4523929877079602744, guid: 3a8079447973fbc428d12156a8af5ade, type: 3}
   phrases3: {fileID: 3768072259054866278, guid: a75dd2b014484764c88eba6d7cb119a8, type: 3}

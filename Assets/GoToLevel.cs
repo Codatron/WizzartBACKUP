@@ -12,6 +12,11 @@ public class GoToLevel : MonoBehaviour
         playerHit = FindObjectOfType<PlayerHit>();
     }
 
+    private void Update()
+    {
+        theEnd();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Painting"))
@@ -31,6 +36,14 @@ public class GoToLevel : MonoBehaviour
 
         }
         
+    }
+
+    IEnumerator theEnd()
+    {
+        yield return new WaitForSeconds(6);
+
+        SceneManager.LoadScene(sceneBuildIndex: 1); 
+        MusicSound.PlayMenuMusic();
     }
 
  
