@@ -10,9 +10,7 @@ public class PlayerHit : MonoBehaviour
     List<AudioClip> hitSoundList = new List<AudioClip>();
     public AudioClip Sound1;
     public AudioClip Sound2;
-    public AudioClip Sound3;
-    public AudioClip Sound4;
-    public AudioClip Sound5;
+  
 
     //Code for random sprite when taking hit
     List<GameObject> phrasesList = new List<GameObject>();
@@ -48,7 +46,7 @@ public class PlayerHit : MonoBehaviour
     {
         isGameOver = false;
         phrasesIndex = UnityEngine.Random.Range(0, 3);
-        soundIndex = UnityEngine.Random.Range(0, 4);
+        soundIndex = UnityEngine.Random.Range(0, 2);
     }
 
     void Start()
@@ -69,9 +67,7 @@ public class PlayerHit : MonoBehaviour
         //Add sound when hit to list
         hitSoundList.Add(Sound1);
         hitSoundList.Add(Sound2);
-        hitSoundList.Add(Sound3);
-        hitSoundList.Add(Sound4);
-        hitSoundList.Add(Sound5);
+        
     }
    
 

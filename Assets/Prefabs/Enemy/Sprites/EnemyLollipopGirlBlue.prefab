@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfa12edea42d7f43b2856a6a3a9402c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipHit: {fileID: 8300000, guid: 9dac1736b29b15940b55c53d074e361f, type: 3}
+  clipHit: {fileID: 8300000, guid: 0299078d13e10cb4a87818843db1d2f3, type: 3}
   enemySpriteRenderer: {fileID: 2037523870020670773}
   slideTarget: {fileID: 0}
   corpseSprite: {fileID: 5484397287130244845, guid: a44034680f3d9ae4c89e4c7b1af8a3b6, type: 3}
@@ -470,11 +470,15 @@ MonoBehaviour:
     sineMag: 0
     sine: 0
     timer: 0
+    offset: 0
+    delta: 0
   sineY:
     sineSpeed: 0
     sineMag: 0
     sine: 0
     timer: 0
+    offset: 0
+    delta: 0
   isOnPatrol: 0
   isPositiveSineX: 0
   isPositiveSineY: 0
@@ -490,7 +494,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9dac1736b29b15940b55c53d074e361f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
